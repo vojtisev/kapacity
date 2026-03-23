@@ -1,0 +1,31 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Lokální prostředí
+.env
+.env.*
+
+# Data a výstupy ETL (typicky nepatří do veřejného repa — upravte podle politiky MKP)
+*.parquet
+data_raw/
+data_processed/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Logs (pokud existují)
+logs/
+
+# Screenshots (pokud existují)
+*.png
+
