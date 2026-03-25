@@ -1,193 +1,214 @@
 # Analýza kapacity knihovního fondu (MKP)
 
-Pythonová datová aplikace pro **zpracování**, **propojení** a **vizualizaci** kapacity a stavu fondu napříč pobočkami. Rozlišuje **realokační kapacitu** a **fyzickou (přepočítanou) kapacitu**; v běžném režimu z Parquetů je realokace ze souboru *Skutečný stav - realokace*, v legacy režimu z `data_raw/realokace.csv`. **Význam metrik a vzorce** jsou popsány níže v sekci *Metriky: význam a výpočet*.
+Pythonová aplikace pro zpracování a vizualizaci kapacity fondu napříč pobočkami.  
+Cesty k datům a ke skriptům jsou odvozené od **složky projektu** (kde leží `app.py`), ne od „aktuálního adresáře“ v CMD — stačí zkopírovat celý adresář a spouštět `.bat` soubory odtud.
 
-## Požadavky
+README je rozdělené na:
 
-- Python 3.11+ (doporučeno; na 3.9 je potřeba ověřit kompatibilitu typových anotací)
-- Závislosti: viz `requirements.txt`
+- **část pro uživatele**: co model ukazuje, jak číst KPI a filtry,
+- **technickou část**: zdroje dat, ETL, datový model, implementační pravidla.
 
-## Instalace
+### Struktura projektu (základ)
+
+```text
+KAPACITY/
+├── app.py
+├── requirements.txt
+├── README.md
+├── build_portable.bat      # jednorázově (IT): embeddable Python + závislosti → runtime\
+├── download_wheels.bat     # volitelně: wheels\ pro úplně offline sestavení
+├── setup_venv.bat          # jednorázově: venv + pip install (když je Python v PATH)
+├── run_dashboard.bat       # Streamlit dashboard (runtime\ nebo .venv)
+├── run_etl.bat             # ETL + exporty (runtime\ nebo .venv)
+├── set_proxy_mlp.bat       # volaný z .bat — proxy MKP (pip)
+├── data_raw/               # vstupy (CSV/Excel/mapování)
+├── data_processed/         # výstupy ETL (po spuštění)
+└── src/                    # kód aplikace
+```
+
+Parquet soubory v kořeni (vedle `app.py`) patří do stejné kopie složky jako data v `data_raw/`.
+
+## 1) Uživatelská část
+
+### K čemu model slouží
+
+Model porovnává:
+
+- kapacitu, kterou máme fyzicky k dispozici (přepočtený kapacitní plán),
+- kapacitu plánovanou pro realokace (aktuální kapacitní plán),
+- skutečný stav fondu (počet svazků).
+
+Výsledek je přehled kapacitního vytížení po lokalitách, pobočkách, oblastech a OCH.
+
+### Jak číst horní KPI (aktuální výběr filtrů)
+
+- **Přepočítaný kapacitní plán** = fyzická kapacita ze zdrojů přepočtu.
+- **Aktuální kapacitní plán** = kapacita z dat realokace.
+- **Skutečný stav (počet svazků)** = skutečný stav fondu.
+- **Naplněná kapacita (%)** = `Skutečný stav / Přepočítaný kapacitní plán * 100`.
+- **Zbývající kapacita (počet svazků)** = `Přepočítaný kapacitní plán - Skutečný stav`.
+- **Počet lokací (výběr)** = počet lokací po aplikaci filtrů.
+
+### Co znamenají sloupce „Přetížená“ a „Riziková“
+
+Tyto sloupce jsou odvozené z metriky **Naplněná kapacita (%)** na úrovni jedné lokace:
+
+- **Přetížená** = `Naplněná kapacita (%) > 100 %`
+- **Riziková** = `Naplněná kapacita (%) > 90 %`
+
+Poznámka:
+
+- pokud lokace nemá definovanou kapacitu (nelze spočítat naplnění), hodnota je prázdná.
+- stav **Přetížená = Ano** současně znamená i **Riziková = Ano**.
+
+### Jak číst blok „Celá síť — referenční KPI (bez filtru)“
+
+Má stejné metriky jako horní řada, ale počítá je nad celou sítí bez UI filtrů.  
+Je to referenční baseline pro porovnání s filtrovaným výběrem.
+
+### Co znamenají kategorie a filtry
+
+- **Oblast / Název pobočky / Lokace**: klasické prostorové filtry.
+- **Jen realokační lokace**: omezuje dataset na lokace označené jako realokační.
+- **Označení + Typ** (z přepočtu): filtrují jen nerealokační lokace.
+- **KAPACITA_DESKRIPTOR + KAPACITA_OCH** (z realokace): filtrují jen realokační lokace.
+
+Skupiny filtrů jsou záměrně oddělené, aby se nemíchaly dva různé datové zdroje.
+
+### Spuštění po zkopírování ze síťového disku (doporučeno)
+
+Postup je stejný v principu jako u souvisejících nástrojů (např. projekt **VYRAZOVANI**): **nejdřív celou složku zkopírujte na lokální disk**, pak spouštějte aplikaci.
+
+**Uživatelé bez práva instalovat software (doporučená distribuce):**  
+IT / správce **jednou** na počítači s internetem spustí **`build_portable.bat`** → vznikne složka **`runtime\python\`** s embeddable Pythonem a všemi balíky z `requirements.txt`. Tuto složku lze zkopírovat s celým projektem koncovým uživatelům — ti pak už **nic neinstalují**, jen **`run_dashboard.bat`** / **`run_etl.bat`**. Podrobně [docs/PORTABLE-OFFLINE-BALICEK.md](docs/PORTABLE-OFFLINE-BALICEK.md).
+
+**Varianta s Pythonem na stanici:**  
+1. **Zkopírujte celý adresář** `KAPACITY` z OneDrive / síťové složky na **lokální disk** (např. `C:\Projekty\KAPACITY`).  
+   Důvod: vytváření virtuálního prostředí (`.venv`), pip a někdy i Streamlit bývají na dlouhých cestách UNC nebo synchronizovaném OneDrive spolehlivější z lokální kopie.
+2. **Jednou** dvojklikem spusťte **`setup_venv.bat`** (nainstaluje balíky z `requirements.txt` do `.venv`).
+3. Pak podle potřeby **`run_dashboard.bat`** (dashboard) nebo **`run_etl.bat`** (přepočet exportů).
+
+Skripty **`run_dashboard.bat`** a **`run_etl.bat`** automaticky preferují **`runtime\python\`**, pokud existuje, jinak **`.venv`**.
+
+**Alternativa:** spuštění přímo ze síťové cesty nebo z mapovaného disku může fungovat; pokud `setup_venv.bat` selže nebo je extrémně pomalý, použijte lokální kopii — podrobně [docs/SITOVY-DISK-WINDOWS.md](docs/SITOVY-DISK-WINDOWS.md).
+
+**Síť MKP / firewall:** proxy pro pip je v `set_proxy_mlp.bat` (volají ji hlavní `.bat`); řešení problémů s pip: [docs/PIP-FIREWALL.md](docs/PIP-FIREWALL.md).
+
+### Rychlé spuštění (shrnutí)
+
+| Platforma | Postup |
+|-----------|--------|
+| **Windows** | S předanou složkou **`runtime\`** (po `build_portable.bat`): přímo `run_dashboard.bat` / `run_etl.bat`. Jinak `setup_venv.bat` → `run_dashboard.bat` / `run_etl.bat` |
+| **Linux / macOS (vývoj)** | `python3 -m venv .venv`, aktivace, `pip install -r requirements.txt`, pak `python3 -m streamlit run app.py` / `python3 -m src.model.pipeline` |
+
+## 2) Technická část
+
+### Požadavky a instalace
+
+- Python 3.11+ (na 3.9 je potřeba ověřit kompatibilitu typových anotací)
+- závislosti: `requirements.txt`
 
 ```bash
 cd KAPACITY
 python3 -m pip install -r requirements.txt
 ```
 
-## Parquet v kořeni projektu (priorita)
+**Windows ze síťového disku / OneDrive:** viz [docs/SITOVY-DISK-WINDOWS.md](docs/SITOVY-DISK-WINDOWS.md).  
+Proxy v MKP síti je řešená přes `set_proxy_mlp.bat`; detaily jsou v [docs/PIP-FIREWALL.md](docs/PIP-FIREWALL.md).
 
-Pokud v **kořeni** repozitáře (vedle `app.py`) leží tyto soubory `*.parquet`:
+**Offline portable:** sestavení **`runtime\python\`** je popsáno v [docs/PORTABLE-OFFLINE-BALICEK.md](docs/PORTABLE-OFFLINE-BALICEK.md) (`build_portable.bat`). V Gitu je jen zdroj; hotový `runtime\` se necommituje (velikost).
 
-- **Pobočky** (název obsahuje `poboček` / `pobocek`),
-- **Přepočítané kapacity** (název obsahuje `kapacity`),
-- **Skutečný stav** (název obsahuje `skuteč` / `skutec` a ne `realok`),
-- **Skutečný stav - realokace** (název obsahuje `realok`),
+### Priorita vstupů: Parquet v kořeni projektu
 
-ETL je **nabídne přednostně** před Excel/CSV v `data_raw/`. Vyžaduje `pyarrow` (v `requirements.txt`).
+Pokud jsou v kořeni projektu tyto soubory `*.parquet`, mají prioritu před `data_raw`:
 
-V tomto režimu je příznak **realokace vs. ostatní** (`je_realokace`) odvozen **výhradně** ze souboru **Skutečný stav - realokace.parquet** (klíč číslo knihovny + `LOKACE_SHORT`); ostatní lokace vycházejí ze **Skutečný stav.parquet**. Překryv obou množin hlásí DQ report.
+- **Pobočky** (`poboček` / `pobocek`)
+- **Přepočítané kapacity** (`kapacity`)
+- **Skutečný stav** (`skuteč` / `skutec`, ale ne `realok`)
+- **Skutečný stav - realokace** (`realok`)
+- **Sklady** (`sklady`) — volitelné doplnění chybějících skladových klíčů
 
-## Vstupní data (`data_raw/`)
+`Sklady.parquet` se zapojuje v režimu **append-only**:
+
+- přidají se jen nové klíče, které nejsou v hlavním přepočtu,
+- existující klíče se nepřepisují,
+- klíč je `(pobocka_cislo, lokace_short_norm, och)`,
+- speciální mapování: `Jenštejn -> pobocka_cislo=92, pobocka_nazev=Jeneč, oblast=Sklad`.
+
+### Vstupní data v `data_raw/`
 
 | Soubor | Popis |
 |--------|--------|
-| `lokace-vsechny-nazev.csv` | Lokace a stav fondu (export z SQL — aplikace parsuje datové řádky) |
+| `lokace-vsechny-nazev.csv` | Lokace a stav fondu (SQL export) |
 | `lokace-vsechny.csv` / `lokace-neprazdne.csv` | Volitelný alternativní zdroj stavu fondu |
-| **`Kapacity - návrh pro sběr dat.xlsx`** | **Hlavní vstup kapacity** (pobočka = list, sloupce včetně **`oblast`**). Umístěte do `data_raw/` pod tímto přesným názvem. |
-| `kapacita.xlsx` | Volitelná záloha: pokud soubor výše v `data_raw/` není, použije se `kapacita.xlsx` (stejná struktura). |
-| `kapacita.csv` | Export kapacity (oddělovač `;`); použije se jen pokud **není žádný** z výše uvedených Excelů — lze doplnit sloupec `OBLAST` / `KAPACITA_OBLAST` |
-| `realokace.csv` | Lokace pro realokaci + `kapacita_realokace` (OCH volitelné) |
-| `oblast_map.csv` | Mapování poboček do oblasti (stejný význam jako sloupec **oblast** ve vaší tabulce poboček) |
-| **`lokace_map_prepocet.csv`** | **Volitelné** sjednocení kódů lokace mezi *Přepočítanými kapacitami* a *Skutečným stavem* (viz níže) |
+| `Kapacity - návrh pro sběr dat.xlsx` | Hlavní vstup kapacity (pobočka = list) |
+| `kapacita.xlsx` | Záložní vstup kapacity |
+| `kapacita.csv` | CSV fallback, pokud není Excel |
+| `realokace.csv` | Legacy vstup pro realokace |
+| `oblast_map.csv` | Doplňková mapa oblastí |
+| `lokace_map_prepocet.csv` | Mapa lokací mezi přepočtem a stavem fondu |
 
-**Mapa lokací z přepočtu (`lokace_map_prepocet.csv`).** Parquet exporty často používají jiné kódy lokace než *Skutečný stav* (např. z přepočtu `92.1` vs. ve fondu `JEN-PVP`). Soubor **neupravujte v Parquetu** — při každém refreshi zůstane nesoulad. Doplňte řádky v `data_raw/`: `pobocka_cislo`, `lokace_short_zdroj` (kód z přepočtu), `lokace_short_cil` (cílový `LOKACE_SHORT` ze Skutečného stavu / realokace pro join). Jedna pobočka může mít libovolně řádků.
+### Mapování lokací z přepočtu
 
-**Vzdálené sklady 1–9 (Jeneč / knihovna 92):** myslíme tím **všech devět** lokací, kde v názvu pobočky/lokace je „Vzdálený sklad 1“ až „Vzdálený sklad 9“ — v `LOKACE_SHORT` to odpovídá devíti kódům `JEN-*` (ne všechny ostatní `JEN-*` na stejné knihovně). Řádky **`JEN-KANC`** a **`JEN-PROST`** patří k názvu „Jeneč“ (provoz), **ne** k číslovaným vzdáleným skladům 1–9 — do té sady je nepočítejte, pokud je z přepočtu nemapujete zvlášť.
+Parquet exporty často používají jiné kódy lokace než skutečný stav.  
+Do `lokace_map_prepocet.csv` doplňte:
 
-Referenční přiřazení (ověřte v aktuálním exportu):
+- `pobocka_cislo`
+- `lokace_short_zdroj` (kód z přepočtu)
+- `lokace_short_cil` (kód ze skutečného stavu)
 
-| VS | `LOKACE_SHORT` |
-|----|----------------|
-| 1 | JEN-PVP |
-| 2 | JEN-PV |
-| 3 | JEN-DEPOZ |
-| 4 | JEN-RFUK |
-| 5 | JEN-RFOKF |
-| 6 | JEN-ZASOB |
-| 7 | JEN-MOFNAU |
-| 8 | JEN-DEPJST |
-| 9 | JEN-PVKONZ |
+Pro Jeneč (knihovna 92) je běžné mapovat kódy `92.x` na `JEN-*`.
 
-V přepočtu se může objevit jen část kódů (např. `92.1`, `92.2`, `92.6`) — pro každý **skutečně** vyskytující se zdrojový kód přidejte jeden řádek mapy na příslušný `JEN-*` z tabulky. Po doplnění spusťte znovu ETL.
+### Pravidla výpočtu kapacity
 
-**Pravidlo kapacity:** u lokace s `je_realokace = TRUE` se pro **běžné pobočky** použije **realokační** kapacita; jinde **fyzická** z přepočtu. **Oblast Sklad** (vzdálené sklady apod.) je výjimka — tam se v metrikách vždy bere **fyzická kapacita** z přepočtu, protože realokační údaj ve zdroji často neodpovídá sběru. Chybějící hodnota se **nepřepisuje nulou**.
+- U běžných lokací se používá fyzická kapacita z přepočtu.
+- U realokačních lokací se používá kapacita z realokačního plánu.
+- **Oblast Sklad** je výjimka: používá se fyzická kapacita.
+- Chybějící kapacita se nepřepisuje nulou.
 
 ### Oblasti poboček
 
-**Primární zdroj:** soubor **`data_raw/Kapacity - návrh pro sběr dat.xlsx`** — na každém listu (pobočka) je ve sloupci **`oblast`** u řádků uvedena oblast; pobočka a kapacita jdou z této šablony. Při ETL se z řádků odvodí jedna hodnota oblasti na `pobocka_cislo` (případně podle názvu listu). Při více různých hodnotách u jedné pobočky se použije **modus** a do DQ reportu přibude varování.
+Primární zdroj oblasti je kapacitní tabulka (sloupec `oblast`).  
+`oblast_map.csv` se použije jen jako doplněk tam, kde oblast chybí.
 
-**Doplnění:** `data_raw/oblast_map.csv` jen tam, kde z Excelu oblast nešla získat (priorita: nejdřív Excel/CSV kapacity, pak mapa).
+Kanonické oblasti:
 
-Kanonické názvy oblastí (stejně jako ve vašich datech):
+- Ústřední knihovna
+- Jih
+- Sklad
+- Jihozápad
+- Jihovýchod
+- Středozápad
+- Severovýchod
 
-Ústřední knihovna, Jih, Sklad, Jihozápad, Jihovýchod, Středozápad, Severovýchod.
+### Struktura projektu
 
-- Propojení z kapacity je podle **`pobocka_cislo`** (sloupec jako u ostatních sloupců KAPACITA_*).
-- Volitelně lze v `oblast_map.csv` doplnit **`pobocka_nazev`** pro řádky bez čísla.
-
-## Spuštění ETL a exportů
-
-Vygeneruje tabulky do `data_processed/exports/` a report `data_processed/data_quality_report.md`:
-
-```bash
-python3 -m src.model.pipeline
-```
-
-## Streamlit dashboard
-
-**Dva samostatné příkazy** — po ETL vždy na **novém řádku** spusťte dashboard (neslepovat s předchozím řádkem, jinak vznikne neexistující příkaz `pythonstreamlit`).
-
-Z adresáře projektu (`KAPACITY`):
-
-```bash
-python3 -m streamlit run app.py
-```
-
-Alternativa, pokud máte `streamlit` v PATH:
-
-```bash
-streamlit run app.py
-```
-
-Dashboard obsahuje KPI, přehledy podle oblasti a pobočky, detail lokace podle OCH, tabulky přetížených a nevyužitých lokací a filtry.
-
-**Filtry podle zdroje (Streamlit):** Ze **Přepočítaných kapacit** (parquet) se nabízejí **Označení** a **Typ** — po výběru zužují **jen ostatní** (nerealokační) lokace. Ze souboru **Skutečný stav - realokace** se nabízejí **KAPACITA_DESKRIPTOR** a **KAPACITA_OCH** — zužují **jen realokační** lokace. Obě skupiny se v datech záměrně nepřekrývají; horní KPI a tabulky lokací respektují tyto filtry. Agregované pohledy `metrics_oblast` / `metrics_pobocka` zůstávají bez těchto dimenzí (jen filtry oblast / pobočka v postranním panelu).
-
-**Co znamená filtr Typ (nebo Označení) u tabulek „přetížené“ a „nevyužité“ lokace:**
-
-- Filtr **Typ** / **Označení** odpovídá otázce: *které lokace mají v Přepočítaných kapacitách alespoň jeden řádek s daným typem* (případně s daným označením — pokud je vybrané obojí, musí sedět **oba** údaje na **jednom** řádku přepočtu). U **realokačních** lokací se tyto filtry z přepočtu **nepoužívají** (omezují je jen deskriptor / KAPACITA_OCH ze souboru realokace).
-- Tabulky **Nejvíce přetížené lokace** a **Nejvíce nevyužité lokace** stále pracují s **jednou řádkou na lokaci** z `metrics_lokace_enriched`. Sloupce jako přetíženost, naplněnost %, kapacita a stav fondu jsou tedy vždy za **celou lokaci** (součet přes segmenty / OCH oproti celkovému stavu fondu na lokaci) — **ne** za izolovaný řez „jen vybraný Typ“.
-- Prakticky: filtr Typ (např. AK) **vybere podmnožinu lokací**, kde je ten typ v přepočtu zastoupený; u každé takové lokace pak vidíte **globální** ukazatele za celou lokaci, nikoli „přetížení jen u segmentu AK“. Pokud byste potřebovali přetížení nebo naplněnost **v řezu jednoho typu**, šlo by o **jiný** pohled (agregace jen přes řádky s daným typem) — ten současný model záměrně neobsahuje.
-
-## Struktura projektu
-
-```
+```text
 data_raw/           # vstupy
 data_processed/     # exporty CSV + DQ report
 src/
   config.py         # cesty
-  io/               # načítání CSV / Excel
+  io/               # načítání CSV / Excel / Parquet
   transform/        # normalizace klíčů
   model/            # DuckDB model, pohledy, ETL
-  metrics/          # dokumentační značka (metriky v SQL)
   validation/       # datová kvalita
   ui/               # Streamlit
 app.py              # vstupní bod Streamlit
 ```
 
-## Datový model (výstupy ETL)
+### Datový model (výstupy ETL)
 
-- `dim_pobocka`, `dim_lokace`
-- `fact_fond`, `fact_kapacita_fyzicka`, `fact_kapacita_realokace`
-- Pohledy: `metrics_lokace_enriched`, `metrics_lokace_och`, `metrics_sit`, `metrics_oblast`, `metrics_pobocka`
+- dimenze: `dim_pobocka`, `dim_lokace`
+- fakta: `fact_fond`, `fact_kapacita_fyzicka`, `fact_kapacita_realokace`
+- hlavní pohledy: `metrics_lokace_enriched`, `metrics_lokace_och`, `metrics_oblast`, `metrics_pobocka`, `metrics_sit`
 
-## Metriky: význam a výpočet (zjednodušeně)
+### Přesná mapa UI metrik na data
 
-Tento blok je určený k tomu, abyste **stejnými slovy** vysvětlovali čísla kolegům. Technická pravda je v SQL pohledech v `src/model/pipeline.py` (DuckDB).
+| Popisek v UI | Výpočet / sloupec |
+|---|---|
+| Přepočítaný kapacitní plán | `sum(kapacita_fyzicka_sum)` |
+| Aktuální kapacitní plán | `sum(kapacita_realokace_sum)` |
+| Skutečný stav (počet svazků) | `sum(stav_fondu_celkem)` |
+| Naplněná kapacita (%) | `sum(stav_fondu_celkem) / sum(kapacita_fyzicka_sum) * 100` |
+| Zbývající kapacita (počet svazků) | `sum(kapacita_fyzicka_sum) - sum(stav_fondu_celkem)` |
 
-### Klíč a zdroje
-
-- **Lokace** v modelu = spojení **čísla knihovny (pobočky)** a kódu **`LOKACE_SHORT`** (v kódu ještě normalizovaný tvar pro spolehlivé spojování).
-- **Stav fondu (počet svazků)** na lokaci vychází ze zdroje **„Skutečný stav“** (parquet `Skutečný stav*.parquet` nebo CSV export lokací) — jde o **celkový** stav u lokace (agregace v dimenzi lokace).
-- **Fyzická / přepočítaná kapacita** po **OCH** vychází z **„Přepočítané kapacity“** (parquet nebo Excel/CSV kapacity) — řádky regálů/segmentů se sčítají na úroveň `pobočka + lokace + OCH`.
-- **Realokační kapacita** po **OCH** vychází ze **„Skutečný stav - realokace“** (parquet; v legacy režimu z `realokace.csv`). U realokačních lokací je to **plánovaná** kapacita pro daný OCH (v Parquetu z kapacitního plánu pro realokaci).
-
-### Realokační lokace (`je_realokace`)
-
-- V **parquet režimu** je lokace považovaná za realokační, **pokud se její pár (číslo knihovny + LOKACE_SHORT)** vyskytuje v souboru **Skutečný stav - realokace.parquet** (ne z `realokace.csv`).
-- V **legacy režimu** se používá `data_raw/realokace.csv` (a případné doplnění podle názvu pobočky).
-
-### Efektivní kapacita na úrovni OCH
-
-Pro každou kombinaci **lokace × OCH**, která má řádek ve fyzické kapacitě:
-
-- Pokud `je_realokace` u lokace **ano** → do výpočtu se bere **realokační** kapacita (`kapacita_realokace`) pro daný OCH (spárovaná s fyzickým řádkem).
-- Pokud **ne** → bere se **fyzická** kapacita (`kapacita_fyzicka`) z přepočítaných kapacit.
-
-**Kapacita lokace celkem** = součet těchto **efektivních** kapacit přes všechna OCH u lokace (`kapacita_celkem` v pohledu `metrics_lokace`). Odpovídá tomu, co v reportech označujete jako **přepočítanou / efektivní kapacitu** u lokace (v dashboardu podle Power BI: *Přepočítaná kapacita (tabulka)* u výběru).
-
-### Stav fondu na úrovni OCH vs. celkem
-
-- **Celkový stav** na lokaci (`stav_fondu_celkem`) je ze zdroje skutečného stavu fondu (jedna hodnota na lokaci).
-- **Stav po OCH** (`stav_fondu_och` v `metrics_lokace_och`) vychází z řádků spojených s kapacitou (rozpad podle OCH z ETL — pro detailní srovnání s kapacitou po OCH).
-
-Proto součet stavu po OCH nemusí být číselně stejný jako „celkový“ stav ze systému, pokud se rozpad liší od primárního výkazu — u prezentací **síťových součtů** používejte metriky z `metrics_lokace_enriched` / `metrics_sit`, u **rozpadu na OCH** pohled `metrics_lokace_och`.
-
-### Odvozené veličiny na lokaci (`metrics_lokace_enriched`)
-
-| Koncept | Jak se počítá |
-|--------|----------------|
-| **Zbývající kapacita** (`volna_kapacita`) | `kapacita_celkem − stav_fondu_celkem` (může být záporná = přetlak). |
-| **% naplnění** (`naplnenost_pct`) | `(stav_fondu_celkem / kapacita_celkem) × 100`, jen pokud je `kapacita_celkem` známá a nenulová; jinak NULL. |
-| **Rozdíl** (`rozdil`) | `stav_fondu_celkem − kapacita_celkem` (stejná informace jako u „zbývající“, se znaménkem opačným vůči volné kapacitě). |
-| **Přetížená** | `naplnenost` > 100 %. |
-| **Riziková** | `naplnenost` > 90 % (informační práh v modelu). |
-
-### Agregace: pobočka, oblast, celá síť
-
-- **Součty** stavu a kapacity jsou **sčítáním přes lokace** v daném řezu (pobočka, oblast, nebo celá síť).
-- **% naplnění** na agregované úrovni (`metrics_oblast`, `metrics_pobocka`, `metrics_sit`) je **vážený poměr**:  
-  `sum(stav u lokací, kde je kapacita) / sum(kapacita) × 100`, nikoli průměr procent z jednotlivých lokací.
-- **Stav při pokrytí kapacitou** (`stav_pri_pokryti_kapacitou`) = součet stavu fondu **jen u lokací, které mají definovanou kapacitu** — používá se u síťového KPI, aby čitatel i jmenovatel u podílu odpovídaly stejné množině.
-
-### Dashboard a názvy jako v Power BI
-
-České popisky ve Streamlit aplikaci (`src/ui/dashboard_labels.py`) kopírují report **Kapacity v MKP**. Mapování:
-
-| Popisek na dashboardu | Technický sloupec / pohled |
-|------------------------|----------------------------|
-| Přepočítaná kapacita (tabulka) | `kapacita_celkem` (součet efektivní kapacity) |
-| Skutečný stav (počet svazků) | `stav_fondu_celkem` |
-| % Naplnění | `naplnenost_pct` (u filtru lokací: poměr součtů; u celé sítě stejná logika jako výše) |
-| Zbývající kapacita | `volna_kapacita` |
-| Celková kapacita sítě / Skutečný stav všech přítomných svazků | řádek z `metrics_sit` |
