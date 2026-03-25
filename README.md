@@ -191,9 +191,3 @@ Proto součet stavu po OCH nemusí být číselně stejný jako „celkový“ s
 | % Naplnění | `naplnenost_pct` (u filtru lokací: poměr součtů; u celé sítě stejná logika jako výše) |
 | Zbývající kapacita | `volna_kapacita` |
 | Celková kapacita sítě / Skutečný stav všech přítomných svazků | řádek z `metrics_sit` |
-
-## Rozšíření (návrh)
-
-- Scénáře optimalizace realokace podle cílových kapacit
-- Polars pro větší objemy
-- Přímé napojení na databázi místo CSV exportů
