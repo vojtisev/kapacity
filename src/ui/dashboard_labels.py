@@ -37,30 +37,33 @@ CACHE_CAPTION = (
 )
 
 # KPI — výběr podle filtrů (kontrolní přehled / lokace)
-KPI_PREPOCITANA_KAPACITA = "Přepočítaná kapacita (tabulka)"
+KPI_PREPOCITANA_KAPACITA = "Přepočítaný kapacitní plán"
+KPI_PLAN_REALOKACE = "Aktuální kapacitní plán"
 KPI_SKUTECNY_STAV_SVAZKY = "Skutečný stav (počet svazků)"
-KPI_NAPLNENI_PCT = "% Naplnění"
+KPI_NAPLNENI_PCT = "Naplněná kapacita (%)"
 KPI_ZBYVAJICI_KAPACITA = "Zbývající kapacita (počet svazků)"
 KPI_POCET_LOKACI_VYBER = "Počet lokací (výběr)"
 
 # Přehled tří řad (vyfiltrovaný výběr)
-SECTION_VYBER_TRI = "Přehled výběru — přepočet · skutečný stav · plán (realokace)"
+SECTION_VYBER_TRI = "Přehled výběru — přepočítaný plán · skutečný stav · aktuální plán"
 CHART_TRI_TITLE = "Součty ve svazcích (aktuální filtry)"
-TRI_PREPOCET = "Přepočítaná kapacita"
+TRI_PREPOCET = "Přepočítaný kapacitní plán"
 TRI_STAV = "Skutečný stav"
-TRI_REALOK = "Plán (realokace)"
+TRI_REALOK = "Aktuální kapacitní plán"
 AXIS_SVAZKY = "Svazky"
 TRI_CAPTION = (
-    "Přes lokace v aktuálním výběru: **přepočítaná kapacita** = součet fyzické kapacity z přepočtu, "
-    "**skutečný stav** = svazky ve fondu, **plán (realokace)** = součet kapacity dle souboru realokace."
+    "Přes lokace v aktuálním výběru: **přepočítaný kapacitní plán** = součet fyzické kapacity z přepočtu, "
+    "**skutečný stav** = svazky ve fondu, **aktuální kapacitní plán** = součet kapacity dle souboru realokace."
 )
 
 # KPI — celá síť (bez filtru) — viz přehled „Kapacity“
 SECTION_SIT = "Celá síť — referenční KPI (bez filtru)"
-KPI_CELKOVA_KAPACITA_SITE = "Celková kapacita sítě"
-KPI_SKUTECNY_STAV_PRITOMNE = "Skutečný stav všech přítomných svazků"
-KPI_STAV_PRI_POKRYTI = "Stav při pokrytí kapacitou"
-KPI_NAPLNENI_POKRYTE = "% Naplnění (pokryté lokace)"
+KPI_CELKOVA_KAPACITA_SITE = "Přepočítaný kapacitní plán"
+KPI_SKUTECNY_STAV_PRITOMNE = "Aktuální kapacitní plán"
+KPI_STAV_PRI_POKRYTI = "Skutečný stav (pokryté lokace)"
+KPI_NAPLNENI_POKRYTE = "Naplněná kapacita (%)"
+KPI_ZBYVAJICI_SITE = "Zbývající kapacita (počet svazků)"
+KPI_POCET_LOKACI_SITE = "Počet lokací"
 
 # Realokace — výsečový graf
 SECTION_REALOK_PIE = "Realokace vs ostatní lokace"
@@ -94,9 +97,9 @@ NEPOUZITE_CAPTION = (
 
 # Sloupce pro zobrazení (mapování z interních názvů)
 COL_LOKACE_SHORT = "LOKACE_SHORT"
-COL_PREPOCITANA = "Přepočítaná kapacita (tabulka)"
+COL_PREPOCITANA = "Přepočítaný kapacitní plán"
 COL_SKUTECNY_STAV = "Skutečný stav (počet svazků)"
-COL_NAPLNENI = "% Naplnění"
+COL_NAPLNENI = "Naplněná kapacita (%)"
 COL_PRETIZENA = "Přetížená"
 COL_RIZIKOVA = "Riziková"
 COL_REALOKACE = "Realokační lokace"
@@ -104,8 +107,8 @@ COL_VOLNA_KAPACITA = "Zbývající kapacita (počet svazků)"
 COL_ROZDIL = "Rozdíl (stav − kapacita)"
 
 # Detail OCH (metrics_lokace_och)
-COL_KAP_FYZ = "Přepočítaná kapacita (fyzická)"
-COL_KAP_REALOK = "Kapacita dle plánu realokace"
+COL_KAP_FYZ = "Přepočítaný kapacitní plán (fyzický)"
+COL_KAP_REALOK = "Aktuální kapacitní plán"
 COL_KAP_EFEKTIVNI = "Kapacita efektivní"
 COL_STAV_OCH = "Skutečný stav (počet svazků)"
 COL_POBOCKA = "Pobočka"

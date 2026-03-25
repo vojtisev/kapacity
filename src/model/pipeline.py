@@ -33,6 +33,7 @@ from ..io.parquet_sources import (
     load_lokace_skutecny_stav,
     load_pobocky_parquet,
     load_prepocet_kapacity,
+    load_sklady_kapacity,
     oblast_z_prepocet,
     parquet_bundle_ready,
 )
@@ -422,6 +423,40 @@ def _build_from_parquet(
 
     kap = load_prepocet_kapacity(disc["prepocet"])
     kap = apply_prepocet_lokace_map(kap, load_lokace_map_prepocet(raw / LOKACE_MAP_PREPOCET))
+    sklady_stats: dict[str, int] | None = None
+    if "sklady" in disc:
+        sk = load_sklady_kapacity(disc["sklady"])
+        sk = apply_prepocet_lokace_map(sk, load_lokace_map_prepocet(raw / LOKACE_MAP_PREPOCET))
+        # Explicitní mapování z požadavku: Jenštejn -> Jeneč / Sklad.
+        # `pobocka_cislo` držíme číselné (92), protože model a DuckDB s ním pracují jako INT.
+        mask_jenstejn = sk["pobocka_nazev"].fillna("").astype(str).str.strip().str.lower().eq("jenštejn")
+        if mask_jenstejn.any():
+            sk.loc[mask_jenstejn, "pobocka_cislo"] = 92
+            sk.loc[mask_jenstejn, "pobocka_nazev"] = "Jeneč"
+            sk.loc[mask_jenstejn, "oblast"] = "Sklad"
+            # Po změně pobočky aplikujeme mapu znovu, aby se propsaly klíče typu 92.8 -> JEN-...
+            sk = apply_prepocet_lokace_map(sk, load_lokace_map_prepocet(raw / LOKACE_MAP_PREPOCET))
+
+        sk = sk[
+            sk["lokace_short_norm"].fillna("").astype(str).str.strip().ne("")
+            & sk["kapacita_fyzicka"].fillna(0).ne(0)
+        ].copy()
+        key_cols = ["pobocka_cislo", "lokace_short_norm", "och"]
+        kap_key = pd.DataFrame(
+            {c: kap[c].fillna("").astype(str).str.strip() for c in key_cols}
+        )
+        sk_key = pd.DataFrame(
+            {c: sk[c].fillna("").astype(str).str.strip() for c in key_cols}
+        )
+        existing_keys = set(zip(kap_key["pobocka_cislo"], kap_key["lokace_short_norm"], kap_key["och"]))
+        sk_merge_key = list(zip(sk_key["pobocka_cislo"], sk_key["lokace_short_norm"], sk_key["och"]))
+        sk_new = sk[[k not in existing_keys for k in sk_merge_key]]
+        kap = pd.concat([kap, sk_new[kap.columns]], ignore_index=True)
+        sklady_stats = {
+            "rows_source": int(len(sk)),
+            "new_keys_added": int(len(sk_new)),
+            "existing_keys_ignored": int(len(sk) - len(sk_new)),
+        }
     _, _, oblast_kap_warnings = extract_oblast_z_kapacity(kap)
 
     pb = load_pobocky_parquet(disc["pobocky"])
@@ -577,6 +612,8 @@ def _build_from_parquet(
     )
     if parquet_source_overlap is not None:
         meta["parquet_source_overlap"] = parquet_source_overlap
+    if sklady_stats is not None:
+        meta["sklady_merge_stats"] = sklady_stats
     return con, meta
 
 

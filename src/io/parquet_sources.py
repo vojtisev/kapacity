@@ -27,6 +27,8 @@ def discover_parquet_files(root: Path) -> dict[str, Path]:
             out["pobocky"] = p
         elif ("skuteč" in n or "skutec" in n) and "realok" not in n:
             out["stav_fond"] = p
+        elif "sklady" in n:
+            out["sklady"] = p
         elif "stavy" in n or "pobocek" in n:
             out["stavy_agreg"] = p
     return out
@@ -81,6 +83,40 @@ def load_prepocet_kapacity(path: Path) -> pd.DataFrame:
     kap.loc[kap["typ"] == "", "typ"] = pd.NA
     if "oznaceni" in kap.columns:
         kap.loc[kap["oznaceni"] == "", "oznaceni"] = pd.NA
+    kap["lokace_short_norm"] = kap["lokace_short"].map(normalize_lokace_short)
+    return kap
+
+
+def load_sklady_kapacity(path: Path) -> pd.DataFrame:
+    """Skladové kapacity (Parquet) ve stejném schématu jako Přepočítané kapacity."""
+    raw = pd.read_parquet(path)
+    oz_col = "Označení" if "Označení" in raw.columns else ("Oznaceni" if "Oznaceni" in raw.columns else None)
+    kap = pd.DataFrame(
+        {
+            "pobocka_cislo": pd.to_numeric(raw.get("Pobočka č."), errors="coerce").astype("Int64"),
+            "pobocka_nazev": raw.get("Pobočka", pd.Series("", index=raw.index)).astype(str).str.strip(),
+            "oblast": raw.get("Oblast", pd.Series("", index=raw.index)).astype(str).str.strip(),
+            "lokace_short": raw.get(
+                "Lokace - systémové označení (Koniáš)",
+                pd.Series("", index=raw.index),
+            )
+            .astype(str)
+            .str.strip(),
+            "och": raw.get("Typ", pd.Series("", index=raw.index)).astype(str).str.strip(),
+            "typ": raw.get("Typ", pd.Series("", index=raw.index)).astype(str).str.strip(),
+            "oznaceni": (
+                raw[oz_col].astype(str).str.strip()
+                if oz_col
+                else pd.Series("", index=raw.index, dtype=object)
+            ),
+            "kapacita_fyzicka": pd.to_numeric(raw.get("Kapacita svazky"), errors="coerce"),
+            "stav_na_regalu": pd.to_numeric(raw.get("Kapacita - současný stav"), errors="coerce"),
+        }
+    )
+    kap.loc[kap["och"] == "", "och"] = pd.NA
+    kap.loc[kap["typ"] == "", "typ"] = pd.NA
+    kap.loc[kap["oznaceni"] == "", "oznaceni"] = pd.NA
+    kap.loc[kap["oblast"] == "", "oblast"] = pd.NA
     kap["lokace_short_norm"] = kap["lokace_short"].map(normalize_lokace_short)
     return kap
 

@@ -278,7 +278,6 @@ def render_dashboard() -> None:
 
     mloc = con.execute("SELECT * FROM metrics_lokace_enriched").df()
     moch = con.execute("SELECT * FROM metrics_lokace_och").df()
-    msit = con.execute("SELECT * FROM metrics_sit").df()
     mobl = con.execute("SELECT * FROM metrics_oblast").df()
     mpob = con.execute("SELECT * FROM metrics_pobocka").df()
     lookup_prepocet = con.execute("SELECT * FROM lookup_prepocet_dims").df()
@@ -323,22 +322,24 @@ def render_dashboard() -> None:
     if not moch_f.empty and not mloc_f.empty and "lokace_id" in moch_f.columns:
         moch_f = moch_f[moch_f["lokace_id"].isin(mloc_f["lokace_id"])]
 
-    kap_sum = mloc_f["kapacita_celkem"].sum()
+    kap_fyz_sum = pd.to_numeric(mloc_f.get("kapacita_fyzicka_sum"), errors="coerce").sum()
+    kap_plan_sum = pd.to_numeric(mloc_f.get("kapacita_realokace_sum"), errors="coerce").sum()
     stav_sum = mloc_f["stav_fondu_celkem"].sum()
-    pokryte = mloc_f[mloc_f["kapacita_celkem"].notna()]
+    pokryte = mloc_f[mloc_f["kapacita_fyzicka_sum"].notna()]
     nap = (
-        (pokryte["stav_fondu_celkem"].sum() / pokryte["kapacita_celkem"].sum() * 100.0)
-        if len(pokryte) and pokryte["kapacita_celkem"].sum() not in (0, None)
+        (pokryte["stav_fondu_celkem"].sum() / pokryte["kapacita_fyzicka_sum"].sum() * 100.0)
+        if len(pokryte) and pokryte["kapacita_fyzicka_sum"].sum() not in (0, None)
         else None
     )
-    zbyva = mloc_f["volna_kapacita"].sum() if "volna_kapacita" in mloc_f.columns else None
+    zbyva = (kap_fyz_sum - stav_sum) if pd.notna(kap_fyz_sum) and pd.notna(stav_sum) else None
 
-    k1, k2, k3, k4, k5 = st.columns(5)
-    k1.metric(L.KPI_PREPOCITANA_KAPACITA, _fmt_num(float(kap_sum)) if pd.notna(kap_sum) else "—")
-    k2.metric(L.KPI_SKUTECNY_STAV_SVAZKY, _fmt_num(float(stav_sum)) if pd.notna(stav_sum) else "—")
-    k3.metric(L.KPI_NAPLNENI_PCT, f"{nap:.2f} %" if nap is not None else "—")
-    k4.metric(L.KPI_ZBYVAJICI_KAPACITA, _fmt_num(float(zbyva)) if zbyva is not None and pd.notna(zbyva) else "—")
-    k5.metric(L.KPI_POCET_LOKACI_VYBER, str(len(mloc_f)))
+    k1, k2, k3, k4, k5, k6 = st.columns(6)
+    k1.metric(L.KPI_PREPOCITANA_KAPACITA, _fmt_num(float(kap_fyz_sum)) if pd.notna(kap_fyz_sum) else "—")
+    k2.metric(L.KPI_PLAN_REALOKACE, _fmt_num(float(kap_plan_sum)) if pd.notna(kap_plan_sum) else "—")
+    k3.metric(L.KPI_SKUTECNY_STAV_SVAZKY, _fmt_num(float(stav_sum)) if pd.notna(stav_sum) else "—")
+    k4.metric(L.KPI_NAPLNENI_PCT, f"{nap:.2f} %" if nap is not None else "—")
+    k5.metric(L.KPI_ZBYVAJICI_KAPACITA, _fmt_num(float(zbyva)) if zbyva is not None and pd.notna(zbyva) else "—")
+    k6.metric(L.KPI_POCET_LOKACI_VYBER, str(len(mloc_f)))
 
     st.subheader(L.SECTION_VYBER_TRI)
     if mloc_f.empty:
@@ -367,25 +368,42 @@ def render_dashboard() -> None:
         st.caption(L.TRI_CAPTION)
 
     st.subheader(L.SECTION_SIT)
-    if not msit.empty:
-        r = msit.iloc[0]
-        a1, a2, a3, a4 = st.columns(4)
-        a1.metric(
-            L.KPI_CELKOVA_KAPACITA_SITE,
-            _fmt_num(float(r["kapacita_celkem"])) if pd.notna(r["kapacita_celkem"]) else "—",
-        )
-        a2.metric(
-            L.KPI_SKUTECNY_STAV_PRITOMNE,
-            _fmt_num(float(r["stav_fondu_celkem"])) if pd.notna(r["stav_fondu_celkem"]) else "—",
-        )
-        a3.metric(
-            L.KPI_STAV_PRI_POKRYTI,
-            _fmt_num(float(r["stav_pri_pokryti_kapacitou"])) if pd.notna(r.get("stav_pri_pokryti_kapacitou")) else "—",
-        )
-        a4.metric(
-            L.KPI_NAPLNENI_POKRYTE,
-            f"{r['naplnenost_pct']:.2f} %" if pd.notna(r["naplnenost_pct"]) else "—",
-        )
+    kap_fyz_site = pd.to_numeric(mloc.get("kapacita_fyzicka_sum"), errors="coerce").sum()
+    kap_plan_site = pd.to_numeric(mloc.get("kapacita_realokace_sum"), errors="coerce").sum()
+    stav_site = pd.to_numeric(mloc.get("stav_fondu_celkem"), errors="coerce").sum()
+    pokryte_site = mloc[mloc["kapacita_fyzicka_sum"].notna()]
+    nap_site = (
+        (pokryte_site["stav_fondu_celkem"].sum() / pokryte_site["kapacita_fyzicka_sum"].sum() * 100.0)
+        if len(pokryte_site) and pokryte_site["kapacita_fyzicka_sum"].sum() not in (0, None)
+        else None
+    )
+    zbyva_site = (kap_fyz_site - stav_site) if pd.notna(kap_fyz_site) and pd.notna(stav_site) else None
+
+    a1, a2, a3, a4, a5, a6 = st.columns(6)
+    a1.metric(
+        L.KPI_PREPOCITANA_KAPACITA,
+        _fmt_num(float(kap_fyz_site)) if pd.notna(kap_fyz_site) else "—",
+    )
+    a2.metric(
+        L.KPI_PLAN_REALOKACE,
+        _fmt_num(float(kap_plan_site)) if pd.notna(kap_plan_site) else "—",
+    )
+    a3.metric(
+        L.KPI_SKUTECNY_STAV_SVAZKY,
+        _fmt_num(float(stav_site)) if pd.notna(stav_site) else "—",
+    )
+    a4.metric(
+        L.KPI_NAPLNENI_PCT,
+        f"{nap_site:.2f} %" if nap_site is not None else "—",
+    )
+    a5.metric(
+        L.KPI_ZBYVAJICI_KAPACITA,
+        _fmt_num(float(zbyva_site)) if zbyva_site is not None and pd.notna(zbyva_site) else "—",
+    )
+    a6.metric(
+        L.KPI_POCET_LOKACI_SITE,
+        str(len(mloc)),
+    )
 
     st.subheader(L.SECTION_REALOK_PIE)
     pie_df = mloc_f.groupby("je_realokace", dropna=False).size().reset_index(name="pocet")

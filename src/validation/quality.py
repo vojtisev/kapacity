@@ -30,6 +30,15 @@ def build_quality_report(con: duckdb.DuckDBPyConnection, meta: dict) -> dict:
             f"Celkem klíčů ve fondu: **{pso.get('pocet_klicu_fond', 0)}**, v realokaci: **{pso.get('pocet_klicu_realok', 0)}**."
         )
 
+    sks = meta.get("sklady_merge_stats")
+    if sks:
+        lines.append(
+            "### Integrace Sklady.parquet\n"
+            f"Řádků po vyčištění ve zdroji: **{sks.get('rows_source', 0)}**.\n\n"
+            f"- Nově přidané skladové klíče: **{sks.get('new_keys_added', 0)}**\n"
+            f"- Ignorované klíče (už existovaly v Přepočítaných kapacitách): **{sks.get('existing_keys_ignored', 0)}**"
+        )
+
     # Konflikty oblasti uvnitř kapacitních řádků (Excel)
     okw = meta.get("oblast_kapacita_warnings") or []
     if okw:
