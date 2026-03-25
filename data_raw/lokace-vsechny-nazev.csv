@@ -1,0 +1,971 @@
+select lokace_key, ",", KNODDEL_cisloknih, ",", knoddel_nazev, ",", LOKACE_SHORT, ",", count(kj_key), ",", "30.09.2025" from lokace left join kj on kj_ptr_owner = lokace_key left join knoddel on knoddel_key = lokace_ptr_knoddel group by lokace_key, lokace_short, knoddel_cisloknih, knoddel_nazev order by knoddel_cisloknih
+ LOKACE_KEY CONSTANT KNODDEL_CISLOKNIH CONSTANT             KNODDEL_NAZEV CONSTANT LOKACE_SHORT CONSTANT       COUNT CONSTANT   CONSTANT
+=========== ======== ================= ======== ========================= ======== ============ ======== =========== ======== ==========
+         98 ,                   <null> ,        <null>                    ,        NEZNAMA      ,                 95 ,        30.09.2025
+        105 ,                   <null> ,        <null>                    ,        KNIHARI      ,              46799 ,        30.09.2025
+        155 ,                   <null> ,        <null>                    ,        EXPEDICE     ,                700 ,        30.09.2025
+        337 ,                   <null> ,        <null>                    ,        VYRAZENI     ,                  7 ,        30.09.2025
+        338 ,                   <null> ,        <null>                    ,        Michle       ,                  0 ,        30.09.2025
+        341 ,                   <null> ,        <null>                    ,        NAVRH        ,              35424 ,        30.09.2025
+        357 ,                   <null> ,        <null>                    ,        ZASOBA       ,               4380 ,        30.09.2025
+        455 ,                   <null> ,        <null>                    ,        DOKNIHARU    ,               1574 ,        30.09.2025
+        456 ,                   <null> ,        <null>                    ,        SAMOPRA      ,              12905 ,        30.09.2025
+        530 ,                   <null> ,        <null>                    ,        manipul1     ,                  0 ,        30.09.2025
+        531 ,                   <null> ,        <null>                    ,        manipul2     ,                  0 ,        30.09.2025
+        532 ,                   <null> ,        <null>                    ,        manipul3     ,                  0 ,        30.09.2025
+        533 ,                   <null> ,        <null>                    ,        manipul4     ,                  0 ,        30.09.2025
+        645 ,                   <null> ,        <null>                    ,        DIGI         ,               1017 ,        30.09.2025
+        709 ,                   <null> ,        <null>                    ,        ROZCIZ       ,                 16 ,        30.09.2025
+        723 ,                   <null> ,        <null>                    ,        TRANSPORT    ,                 10 ,        30.09.2025
+        819 ,                   <null> ,        <null>                    ,        ALOK         ,               4599 ,        30.09.2025
+        831 ,                   <null> ,        <null>                    ,        DOMOFU       ,               6036 ,        30.09.2025
+        839 ,                   <null> ,        <null>                    ,        NEMOF        ,                  2 ,        30.09.2025
+        848 ,                   <null> ,        <null>                    ,        REALOKACE    ,               3164 ,        30.09.2025
+        849 ,                   <null> ,        <null>                    ,        ODOP         ,              33351 ,        30.09.2025
+        868 ,                   <null> ,        <null>                    ,        PRIRUCKA     ,                269 ,        30.09.2025
+        879 ,                   <null> ,        <null>                    ,        ZEVZDAL      ,                 21 ,        30.09.2025
+        880 ,                   <null> ,        <null>                    ,        PRIPVZDAL    ,                 77 ,        30.09.2025
+        881 ,                   <null> ,        <null>                    ,        DOVZDAL      ,                196 ,        30.09.2025
+        968 ,                   <null> ,        <null>                    ,        ZAVRENO      ,              18611 ,        30.09.2025
+       1034 ,                   <null> ,        <null>                    ,        REKATHUD     ,                310 ,        30.09.2025
+       1248 ,                   <null> ,        <null>                    ,        PRESUN       ,               3607 ,        30.09.2025
+          1 ,                        1 ,        Ústøední knihovna         ,        prezent      ,                737 ,        30.09.2025
+          2 ,                        1 ,        Ústøední knihovna         ,        nauèná       ,              17336 ,        30.09.2025
+          3 ,                        1 ,        Ústøední knihovna         ,        beletrie     ,               7090 ,        30.09.2025
+         22 ,                        1 ,        Ústøední knihovna         ,        dìti         ,               4922 ,        30.09.2025
+         23 ,                        1 ,        Ústøední knihovna         ,        mládež       ,               3058 ,        30.09.2025
+         24 ,                        1 ,        Ústøední knihovna         ,        student      ,                 86 ,        30.09.2025
+         25 ,                        1 ,        Ústøední knihovna         ,        audio        ,              17476 ,        30.09.2025
+         26 ,                        1 ,        Ústøední knihovna         ,        hudba        ,               3140 ,        30.09.2025
+         27 ,                        1 ,        Ústøední knihovna         ,        theatre      ,               7161 ,        30.09.2025
+         53 ,                        1 ,        Ústøední knihovna         ,        èasopisy     ,               2383 ,        30.09.2025
+         54 ,                        1 ,        Ústøední knihovna         ,        èiperka      ,                 76 ,        30.09.2025
+         55 ,                        1 ,        Ústøední knihovna         ,        mezipatro    ,              35084 ,        30.09.2025
+         56 ,                        1 ,        Ústøední knihovna         ,        1.patro      ,              61009 ,        30.09.2025
+         57 ,                        1 ,        Ústøední knihovna         ,        3.patro      ,              18360 ,        30.09.2025
+         59 ,                        1 ,        Ústøední knihovna         ,        divsklad1p   ,               2029 ,        30.09.2025
+         60 ,                        1 ,        Ústøední knihovna         ,        skladhud     ,              73657 ,        30.09.2025
+         61 ,                        1 ,        Ústøední knihovna         ,        starhud      ,              19719 ,        30.09.2025
+         62 ,                        1 ,        Ústøední knihovna         ,        dvorek       ,              51469 ,        30.09.2025
+         63 ,                        1 ,        Ústøední knihovna         ,        masky        ,              11840 ,        30.09.2025
+         64 ,                        1 ,        Ústøední knihovna         ,        vázanky      ,               3265 ,        30.09.2025
+         65 ,                        1 ,        Ústøední knihovna         ,        pragensia    ,               7636 ,        30.09.2025
+         66 ,                        1 ,        Ústøední knihovna         ,        praha        ,              14938 ,        30.09.2025
+         67 ,                        1 ,        Ústøední knihovna         ,        databáze     ,                 57 ,        30.09.2025
+         68 ,                        1 ,        Ústøední knihovna         ,        informace    ,              14329 ,        30.09.2025
+         79 ,                        1 ,        Ústøední knihovna         ,        pøíruèky     ,                  0 ,        30.09.2025
+         80 ,                        1 ,        Ústøední knihovna         ,        mapy         ,                  0 ,        30.09.2025
+         81 ,                        1 ,        Ústøední knihovna         ,        hrabátko     ,               1709 ,        30.09.2025
+         83 ,                        1 ,        Ústøední knihovna         ,        VRACA        ,                546 ,        30.09.2025
+         84 ,                        1 ,        Ústøední knihovna         ,        VRACP        ,                241 ,        30.09.2025
+         86 ,                        1 ,        Ústøední knihovna         ,        POKUK        ,                  0 ,        30.09.2025
+         87 ,                        1 ,        Ústøední knihovna         ,        èaszapult    ,               5475 ,        30.09.2025
+         91 ,                        1 ,        Ústøední knihovna         ,        PUJCA        ,                 13 ,        30.09.2025
+         92 ,                        1 ,        Ústøední knihovna         ,        HUPULT       ,                603 ,        30.09.2025
+         93 ,                        1 ,        Ústøední knihovna         ,        DEPULT       ,                 44 ,        30.09.2025
+         96 ,                        1 ,        Ústøední knihovna         ,        DIPULT       ,                  0 ,        30.09.2025
+         97 ,                        1 ,        Ústøední knihovna         ,        PUJCP        ,                  0 ,        30.09.2025
+         99 ,                        1 ,        Ústøední knihovna         ,        CAPULT       ,                189 ,        30.09.2025
+        106 ,                        1 ,        Ústøední knihovna         ,        virtskvaz    ,                  0 ,        30.09.2025
+        107 ,                        1 ,        Ústøední knihovna         ,        REZER        ,                 18 ,        30.09.2025
+        109 ,                        1 ,        Ústøední knihovna         ,        výstavky     ,                194 ,        30.09.2025
+        110 ,                        1 ,        Ústøední knihovna         ,        NAI3         ,                  5 ,        30.09.2025
+        111 ,                        1 ,        Ústøední knihovna         ,        AK           ,                403 ,        30.09.2025
+        113 ,                        1 ,        Ústøední knihovna         ,        METO7        ,                  0 ,        30.09.2025
+        114 ,                        1 ,        Ústøední knihovna         ,        CEI1         ,                 70 ,        30.09.2025
+        129 ,                        1 ,        Ústøední knihovna         ,        INFOINTER    ,                  1 ,        30.09.2025
+        134 ,                        1 ,        Ústøední knihovna         ,        DIVPRI       ,              26987 ,        30.09.2025
+        135 ,                        1 ,        Ústøední knihovna         ,        HUDPRI       ,              19232 ,        30.09.2025
+        154 ,                        1 ,        Ústøední knihovna         ,        pravnici     ,                  0 ,        30.09.2025
+        166 ,                        1 ,        Ústøední knihovna         ,        UCEBNA       ,                  1 ,        30.09.2025
+        170 ,                        1 ,        Ústøední knihovna         ,        huvza        ,               5931 ,        30.09.2025
+        235 ,                        1 ,        Ústøední knihovna         ,        METO487      ,                  0 ,        30.09.2025
+        237 ,                        1 ,        Ústøední knihovna         ,        INFOPULT     ,                  4 ,        30.09.2025
+        257 ,                        1 ,        Ústøední knihovna         ,        CADKOVA      ,                  0 ,        30.09.2025
+        263 ,                        1 ,        Ústøední knihovna         ,        STERBOVA     ,                  0 ,        30.09.2025
+        264 ,                        1 ,        Ústøední knihovna         ,        AUTO         ,                  1 ,        30.09.2025
+        287 ,                        1 ,        Ústøední knihovna         ,        INFOGAL      ,                  1 ,        30.09.2025
+        319 ,                        1 ,        Ústøední knihovna         ,        KABINET      ,                  3 ,        30.09.2025
+        339 ,                        1 ,        Ústøední knihovna         ,        MRTVYSKLAD   ,                  0 ,        30.09.2025
+        363 ,                        1 ,        Ústøední knihovna         ,        VRACP3P      ,                  1 ,        30.09.2025
+        364 ,                        1 ,        Ústøední knihovna         ,        KURARNA      ,                 40 ,        30.09.2025
+        442 ,                        1 ,        Ústøední knihovna         ,        AUTOSER      ,                  0 ,        30.09.2025
+        508 ,                        1 ,        Ústøední knihovna         ,        MELANTRICH   ,                  0 ,        30.09.2025
+        606 ,                        1 ,        Ústøední knihovna         ,        èas-bel      ,                  1 ,        30.09.2025
+        608 ,                        1 ,        Ústøední knihovna         ,        piktogramy   ,               4926 ,        30.09.2025
+        609 ,                        1 ,        Ústøední knihovna         ,        cizí-jazyk   ,               6837 ,        30.09.2025
+        610 ,                        1 ,        Ústøední knihovna         ,        poezie       ,               2299 ,        30.09.2025
+        611 ,                        1 ,        Ústøední knihovna         ,        nabízíme     ,                  0 ,        30.09.2025
+        643 ,                        1 ,        Ústøední knihovna         ,        NOTEBOOK     ,                  0 ,        30.09.2025
+        651 ,                        1 ,        Ústøední knihovna         ,        TUR          ,                  0 ,        30.09.2025
+        692 ,                        1 ,        Ústøední knihovna         ,        dvojjaz      ,                516 ,        30.09.2025
+        722 ,                        1 ,        Internetový pøístup       ,        INET         ,                  0 ,        30.09.2025
+        817 ,                        1 ,        Ústøední knihovna         ,        PREDSALI     ,                  5 ,        30.09.2025
+        859 ,                        1 ,        Ústøední knihovna         ,        divirt       ,                  0 ,        30.09.2025
+        956 ,                        1 ,        Ústøední knihovna         ,        MVS          ,               5070 ,        30.09.2025
+        975 ,                        1 ,        Ústøední knihovna         ,        divsklad3p   ,               3056 ,        30.09.2025
+        977 ,                        1 ,        Ústøední knihovna         ,        skladmluv    ,                449 ,        30.09.2025
+        978 ,                        1 ,        Ústøední knihovna         ,        mluv         ,               1557 ,        30.09.2025
+        979 ,                        1 ,        Ústøední knihovna         ,        mluv-dìti    ,                507 ,        30.09.2025
+        980 ,                        1 ,        Ústøední knihovna         ,        zvuk         ,               3482 ,        30.09.2025
+        983 ,                        1 ,        Ústøední knihovna         ,        NAUCMAP      ,                571 ,        30.09.2025
+       1000 ,                        1 ,        Ústøední knihovna         ,        DILNA-VOL    ,                309 ,        30.09.2025
+       1001 ,                        1 ,        Ústøední knihovna         ,        DILNA-PULT   ,                  0 ,        30.09.2025
+       1022 ,                        1 ,        Ústøední knihovna         ,        jakurzy      ,                402 ,        30.09.2025
+       1028 ,                        1 ,        Ústøední knihovna         ,        VYSTDOSP     ,                 34 ,        30.09.2025
+       1030 ,                        1 ,        Ústøední knihovna         ,        hud-gal      ,               3378 ,        30.09.2025
+       1031 ,                        1 ,        Ústøední knihovna         ,        muzika       ,               1172 ,        30.09.2025
+       1032 ,                        1 ,        Ústøední knihovna         ,        AKVI         ,                  0 ,        30.09.2025
+       1087 ,                        1 ,        Ústøední knihovna         ,        CASDE        ,                176 ,        30.09.2025
+       1088 ,                        1 ,        Ústøední knihovna         ,        CASML        ,                 62 ,        30.09.2025
+       1089 ,                        1 ,        Ústøední knihovna         ,        DVDDE        ,                 11 ,        30.09.2025
+       1129 ,                        1 ,        Ústøední knihovna         ,        VYSTAVML     ,                 36 ,        30.09.2025
+       1133 ,                        1 ,        Ústøední knihovna         ,        leporela     ,                322 ,        30.09.2025
+       1134 ,                        1 ,        Ústøední knihovna         ,        dìti-kom     ,                143 ,        30.09.2025
+       1135 ,                        1 ,        Ústøední knihovna         ,        prvníètení   ,                184 ,        30.09.2025
+       1136 ,                        1 ,        Ústøední knihovna         ,        mládež-kom   ,               1064 ,        30.09.2025
+       1156 ,                        1 ,        Ústøední knihovna         ,        SELF         ,                  0 ,        30.09.2025
+       1208 ,                        1 ,        Automatizace              ,        AUTOPULT     ,                  0 ,        30.09.2025
+       1247 ,                        1 ,        Ústøední knihovna         ,        SKLADHRY     ,                 46 ,        30.09.2025
+       1267 ,                        1 ,        Ústøední knihovna         ,        VR           ,                  8 ,        30.09.2025
+        578 ,                        3 ,        Hradèany                  ,        HRA-POK      ,                  0 ,        30.09.2025
+        652 ,                        3 ,        Hradèany                  ,        HRA-HRAB     ,                 58 ,        30.09.2025
+        669 ,                        3 ,        Hradèany                  ,        HRA-CHF      ,                614 ,        30.09.2025
+        670 ,                        3 ,        Hradèany                  ,        HRA-DE       ,               1108 ,        30.09.2025
+        671 ,                        3 ,        Hradèany                  ,        HRA-POEDI    ,                176 ,        30.09.2025
+        672 ,                        3 ,        Hradèany                  ,        HRA-BELDO    ,               1245 ,        30.09.2025
+        673 ,                        3 ,        Hradèany                  ,        HRA-NAUDO    ,               1092 ,        30.09.2025
+        674 ,                        3 ,        Hradèany                  ,        HRA-PIKTO    ,                151 ,        30.09.2025
+        772 ,                        3 ,        Hradèany                  ,        HRA-DOPOR    ,                163 ,        30.09.2025
+        889 ,                        3 ,        Hradèany                  ,        HRA-CASDO    ,                392 ,        30.09.2025
+        890 ,                        3 ,        Hradèany                  ,        HRA-CASDE    ,                123 ,        30.09.2025
+       1157 ,                        3 ,        Hradèany                  ,        HRA-SELF     ,                  0 ,        30.09.2025
+        365 ,                        4 ,        Ostrèilovo nám.           ,        OST-CHF      ,                  1 ,        30.09.2025
+        366 ,                        4 ,        Ostrèilovo nám.           ,        OST-NAUDO    ,               1911 ,        30.09.2025
+        367 ,                        4 ,        Ostrèilovo nám.           ,        OST-BEL      ,               3941 ,        30.09.2025
+        368 ,                        4 ,        Ostrèilovo nám.           ,        OST-HRAB     ,                115 ,        30.09.2025
+        369 ,                        4 ,        Ostrèilovo nám.           ,        OST-DOPDE    ,                  0 ,        30.09.2025
+        370 ,                        4 ,        Ostrèilovo nám.           ,        OST-DETI     ,               1762 ,        30.09.2025
+        371 ,                        4 ,        Ostrèilovo nám.           ,        OST-POK      ,                 15 ,        30.09.2025
+        762 ,                        4 ,        Ostrèilovo nám.           ,        OST-VSMS     ,                 15 ,        30.09.2025
+        805 ,                        4 ,        Ostrèilovo nám.           ,        OST-DOPOR    ,                 82 ,        30.09.2025
+        820 ,                        4 ,        Ostrèilovo nám.           ,        OST-OBVOD    ,                  0 ,        30.09.2025
+        891 ,                        4 ,        Ostrèilovo nám.           ,        OST-CASDO    ,                187 ,        30.09.2025
+        892 ,                        4 ,        Ostrèilovo nám.           ,        OST-CASDE    ,                 44 ,        30.09.2025
+        893 ,                        4 ,        Ostrèilovo nám.           ,        OST-KOMIKS   ,                164 ,        30.09.2025
+       1158 ,                        4 ,        Ostrèilovo nám.           ,        OST-SELF     ,                  0 ,        30.09.2025
+        410 ,                        5 ,        Sedmièka                  ,        HOL-POK      ,                  8 ,        30.09.2025
+        411 ,                        5 ,        Sedmièka                  ,        HOL-HRAB     ,                 53 ,        30.09.2025
+        412 ,                        5 ,        Sedmièka                  ,        HOL-BELDO    ,               4168 ,        30.09.2025
+        413 ,                        5 ,        Sedmièka                  ,        HOL-NAUDO    ,               3278 ,        30.09.2025
+        414 ,                        5 ,        Sedmièka                  ,        HOL-CASDO    ,                406 ,        30.09.2025
+        415 ,                        5 ,        Sedmièka                  ,        HOL-DETI     ,               3451 ,        30.09.2025
+        419 ,                        5 ,        Sedmièka                  ,        HOL-ZASOBA   ,                  0 ,        30.09.2025
+        420 ,                        5 ,        Sedmièka                  ,        HOL-POVIN    ,                  1 ,        30.09.2025
+        854 ,                        5 ,        Sedmièka                  ,        HOL-DOPOR    ,                366 ,        30.09.2025
+        856 ,                        5 ,        Sedmièka                  ,        HOL-DOPOR3   ,                188 ,        30.09.2025
+        857 ,                        5 ,        Sedmièka                  ,        HOL-PRSK     ,                891 ,        30.09.2025
+        923 ,                        5 ,        Sedmièka                  ,        HOL-AUDIO    ,                284 ,        30.09.2025
+       1081 ,                        5 ,        Sedmièka                  ,        HOL-KOMDE    ,                149 ,        30.09.2025
+       1082 ,                        5 ,        Sedmièka                  ,        HOL-KOMDO    ,                254 ,        30.09.2025
+       1159 ,                        5 ,        Sedmièka                  ,        HOL-SELF     ,                  0 ,        30.09.2025
+        561 ,                        7 ,        Kobylisy                  ,        KOB-POK      ,                 70 ,        30.09.2025
+        562 ,                        7 ,        Kobylisy                  ,        KOB-HRAB     ,                 86 ,        30.09.2025
+        600 ,                        7 ,        Kobylisy                  ,        KOB-LITDE    ,               3560 ,        30.09.2025
+        601 ,                        7 ,        Kobylisy                  ,        KOB-CHFDE    ,                  1 ,        30.09.2025
+        602 ,                        7 ,        Kobylisy                  ,        KOB-CHFDO    ,                 25 ,        30.09.2025
+        603 ,                        7 ,        Kobylisy                  ,        KOB-DO       ,               5911 ,        30.09.2025
+        604 ,                        7 ,        Kobylisy                  ,        KOB-PRSK     ,                768 ,        30.09.2025
+        605 ,                        7 ,        Kobylisy                  ,        KOB-VYLOHY   ,                 30 ,        30.09.2025
+        739 ,                        7 ,        Kobylisy                  ,        KOB-VSMS     ,                  0 ,        30.09.2025
+        763 ,                        7 ,        Kobylisy                  ,        KOB-HRABDE   ,                 14 ,        30.09.2025
+        801 ,                        7 ,        Kobylisy                  ,        KOB-DOPOR    ,                228 ,        30.09.2025
+        802 ,                        7 ,        Kobylisy                  ,        KOB-DOPORD   ,                 13 ,        30.09.2025
+        933 ,                        7 ,        Kobylisy                  ,        KOB-CASDO    ,                 44 ,        30.09.2025
+        934 ,                        7 ,        Kobylisy                  ,        KOB-CASDE    ,                 11 ,        30.09.2025
+        935 ,                        7 ,        Kobylisy                  ,        KOB-MAPY     ,                  0 ,        30.09.2025
+       1152 ,                        7 ,        Kobylisy                  ,        KOB-1PAT     ,                  0 ,        30.09.2025
+       1160 ,                        7 ,        Kobylisy                  ,        KOB-SELF     ,                  0 ,        30.09.2025
+        112 ,                        8 ,        Školská                   ,        SKO-POK      ,                 38 ,        30.09.2025
+        115 ,                        8 ,        Školská                   ,        SKO-CASOP    ,                446 ,        30.09.2025
+        116 ,                        8 ,        Školská                   ,        SKO-BELDO    ,               3509 ,        30.09.2025
+        117 ,                        8 ,        Školská                   ,        SKO-NAUDO    ,               4079 ,        30.09.2025
+        118 ,                        8 ,        Školská                   ,        SKO-LITDE    ,               2285 ,        30.09.2025
+        119 ,                        8 ,        Školská                   ,        SKO-LITML    ,                 11 ,        30.09.2025
+        120 ,                        8 ,        Školská                   ,        SKO-POEML    ,                156 ,        30.09.2025
+        121 ,                        8 ,        Školská                   ,        SKO-DIVML    ,                 45 ,        30.09.2025
+        122 ,                        8 ,        Školská                   ,        SKO-HRAB     ,                237 ,        30.09.2025
+        123 ,                        8 ,        Školská                   ,        SKO-CHFOND   ,                  0 ,        30.09.2025
+        124 ,                        8 ,        Školská                   ,        SKO-VYLOHY   ,                 42 ,        30.09.2025
+        125 ,                        8 ,        Školská                   ,        SKO-SKLAD    ,                  0 ,        30.09.2025
+        126 ,                        8 ,        Školská                   ,        SKO-I1       ,                  0 ,        30.09.2025
+        127 ,                        8 ,        Školská                   ,        SKO-I2       ,                  0 ,        30.09.2025
+        128 ,                        8 ,        Školská                   ,        SKO-KANC     ,                  0 ,        30.09.2025
+        362 ,                        8 ,        Školská                   ,        SKO-STU      ,                  0 ,        30.09.2025
+        644 ,                        8 ,        Školská                   ,        SKO-NOT      ,                  0 ,        30.09.2025
+        810 ,                        8 ,        Školská                   ,        SKO-MOF      ,                  0 ,        30.09.2025
+        812 ,                        8 ,        Školská                   ,        SKO-DOPO1    ,                332 ,        30.09.2025
+        814 ,                        8 ,        Školská                   ,        SKO-DOPO3    ,                283 ,        30.09.2025
+        815 ,                        8 ,        Školská                   ,        SKO-MAPY     ,                205 ,        30.09.2025
+        816 ,                        8 ,        Školská                   ,        SKO-AUDIO    ,                387 ,        30.09.2025
+        894 ,                        8 ,        Školská                   ,        SKO-CASDE    ,                 40 ,        30.09.2025
+        895 ,                        8 ,        Školská                   ,        SKO-KOMIKS   ,                135 ,        30.09.2025
+        958 ,                        8 ,        Školská                   ,        SKO-KOMDO    ,                288 ,        30.09.2025
+       1161 ,                        8 ,        Školská                   ,        SKO-SELF     ,                  0 ,        30.09.2025
+        443 ,                       10 ,        Vysoèany                  ,        VYS-BELDO    ,               3139 ,        30.09.2025
+        444 ,                       10 ,        Vysoèany                  ,        VYS-NAUDO    ,               2901 ,        30.09.2025
+        445 ,                       10 ,        Vysoèany                  ,        VYS-NAUDE    ,               1417 ,        30.09.2025
+        446 ,                       10 ,        Vysoèany                  ,        VYS-BELDE    ,               2029 ,        30.09.2025
+        447 ,                       10 ,        Vysoèany                  ,        VYS-POEDIV   ,                218 ,        30.09.2025
+        448 ,                       10 ,        Vysoèany                  ,        VYS-CHFVYP   ,                 54 ,        30.09.2025
+        449 ,                       10 ,        Vysoèany                  ,        VYS-PRSKDE   ,                805 ,        30.09.2025
+        450 ,                       10 ,        Vysoèany                  ,        VYS-PRSK     ,               2651 ,        30.09.2025
+        451 ,                       10 ,        Vysoèany                  ,        VYS-VYLOHY   ,                 23 ,        30.09.2025
+        452 ,                       10 ,        Vysoèany                  ,        VYS-HRAB     ,                  5 ,        30.09.2025
+        453 ,                       10 ,        Vysoèany                  ,        VYS-POK      ,                 23 ,        30.09.2025
+        747 ,                       10 ,        Vysoèany                  ,        VYS-VSMS     ,                 15 ,        30.09.2025
+        803 ,                       10 ,        Vysoèany                  ,        VYS-DOPOR    ,                108 ,        30.09.2025
+        936 ,                       10 ,        Vysoèany                  ,        VYS-CASDO    ,                130 ,        30.09.2025
+        937 ,                       10 ,        Vysoèany                  ,        VYS-CASDE    ,                 38 ,        30.09.2025
+       1083 ,                       10 ,        Vysoèany                  ,        VYS-KOMIKS   ,                249 ,        30.09.2025
+       1162 ,                       10 ,        Vysoèany                  ,        VYS-SELF     ,                  0 ,        30.09.2025
+       1211 ,                       11 ,        Velký mlýn                ,        MLY-LITDO    ,               2933 ,        30.09.2025
+       1212 ,                       11 ,        Velký mlýn                ,        MLY-LITDE    ,                892 ,        30.09.2025
+       1213 ,                       11 ,        Velký mlýn                ,        MLY-DOPOR    ,                135 ,        30.09.2025
+       1214 ,                       11 ,        Velký mlýn                ,        MLY-KOMDO    ,                150 ,        30.09.2025
+       1215 ,                       11 ,        Velký mlýn                ,        MLY-KOMDE    ,                 60 ,        30.09.2025
+       1216 ,                       11 ,        Velký mlýn                ,        MLY-LEPOR    ,                 25 ,        30.09.2025
+       1217 ,                       11 ,        Velký mlýn                ,        MLY-HRAB     ,                123 ,        30.09.2025
+       1218 ,                       11 ,        Velký mlýn                ,        MLY-POK      ,                 37 ,        30.09.2025
+       1219 ,                       11 ,        Velký mlýn                ,        MLY-SELF     ,                  0 ,        30.09.2025
+       1246 ,                       11 ,        Velký mlýn                ,        MLY-CAS      ,                 62 ,        30.09.2025
+        540 ,                       13 ,        Hloubìtín                 ,        HLO-POK      ,                 13 ,        30.09.2025
+        541 ,                       13 ,        Hloubìtín                 ,        HLO-HRAB     ,                 11 ,        30.09.2025
+        585 ,                       13 ,        Hloubìtín                 ,        HLO-CHF      ,                  1 ,        30.09.2025
+        586 ,                       13 ,        Hloubìtín                 ,        HLO-LITDE    ,               1355 ,        30.09.2025
+        589 ,                       13 ,        Hloubìtín                 ,        HLO-PRSK     ,                 84 ,        30.09.2025
+        734 ,                       13 ,        Hloubìtín                 ,        HLO-VSMS     ,                 48 ,        30.09.2025
+        800 ,                       13 ,        Hloubìtín                 ,        HLO-DOPOR    ,                178 ,        30.09.2025
+        939 ,                       13 ,        Hloubìtín                 ,        HLO-CAS      ,                  0 ,        30.09.2025
+        959 ,                       13 ,        Hloubìtín                 ,        HLO-CASDE    ,                  1 ,        30.09.2025
+       1119 ,                       13 ,        Hloubìtín                 ,        HLO-KOMDO    ,                110 ,        30.09.2025
+       1120 ,                       13 ,        Hloubìtín                 ,        HLO-KOMDE    ,                 80 ,        30.09.2025
+       1121 ,                       13 ,        Hloubìtín                 ,        HLO-LITDO    ,               3136 ,        30.09.2025
+       1163 ,                       13 ,        Hloubìtín                 ,        HLO-SELF     ,                  1 ,        30.09.2025
+        288 ,                       15 ,        Žižkov                    ,        HUS-KANC     ,                  0 ,        30.09.2025
+        289 ,                       15 ,        Žižkov                    ,        HUS-HRAB     ,                410 ,        30.09.2025
+        290 ,                       15 ,        Žižkov                    ,        HUS-CHFOND   ,                  0 ,        30.09.2025
+        307 ,                       15 ,        Žižkov                    ,        HUS-BELDO    ,               4753 ,        30.09.2025
+        310 ,                       15 ,        Žižkov                    ,        HUS-BELDE    ,               1209 ,        30.09.2025
+        311 ,                       15 ,        Žižkov                    ,        HUS-NAUC     ,               3600 ,        30.09.2025
+        312 ,                       15 ,        Žižkov                    ,        HUS-POEDIV   ,                782 ,        30.09.2025
+        313 ,                       15 ,        Žižkov                    ,        HUS-VITRIN   ,                  0 ,        30.09.2025
+        314 ,                       15 ,        Žižkov                    ,        HUS-VYLOH    ,                 41 ,        30.09.2025
+        315 ,                       15 ,        Žižkov                    ,        HUS-DOMDE    ,                228 ,        30.09.2025
+        316 ,                       15 ,        Žižkov                    ,        HUS-DOPDE    ,                154 ,        30.09.2025
+        317 ,                       15 ,        Žižkov                    ,        HUS-POK      ,                 13 ,        30.09.2025
+        318 ,                       15 ,        Žižkov                    ,        HUS-INF      ,                  0 ,        30.09.2025
+        736 ,                       15 ,        Žižkov                    ,        HUS-VSMS     ,                 33 ,        30.09.2025
+        804 ,                       15 ,        Žižkov                    ,        HUS-DOPOR    ,                 91 ,        30.09.2025
+        840 ,                       15 ,        Žižkov                    ,        HUS-SCIFI    ,                532 ,        30.09.2025
+        845 ,                       15 ,        Žižkov                    ,        HUS-KOMDO    ,                147 ,        30.09.2025
+        896 ,                       15 ,        Žižkov                    ,        HUS-CASDO    ,                166 ,        30.09.2025
+        897 ,                       15 ,        Žižkov                    ,        HUS-CASDE    ,                190 ,        30.09.2025
+       1002 ,                       15 ,        Žižkov                    ,        HUS-KOMDE    ,                 72 ,        30.09.2025
+       1003 ,                       15 ,        Žižkov                    ,        HUS-NAUDE    ,                563 ,        30.09.2025
+       1164 ,                       15 ,        Žižkov                    ,        HUS-SELF     ,                  0 ,        30.09.2025
+       1125 ,                       16 ,        DOK16                     ,        DOK-POK      ,                  0 ,        30.09.2025
+       1126 ,                       16 ,        DOK16                     ,        DOK-HRAB     ,                  0 ,        30.09.2025
+        373 ,                       18 ,        Korunní                   ,        KOR-HRAB     ,                 43 ,        30.09.2025
+        374 ,                       18 ,        Korunní                   ,        KOR-POK      ,                 56 ,        30.09.2025
+        375 ,                       18 ,        Korunní                   ,        KOR-BELDO    ,               6519 ,        30.09.2025
+        376 ,                       18 ,        Korunní                   ,        KOR-NAUDO    ,               8173 ,        30.09.2025
+        378 ,                       18 ,        Korunní                   ,        KOR-CASDO    ,                244 ,        30.09.2025
+        380 ,                       18 ,        Korunní                   ,        KOR-DETI     ,               4184 ,        30.09.2025
+        381 ,                       18 ,        Korunní                   ,        KOR-CHFDO    ,                  1 ,        30.09.2025
+        384 ,                       18 ,        Korunní                   ,        KOR-ZASOBA   ,                  0 ,        30.09.2025
+        385 ,                       18 ,        Korunní                   ,        KOR-DEPULT   ,                  0 ,        30.09.2025
+        775 ,                       18 ,        Korunní                   ,        KOR-DOPOR    ,                403 ,        30.09.2025
+        946 ,                       18 ,        Korunní                   ,        KOR-CASDE    ,                 41 ,        30.09.2025
+        989 ,                       18 ,        Korunní                   ,        KOR-CDDO     ,                869 ,        30.09.2025
+        991 ,                       18 ,        Korunní                   ,        KOR-JK       ,                 86 ,        30.09.2025
+        992 ,                       18 ,        Korunní                   ,        KOR-AK       ,                133 ,        30.09.2025
+        993 ,                       18 ,        Korunní                   ,        KOR-DOPDE    ,                 75 ,        30.09.2025
+        994 ,                       18 ,        Korunní                   ,        KOR-KOMDE    ,                163 ,        30.09.2025
+        995 ,                       18 ,        Korunní                   ,        KOR-MAPY     ,                301 ,        30.09.2025
+       1008 ,                       18 ,        Korunní                   ,        KOR-CIZODE   ,               1533 ,        30.09.2025
+       1035 ,                       18 ,        Korunní                   ,        KOR-CIZODO   ,                830 ,        30.09.2025
+       1141 ,                       18 ,        Korunní                   ,        KOR-KOMDO    ,                431 ,        30.09.2025
+       1204 ,                       18 ,        Korunní                   ,        KOR-SELFDO   ,                  0 ,        30.09.2025
+       1205 ,                       18 ,        Korunní                   ,        KOR-SELFDE   ,                  0 ,        30.09.2025
+       1209 ,                       18 ,        Korunní                   ,        KOR-YA       ,                310 ,        30.09.2025
+       1293 ,                       18 ,        Korunní                   ,        KOR-CDDE     ,                131 ,        30.09.2025
+        423 ,                       19 ,        (zrušeno) Vršovice        ,        VRS-POK      ,                  0 ,        30.09.2025
+        424 ,                       19 ,        (zrušeno) Vršovice        ,        VRS-HRAB     ,                  0 ,        30.09.2025
+        426 ,                       19 ,        (zrušeno) Vršovice        ,        VRS-NAUDO    ,                  0 ,        30.09.2025
+        427 ,                       19 ,        (zrušeno) Vršovice        ,        VRS-BELDO    ,                  0 ,        30.09.2025
+        428 ,                       19 ,        (zrušeno) Vršovice        ,        VRS-CASDO    ,                  0 ,        30.09.2025
+        429 ,                       19 ,        (zrušeno) Vršovice        ,        VRS-DETI     ,                  0 ,        30.09.2025
+        430 ,                       19 ,        (zrušeno) Vršovice        ,        VRS-CHFI     ,                  0 ,        30.09.2025
+        431 ,                       19 ,        (zrušeno) Vršovice        ,        VRS-CHFVYP   ,                  0 ,        30.09.2025
+        746 ,                       19 ,        (zrušeno) Vršovice        ,        VRS-VSMS     ,                  0 ,        30.09.2025
+        791 ,                       19 ,        (zrušeno) Vršovice        ,        VRS-DOPOR    ,                  0 ,        30.09.2025
+       1166 ,                       19 ,        (zrušeno) Vršovice        ,        VRS-SELF     ,                  0 ,        30.09.2025
+        490 ,                       21 ,        Hostivaø                  ,        HOS-POK      ,                 31 ,        30.09.2025
+        493 ,                       21 ,        Hostivaø                  ,        HOS-BELDO    ,               3846 ,        30.09.2025
+        494 ,                       21 ,        Hostivaø                  ,        HOS-NAUDO    ,               3189 ,        30.09.2025
+        495 ,                       21 ,        Hostivaø                  ,        HOS-CASDO    ,                111 ,        30.09.2025
+        496 ,                       21 ,        Hostivaø                  ,        HOS-LITDE    ,               2548 ,        30.09.2025
+        498 ,                       21 ,        Hostivaø                  ,        HOS-HRAB     ,                 23 ,        30.09.2025
+        735 ,                       21 ,        Hostivaø                  ,        HOS-VSMS     ,                 43 ,        30.09.2025
+        771 ,                       21 ,        Hostivaø                  ,        HOS-DOPOR    ,                190 ,        30.09.2025
+        885 ,                       21 ,        Hostivaø                  ,        HOS-CASDE    ,                 13 ,        30.09.2025
+       1017 ,                       21 ,        Hostivaø                  ,        HOS-DOPDE    ,                 68 ,        30.09.2025
+       1084 ,                       21 ,        Hostivaø                  ,        HOS-KOMDO    ,                192 ,        30.09.2025
+       1085 ,                       21 ,        Hostivaø                  ,        HOS-KOMDE    ,                121 ,        30.09.2025
+       1167 ,                       21 ,        Hostivaø                  ,        HOS-SELF     ,                  0 ,        30.09.2025
+        549 ,                       24 ,        Jezerka                   ,        JEZ-POK      ,                 62 ,        30.09.2025
+       1098 ,                       24 ,        Jezerka                   ,        JEZ-ATELI    ,                137 ,        30.09.2025
+       1099 ,                       24 ,        Jezerka                   ,        JEZ-LITDE    ,               2128 ,        30.09.2025
+       1100 ,                       24 ,        Jezerka                   ,        JEZ-BELDO    ,               3107 ,        30.09.2025
+       1101 ,                       24 ,        Jezerka                   ,        JEZ-CASDE    ,                102 ,        30.09.2025
+       1102 ,                       24 ,        Jezerka                   ,        JEZ-CASDO    ,                394 ,        30.09.2025
+       1103 ,                       24 ,        Jezerka                   ,        JEZ-HRY      ,                 33 ,        30.09.2025
+       1105 ,                       24 ,        Jezerka                   ,        JEZ-HRABDO   ,                 23 ,        30.09.2025
+       1106 ,                       24 ,        Jezerka                   ,        JEZ-HRABDE   ,                  1 ,        30.09.2025
+       1107 ,                       24 ,        Jezerka                   ,        JEZ-DOPOR    ,                241 ,        30.09.2025
+       1108 ,                       24 ,        Jezerka                   ,        JEZ-KOMDE    ,                 78 ,        30.09.2025
+       1109 ,                       24 ,        Jezerka                   ,        JEZ-KOMDO    ,                263 ,        30.09.2025
+       1110 ,                       24 ,        Jezerka                   ,        JEZ-LEPOR    ,                209 ,        30.09.2025
+       1111 ,                       24 ,        Jezerka                   ,        JEZ-VSMS     ,                 63 ,        30.09.2025
+       1112 ,                       24 ,        Jezerka                   ,        JEZ-NAUDO    ,               3037 ,        30.09.2025
+       1113 ,                       24 ,        Jezerka                   ,        JEZ-PRSK     ,               1740 ,        30.09.2025
+       1114 ,                       24 ,        Jezerka                   ,        JEZ-TEENS    ,               1042 ,        30.09.2025
+       1115 ,                       24 ,        Jezerka                   ,        JEZ-ROD      ,                149 ,        30.09.2025
+       1116 ,                       24 ,        Jezerka                   ,        JEZ-ZIVOT    ,                200 ,        30.09.2025
+       1168 ,                       24 ,        Jezerka                   ,        JEZ-SELF     ,                310 ,        30.09.2025
+       1294 ,                       24 ,        Jezerka                   ,        JEZ-SKOLA    ,                131 ,        30.09.2025
+        558 ,                       25 ,        Vikova                    ,        VIK-POK      ,                 36 ,        30.09.2025
+        559 ,                       25 ,        Vikova                    ,        VIK-HRAB     ,                118 ,        30.09.2025
+        560 ,                       25 ,        Vikova                    ,        VIK-CHF      ,                 21 ,        30.09.2025
+        565 ,                       25 ,        Vikova                    ,        VIK-LITDE    ,               3440 ,        30.09.2025
+        566 ,                       25 ,        Vikova                    ,        VIK-NAUDO    ,               2720 ,        30.09.2025
+        567 ,                       25 ,        Vikova                    ,        VIK-BELDO    ,               3427 ,        30.09.2025
+        568 ,                       25 ,        Vikova                    ,        VIK-PRSK     ,                275 ,        30.09.2025
+        745 ,                       25 ,        Vikova                    ,        VIK-VSMS     ,                103 ,        30.09.2025
+        790 ,                       25 ,        Vikova                    ,        VIK-DOPOR    ,                207 ,        30.09.2025
+        847 ,                       25 ,        Vikova                    ,        VIK-KOMDO    ,                241 ,        30.09.2025
+        902 ,                       25 ,        Vikova                    ,        VIK-CASDO    ,                240 ,        30.09.2025
+        903 ,                       25 ,        Vikova                    ,        VIK-CASDE    ,                111 ,        30.09.2025
+        957 ,                       25 ,        Vikova                    ,        VIK-KOMDE    ,                 61 ,        30.09.2025
+       1169 ,                       25 ,        Vikova                    ,        VIK-SELF     ,                  0 ,        30.09.2025
+       1274 ,                       25 ,        Vikova                    ,        VIK-ZIVOT    ,                135 ,        30.09.2025
+       1275 ,                       25 ,        Vikova                    ,        VIK-YOUNG    ,                196 ,        30.09.2025
+        579 ,                       27 ,        Modøany                   ,        MOD-POK      ,                 42 ,        30.09.2025
+        624 ,                       27 ,        Modøany                   ,        MOD-HRAB     ,                107 ,        30.09.2025
+        661 ,                       27 ,        Modøany                   ,        MOD-CHF      ,                 67 ,        30.09.2025
+        662 ,                       27 ,        Modøany                   ,        MOD-NAU      ,               5203 ,        30.09.2025
+        663 ,                       27 ,        Modøany                   ,        MOD-BELDO    ,               5537 ,        30.09.2025
+        664 ,                       27 ,        Modøany                   ,        MOD-BELDE    ,               3178 ,        30.09.2025
+        665 ,                       27 ,        Modøany                   ,        MOD-PRSK     ,                  0 ,        30.09.2025
+        666 ,                       27 ,        Modøany                   ,        MOD-CAS      ,                138 ,        30.09.2025
+        668 ,                       27 ,        Modøany                   ,        MOD-POEDIV   ,                418 ,        30.09.2025
+        741 ,                       27 ,        Modøany                   ,        MOD-VSMS     ,                 32 ,        30.09.2025
+        779 ,                       27 ,        Modøany                   ,        MOD-DOPOR    ,                475 ,        30.09.2025
+        858 ,                       27 ,        Modøany                   ,        MOD-KOM      ,                206 ,        30.09.2025
+       1170 ,                       27 ,        Modøany                   ,        MOD-SELF     ,                  0 ,        30.09.2025
+       1254 ,                       27 ,        Modøany                   ,        MOD-NAUDE    ,               1232 ,        30.09.2025
+        386 ,                       29 ,        Smíchov                   ,        SMI-POK      ,                 37 ,        30.09.2025
+        387 ,                       29 ,        Smíchov                   ,        SMI-HRAB     ,                 22 ,        30.09.2025
+        389 ,                       29 ,        Smíchov                   ,        SMI-BELDO    ,               9913 ,        30.09.2025
+        390 ,                       29 ,        Smíchov                   ,        SMI-NAUDO    ,               9232 ,        30.09.2025
+        391 ,                       29 ,        Smíchov                   ,        SMI-CASDO    ,                412 ,        30.09.2025
+        392 ,                       29 ,        Smíchov                   ,        SMI-BELDE    ,               2496 ,        30.09.2025
+        393 ,                       29 ,        Smíchov                   ,        SMI-NAUDE    ,               1453 ,        30.09.2025
+        394 ,                       29 ,        Smíchov                   ,        SMI-CASDE    ,                 34 ,        30.09.2025
+        395 ,                       29 ,        Smíchov                   ,        SMI-GALML    ,               1351 ,        30.09.2025
+        396 ,                       29 ,        Smíchov                   ,        SMI-GALDE    ,                633 ,        30.09.2025
+        398 ,                       29 ,        Smíchov                   ,        SMI-CHFDO    ,                 10 ,        30.09.2025
+        399 ,                       29 ,        Smíchov                   ,        SMI-CHFDE    ,                  7 ,        30.09.2025
+        404 ,                       29 ,        Smíchov                   ,        SMI-CHRVOL   ,                  8 ,        30.09.2025
+        807 ,                       29 ,        Smíchov                   ,        SMI-DOPOR    ,                290 ,        30.09.2025
+        808 ,                       29 ,        Smíchov                   ,        SMI-DOPORD   ,                174 ,        30.09.2025
+        846 ,                       29 ,        Smíchov                   ,        SMI-KOLOTO   ,                 78 ,        30.09.2025
+        883 ,                       29 ,        Smíchov                   ,        SMI-MAPY     ,                248 ,        30.09.2025
+        884 ,                       29 ,        Smíchov                   ,        SMI-AUDIO    ,                159 ,        30.09.2025
+       1148 ,                       29 ,        Smíchov                   ,        SMI-CD       ,                989 ,        30.09.2025
+       1149 ,                       29 ,        Smíchov                   ,        SMI-JK       ,                 94 ,        30.09.2025
+       1171 ,                       29 ,        Smíchov                   ,        SMI-SELF     ,                  0 ,        30.09.2025
+        630 ,                       30 ,        (zrušeno) Cibulka         ,        CI1-POK      ,                  0 ,        30.09.2025
+        631 ,                       30 ,        (zrušeno) Cibulka         ,        CI1-HRAB     ,                  0 ,        30.09.2025
+        632 ,                       30 ,        (zrušeno) Cibulka         ,        CI1-CHFDO    ,                  0 ,        30.09.2025
+        633 ,                       30 ,        (zrušeno) Cibulka         ,        CI1-LITDO    ,                  0 ,        30.09.2025
+        634 ,                       30 ,        (zrušeno) Cibulka         ,        CI1-PRSK1    ,                  0 ,        30.09.2025
+        635 ,                       30 ,        (zrušeno) Cibulka         ,        CI1-PRSK2    ,                  0 ,        30.09.2025
+        636 ,                       30 ,        Cibulka                   ,        CI3-POK      ,                 38 ,        30.09.2025
+        637 ,                       30 ,        Cibulka                   ,        CI3-HRAB     ,                  9 ,        30.09.2025
+        638 ,                       30 ,        Cibulka                   ,        CI3-LITDE    ,               1085 ,        30.09.2025
+        639 ,                       30 ,        Cibulka                   ,        CI3-CHFDE    ,                  0 ,        30.09.2025
+        730 ,                       30 ,        (zrušeno) Cibulka         ,        CI1-VSMS     ,                  0 ,        30.09.2025
+        767 ,                       30 ,        (zrušeno) Cibulka         ,        CIB1-DOPOR   ,                  0 ,        30.09.2025
+        768 ,                       30 ,        Cibulka                   ,        CIB3-DOPOR   ,                  6 ,        30.09.2025
+        828 ,                       30 ,        Cibulka                   ,        CI3-VSMS     ,                 59 ,        30.09.2025
+        912 ,                       30 ,        Cibulka                   ,        CI3-LITDO    ,               1031 ,        30.09.2025
+        915 ,                       30 ,        Cibulka                   ,        CI3-CASDE    ,                 27 ,        30.09.2025
+       1154 ,                       30 ,        Cibulka                   ,        CI3-CASDO    ,                 73 ,        30.09.2025
+       1172 ,                       30 ,        Cibulka                   ,        CI3-SELF     ,                  0 ,        30.09.2025
+        569 ,                       31 ,        Velká Chuchle             ,        CHU-POK      ,                 44 ,        30.09.2025
+        570 ,                       31 ,        Velká Chuchle             ,        CHU-HRAB     ,                  8 ,        30.09.2025
+        590 ,                       31 ,        Velká Chuchle             ,        CHU-CHF      ,                 18 ,        30.09.2025
+        591 ,                       31 ,        Velká Chuchle             ,        CHU-NAU      ,                834 ,        30.09.2025
+        592 ,                       31 ,        Velká Chuchle             ,        CHU-BELDE    ,               1280 ,        30.09.2025
+        593 ,                       31 ,        Velká Chuchle             ,        CHU-BELDO    ,               1348 ,        30.09.2025
+        594 ,                       31 ,        Velká Chuchle             ,        CHU-CAS      ,                138 ,        30.09.2025
+        597 ,                       31 ,        Velká Chuchle             ,        CHU-PRSK     ,                  0 ,        30.09.2025
+        738 ,                       31 ,        Velká Chuchle             ,        CHU-VSMS     ,                 32 ,        30.09.2025
+        789 ,                       31 ,        Velká Chuchle             ,        CHU-DOPOR    ,                 22 ,        30.09.2025
+       1018 ,                       31 ,        Velká Chuchle             ,        CHU-NAUDE    ,                488 ,        30.09.2025
+       1173 ,                       31 ,        Velká Chuchle             ,        CHU-SELF     ,                  0 ,        30.09.2025
+       1264 ,                       32 ,        (zavøeno) Èerný Most      ,        CER-POK      ,                  0 ,        30.09.2025
+       1265 ,                       32 ,        (zavøeno) Èerný Most      ,        CER-HRAB     ,                  0 ,        30.09.2025
+       1266 ,                       32 ,        (zavøeno) Èerný Most      ,        CER-SELF     ,                  0 ,        30.09.2025
+        575 ,                       33 ,        Košíøe                    ,        KOS-POK      ,                  0 ,        30.09.2025
+        599 ,                       33 ,        Košíøe                    ,        KOS-HRAB     ,                  0 ,        30.09.2025
+        144 ,                       35 ,        Bøevnov                   ,        BRE-CITR     ,                144 ,        30.09.2025
+        145 ,                       35 ,        Bøevnov                   ,        BRE-BELDO    ,               6714 ,        30.09.2025
+        146 ,                       35 ,        Bøevnov                   ,        BRE-NAUDO    ,               7319 ,        30.09.2025
+        148 ,                       35 ,        Bøevnov                   ,        BRE-LITDE    ,               4134 ,        30.09.2025
+        149 ,                       35 ,        Bøevnov                   ,        BRE-HRAB     ,                  7 ,        30.09.2025
+        151 ,                       35 ,        Bøevnov                   ,        BRE-CHFOND   ,                  6 ,        30.09.2025
+        157 ,                       35 ,        Bøevnov                   ,        BRE-POEZIE   ,                346 ,        30.09.2025
+        159 ,                       35 ,        Bøevnov                   ,        BRE-VYLOHY   ,                  0 ,        30.09.2025
+        161 ,                       35 ,        Bøevnov                   ,        BRE-POK      ,                 12 ,        30.09.2025
+        265 ,                       35 ,        Bøevnov                   ,        BRE-KANC     ,                  7 ,        30.09.2025
+        720 ,                       35 ,        Bøevnov                   ,        BRE-VITRIN   ,                 21 ,        30.09.2025
+        796 ,                       35 ,        Bøevnov                   ,        BRE-DOPOR    ,                548 ,        30.09.2025
+        826 ,                       35 ,        Bøevnov                   ,        BRE-CD       ,                429 ,        30.09.2025
+        827 ,                       35 ,        Bøevnov                   ,        BRE-HRAB2    ,                  1 ,        30.09.2025
+        924 ,                       35 ,        Bøevnov                   ,        BRE-CASDE    ,                 46 ,        30.09.2025
+       1174 ,                       35 ,        Bøevnov                   ,        BRE-SELF     ,                  0 ,        30.09.2025
+       1220 ,                       35 ,        Bøevnov                   ,        BRE-LITML    ,                265 ,        30.09.2025
+        581 ,                       37 ,        Dìdina                    ,        DED-POK      ,                 17 ,        30.09.2025
+        732 ,                       37 ,        Dìdina                    ,        DED-VSMS     ,                 38 ,        30.09.2025
+        821 ,                       37 ,        Dìdina                    ,        DED-HRAB     ,                  5 ,        30.09.2025
+        822 ,                       37 ,        Dìdina                    ,        DED-LITDE    ,               2509 ,        30.09.2025
+        823 ,                       37 ,        Dìdina                    ,        DED-LITDO    ,               4898 ,        30.09.2025
+        851 ,                       37 ,        Dìdina                    ,        DED-PERDE    ,                 54 ,        30.09.2025
+        852 ,                       37 ,        Dìdina                    ,        DED-PERDO    ,                285 ,        30.09.2025
+       1078 ,                       37 ,        Dìdina                    ,        DED-KOMIKS   ,                164 ,        30.09.2025
+       1153 ,                       37 ,        Dìdina                    ,        DED-DOPOR    ,                155 ,        30.09.2025
+       1175 ,                       37 ,        Dìdina                    ,        DED-SELF     ,                  0 ,        30.09.2025
+        576 ,                       38 ,        Dejvice                   ,        DEJ-POK      ,                 50 ,        30.09.2025
+        711 ,                       38 ,        Dejvice                   ,        DEJ-BEL      ,              10448 ,        30.09.2025
+        712 ,                       38 ,        Dejvice                   ,        DEJ-NAU1     ,               6335 ,        30.09.2025
+        713 ,                       38 ,        Dejvice                   ,        DEJ-CIZJAZ   ,               1296 ,        30.09.2025
+        714 ,                       38 ,        Dejvice                   ,        DEJ-NAU2     ,               5290 ,        30.09.2025
+        715 ,                       38 ,        Dejvice                   ,        DEJ-LITDE    ,               5395 ,        30.09.2025
+        716 ,                       38 ,        Dejvice                   ,        DEJ-PRSK1    ,                 27 ,        30.09.2025
+        717 ,                       38 ,        Dejvice                   ,        DEJ-PRSK2    ,                  1 ,        30.09.2025
+        718 ,                       38 ,        Dejvice                   ,        DEJ-HRAB     ,                165 ,        30.09.2025
+        719 ,                       38 ,        Dejvice                   ,        DEJ-HRAB2    ,                  3 ,        30.09.2025
+        750 ,                       38 ,        Dejvice                   ,        DEJ-DOPOR1   ,                509 ,        30.09.2025
+        751 ,                       38 ,        Dejvice                   ,        DEJ-DOPOR2   ,                275 ,        30.09.2025
+        926 ,                       38 ,        Dejvice                   ,        DEJ-MAPY     ,                378 ,        30.09.2025
+        927 ,                       38 ,        Dejvice                   ,        DEJ-CASDO1   ,                282 ,        30.09.2025
+        928 ,                       38 ,        Dejvice                   ,        DEJ-CASDO2   ,                404 ,        30.09.2025
+        929 ,                       38 ,        Dejvice                   ,        DEJ-CASDE    ,                 30 ,        30.09.2025
+        930 ,                       38 ,        Dejvice                   ,        DEJ-AUDIO    ,                321 ,        30.09.2025
+       1036 ,                       38 ,        Dejvice                   ,        DEJ-LITML    ,                403 ,        30.09.2025
+       1151 ,                       38 ,        Dejvice                   ,        DEJ-KOMDO    ,                472 ,        30.09.2025
+       1176 ,                       38 ,        Dejvice                   ,        DEJ-SELF     ,                  0 ,        30.09.2025
+        191 ,                       39 ,        Letná                     ,        LE1-SKLAD    ,                  0 ,        30.09.2025
+        196 ,                       39 ,        (zrušeno) Letná-dìti      ,        LE3-HRAB     ,                  0 ,        30.09.2025
+        197 ,                       39 ,        (zrušeno) Letná-dìti      ,        LE3-VYLOHY   ,                  0 ,        30.09.2025
+        198 ,                       39 ,        (zrušeno) Letná-dìti      ,        LE3-PRSK     ,                  0 ,        30.09.2025
+        199 ,                       39 ,        (zrušeno) Letná-dìti      ,        LE3-NAUDE    ,                  0 ,        30.09.2025
+        200 ,                       39 ,        (zrušeno) Letná-dìti      ,        LE3-BELDE    ,                  0 ,        30.09.2025
+        201 ,                       39 ,        (zrušeno) Letná-dìti      ,        LE3-CHFOND   ,                  0 ,        30.09.2025
+        202 ,                       39 ,        (zrušeno) Letná-dìti      ,        LE3-STUD     ,                  0 ,        30.09.2025
+        203 ,                       39 ,        (zrušeno) Letná-dìti      ,        LE3-SPRSK    ,                  0 ,        30.09.2025
+        204 ,                       39 ,        (zrušeno) Letná-dìti      ,        LE3-CASOP    ,                  0 ,        30.09.2025
+        205 ,                       39 ,        Letná                     ,        LET-POK      ,                 16 ,        30.09.2025
+        206 ,                       39 ,        (zrušeno) Letná-dìti      ,        LE3-POK      ,                  0 ,        30.09.2025
+        799 ,                       39 ,        (zrušeno) Letná-dìti      ,        LE3-DOPOR    ,                  0 ,        30.09.2025
+       1050 ,                       39 ,        Letná                     ,        LET-DOPOR    ,                 89 ,        30.09.2025
+       1052 ,                       39 ,        Letná                     ,        LET-CASDE    ,                 16 ,        30.09.2025
+       1054 ,                       39 ,        Letná                     ,        LET-KOMIKS   ,                171 ,        30.09.2025
+       1055 ,                       39 ,        Letná                     ,        LET-HRAB     ,                 15 ,        30.09.2025
+       1056 ,                       39 ,        Letná                     ,        LET-LITDO    ,                 85 ,        30.09.2025
+       1127 ,                       39 ,        Letná                     ,        LET-LITDE    ,               2127 ,        30.09.2025
+       1177 ,                       39 ,        Letná                     ,        LET-SELF     ,                  0 ,        30.09.2025
+        169 ,                       41 ,        Novodvorská               ,        NOV-RETRO    ,                  0 ,        30.09.2025
+        238 ,                       41 ,        Novodvorská               ,        NOV-BELDO    ,               4269 ,        30.09.2025
+        240 ,                       41 ,        Novodvorská               ,        NOV-LITDE    ,               3755 ,        30.09.2025
+        241 ,                       41 ,        Novodvorská               ,        NOV-DETCAS   ,                 77 ,        30.09.2025
+        242 ,                       41 ,        Novodvorská               ,        NOV-NAUDO    ,               3962 ,        30.09.2025
+        243 ,                       41 ,        Novodvorská               ,        NOV-CHFOND   ,                  7 ,        30.09.2025
+        244 ,                       41 ,        Novodvorská               ,        NOV-CASOP    ,                306 ,        30.09.2025
+        245 ,                       41 ,        Novodvorská               ,        NOV-HRAB     ,                125 ,        30.09.2025
+        246 ,                       41 ,        Novodvorská               ,        NOV-POK      ,                 11 ,        30.09.2025
+        260 ,                       41 ,        Novodvorská               ,        NOV-INF      ,                  0 ,        30.09.2025
+        780 ,                       41 ,        Novodvorská               ,        NOV-DOPOR    ,                 87 ,        30.09.2025
+        830 ,                       41 ,        Novodvorská               ,        NOV-KOMIKS   ,                329 ,        30.09.2025
+        905 ,                       41 ,        Novodvorská               ,        NOV-MAPY     ,                171 ,        30.09.2025
+        962 ,                       41 ,        Novodvorská               ,        NOV-AUDIO    ,                 57 ,        30.09.2025
+        963 ,                       41 ,        Novodvorská               ,        NOV-POEDI    ,                302 ,        30.09.2025
+        964 ,                       41 ,        Novodvorská               ,        NOV-KOMDE    ,                 93 ,        30.09.2025
+        965 ,                       41 ,        Novodvorská               ,        NOV-REZ      ,                  2 ,        30.09.2025
+        966 ,                       41 ,        Novodvorská               ,        NOV-MLSL     ,                567 ,        30.09.2025
+       1178 ,                       41 ,        Novodvorská               ,        NOV-SELF     ,                  0 ,        30.09.2025
+       1285 ,                       41 ,        Novodvorská               ,        NOV-VYSTAV   ,                  9 ,        30.09.2025
+        477 ,                       42 ,        Petøiny                   ,        PET-POK      ,                 18 ,        30.09.2025
+        478 ,                       42 ,        Petøiny                   ,        PET-HRAB     ,                267 ,        30.09.2025
+       1226 ,                       42 ,        Petøiny                   ,        PET-CASDE1   ,                 43 ,        30.09.2025
+       1227 ,                       42 ,        Petøiny                   ,        PET-CASDO1   ,                277 ,        30.09.2025
+       1228 ,                       42 ,        Petøiny                   ,        PET-HRAB1    ,                  7 ,        30.09.2025
+       1229 ,                       42 ,        Petøiny                   ,        PET-DOPDE1   ,                 75 ,        30.09.2025
+       1230 ,                       42 ,        Petøiny                   ,        PET-DOPOR1   ,                 87 ,        30.09.2025
+       1231 ,                       42 ,        Petøiny                   ,        PET-KOMDE1   ,                 58 ,        30.09.2025
+       1232 ,                       42 ,        Petøiny                   ,        PET-LEPDE1   ,                184 ,        30.09.2025
+       1233 ,                       42 ,        Petøiny                   ,        PET-LITDE1   ,               1453 ,        30.09.2025
+       1234 ,                       42 ,        Petøiny                   ,        PET-VSMS1    ,                 17 ,        30.09.2025
+       1235 ,                       42 ,        Petøiny                   ,        PET-VITRI1   ,                 93 ,        30.09.2025
+       1236 ,                       42 ,        Petøiny                   ,        PET-BELDO2   ,               4086 ,        30.09.2025
+       1237 ,                       42 ,        Petøiny                   ,        PET-HRAB2    ,                 66 ,        30.09.2025
+       1238 ,                       42 ,        Petøiny                   ,        PET-DOPML2   ,                 40 ,        30.09.2025
+       1239 ,                       42 ,        Petøiny                   ,        PET-DOPOR2   ,                221 ,        30.09.2025
+       1240 ,                       42 ,        Petøiny                   ,        PET-LITML2   ,               1211 ,        30.09.2025
+       1241 ,                       42 ,        Petøiny                   ,        PET-NAUDO2   ,               3780 ,        30.09.2025
+       1242 ,                       42 ,        Petøiny                   ,        PET-KOMDO2   ,                416 ,        30.09.2025
+       1244 ,                       42 ,        Petøiny                   ,        PET-SELF1N   ,                  0 ,        30.09.2025
+       1245 ,                       42 ,        Petøiny                   ,        PET-SELF2N   ,                  0 ,        30.09.2025
+        467 ,                       43 ,        Pankrác                   ,        NVE-POK      ,                 12 ,        30.09.2025
+        499 ,                       43 ,        Pankrác                   ,        NVE-LITML    ,               4289 ,        30.09.2025
+        500 ,                       43 ,        Pankrác                   ,        NVE-LITDE    ,               2640 ,        30.09.2025
+        504 ,                       43 ,        Pankrác                   ,        NVE-HRAB     ,                 18 ,        30.09.2025
+        506 ,                       43 ,        (formální) Pankrác        ,        XNVE-POK     ,                  0 ,        30.09.2025
+        507 ,                       43 ,        Pankrác                   ,        NVE-CHFDE    ,                387 ,        30.09.2025
+        556 ,                       43 ,        (zrušeno) Pankrác         ,        5KV-HRAB     ,                  0 ,        30.09.2025
+        557 ,                       43 ,        (zrušeno) Pankrác         ,        5KV-POK      ,                  0 ,        30.09.2025
+        625 ,                       43 ,        (zrušeno) Pankrác         ,        5KV-BELDO    ,                  0 ,        30.09.2025
+        626 ,                       43 ,        (zrušeno) Pankrác         ,        5KV-NAUDO    ,                  0 ,        30.09.2025
+        627 ,                       43 ,        (zrušeno) Pankrác         ,        5KV-CAS      ,                  0 ,        30.09.2025
+        628 ,                       43 ,        (zrušeno) Pankrác         ,        5KV-CHF      ,                  0 ,        30.09.2025
+        641 ,                       43 ,        (zrušeno) Pankrác         ,        5KV-VYLOHY   ,                  0 ,        30.09.2025
+        729 ,                       43 ,        (zrušeno) Pankrác         ,        5KV-VSMS     ,                  0 ,        30.09.2025
+        783 ,                       43 ,        (zrušeno) Pankrác         ,        5KV-DOPOR    ,                  0 ,        30.09.2025
+        784 ,                       43 ,        Pankrác                   ,        NVE-DOPOR    ,                 12 ,        30.09.2025
+        843 ,                       43 ,        Pankrác                   ,        NVE-KOMDO    ,                 59 ,        30.09.2025
+        844 ,                       43 ,        Pankrác                   ,        NVE-POEDE    ,                160 ,        30.09.2025
+        906 ,                       43 ,        Pankrác                   ,        NVE-CASDO    ,                125 ,        30.09.2025
+        907 ,                       43 ,        Pankrác                   ,        NVE-CASDE    ,                264 ,        30.09.2025
+       1023 ,                       43 ,        Pankrác                   ,        NVE-KOMDE    ,                105 ,        30.09.2025
+       1180 ,                       43 ,        Pankrác                   ,        NVE-SELF     ,                  0 ,        30.09.2025
+       1250 ,                       43 ,        Pankrác                   ,        NVE-LEP      ,                119 ,        30.09.2025
+        422 ,                       45 ,        Spoøilov                  ,        SPO-POVIN    ,                  3 ,        30.09.2025
+        432 ,                       45 ,        Spoøilov                  ,        SPO-POK      ,                 52 ,        30.09.2025
+        433 ,                       45 ,        Spoøilov                  ,        SPO-HRAB     ,                 49 ,        30.09.2025
+        434 ,                       45 ,        Spoøilov                  ,        SPO-NAUDO    ,               4981 ,        30.09.2025
+        435 ,                       45 ,        Spoøilov                  ,        SPO-BELDO    ,               6138 ,        30.09.2025
+        436 ,                       45 ,        Spoøilov                  ,        SPO-CASDO    ,                249 ,        30.09.2025
+        437 ,                       45 ,        Spoøilov                  ,        SPO-DETI     ,               3713 ,        30.09.2025
+        441 ,                       45 ,        Spoøilov                  ,        SPO-POEDIV   ,                813 ,        30.09.2025
+        572 ,                       45 ,        Spoøilov                  ,        SPO-PRSK     ,                  0 ,        30.09.2025
+        788 ,                       45 ,        Spoøilov                  ,        SPO-DOPOR    ,                555 ,        30.09.2025
+        955 ,                       45 ,        Spoøilov                  ,        SPO-KOMIKS   ,                360 ,        30.09.2025
+       1024 ,                       45 ,        Spoøilov                  ,        SPO-KOMDE    ,                157 ,        30.09.2025
+       1025 ,                       45 ,        Spoøilov                  ,        SPO-LEPO     ,                188 ,        30.09.2025
+       1026 ,                       45 ,        Spoøilov                  ,        SPO-VSMS     ,                699 ,        30.09.2025
+       1027 ,                       45 ,        Spoøilov                  ,        SPO-DESK     ,                  5 ,        30.09.2025
+       1057 ,                       45 ,        Spoøilov                  ,        SPO-CASDE    ,                 10 ,        30.09.2025
+       1181 ,                       45 ,        Spoøilov                  ,        SPO-SELF     ,                  0 ,        30.09.2025
+       1207 ,                       45 ,        Vzdálený sklad Spoøilov   ,        SPO-PV       ,              13341 ,        30.09.2025
+        699 ,                       47 ,        Zahradní Mìsto            ,        ZME-BELDO    ,               3831 ,        30.09.2025
+        700 ,                       47 ,        Zahradní Mìsto            ,        ZME-NAUDO    ,               3505 ,        30.09.2025
+        701 ,                       47 ,        Zahradní Mìsto            ,        ZME-DETI     ,                672 ,        30.09.2025
+        703 ,                       47 ,        Zahradní Mìsto            ,        ZME-CASDO    ,                148 ,        30.09.2025
+        704 ,                       47 ,        Zahradní Mìsto            ,        ZME-CASDE    ,                 31 ,        30.09.2025
+        705 ,                       47 ,        Zahradní Mìsto            ,        ZME-HRAB     ,                108 ,        30.09.2025
+        706 ,                       47 ,        Zahradní Mìsto            ,        ZME-POK      ,                 27 ,        30.09.2025
+        749 ,                       47 ,        Zahradní Mìsto            ,        ZME-VSMS     ,                 17 ,        30.09.2025
+        793 ,                       47 ,        Zahradní Mìsto            ,        ZME-DOPOR    ,                279 ,        30.09.2025
+       1091 ,                       47 ,        Zahradní Mìsto            ,        ZME-BELDE    ,               1302 ,        30.09.2025
+       1092 ,                       47 ,        Zahradní Mìsto            ,        ZME-KOMDE    ,                 93 ,        30.09.2025
+       1093 ,                       47 ,        Zahradní Mìsto            ,        ZME-KOMDO    ,                246 ,        30.09.2025
+       1094 ,                       47 ,        Zahradní Mìsto            ,        ZME-DOPDE    ,                137 ,        30.09.2025
+       1095 ,                       47 ,        Zahradní Mìsto            ,        ZME-LITML    ,                776 ,        30.09.2025
+       1182 ,                       47 ,        Zahradní Mìsto            ,        ZME-SELF     ,                  0 ,        30.09.2025
+        573 ,                       48 ,        Ostrovského               ,        OSV-POK      ,                 20 ,        30.09.2025
+        629 ,                       48 ,        Ostrovského               ,        OSV-HRAB     ,                 34 ,        30.09.2025
+        653 ,                       48 ,        Ostrovského               ,        OSV-BELDO    ,               2110 ,        30.09.2025
+        654 ,                       48 ,        Ostrovského               ,        OSV-BELDE    ,               1754 ,        30.09.2025
+        655 ,                       48 ,        Ostrovského               ,        OSV-NAUDO    ,               2524 ,        30.09.2025
+        660 ,                       48 ,        Ostrovského               ,        OSV-CHF      ,                  0 ,        30.09.2025
+        761 ,                       48 ,        Ostrovského               ,        OSV-VSMS     ,                 48 ,        30.09.2025
+        781 ,                       48 ,        Ostrovského               ,        OSV-DOPOR    ,                176 ,        30.09.2025
+        782 ,                       48 ,        Ostrovského               ,        OSV-DOPORD   ,                 71 ,        30.09.2025
+        916 ,                       48 ,        Ostrovského               ,        OSV-CASDO    ,                206 ,        30.09.2025
+        917 ,                       48 ,        Ostrovského               ,        OSV-CASDE    ,                 59 ,        30.09.2025
+       1183 ,                       48 ,        Ostrovského               ,        OSV-SELF     ,                  0 ,        30.09.2025
+       1258 ,                       48 ,        Ostrovského               ,        OSV-KOMDO    ,                213 ,        30.09.2025
+       1259 ,                       48 ,        Ostrovského               ,        OSV-KOMDE    ,                 53 ,        30.09.2025
+       1260 ,                       48 ,        Ostrovského               ,        OSV-LEPOR    ,                 68 ,        30.09.2025
+        207 ,                       51 ,        Dittrichova               ,        DIT-BELDO    ,               3302 ,        30.09.2025
+        208 ,                       51 ,        Dittrichova               ,        DIT-CASOP    ,                268 ,        30.09.2025
+        209 ,                       51 ,        Dittrichova               ,        DIT-CHFOND   ,                  6 ,        30.09.2025
+        211 ,                       51 ,        Dittrichova               ,        DIT-HRAB     ,                195 ,        30.09.2025
+        212 ,                       51 ,        Dittrichova               ,        DIT-LITDE    ,               2640 ,        30.09.2025
+        213 ,                       51 ,        Dittrichova               ,        DIT-NAUDO    ,               3443 ,        30.09.2025
+        215 ,                       51 ,        Dittrichova               ,        DIT-POK      ,                 23 ,        30.09.2025
+        216 ,                       51 ,        Dittrichova               ,        DIT-VITRIN   ,                 30 ,        30.09.2025
+        217 ,                       51 ,        Dittrichova               ,        DIT-DETCAS   ,                175 ,        30.09.2025
+        236 ,                       51 ,        Dittrichova               ,        DIT-DEINFO   ,                  0 ,        30.09.2025
+        733 ,                       51 ,        Dittrichova               ,        DIT-VSMS     ,                108 ,        30.09.2025
+        806 ,                       51 ,        Dittrichova               ,        DIT-DOPOR    ,                 41 ,        30.09.2025
+        818 ,                       51 ,        Dittrichova               ,        DIT-VYSTAV   ,                295 ,        30.09.2025
+        960 ,                       51 ,        Dittrichova               ,        DIT-KOMDO    ,                308 ,        30.09.2025
+       1020 ,                       51 ,        Dittrichova               ,        DIT-DOMDE    ,                244 ,        30.09.2025
+       1068 ,                       51 ,        Dittrichova               ,        DIT-KOMDE    ,                106 ,        30.09.2025
+       1184 ,                       51 ,        Dittrichova               ,        DIT-SELF     ,                  0 ,        30.09.2025
+        218 ,                       52 ,        Bohnice                   ,        BOH-BELDO    ,              11373 ,        30.09.2025
+        219 ,                       52 ,        Bohnice                   ,        BOH-LITDE    ,               4750 ,        30.09.2025
+        220 ,                       52 ,        Bohnice                   ,        BOH-DETCAS   ,                 34 ,        30.09.2025
+        221 ,                       52 ,        Bohnice                   ,        BOH-NAUDO    ,              10723 ,        30.09.2025
+        222 ,                       52 ,        Bohnice                   ,        BOH-HRAB     ,                234 ,        30.09.2025
+        223 ,                       52 ,        Bohnice                   ,        BOH-SKLAD    ,               9778 ,        30.09.2025
+        224 ,                       52 ,        Bohnice                   ,        BOH-CHFOND   ,               2959 ,        30.09.2025
+        225 ,                       52 ,        Bohnice                   ,        BOH-POK      ,                 33 ,        30.09.2025
+        227 ,                       52 ,        Bohnice                   ,        BOH-HUDBA    ,               1535 ,        30.09.2025
+        228 ,                       52 ,        Bohnice                   ,        BOH-HUDCAS   ,                 17 ,        30.09.2025
+        230 ,                       52 ,        Bohnice                   ,        BOH-CASOP    ,                906 ,        30.09.2025
+        232 ,                       52 ,        Bohnice                   ,        BOH-CHFI1    ,                947 ,        30.09.2025
+        766 ,                       52 ,        Bohnice                   ,        BOH-DOPOR    ,                257 ,        30.09.2025
+       1139 ,                       52 ,        Bohnice                   ,        BOH-KOMDO    ,                790 ,        30.09.2025
+       1185 ,                       52 ,        Bohnice                   ,        BOH-SELF     ,                  0 ,        30.09.2025
+       1251 ,                       52 ,        Bohnice                   ,        BOH-VYSTAV   ,               1051 ,        30.09.2025
+       1253 ,                       52 ,        Bohnice                   ,        BOH-CIZOJ    ,                602 ,        30.09.2025
+        320 ,                       54 ,        Prosek                    ,        PRO-PRIZ     ,                 26 ,        30.09.2025
+        321 ,                       54 ,        Prosek                    ,        PRO-1PAT     ,                  6 ,        30.09.2025
+        322 ,                       54 ,        Prosek                    ,        PRO-HRAB     ,                 24 ,        30.09.2025
+        323 ,                       54 ,        Prosek                    ,        PRO-CHFOND   ,                 33 ,        30.09.2025
+        324 ,                       54 ,        Prosek                    ,        PRO-BELDO    ,               5396 ,        30.09.2025
+        325 ,                       54 ,        Prosek                    ,        PRO-NAUDO    ,               4678 ,        30.09.2025
+        326 ,                       54 ,        Prosek                    ,        PRO-CASDO    ,                264 ,        30.09.2025
+        327 ,                       54 ,        Prosek                    ,        PRO-BELDE    ,               3409 ,        30.09.2025
+        328 ,                       54 ,        Prosek                    ,        PRO-NAUDE    ,               1224 ,        30.09.2025
+        329 ,                       54 ,        Prosek                    ,        PRO-CASDE    ,                 34 ,        30.09.2025
+        331 ,                       54 ,        Prosek                    ,        PRO-POE      ,                605 ,        30.09.2025
+        332 ,                       54 ,        Prosek                    ,        PRO-NAU      ,               1188 ,        30.09.2025
+        333 ,                       54 ,        Prosek                    ,        PRO-CHFDE    ,                218 ,        30.09.2025
+        334 ,                       54 ,        Prosek                    ,        PRO-HRABDE   ,                 18 ,        30.09.2025
+        786 ,                       54 ,        Prosek                    ,        PRO-DOPOR    ,                798 ,        30.09.2025
+        787 ,                       54 ,        Prosek                    ,        PRO-DOPORD   ,                245 ,        30.09.2025
+        976 ,                       54 ,        Prosek                    ,        PRO-PRSK     ,               1723 ,        30.09.2025
+        981 ,                       54 ,        Prosek                    ,        PRO-KOMDE    ,                214 ,        30.09.2025
+        982 ,                       54 ,        Prosek                    ,        PRO-KOMDO    ,                394 ,        30.09.2025
+       1186 ,                       54 ,        Prosek                    ,        PRO-SELFPR   ,                  0 ,        30.09.2025
+       1187 ,                       54 ,        Prosek                    ,        PRO-SELF1P   ,                  0 ,        30.09.2025
+        563 ,                       56 ,        Dùm ètení                 ,        RUS-POK      ,                 99 ,        30.09.2025
+        752 ,                       56 ,        Dùm ètení                 ,        RUS-BELDO    ,              11384 ,        30.09.2025
+        753 ,                       56 ,        Dùm ètení                 ,        RUS-NAUDO    ,               8860 ,        30.09.2025
+        754 ,                       56 ,        Dùm ètení                 ,        RUS-DETI     ,               4486 ,        30.09.2025
+        755 ,                       56 ,        Dùm ètení                 ,        RUS-HRAB     ,                223 ,        30.09.2025
+        756 ,                       56 ,        Dùm ètení                 ,        RUS-SKLAD    ,                144 ,        30.09.2025
+        757 ,                       56 ,        Dùm ètení                 ,        RUS-DOPOR    ,                 83 ,        30.09.2025
+        764 ,                       56 ,        Dùm ètení                 ,        RUS-CTECKY   ,                  2 ,        30.09.2025
+        811 ,                       56 ,        Dùm ètení                 ,        RUS-MOF      ,                  8 ,        30.09.2025
+        948 ,                       56 ,        Dùm ètení                 ,        RUS-OST1     ,               1985 ,        30.09.2025
+        949 ,                       56 ,        Dùm ètení                 ,        RUS-OST2     ,                437 ,        30.09.2025
+        950 ,                       56 ,        Dùm ètení                 ,        RUS-OST3     ,                949 ,        30.09.2025
+       1188 ,                       56 ,        Dùm ètení                 ,        RUS-SELF     ,                  0 ,        30.09.2025
+       1206 ,                       56 ,        Vzdálený sklad Domu ètení ,        RUS-PV       ,              14598 ,        30.09.2025
+        267 ,                       58 ,        Opatov                    ,        OPA-STUD     ,               1950 ,        30.09.2025
+        269 ,                       58 ,        Opatov                    ,        OPA-STUCAS   ,                 34 ,        30.09.2025
+        270 ,                       58 ,        Opatov                    ,        OPA-LITDE    ,               6091 ,        30.09.2025
+        271 ,                       58 ,        Opatov                    ,        OPA-DETCAS   ,                 99 ,        30.09.2025
+        272 ,                       58 ,        Opatov                    ,        OPA-SKLAD    ,              25278 ,        30.09.2025
+        273 ,                       58 ,        Opatov                    ,        OPA-BELDO    ,              12729 ,        30.09.2025
+        274 ,                       58 ,        Opatov                    ,        OPA-NAUDO    ,              15535 ,        30.09.2025
+        275 ,                       58 ,        Opatov                    ,        OPA-CASOP    ,                772 ,        30.09.2025
+        276 ,                       58 ,        Opatov                    ,        OPA-HRAB     ,                848 ,        30.09.2025
+        277 ,                       58 ,        Opatov                    ,        OPA-VITRIN   ,                151 ,        30.09.2025
+        278 ,                       58 ,        Opatov                    ,        OPA-ARTO     ,               5479 ,        30.09.2025
+        279 ,                       58 ,        Opatov                    ,        OPA-ARTCHF   ,               1416 ,        30.09.2025
+        280 ,                       58 ,        Opatov                    ,        OPA-ARTMAP   ,                644 ,        30.09.2025
+        281 ,                       58 ,        Opatov                    ,        OPA-ARTCAS   ,                807 ,        30.09.2025
+        282 ,                       58 ,        Opatov                    ,        OPA-POK      ,                 75 ,        30.09.2025
+        285 ,                       58 ,        Opatov                    ,        OPA-MONOGR   ,               1871 ,        30.09.2025
+        286 ,                       58 ,        Opatov                    ,        OPA-DETINF   ,                  2 ,        30.09.2025
+        693 ,                       58 ,        Opatov                    ,        OPA-CHRREG   ,                 50 ,        30.09.2025
+        721 ,                       58 ,        Opatov                    ,        OPA-ARTSKL   ,               7629 ,        30.09.2025
+        809 ,                       58 ,        Opatov                    ,        OPA-DOPOR    ,                 97 ,        30.09.2025
+        850 ,                       58 ,        Opatov                    ,        OPA-LITLEP   ,                 88 ,        30.09.2025
+        882 ,                       58 ,        Opatov                    ,        OPA-KOMIKS   ,                757 ,        30.09.2025
+        961 ,                       58 ,        Opatov                    ,        OPA-AUDIO    ,                215 ,        30.09.2025
+       1009 ,                       58 ,        Opatov                    ,        OPA-CD       ,                450 ,        30.09.2025
+       1010 ,                       58 ,        Opatov                    ,        OPA-DETCD    ,                 93 ,        30.09.2025
+       1021 ,                       58 ,        Opatov                    ,        OPA-MAPY     ,                511 ,        30.09.2025
+       1033 ,                       58 ,        Opatov                    ,        OPA-LEPSKL   ,                  3 ,        30.09.2025
+       1138 ,                       58 ,        Opatov                    ,        OPA-DETKOM   ,                155 ,        30.09.2025
+       1189 ,                       58 ,        Opatov                    ,        OPA-SELF     ,                  0 ,        30.09.2025
+        521 ,                       60 ,        Krè                       ,        KRC-POK      ,                 29 ,        30.09.2025
+        522 ,                       60 ,        Krè                       ,        KRC-HRAB     ,                 93 ,        30.09.2025
+        524 ,                       60 ,        Krè                       ,        KRC-CASDO    ,                228 ,        30.09.2025
+        525 ,                       60 ,        Krè                       ,        KRC-LITDE    ,               4314 ,        30.09.2025
+        526 ,                       60 ,        Krè                       ,        KRC-CASDE    ,                 81 ,        30.09.2025
+        527 ,                       60 ,        Krè                       ,        KRC-CHFVYP   ,                  1 ,        30.09.2025
+        529 ,                       60 ,        Krè                       ,        KRC-PRSK     ,                988 ,        30.09.2025
+        776 ,                       60 ,        Krè                       ,        KRC-DOPOR    ,                221 ,        30.09.2025
+       1190 ,                       60 ,        Krè                       ,        KRC-SELF     ,                  1 ,        30.09.2025
+       1276 ,                       60 ,        Krè                       ,        KRC-AUDIO    ,                595 ,        30.09.2025
+       1277 ,                       60 ,        Krè                       ,        KRC-BELDO    ,               2918 ,        30.09.2025
+       1278 ,                       60 ,        Krè                       ,        KRC-KOMDE    ,                173 ,        30.09.2025
+       1279 ,                       60 ,        Krè                       ,        KRC-KOMDO    ,                269 ,        30.09.2025
+       1280 ,                       60 ,        Krè                       ,        KRC-NAUDO    ,               4340 ,        30.09.2025
+       1281 ,                       60 ,        Krè                       ,        KRC-POEDIV   ,                294 ,        30.09.2025
+       1282 ,                       60 ,        Krè                       ,        KRC-VYSTAV   ,                129 ,        30.09.2025
+       1286 ,                       60 ,        Krè                       ,        KRC-LEPOR    ,                 40 ,        30.09.2025
+       1287 ,                       60 ,        Krè                       ,        KRC-RODIC    ,                139 ,        30.09.2025
+        571 ,                       61 ,        Malešice                  ,        MAL-POK      ,                 14 ,        30.09.2025
+       1037 ,                       61 ,        Malešice                  ,        MAL-BELDO    ,               3372 ,        30.09.2025
+       1038 ,                       61 ,        Malešice                  ,        MAL-NAUDO    ,               2669 ,        30.09.2025
+       1039 ,                       61 ,        Malešice                  ,        MAL-CASDO    ,                 70 ,        30.09.2025
+       1040 ,                       61 ,        Malešice                  ,        MAL-DETI     ,               2198 ,        30.09.2025
+       1041 ,                       61 ,        Malešice                  ,        MAL-CASDE    ,                 16 ,        30.09.2025
+       1042 ,                       61 ,        Malešice                  ,        MAL-LITML    ,                  2 ,        30.09.2025
+       1043 ,                       61 ,        Malešice                  ,        MAL-DOPDO    ,                297 ,        30.09.2025
+       1045 ,                       61 ,        Malešice                  ,        MAL-DOPDE    ,                737 ,        30.09.2025
+       1046 ,                       61 ,        Malešice                  ,        MAL-HRAB     ,                476 ,        30.09.2025
+       1066 ,                       61 ,        Malešice                  ,        MAL-KOMIKS   ,                292 ,        30.09.2025
+       1191 ,                       61 ,        Malešice                  ,        MAL-SELF     ,                  0 ,        30.09.2025
+        459 ,                       62 ,        Barrandov                 ,        BAR-HRAB     ,                 31 ,        30.09.2025
+        460 ,                       62 ,        Barrandov                 ,        BAR-POK      ,                  8 ,        30.09.2025
+        461 ,                       62 ,        Barrandov                 ,        BAR-BELDO    ,               4363 ,        30.09.2025
+        462 ,                       62 ,        Barrandov                 ,        BAR-NAUDO    ,               3667 ,        30.09.2025
+        464 ,                       62 ,        Barrandov                 ,        BAR-NAUDE    ,               1154 ,        30.09.2025
+        465 ,                       62 ,        Barrandov                 ,        BAR-BELDE    ,               2735 ,        30.09.2025
+        466 ,                       62 ,        Barrandov                 ,        BAR-CHF      ,                  2 ,        30.09.2025
+        675 ,                       62 ,        Barrandov                 ,        BAR-PRSK     ,                259 ,        30.09.2025
+        765 ,                       62 ,        Barrandov                 ,        BAR-DOPOR    ,                563 ,        30.09.2025
+        887 ,                       62 ,        Barrandov                 ,        BAR-CASDE    ,                 15 ,        30.09.2025
+        888 ,                       62 ,        Barrandov                 ,        BAR-CASDO    ,                114 ,        30.09.2025
+       1071 ,                       62 ,        Barrandov                 ,        BAR-KOMDO    ,                144 ,        30.09.2025
+       1072 ,                       62 ,        Barrandov                 ,        BAR-KOMDE    ,                112 ,        30.09.2025
+       1145 ,                       62 ,        Barrandov                 ,        BAR-VSMS     ,                433 ,        30.09.2025
+       1146 ,                       62 ,        Barrandov                 ,        BAR-LEPOR    ,                128 ,        30.09.2025
+       1192 ,                       62 ,        Barrandov                 ,        BAR-SELF     ,                  0 ,        30.09.2025
+       1255 ,                       62 ,        Barrandov                 ,        BAR-AKJK     ,                 51 ,        30.09.2025
+        342 ,                       65 ,        Záhøebská                 ,        ZAH-POK      ,                 61 ,        30.09.2025
+        345 ,                       65 ,        Záhøebská                 ,        ZAH-CHFDO    ,                 13 ,        30.09.2025
+        346 ,                       65 ,        Záhøebská                 ,        ZAH-CHFDE    ,                 23 ,        30.09.2025
+        347 ,                       65 ,        Záhøebská                 ,        ZAH-HRABDO   ,                  0 ,        30.09.2025
+        348 ,                       65 ,        Záhøebská                 ,        ZAH-HRABDE   ,                  0 ,        30.09.2025
+        350 ,                       65 ,        Záhøebská                 ,        ZAH-KANC     ,                  0 ,        30.09.2025
+        351 ,                       65 ,        Záhøebská                 ,        ZAH-NAUDO    ,               2903 ,        30.09.2025
+        352 ,                       65 ,        Záhøebská                 ,        ZAH-BELDO    ,               2212 ,        30.09.2025
+        353 ,                       65 ,        Záhøebská                 ,        ZAH-CASDO    ,                 93 ,        30.09.2025
+        355 ,                       65 ,        Záhøebská                 ,        ZAH-NAUDE    ,                351 ,        30.09.2025
+        358 ,                       65 ,        Záhøebská                 ,        ZAH-DEPULT   ,                  0 ,        30.09.2025
+        359 ,                       65 ,        Záhøebská                 ,        ZAH-SCIFI    ,                117 ,        30.09.2025
+        360 ,                       65 ,        Záhøebská                 ,        ZAH-DETI     ,               2606 ,        30.09.2025
+        361 ,                       65 ,        Záhøebská                 ,        ZAH-POEDIV   ,                333 ,        30.09.2025
+        468 ,                       65 ,        Záhøebská                 ,        ZAH-PRSK     ,                  4 ,        30.09.2025
+        748 ,                       65 ,        Záhøebská                 ,        ZAH-VSMS     ,                 39 ,        30.09.2025
+        794 ,                       65 ,        Záhøebská                 ,        ZAH-DOPOR    ,                167 ,        30.09.2025
+        795 ,                       65 ,        Záhøebská                 ,        ZAH-DOPORD   ,                 66 ,        30.09.2025
+        898 ,                       65 ,        Záhøebská                 ,        ZAH-CASDE    ,                 39 ,        30.09.2025
+        899 ,                       65 ,        Záhøebská                 ,        ZAH-KOMIKS   ,                125 ,        30.09.2025
+       1069 ,                       65 ,        Záhøebská                 ,        ZAH-LEPDE    ,                109 ,        30.09.2025
+       1070 ,                       65 ,        Záhøebská                 ,        ZAH-KOMDO    ,                231 ,        30.09.2025
+       1202 ,                       65 ,        Záhøebská                 ,        ZAH-SELFDO   ,                  2 ,        30.09.2025
+       1203 ,                       65 ,        Záhøebská                 ,        ZAH-SELFDE   ,                  2 ,        30.09.2025
+       1284 ,                       65 ,        Záhøebská                 ,        ZAH-CIZJAZ   ,                 12 ,        30.09.2025
+        534 ,                       66 ,        Vozovna                   ,        CHM-POK      ,                 22 ,        30.09.2025
+        535 ,                       66 ,        Vozovna                   ,        CHM-HRAB     ,                158 ,        30.09.2025
+        537 ,                       66 ,        Vozovna                   ,        CHM-BELDO    ,               5020 ,        30.09.2025
+        538 ,                       66 ,        Vozovna                   ,        CHM-NAUDO    ,               5599 ,        30.09.2025
+        539 ,                       66 ,        Vozovna                   ,        CHM-LITDE    ,               3371 ,        30.09.2025
+        737 ,                       66 ,        Vozovna                   ,        CHM-VSMS     ,                 25 ,        30.09.2025
+        773 ,                       66 ,        Vozovna                   ,        CHM-DOPOR    ,                422 ,        30.09.2025
+        984 ,                       66 ,        Vozovna                   ,        CHM-CASDO    ,                 77 ,        30.09.2025
+        985 ,                       66 ,        Vozovna                   ,        CHM-CASDE    ,                 99 ,        30.09.2025
+        986 ,                       66 ,        Vozovna                   ,        CHM-KOMDO    ,                323 ,        30.09.2025
+        987 ,                       66 ,        Vozovna                   ,        CHM-KOMDE    ,                 70 ,        30.09.2025
+        988 ,                       66 ,        Vozovna                   ,        CHM-VYST     ,                 20 ,        30.09.2025
+        999 ,                       66 ,        Vozovna                   ,        CHM-MAPY     ,                  0 ,        30.09.2025
+       1194 ,                       66 ,        Vozovna                   ,        CHM-SELF     ,                  1 ,        30.09.2025
+        542 ,                       70 ,        Skalka                    ,        SKA-CHF      ,                  0 ,        30.09.2025
+        543 ,                       70 ,        Skalka                    ,        SKA-LITDE    ,               2675 ,        30.09.2025
+        544 ,                       70 ,        Skalka                    ,        SKA-BELDO    ,               3886 ,        30.09.2025
+        545 ,                       70 ,        Skalka                    ,        SKA-NAUDO    ,               3569 ,        30.09.2025
+        547 ,                       70 ,        Skalka                    ,        SKA-HRAB     ,                 76 ,        30.09.2025
+        548 ,                       70 ,        Skalka                    ,        SKA-POK      ,                 34 ,        30.09.2025
+        743 ,                       70 ,        Skalka                    ,        SKA-VSMS     ,                 84 ,        30.09.2025
+        792 ,                       70 ,        Skalka                    ,        SKA-DOPOR    ,                206 ,        30.09.2025
+        951 ,                       70 ,        Skalka                    ,        SKA-CASDO    ,                289 ,        30.09.2025
+        952 ,                       70 ,        Skalka                    ,        SKA-CASDE    ,                134 ,        30.09.2025
+       1150 ,                       70 ,        Skalka                    ,        SKA-KOMIKS   ,                198 ,        30.09.2025
+       1195 ,                       70 ,        Skalka                    ,        SKA-SELF     ,                  0 ,        30.09.2025
+        136 ,                       81 ,        Lužiny                    ,        LUZ-BELDO    ,               6983 ,        30.09.2025
+        137 ,                       81 ,        Lužiny                    ,        LUZ-NAUDO    ,              10799 ,        30.09.2025
+        140 ,                       81 ,        Lužiny                    ,        LUZ-HRAB     ,                 51 ,        30.09.2025
+        160 ,                       81 ,        Lužiny                    ,        LUZ-POK      ,                  7 ,        30.09.2025
+        162 ,                       81 ,        Lužiny                    ,        LUZ-REG      ,                  0 ,        30.09.2025
+        163 ,                       81 ,        Lužiny                    ,        LUZ-INF      ,                  0 ,        30.09.2025
+        164 ,                       81 ,        Lužiny                    ,        LUZ-KAN      ,                  2 ,        30.09.2025
+        165 ,                       81 ,        Lužiny                    ,        LUZ-STU      ,                  0 ,        30.09.2025
+        167 ,                       81 ,        Lužiny                    ,        LUZ-DEBEL    ,               4221 ,        30.09.2025
+        168 ,                       81 ,        Lužiny                    ,        LUZ-DENA     ,               2355 ,        30.09.2025
+        777 ,                       81 ,        Lužiny                    ,        LUZ-DOPOR    ,               1022 ,        30.09.2025
+        869 ,                       81 ,        Lužiny                    ,        LUZ-DOPORD   ,                604 ,        30.09.2025
+        870 ,                       81 ,        Lužiny                    ,        LUZ-DETCAS   ,                 55 ,        30.09.2025
+        871 ,                       81 ,        Lužiny                    ,        LUZ-BELCAS   ,                177 ,        30.09.2025
+        872 ,                       81 ,        Lužiny                    ,        LUZ-NAUCAS   ,                468 ,        30.09.2025
+        873 ,                       81 ,        Lužiny                    ,        LUZ-MAPY     ,                186 ,        30.09.2025
+        874 ,                       81 ,        Lužiny                    ,        LUZ-VSMS     ,                343 ,        30.09.2025
+        875 ,                       81 ,        Lužiny                    ,        LUZ-CIZJAZ   ,               1836 ,        30.09.2025
+       1086 ,                       81 ,        Lužiny                    ,        LUZ-DELEP    ,                149 ,        30.09.2025
+       1196 ,                       81 ,        Lužiny                    ,        LUZ-SELF     ,                  0 ,        30.09.2025
+       1224 ,                       81 ,        Lužiny                    ,        LUZ-YA       ,                368 ,        30.09.2025
+       1256 ,                       81 ,        Lužiny                    ,        LUZ-KOMDE    ,                300 ,        30.09.2025
+       1257 ,                       81 ,        Lužiny                    ,        LUZ-KOMDO    ,                597 ,        30.09.2025
+       1268 ,                       82 ,        Kiosek DBK                ,        DBK-POK      ,                  1 ,        30.09.2025
+       1269 ,                       82 ,        Kiosek DBK                ,        DBK-HRAB     ,                610 ,        30.09.2025
+       1270 ,                       82 ,        Kiosek DBK                ,        DBK-SELF     ,                  0 ,        30.09.2025
+       1271 ,                       83 ,        Kiosek Chodov             ,        WCH-POK      ,                  4 ,        30.09.2025
+       1272 ,                       83 ,        Kiosek Chodov             ,        WCH-HRAB     ,                552 ,        30.09.2025
+       1273 ,                       83 ,        Kiosek Chodov             ,        WCH-SELF     ,                  0 ,        30.09.2025
+        577 ,                       84 ,        Stodùlky                  ,        STO-POK      ,                 46 ,        30.09.2025
+        582 ,                       84 ,        Stodùlky                  ,        STO-HRAB     ,                  0 ,        30.09.2025
+        614 ,                       84 ,        Stodùlky                  ,        STO-BELDO    ,               5018 ,        30.09.2025
+        615 ,                       84 ,        Stodùlky                  ,        STO-NAUDO    ,               2974 ,        30.09.2025
+        617 ,                       84 ,        Stodùlky                  ,        STO-BELDE    ,               1999 ,        30.09.2025
+        618 ,                       84 ,        Stodùlky                  ,        STO-NAUDE    ,                870 ,        30.09.2025
+        620 ,                       84 ,        Stodùlky                  ,        STO-PRSK     ,                  4 ,        30.09.2025
+        744 ,                       84 ,        Stodùlky                  ,        STO-VSMS     ,                297 ,        30.09.2025
+        758 ,                       84 ,        Stodùlky                  ,        STO-DOPOR    ,                 67 ,        30.09.2025
+        919 ,                       84 ,        Stodùlky                  ,        STO-CASDO    ,                270 ,        30.09.2025
+        920 ,                       84 ,        Stodùlky                  ,        STO-CASDE    ,                 59 ,        30.09.2025
+       1074 ,                       84 ,        Stodùlky                  ,        STO-KOMDO    ,                238 ,        30.09.2025
+       1075 ,                       84 ,        Stodùlky                  ,        STO-KOMDE    ,                158 ,        30.09.2025
+       1147 ,                       84 ,        Stodùlky                  ,        STO-LEPOR    ,                 30 ,        30.09.2025
+       1197 ,                       84 ,        Stodùlky                  ,        STO-SELF     ,                  0 ,        30.09.2025
+       1222 ,                       84 ,        Stodùlky                  ,        STO-AKJK     ,                 24 ,        30.09.2025
+       1223 ,                       84 ,        Stodùlky                  ,        STO-DOPORD   ,                161 ,        30.09.2025
+       1261 ,                       84 ,        Stodùlky                  ,        STO-HRAB2    ,                  0 ,        30.09.2025
+       1142 ,                       86 ,        Kiosek CÈM                ,        CCM-POK      ,                 18 ,        30.09.2025
+       1143 ,                       86 ,        Kiosek CÈM                ,        CCM-HRAB     ,                100 ,        30.09.2025
+       1198 ,                       86 ,        Kiosek CÈM                ,        CCM-SELF     ,                  0 ,        30.09.2025
+        471 ,                       87 ,        Rajská zahrada            ,        RAJ-POK      ,                 17 ,        30.09.2025
+        472 ,                       87 ,        Rajská zahrada            ,        RAJ-HRAB     ,                  0 ,        30.09.2025
+        473 ,                       87 ,        Rajská zahrada            ,        RAJ-LITDO    ,               5571 ,        30.09.2025
+        474 ,                       87 ,        Rajská zahrada            ,        RAJ-LITDE    ,               1813 ,        30.09.2025
+        769 ,                       87 ,        Rajská zahrada            ,        RAJ-DOPOR    ,                146 ,        30.09.2025
+        942 ,                       87 ,        Rajská zahrada            ,        RAJ-CASDO    ,                160 ,        30.09.2025
+        943 ,                       87 ,        Rajská zahrada            ,        RAJ-CASDE    ,                125 ,        30.09.2025
+       1059 ,                       87 ,        Rajská zahrada            ,        RAJ-KOMDE    ,                 84 ,        30.09.2025
+       1060 ,                       87 ,        Rajská zahrada            ,        RAJ-KOMDO    ,                195 ,        30.09.2025
+       1061 ,                       87 ,        Rajská zahrada            ,        RAJ-MLSLDE   ,                167 ,        30.09.2025
+       1062 ,                       87 ,        Rajská zahrada            ,        RAJ-MLSLDO   ,                485 ,        30.09.2025
+       1132 ,                       87 ,        Rajská zahrada            ,        RAJ-PRSK     ,                301 ,        30.09.2025
+       1199 ,                       87 ,        Rajská zahrada            ,        RAJ-SELF     ,                  0 ,        30.09.2025
+        511 ,                       88 ,        Ládví                     ,        DAB-POK      ,                 54 ,        30.09.2025
+        512 ,                       88 ,        Ládví                     ,        DAB-HRAB     ,                286 ,        30.09.2025
+        513 ,                       88 ,        Ládví                     ,        DAB-LITDE    ,               4143 ,        30.09.2025
+        514 ,                       88 ,        Ládví                     ,        DAB-NAUC     ,              10127 ,        30.09.2025
+        515 ,                       88 ,        Ládví                     ,        DAB-BELDO    ,               6982 ,        30.09.2025
+        516 ,                       88 ,        Ládví                     ,        DAB-JAZYK    ,                697 ,        30.09.2025
+        517 ,                       88 ,        Ládví                     ,        DAB-PIKTO    ,                904 ,        30.09.2025
+        519 ,                       88 ,        Ládví                     ,        DAB-PRSK     ,                  0 ,        30.09.2025
+        520 ,                       88 ,        Ládví                     ,        DAB-CASDO    ,                251 ,        30.09.2025
+        731 ,                       88 ,        Ládví                     ,        DAB-VSMS     ,                 27 ,        30.09.2025
+        770 ,                       88 ,        Ládví                     ,        DAB-DOPOR    ,                103 ,        30.09.2025
+        945 ,                       88 ,        Ládví                     ,        DAB-CASDE    ,                 30 ,        30.09.2025
+        969 ,                       88 ,        Ládví                     ,        DAB-POEZIE   ,                440 ,        30.09.2025
+        970 ,                       88 ,        Ládví                     ,        DAB-MAPY     ,                163 ,        30.09.2025
+        971 ,                       88 ,        Ládví                     ,        DAB-KOMDO    ,                352 ,        30.09.2025
+       1137 ,                       88 ,        Ládví                     ,        DAB-JK/AK    ,                830 ,        30.09.2025
+       1200 ,                       88 ,        Ládví                     ,        DAB-SELFDO   ,                  0 ,        30.09.2025
+       1210 ,                       88 ,        Ládví                     ,        DAB-SELFDE   ,                  0 ,        30.09.2025
+       1221 ,                       88 ,        Ládví                     ,        DAB-VYSTAV   ,                 55 ,        30.09.2025
+       1295 ,                       88 ,        Ládví                     ,        DAB-KOMDE    ,                 45 ,        30.09.2025
+       1296 ,                       88 ,        Ládví                     ,        DAB-LEPOR    ,                 62 ,        30.09.2025
+        247 ,                       89 ,        Chodov                    ,        JIR-BELDO    ,               5204 ,        30.09.2025
+        249 ,                       89 ,        Chodov                    ,        JIR-LITDE    ,               3754 ,        30.09.2025
+        250 ,                       89 ,        Chodov                    ,        JIR-DETCAS   ,                 82 ,        30.09.2025
+        251 ,                       89 ,        Chodov                    ,        JIR-NAUDO    ,               4662 ,        30.09.2025
+        253 ,                       89 ,        Chodov                    ,        JIR-CHFOND   ,                  4 ,        30.09.2025
+        254 ,                       89 ,        Chodov                    ,        JIR-CASOP    ,                360 ,        30.09.2025
+        255 ,                       89 ,        Chodov                    ,        JIR-HRAB     ,                166 ,        30.09.2025
+        256 ,                       89 ,        Chodov                    ,        JIR-POK      ,                 20 ,        30.09.2025
+        261 ,                       89 ,        Chodov                    ,        JIR-INF      ,                  0 ,        30.09.2025
+        262 ,                       89 ,        Chodov                    ,        JIR-KANC     ,                  0 ,        30.09.2025
+        774 ,                       89 ,        Chodov                    ,        JIR-DOPOR    ,                388 ,        30.09.2025
+       1006 ,                       89 ,        Chodov                    ,        JIR-KOM      ,                206 ,        30.09.2025
+       1007 ,                       89 ,        Chodov                    ,        JIR-AUDIO    ,                851 ,        30.09.2025
+       1065 ,                       89 ,        Chodov                    ,        JIR-LEPOR    ,                290 ,        30.09.2025
+       1201 ,                       89 ,        Chodov                    ,        JIR-SELF     ,                  0 ,        30.09.2025
+       1249 ,                       89 ,        Chodov                    ,        JIR-ZIVOT    ,                236 ,        30.09.2025
+       1252 ,                       89 ,        Chodov                    ,        JIR-KOMDE    ,                 95 ,        30.09.2025
+        860 ,                       92 ,        Jeneè                     ,        JEN-KANC     ,                  0 ,        30.09.2025
+        861 ,                       92 ,        Jeneè                     ,        JEN-PROST    ,                  0 ,        30.09.2025
+        862 ,                       92 ,        Vzdálený sklad 1          ,        JEN-PVP      ,             119426 ,        30.09.2025
+        863 ,                       92 ,        Vzdálený sklad 2          ,        JEN-PV       ,              13760 ,        30.09.2025
+        864 ,                       92 ,        Vzdálený sklad 3          ,        JEN-DEPOZ    ,                  0 ,        30.09.2025
+        865 ,                       92 ,        Vzdálený sklad 4          ,        JEN-RFUK     ,                408 ,        30.09.2025
+        866 ,                       92 ,        Vzdálený sklad 5          ,        JEN-RFOKF    ,                  1 ,        30.09.2025
+        867 ,                       92 ,        Vzdálený sklad 6          ,        JEN-ZASOB    ,              36010 ,        30.09.2025
+       1019 ,                       92 ,        Vzdálený sklad 7          ,        JEN-MOFNAU   ,                 59 ,        30.09.2025
+       1067 ,                       92 ,        Vzdálený sklad 8          ,        JEN-DEPJST   ,                 32 ,        30.09.2025
+       1155 ,                       92 ,        Vzdálený sklad 9          ,        JEN-PVKONZ   ,                  0 ,        30.09.2025
+        876 ,                       94 ,        MVK Zlièín                ,        MET-ZLICIN   ,                  7 ,        30.09.2025
+        877 ,                       94 ,        MVK Kbely                 ,        MET-KBELY    ,                  0 ,        30.09.2025
+        878 ,                       94 ,        MVK Øepy                  ,        MET-REPY     ,                 30 ,        30.09.2025
+        967 ,                       94 ,        MVK Roztoky               ,        MET-ROZTOK   ,                 40 ,        30.09.2025
+        401 ,                       96 ,        Region                    ,        REG-KANC     ,                  0 ,        30.09.2025
+        402 ,                       96 ,        Region                    ,        REG-HRAB     ,               6081 ,        30.09.2025
+       1058 ,                       96 ,        Region                    ,        REG-SKL      ,               5128 ,        30.09.2025
+        457 ,                       97 ,        Vzácné tisky - objednávka ,        BRU-POK      ,                  2 ,        30.09.2025
+        458 ,                       97 ,        Vzácné tisky - objednávka ,        BRU-HRAB     ,                  2 ,        30.09.2025
+        832 ,                       97 ,        Vzácné tisky - objednávka ,        BRU-D1       ,              10547 ,        30.09.2025
+        833 ,                       97 ,        Vzácné tisky - objednávka ,        BRU-D2TOP    ,               2916 ,        30.09.2025
+        834 ,                       97 ,        Vzácné tisky - objednávka ,        BRU-D2TEA    ,                  0 ,        30.09.2025
+        835 ,                       97 ,        Vzácné tisky - objednávka ,        BRU-D2ZED    ,                129 ,        30.09.2025
+        836 ,                       97 ,        Vzácné tisky - objednávka ,        BRU-D2OST    ,               1810 ,        30.09.2025
+        837 ,                       97 ,        Vzácné tisky - objednávka ,        BRU-D2BIB    ,               2199 ,        30.09.2025
+        838 ,                       97 ,        Vzácné tisky - objednávka ,        BRU-D2OSOB   ,                519 ,        30.09.2025
+        841 ,                       97 ,        Vzácné tisky - objednávka ,        BRU-STU      ,                109 ,        30.09.2025
+        842 ,                       97 ,        Vzácné tisky - objednávka ,        BRU-DIL      ,                 28 ,        30.09.2025
+       1117 ,                       97 ,        Vzácné tisky - objednávka ,        BRU-D2BIII   ,                  9 ,        30.09.2025
+       1262 ,                       97 ,        Vzácné tisky - objednávka ,        BRU-D2DE     ,                262 ,        30.09.2025
+       1263 ,                       97 ,        Vzácné tisky - objednávka ,        BRU-D2PER    ,                134 ,        30.09.2025
+       1283 ,                       97 ,        Vzácné tisky - objednávka ,        BRU-D2       ,                 14 ,        30.09.2025
+        622 ,                       99 ,        BibHostivaø               ,        BBS-KANC     ,                  0 ,        30.09.2025
+        623 ,                       99 ,        BibHostivaø               ,        BBS-HRAB     ,                  0 ,        30.09.2025
+        676 ,                       99 ,        Bibliobus 1               ,        BB1-PULT     ,                  2 ,        30.09.2025
+        677 ,                       99 ,        Bibliobus 1               ,        BB1-HRAB     ,                  0 ,        30.09.2025
+        681 ,                       99 ,        Bibliobus 2               ,        BB2-PULT     ,                 40 ,        30.09.2025
+        682 ,                       99 ,        Bibliobus 2               ,        BB2-HRAB     ,                  7 ,        30.09.2025
+        686 ,                       99 ,        Bibliobus 3               ,        BB3-PULT     ,                 53 ,        30.09.2025
+        687 ,                       99 ,        Bibliobus 3               ,        BB3-HRAB     ,                 19 ,        30.09.2025
+        691 ,                       99 ,        BibHostivaø               ,        BBS-SKLAD    ,               3034 ,        30.09.2025
+        694 ,                       99 ,        Bibliobus 1               ,        BB1-NAUBE    ,                  2 ,        30.09.2025
+        695 ,                       99 ,        Bibliobus 2               ,        BB2-NAUBE    ,               2191 ,        30.09.2025
+        696 ,                       99 ,        Bibliobus 3               ,        BB3-NAUBE    ,                595 ,        30.09.2025
+        724 ,                       99 ,        Výmìnné soubory           ,        VYM-LOK      ,               1208 ,        30.09.2025
+        727 ,                       99 ,        Výmìnné soubory           ,        VYM-HRAB     ,                  7 ,        30.09.2025
+        728 ,                       99 ,        Výmìnné soubory           ,        VYM-KANC     ,                  0 ,        30.09.2025
+        996 ,                       99 ,        Krabice                   ,        BB4-PULT     ,                  2 ,        30.09.2025
+        997 ,                       99 ,        Krabice                   ,        BB4-HRAB     ,                 14 ,        30.09.2025
+        998 ,                       99 ,        Krabice                   ,        BB4-NAUBE    ,                  8 ,        30.09.2025
+       1014 ,                       99 ,        Krabice2                  ,        BB5-PULT     ,                  0 ,        30.09.2025
+       1015 ,                       99 ,        Krabice2                  ,        BB5-HRAB     ,                  0 ,        30.09.2025
+       1016 ,                       99 ,        Krabice2                  ,        BB5-NAUBE    ,                  0 ,        30.09.2025
+       1096 ,                      111 ,        Provaznická               ,        PVZ-HUDKAT   ,                  0 ,        30.09.2025
+       1097 ,                      111 ,        Provaznická               ,        PVZ-HRAB     ,                  0 ,        30.09.2025
+       1128 ,                      203 ,        Expedice                  ,        TRIDEXPED    ,                  1 ,        30.09.2025
+
+Records : 963
+Affected: 0
+
+eSQL>
