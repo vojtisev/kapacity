@@ -1,0 +1,825 @@
+﻿pobocka_cislo,lokace_short_norm,OCH,kapacita_fyzicka,stav_na_regalu,lokace_id
+1,1.PATRO,Sklad,81602.0,0.0,56
+1,3.PATRO,Sklad,31682.0,0.0,57
+1,AK,AK,250.0,0.0,111
+1,AUDIO,Sklad,10500.0,0.0,25
+1,BELETRIE,Beletrie - dospělí,8760.0,0.0,3
+1,CASDE,Časopisy pro děti,187.0,0.0,1087
+1,CIZÍ-JAZYK,Beletrie - dospělí,7241.0,0.0,609
+1,DIVPRI,Chráněný fond,2081.0,0.0,134
+1,DVDDE,DVD - dětské knihy v přízemí,354.0,0.0,1089
+1,DVOJJAZ,Beletrie - dospělí,583.0,0.0,692
+1,DVOREK+HUVZA+SKLADHUD+STARHUD,Sklad,23736.0,0.0,
+1,DĚTI,Beletrie - děti,5939.0,0.0,22
+1,DĚTI,Naučná - děti,2903.0,0.0,22
+1,DĚTI-KOM,Beletrie - děti,0.0,0.0,1134
+1,HRABÁTKO,Dnes vrácené knihy,3140.0,0.0,81
+1,HUD-GAL,Naučná - dospělí,2498.0,0.0,1030
+1,HUD-ML (ASI),Hudební literatura vybraná pro mládež,419.0,0.0,
+1,HUDBA,Naučná - dospělí,3034.0,0.0,26
+1,HUDPRI,Chráněný fond,1148.0,0.0,135
+1,INFORMACE,Chráněný fond,2116.0,0.0,68
+1,JAKURZY,JK,428.0,0.0,1022
+1,LEPORELA,Beletrie - děti,0.0,0.0,1133
+1,MASKY,Naučná - dospělí,6932.0,0.0,63
+1,MEZIPATRO,Sklad,65621.0,0.0,55
+1,MLUV,CD,721.0,0.0,978
+1,MLUV-DĚTI,CD,208.0,0.0,979
+1,MLÁDEŽ,Knihy pro mládež na galerii,2676.0,0.0,23
+1,MLÁDEŽ-KOM,Komiksy - knihy na galerii pro mládež,654.0,0.0,1136
+1,MUZIKA,CD,591.0,0.0,1031
+1,NAUCMAP,Mapy u naučné literatury,536.0,0.0,983
+1,NAUČNÁ,Naučná - dospělí,23476.0,0.0,2
+1,PIKTOGRAMY,Beletrie - dospělí,6487.0,0.0,608
+1,POEZIE,Beletrie - dospělí,1684.0,0.0,610
+1,PRAGENSIA,Naučná - dospělí,4135.0,0.0,65
+1,PRAHA,Chráněný fond,2253.0,0.0,66
+1,PREZENT,Naučná - dospělí,1558.0,0.0,1
+1,PRVNÍČTENÍ,Beletrie - děti,95.0,0.0,1135
+1,STUDENT,Studovna pro děti a mládež,116.0,0.0,24
+1,THEATRE,Naučná - dospělí,2884.0,0.0,27
+1,THEATRE,Volný výběr v divadelním úseku,1190.0,0.0,27
+1,VYSTAVML,Tematické výstavky na příčné galerii pro mládež,319.0,0.0,1129
+1,VYSTDOSP,Doporučujeme (dospělí),59.0,0.0,1028
+1,VÁZANKY,Příruční sklad,4487.0,0.0,64
+1,VÝSTAVKY,Doporučujeme (dospělí),1336.0,0.0,109
+1,ZVUK,CD,1463.0,0.0,980
+1,ČASOPISY,Časopisy pro dospělé,630.0,0.0,53
+1,ČASZAPULT,Sklad,5434.0,0.0,87
+3,HRA-BELDO,Beletrie - dospělí,1412.0,0.0,672
+3,HRA-CASDE,Časopisy pro děti,26.0,0.0,890
+3,HRA-CHF,AK,12.0,0.0,669
+3,HRA-CHF,CD,500.0,0.0,669
+3,HRA-DE,Beletrie - dospělí,14.0,0.0,670
+3,HRA-DE,Beletrie - děti,733.0,0.0,670
+3,HRA-DE,Deskové hry,10.0,0.0,670
+3,HRA-DE,Naučná - děti,405.0,0.0,670
+3,HRA-DE,None,100.0,0.0,670
+3,HRA-DOPOR,Beletrie - dospělí,170.0,0.0,772
+3,HRA-DOPOR,CD,60.0,0.0,772
+3,HRA-NAUDO,Naučná - dospělí,1556.0,0.0,673
+3,HRA-PIKTO,Beletrie - dospělí,122.0,0.0,674
+3,HRA-PIKTO,Beletrie - děti,67.0,0.0,674
+3,HRA-POEDI,Beletrie - dospělí,191.0,0.0,671
+3,HRA_CASDO,Časopisy pro dospělé,100.0,0.0,
+3,NONE,Dnes vrácené knihy,90.0,0.0,
+3,NONE,Rezervace,60.0,0.0,
+4,NONE,Dnes vrácené knihy,173.0,0.0,
+4,NONE,Rezervace,260.0,0.0,
+4,OST-BEL,Beletrie - dospělí,4313.0,3.0,367
+4,OST-CAS-DE,Časopisy pro děti,11.0,0.0,
+4,OST-CASDO,Časopisy pro dospělé,21.0,0.0,891
+4,OST-DETI,Beletrie - děti,2022.0,0.0,370
+4,OST-DETI,Naučná - děti,426.0,2.25,370
+4,OST-DETI,None,100.0,0.0,370
+4,OST-DOPDE,Beletrie - děti,36.0,0.0,369
+4,OST-DOPOR,Beletrie - dospělí,65.0,0.0,805
+4,OST-DOPOR,Naučná - dospělí,16.0,0.0,805
+4,OST-KOMIKS,Beletrie - dospělí,80.0,0.0,893
+4,OST-KOMIKS,Beletrie - děti,85.0,0.0,893
+4,OST-NAUDO,Naučná - dospělí,2412.0,6.0,366
+4,OST-VSMS,CD,20.0,0.0,762
+5,HOL-AUDIO,CD,0.0,0.0,923
+5,HOL-BELDO,Beletrie - dospělí,5693.0,0.0,412
+5,HOL-BELDO,Doporučujeme (dospělí),25.0,0.0,412
+5,HOL-CASDO,Časopisy pro dospělé,126.0,0.0,414
+5,HOL-DETI,Beletrie - děti,5136.0,0.0,415
+5,HOL-DETI,CD,80.0,0.0,415
+5,HOL-DETI,Doporučujeme dětem,77.0,0.0,415
+5,HOL-DETI,Naučná - děti,1256.0,0.0,415
+5,HOL-DOPOR,Deskové hry,10.0,0.0,854
+5,HOL-DOPOR,Doporučujeme (dospělí),635.0,0.0,854
+5,HOL-DOPOR3,Deskové hry,10.0,0.0,856
+5,HOL-DOPOR3,Doporučujeme dětem,289.0,0.0,856
+5,HOL-HRAB,Dnes vrácené knihy,189.0,0.0,411
+5,HOL-KOMDE,Beletrie - děti,200.0,0.0,1081
+5,HOL-KOMDO,Beletrie - dospělí,200.0,0.0,1082
+5,HOL-NAUDO,AK,32.0,2.0,413
+5,HOL-NAUDO,JK,32.0,0.0,413
+5,HOL-NAUDO,Naučná - dospělí,6294.0,15.0,413
+5,HOL-PRSK,Příruční sklad,1797.0,0.0,857
+5,NONE,Rezervace,378.0,0.0,
+7,KOB-CASDE,Časopisy pro děti,9.0,0.0,934
+7,KOB-CASDO,Časopisy pro dospělé,151.0,0.0,933
+7,KOB-CHFDE,CD,0.0,0.0,601
+7,KOB-CHFDO,CD,10.0,0.0,602
+7,KOB-DO,Beletrie - dospělí,3309.0,0.0,603
+7,KOB-DO,Naučná - dospělí,2827.0,0.0,603
+7,KOB-DOPOR,AK,15.0,0.0,801
+7,KOB-DOPOR,Deskové hry,10.0,0.0,801
+7,KOB-DOPOR,Doporučujeme (dospělí),28.0,0.0,801
+7,KOB-DOPOR,JK,15.0,0.0,801
+7,KOB-DOPORD,Deskové hry,15.0,0.0,802
+7,KOB-HRAB,None,215.0,0.0,562
+7,KOB-LITDE,Beletrie - děti,2844.0,2.0,600
+7,KOB-LITDE,Naučná - děti,1297.0,0.0,600
+7,KOB-PRSK,Sklad,1039.0,0.0,604
+7,KOB-VYLOHY,Doporučujeme (dospělí),15.0,0.0,605
+7,KOB-VYLOHY,Doporučujeme dětem,15.0,0.0,605
+7,NONE,Rezervace,0.0,12.0,
+7,VÝSTAVKA DOSPĚLÍ,Doporučujeme (dospělí),60.0,15.0,
+7,VÝSTAVKA DĚTI,Doporučujeme dětem,421.0,0.0,
+8,NONE,Dnes vrácené knihy,722.0,0.0,
+8,NONE,Rezervace,361.0,0.0,
+8,SKO-AUDIO,AK,70.0,0.0,816
+8,SKO-AUDIO,CD,179.0,0.0,816
+8,SKO-AUDIO,JK,141.0,0.0,816
+8,SKO-BELDO,Beletrie - dospělí,3544.0,6.0,116
+8,SKO-CASDE,Časopisy pro děti,21.0,0.0,894
+8,SKO-CASDO,Časopisy pro dospělé,131.0,0.0,
+8,SKO-DIVML,Beletrie - dospělí,66.0,0.0,121
+8,SKO-DOPO1,Beletrie - dospělí,632.0,5.0,812
+8,SKO-DOPO1,CD,20.0,0.0,812
+8,SKO-DOPO1,Naučná - dospělí,58.0,0.0,812
+8,SKO-DOPO3,Beletrie - děti,188.0,0.0,814
+8,SKO-DOPO3,Deskové hry,25.0,0.0,814
+8,SKO-DOPO3,Naučná - děti,83.0,0.0,814
+8,SKO-KOMDO,Beletrie - dospělí,200.0,0.0,958
+8,SKO-KOMIKS,Beletrie - děti,180.0,0.0,895
+8,SKO-LITDE,Beletrie - dospělí,43.0,0.0,118
+8,SKO-LITDE,Beletrie - děti,2183.0,2.0,118
+8,SKO-LITDE,Naučná - děti,1195.0,3.0,118
+8,SKO-MAPY,Naučná - dospělí,250.0,5.0,815
+8,SKO-NAUDO,Naučná - dospělí,9184.0,0.0,117
+8,SKO-POEML,Beletrie - dospělí,178.0,0.0,120
+8,SKO-VÝLOHY,Beletrie - dospělí,57.0,0.0,
+10,NONE,Rezervace,324.0,0.0,
+10,VYS-BELDE,Beletrie - dospělí,87.0,0.0,446
+10,VYS-BELDE,Beletrie - děti,2591.0,0.0,446
+10,VYS-BELDO,Beletrie - dospělí,3506.0,0.0,443
+10,VYS-CASDE,Časopisy pro děti,18.0,0.0,937
+10,VYS-CASDO,Časopisy pro dospělé,35.0,0.0,936
+10,VYS-CHFVYP,Chráněný fond,35.0,0.0,448
+10,VYS-CHFVYP,Deskové hry,20.0,0.0,448
+10,VYS-DOPOR,Beletrie - dospělí,136.0,0.0,803
+10,VYS-DOPOR,Beletrie - děti,80.0,0.0,803
+10,VYS-DOPOR,Naučná - dospělí,10.0,0.0,803
+10,VYS-HRAB,Dnes vrácené knihy,324.0,0.0,452
+10,VYS-KOMIKS,Beletrie - dospělí,200.0,0.0,1083
+10,VYS-NAUDE,Naučná - dospělí,1841.0,0.0,445
+10,VYS-NAUDE,Naučná - děti,37.0,0.0,445
+10,VYS-NAUDO,AK,18.0,0.0,444
+10,VYS-NAUDO,Naučná - dospělí,3146.0,0.0,444
+10,VYS-POEDIV,Beletrie - dospělí,278.0,0.0,447
+10,VYS-PRSK,Příruční sklad,3158.0,0.0,450
+10,VYS-PRSKDE,Příruční sklad,1074.0,0.0,449
+11,MLY-CASDE?,Časopisy pro děti,0.0,0.0,
+11,MLY-CASDO?,Časopisy pro dospělé,0.0,0.0,
+11,MLY-DOPOR,Doporučujeme (dospělí),206.0,0.0,1213
+11,MLY-HRAB,Dnes vrácené knihy,147.0,0.0,1217
+11,MLY-KOMDE,Beletrie - děti,50.0,0.0,1215
+11,MLY-KOMDO,Beletrie - dospělí,95.0,0.0,1214
+11,MLY-LEPOR,Beletrie - děti,100.0,0.0,1216
+11,MLY-LITDE,Beletrie - děti,1129.0,0.0,1212
+11,MLY-LITDE,Naučná - děti,542.0,0.0,1212
+11,MLY-LITDO,Beletrie - dospělí,1813.0,0.0,1211
+11,MLY-LITDO,Naučná - dospělí,938.0,0.0,1211
+11,NONE,Rezervace,147.0,0.0,
+13,HLO-DOPOR,Deskové hry,20.0,0.0,800
+13,HLO-DOPOR,Doporučujeme (dospělí),80.0,0.0,800
+13,HLO-HRAB,Dnes vrácené knihy,206.0,0.0,541
+13,HLO-KOMDE,Beletrie - děti,90.0,0.0,1120
+13,HLO-KOMDO,Beletrie - dospělí,120.0,0.0,1119
+13,HLO-LITDE,Beletrie - děti,1205.0,0.0,586
+13,HLO-LITDE,Naučná - děti,498.0,0.0,586
+13,HLO-LITDO,Beletrie - dospělí,1687.0,0.0,1121
+13,HLO-LITDO,Naučná - dospělí,1398.0,0.0,1121
+13,HLO-PRSK,Příruční sklad,154.0,0.0,589
+13,NONE,Rezervace,206.0,0.0,
+15,HUS-BELDE,Beletrie - děti,2216.0,16.0,310
+15,HUS-BELDO,Beletrie - dospělí,5512.0,0.0,307
+15,HUS-CASDE,Časopisy pro děti,32.0,0.0,897
+15,HUS-CASDO,Beletrie - dospělí,53.0,0.0,896
+15,HUS-DOMDE,Beletrie - děti,50.0,0.0,315
+15,HUS-DOPDE,Beletrie - děti,133.0,0.0,316
+15,HUS-DOPDE,Deskové hry,5.0,0.0,316
+15,HUS-DOPOR,Beletrie - dospělí,25.0,0.0,804
+15,HUS-DOPOR,None,42.0,0.0,804
+15,HUS-HRAB,Beletrie - děti,18.0,0.0,289
+15,HUS-HRAB,Dnes vrácené knihy,489.0,0.0,289
+15,HUS-KOMDE,Beletrie - děti,130.0,0.0,1002
+15,HUS-KOMDO,Beletrie - dospělí,140.0,0.0,845
+15,HUS-NAUC,JK,16.0,0.0,311
+15,HUS-NAUC,Naučná - dospělí,5254.0,47.0,311
+15,HUS-NAUDE,Naučná - děti,860.0,0.75,1003
+15,HUS-POEDIV,Beletrie - dospělí,830.0,0.0,312
+15,HUS-SCIFI,Beletrie - dospělí,776.0,0.0,840
+15,HUS-VSMS,CD,26.0,0.0,736
+15,HUS-VYLOH,None,40.0,0.0,314
+15,NONE,None,32.0,0.0,
+15,NONE,Rezervace,245.0,0.0,
+18,KOR-AK,AK,0.0,0.0,992
+18,KOR-BELDO,Beletrie - dospělí,7605.0,34.0,375
+18,KOR-CASDE,Časopisy pro děti,27.0,0.0,946
+18,KOR-CASDO,Časopisy pro dospělé,116.0,0.0,378
+18,KOR-CDDO,CD,421.0,14.0,989
+18,KOR-CIZODO,Beletrie - dospělí,927.0,29.5,1035
+18,KOR-CIZODO,Naučná - dospělí,179.0,6.0,1035
+18,KOR-DETI,Beletrie - děti,5132.0,24.0,380
+18,KOR-DETI,Naučná - děti,1761.0,6.0,380
+18,KOR-DOPDE,Doporučujeme dětem,448.0,0.0,993
+18,KOR-DOPOR,Doporučujeme (dospělí),562.0,12.0,775
+18,KOR-HRAB,Dnes vrácené knihy,0.0,0.0,373
+18,KOR-JK,JK,73.0,2.5,991
+18,KOR-KOMDE,Beletrie - děti,200.0,5.0,994
+18,KOR-MAPY,None,60.0,2.0,995
+18,KOR-NAUDO,Naučná - dospělí,10696.0,78.5,376
+18,KOR-YA,Beletrie - dospělí,361.0,12.0,1209
+18,REZERVACE,Rezervace,523.0,18.0,
+21,HOS-BELDO,Beletrie - dospělí,4478.0,132.0,493
+21,HOS-CASDE,Časopisy pro děti,3.0,0.0,885
+21,HOS-CASDO,Časopisy pro dospělé,9.0,0.0,495
+21,HOS-DOPDE,Doporučujeme dětem,120.0,4.0,1017
+21,HOS-DOPOR,Doporučujeme (dospělí),361.0,12.0,771
+21,HOS-HRAB,Dnes vrácené knihy,331.0,11.0,498
+21,HOS-KOMDE,Beletrie - děti,115.0,3.0,1085
+21,HOS-KOMDO,Beletrie - dospělí,110.0,5.0,1084
+21,HOS-LITDE,Beletrie - děti,2484.0,5.0,496
+21,HOS-LITDE,Naučná - děti,1104.0,11.75,496
+21,HOS-NAUDO,Naučná - dospělí,4142.0,49.5,494
+21,HOS-VSMS,CD,30.0,1.0,735
+24,JEZ-ATELI,Naučná - dospělí,90.0,0.0,1098
+24,JEZ-BELDO,Beletrie - dospělí,2948.0,0.0,1100
+24,JEZ-CASDE,None,61.0,0.0,1101
+24,JEZ-CASDO,None,152.0,0.0,1102
+24,JEZ-DOPOR,None,305.0,0.0,1107
+24,JEZ-HRABDE,None,218.0,0.0,1106
+24,JEZ-HRABDO,None,305.0,0.0,1105
+24,JEZ-HRY,None,198.0,0.0,1103
+24,JEZ-KOMDE,Beletrie - děti,130.0,0.0,1108
+24,JEZ-KOMDO,Beletrie - dospělí,200.0,0.0,1109
+24,JEZ-LEPOR,Beletrie - děti,250.0,0.0,1110
+24,JEZ-LITDE,Beletrie - děti,1803.0,0.0,1099
+24,JEZ-LITDE,Naučná - děti,1190.0,0.0,1099
+24,JEZ-NAUDO,Naučná - dospělí,2931.0,0.0,1112
+24,JEZ-PRSK,Beletrie - dospělí,1366.0,0.0,1113
+24,JEZ-PRSK,Naučná - dospělí,1036.0,0.0,1113
+24,JEZ-ROD,Beletrie - dospělí,49.0,0.0,1115
+24,JEZ-ROD,Naučná - dospělí,122.0,0.0,1115
+24,JEZ-SAMOPRA,None,0.0,0.0,
+24,JEZ-TEENS,Beletrie - dospělí,926.0,0.0,1114
+24,JEZ-TEENS,Beletrie - děti,731.0,0.0,1114
+24,JEZ-TEENS,Naučná - děti,91.0,0.0,1114
+24,JEZ-ZIVOT,Beletrie - dospělí,97.0,0.0,1116
+24,JEZ-ZIVOT,Naučná - dospělí,151.0,0.0,1116
+24,REZERVACE,None,0.0,0.0,
+25,REZERVACE,Rezervace,241.0,0.0,
+25,VIK-BELDO,Beletrie - dospělí,4189.0,0.0,567
+25,VIK-CASDE,Časopisy pro děti,30.0,0.0,903
+25,VIK-CASDO,Časopisy pro dospělé,100.0,0.0,902
+25,VIK-DOPOR,Beletrie - dospělí,394.0,0.0,790
+25,VIK-HRAB,Dnes vrácené knihy,208.0,0.0,559
+25,VIK-KOMDE,Beletrie - dospělí,15.0,0.0,957
+25,VIK-KOMDE,Beletrie - děti,90.0,0.0,957
+25,VIK-KOMDO,Beletrie - dospělí,125.0,0.0,847
+25,VIK-LITDE,Beletrie - dospělí,114.0,0.0,565
+25,VIK-LITDE,Beletrie - děti,2974.0,0.0,565
+25,VIK-LITDE,Naučná - děti,1494.0,0.0,565
+25,VIK-NAUDO,Beletrie - dospělí,72.0,0.0,566
+25,VIK-NAUDO,Naučná - dospělí,4305.0,0.0,566
+25,VIK-PRSK,Beletrie - dospělí,579.0,0.0,568
+25,VIK-PRSK,Naučná - dospělí,40.0,0.0,568
+25,VIK-SAMOPRA,Opravuje se na pobočce,151.0,0.0,
+25,VIK-VSMS,CD,70.0,0.0,745
+25,VIK-YONG,Beletrie - dospělí,211.0,0.0,
+25,VIK-ZIVOT,Naučná - dospělí,105.0,0.0,1274
+27,MOD-BELDE,Beletrie - děti,4571.0,0.0,664
+27,MOD-BELDO,Beletrie - dospělí,5991.0,0.0,663
+27,MOD-CAS,Časopisy pro dospělé,90.0,0.0,666
+27,MOD-CAS,Časopisy pro děti,30.0,0.0,666
+27,MOD-CHF,Deskové hry,120.0,0.0,661
+27,MOD-CHF,JK,30.0,0.0,661
+27,MOD-DOPOR,Doporučujeme (dospělí),633.0,0.0,779
+27,MOD-HRAB,Dnes vrácené knihy,181.0,0.0,624
+27,MOD-KOM,Beletrie - dospělí,150.0,0.0,858
+27,MOD-NAU,Naučná - dospělí,7272.0,0.0,662
+27,MOD-NAUDE,Naučná - děti,1972.0,0.0,1254
+27,MOD-POEDIV,Beletrie - dospělí,575.0,0.0,668
+27,REZERVACE,Rezervace,271.0,0.0,
+29,REZERVACE,Rezervace,731.0,0.0,
+29,SAMOPRA,Opravuje se na pobočce,686.0,0.0,
+29,SMI-AUDIO,AK,365.0,0.0,884
+29,SMI-BELDE,Beletrie - děti,4674.0,0.0,392
+29,SMI-BELDO,Beletrie - dospělí,14251.0,18.0,389
+29,SMI-CASDE,Časopisy pro děti,61.0,0.0,394
+29,SMI-CASDO,Časopisy pro dospělé,274.0,0.0,391
+29,SMI-CD,CD,487.0,0.0,1148
+29,SMI-CHFDE,Chráněný fond,61.0,0.0,399
+29,SMI-CHFDO,Chráněný fond,61.0,0.0,398
+29,SMI-CHRVOL,Příruční sklad,0.0,0.0,404
+29,SMI-DOPOR,Deskové hry,426.0,0.0,807
+29,SMI-DOPOR,Doporučujeme (dospělí),761.0,0.0,807
+29,SMI-DOPORD,Doporučujeme dětem,365.0,0.0,808
+29,SMI-GALDE,Beletrie - děti,1914.0,0.0,396
+29,SMI-GALML,Beletrie - dospělí,1515.0,0.0,395
+29,SMI-HRAB,Dnes vrácené knihy,548.0,0.0,387
+29,SMI-JK,JK,365.0,0.0,1149
+29,SMI-KOLOTO,Beletrie - děti,150.0,0.0,846
+29,SMI-MAPY,None,61.0,0.0,883
+29,SMI-NAUDE,Naučná - děti,4928.0,0.0,393
+29,SMI-NAUDO,Naučná - dospělí,17476.0,0.0,390
+30,CI3-CASDE,Časopisy pro děti,12.0,0.0,915
+30,CI3-CASDO,Časopisy pro dospělé,42.0,0.0,1154
+30,CI3-CHFDE,Chráněný fond,9.0,0.0,639
+30,CI3-HRAB,Dnes vrácené knihy,104.0,0.0,637
+30,CI3-LITDE,Beletrie - děti,850.0,0.0,638
+30,CI3-LITDE,Naučná - děti,305.0,0.0,638
+30,CI3-LITDO,Beletrie - dospělí,791.0,0.0,912
+30,CI3-LITDO,Naučná - dospělí,256.0,0.0,912
+30,CI3-VSMS,CD,26.0,0.0,828
+30,CIB3-DOPOR,Deskové hry,26.0,0.0,768
+30,REZERVACE,Rezervace,105.0,0.0,
+31,CHU-BELDE,Beletrie - dospělí,130.0,0.0,592
+31,CHU-BELDE,Beletrie - děti,1437.0,0.0,592
+31,CHU-BELDO,Beletrie - dospělí,1444.0,0.0,593
+31,CHU-BELDO,Beletrie - děti,31.0,0.0,593
+31,CHU-CAS,Časopisy pro dospělé,90.0,0.0,594
+31,CHU-CAS,Časopisy pro děti,15.0,0.0,594
+31,CHU-CHF,Chráněný fond,14.0,0.0,590
+31,CHU-DOPOR,Doporučujeme (dospělí),60.0,0.0,789
+31,CHU-HRAB,Dnes vrácené knihy,120.0,0.0,570
+31,CHU-NAU,Naučná - dospělí,853.0,0.0,591
+31,CHU-NAUDE,Naučná - děti,673.0,0.0,1018
+31,CHU-VSMS,CD,0.0,0.0,738
+31,REZERVACE,Rezervace,120.0,0.0,
+35,BRE-BELDO,Beletrie - dospělí,7380.0,0.0,145
+35,BRE-CASDE,Časopisy pro děti,21.0,0.0,924
+35,BRE-CD,CD,463.0,0.0,826
+35,BRE-CITR,Časopisy pro dospělé,21.0,0.0,144
+35,BRE-DOPOR,Beletrie - dospělí,605.0,0.0,796
+35,BRE-DOPOR,Beletrie - děti,19.0,0.0,796
+35,BRE-DOPOR,CD,125.0,0.0,796
+35,BRE-DOPOR,Deskové hry,20.0,0.0,796
+35,BRE-DOPOR,Naučná - dospělí,11.0,0.0,796
+35,BRE-DOPOR,Naučná - děti,8.0,0.0,796
+35,BRE-LITDE,Beletrie - dospělí,149.0,0.0,148
+35,BRE-LITDE,Beletrie - děti,4399.0,0.0,148
+35,BRE-LITDE,Naučná - děti,1217.0,0.0,148
+35,BRE-NAUDO,JK,37.0,0.0,146
+35,BRE-NAUDO,Naučná - dospělí,10202.0,254.0,146
+35,BRE-POEZIE,Beletrie - dospělí,401.0,0.0,157
+35,BRE-VITRINA,Naučná - dospělí,20.0,0.0,
+35,BRE-VYLOHY,None,20.0,0.0,159
+35,NONE,Dnes vrácené knihy,379.0,0.0,
+35,NONE,Rezervace,299.0,0.0,
+37,DED-DOPOR,Beletrie - dospělí,178.0,0.0,1153
+37,DED-KOMIKS,None,180.0,0.0,1078
+37,DED-LITDE,Beletrie - děti,2053.0,37.0,822
+37,DED-LITDE,Deskové hry,18.0,0.0,822
+37,DED-LITDE,Dnes vrácené knihy,28.0,0.0,822
+37,DED-LITDE,Naučná - děti,605.0,0.0,822
+37,DED-LITDO,Beletrie - dospělí,2653.0,0.0,823
+37,DED-LITDO,Naučná - dospělí,2577.0,6.0,823
+37,DED-PERDE,Časopisy pro děti,9.0,0.0,851
+37,DED-PERDO,Časopisy pro dospělé,53.0,0.0,852
+37,DED-VSMS,CD,21.0,0.0,732
+37,NONE,Rezervace,68.0,0.0,
+38,DEJ-AUDIO,CD,140.0,0.0,930
+38,DEJ-BEL,Beletrie - dospělí,12223.0,0.0,711
+38,DEJ-CASDE,Časopisy pro děti,11.0,0.0,929
+38,DEJ-CASNAU1,Časopisy pro dospělé,37.0,0.0,
+38,DEJ-CASNAU2,Časopisy pro dospělé,74.0,0.0,
+38,DEJ-CIZJAZ,Beletrie - dospělí,1133.0,32.0,713
+38,DEJ-DOPOR1,Beletrie - dospělí,318.0,0.0,750
+38,DEJ-DOPOR2,Beletrie - děti,72.0,0.0,751
+38,DEJ-DOPOR2,Naučná - dospělí,36.0,0.0,751
+38,DEJ-DOPOR2,None,40.0,0.0,751
+38,DEJ-KOMDO,Beletrie - dospělí,350.0,0.0,1151
+38,DEJ-LITDE,Beletrie - děti,4686.0,0.0,715
+38,DEJ-LITDE,Naučná - děti,1379.0,6.5,715
+38,DEJ-LITML,Beletrie - děti,575.0,0.0,1036
+38,DEJ-MAPY,Naučná - dospělí,68.0,0.0,926
+38,DEJ-NAU1,JK,84.0,0.0,712
+38,DEJ-NAU1,Naučná - dospělí,8459.0,11.0,712
+38,DEJ-NAU2,Naučná - dospělí,7728.0,40.0,714
+38,NONE,Dnes vrácené knihy,819.0,0.0,
+38,NONE,Rezervace,779.0,0.0,
+39,LET-CASDE,Časopisy pro děti,9.0,0.0,1052
+39,LET-DOPOR,Doporučujeme dětem,89.0,0.0,1050
+39,LET-HRAB,Dnes vrácené knihy,89.0,0.0,1055
+39,LET-KOMIKS,Beletrie - děti,150.0,0.0,1054
+39,LET-LITDE,Beletrie - děti,1600.0,0.0,1127
+39,LET-LITDE,Doporučujeme dětem,149.0,0.0,1127
+39,LET-LITDE,Naučná - děti,965.0,0.0,1127
+39,LET-LITDO,Beletrie - dospělí,70.0,0.0,1056
+39,LET-LITDO,Naučná - dospělí,30.0,0.0,1056
+39,NONE,Rezervace,179.0,0.0,
+41,NOV-AUDIO,None,53.0,0.0,962
+41,NOV-BELDO,Beletrie - dospělí,7528.0,0.0,238
+41,NOV-CASOP,None,181.0,0.0,244
+41,NOV-DETCAS,None,36.0,0.0,241
+41,NOV-DOPOR,None,421.0,0.0,780
+41,NOV-HRAB,Dnes vrácené knihy,263.0,0.0,245
+41,NOV-HRAB,None,263.0,0.0,245
+41,NOV-KOMDE,Beletrie - děti,114.0,0.0,964
+41,NOV-KOMIKS,Beletrie - dospělí,329.0,0.0,830
+41,NOV-LITDE,Beletrie - děti,2984.0,0.0,240
+41,NOV-LITDE,Naučná - děti,1336.0,0.0,240
+41,NOV-MAPY,None,46.0,0.0,905
+41,NOV-MLSL,None,158.0,0.0,966
+41,NOV-NAUDO,Naučná - dospělí,5134.0,0.0,242
+41,NOV-POEDI,Beletrie - dospělí,341.0,0.0,963
+41,NOV-SAMOPRA,None,30.0,0.0,
+41,NOV-VYSTAV,None,98.0,0.0,1285
+41,REZERVACE,None,542.0,0.0,
+42,NONE,None,0.0,0.0,
+42,NONE,Rezervace,221.0,0.0,
+42,PET-BELDO2,Beletrie - dospělí,4001.0,0.0,1236
+42,PET-CASDE1,Časopisy pro děti,27.0,0.0,1226
+42,PET-CASDO1,Časopisy pro dospělé,61.0,0.0,1227
+42,PET-CASDO2,Časopisy pro dospělé,27.0,0.0,
+42,PET-DOPDE1,Beletrie - děti,18.0,0.0,1229
+42,PET-DOPOR1,Naučná - dospělí,35.0,0.0,1230
+42,PET-DOPOR2,Beletrie - dospělí,159.0,0.0,1239
+42,PET-DOPOR2,Deskové hry,14.0,0.0,1239
+42,PET-HRAB1,Dnes vrácené knihy,280.0,0.0,1228
+42,PET-KOMDE1,Beletrie - děti,35.0,0.0,1231
+42,PET-KOMDO2,Beletrie - dospělí,300.0,0.0,1242
+42,PET-LEPDE1,Beletrie - děti,60.0,0.0,1232
+42,PET-LITDE1,Beletrie - děti,2191.0,0.0,1233
+42,PET-LITDE1,Naučná - děti,381.0,0.0,1233
+42,PET-LITML2,Beletrie - dospělí,173.0,0.0,1240
+42,PET-LITML2,Beletrie - děti,529.0,0.0,1240
+42,PET-LITML2,Naučná - děti,358.0,0.0,1240
+42,PET-NAUDO2,Naučná - dospělí,3893.0,0.0,1241
+42,PET-VITRI1,Beletrie - dospělí,58.0,0.0,1235
+42,PET-VSMS1,CD,11.0,0.0,1234
+43,NVE-CASDE,Časopisy pro děti,60.0,0.0,907
+43,NVE-CASDO,Časopisy pro dospělé,106.0,0.0,906
+43,NVE-CHFDE,Beletrie - děti,93.0,0.0,507
+43,NVE-CHFDE,CD,60.0,0.0,507
+43,NVE-CHFDE,Deskové hry,35.0,0.0,507
+43,NVE-CHFDE,Naučná - dospělí,72.0,0.0,507
+43,NVE-HRAB,Dnes vrácené knihy,166.0,0.0,504
+43,NVE-KOMDE,Beletrie - dospělí,50.0,0.0,1023
+43,NVE-KOMDE,Beletrie - děti,150.0,0.0,1023
+43,NVE-KOMDO,Beletrie - dospělí,70.0,0.0,843
+43,NVE-LEP,Beletrie - děti,150.0,0.0,1250
+43,NVE-LEP,Naučná - děti,50.0,0.0,1250
+43,NVE-LITDE,Beletrie - děti,2823.0,0.0,500
+43,NVE-LITDE,Naučná - děti,1540.0,0.0,500
+43,NVE-LITML,AK,11.0,0.0,499
+43,NVE-LITML,Beletrie - dospělí,3008.0,0.0,499
+43,NVE-LITML,JK,11.0,0.0,499
+43,NVE-LITML,Naučná - dospělí,2197.0,0.0,499
+43,NVE-POEDE,Beletrie - dospělí,17.0,0.0,844
+43,NVE-POEDE,Beletrie - děti,281.0,0.0,844
+43,NVE-SAMOPRA,Opravuje se na pobočce,123.0,0.0,
+43,REZERVACE,Rezervace,181.0,0.0,
+45,45.44,Beletrie - dospělí,17398.0,0.0,
+45,REZERVACE,Rezervace,0.0,0.0,
+45,SPO-BELDO,Beletrie - dospělí,6546.0,0.0,435
+45,SPO-CASDE,Časopisy pro děti,61.0,0.0,1057
+45,SPO-CASDO,Časopisy pro dospělé,150.0,0.0,436
+45,SPO-DESK,Deskové hry,0.0,0.0,1027
+45,SPO-DETI,Beletrie - děti,3398.0,0.0,437
+45,SPO-DETI,Naučná - děti,1580.0,0.0,437
+45,SPO-DOPOR,Doporučujeme (dospělí),349.0,0.0,788
+45,SPO-HRAB,Dnes vrácené knihy,197.0,0.0,433
+45,SPO-KOMDE,Beletrie - děti,195.0,0.0,1024
+45,SPO-KOMIKS,Beletrie - dospělí,292.0,0.0,955
+45,SPO-LEPO,Beletrie - děti,195.0,0.0,1025
+45,SPO-NAUDO,Naučná - dospělí,6484.0,0.0,434
+45,SPO-POEDIV,Beletrie - dospělí,781.0,0.0,441
+45,SPO-VSMS,CD,343.0,0.0,1026
+47,REZERVACE,Rezervace,152.0,5.0,
+47,ZME-BELDE,Beletrie - děti,1553.0,0.0,1091
+47,ZME-BELDO,Beletrie - dospělí,3718.0,68.0,699
+47,ZME-CASDE,Časopisy pro děti,30.0,1.0,704
+47,ZME-CASDO,Časopisy pro dospělé,74.0,5.0,703
+47,ZME-DETI,Naučná - děti,1030.0,0.5,701
+47,ZME-DOPDE,Doporučujeme dětem,0.0,2.0,1094
+47,ZME-DOPOR,Deskové hry,13.0,0.0,793
+47,ZME-DOPOR,Doporučujeme (dospělí),295.0,6.0,793
+47,ZME-HRAB,Dnes vrácené knihy,152.0,5.0,705
+47,ZME-KOMDE,Beletrie - děti,50.0,1.0,1092
+47,ZME-KOMDO,Beletrie - dospělí,250.0,5.0,1093
+47,ZME-LITML,Beletrie - děti,768.0,20.5,1095
+47,ZME-NAUDO,Naučná - dospělí,4188.0,95.0,700
+47,ZME-VSMS,CD,24.0,0.0,749
+47,ČTENÁŘI ČTENÁŘŮM,None,152.0,5.0,
+48,OSV-BELDE,Beletrie - děti,2008.0,0.0,654
+48,OSV-BELDO,Beletrie - dospělí,2155.0,0.0,653
+48,OSV-CASDE,Časopisy pro děti,30.0,0.0,917
+48,OSV-CASDO,Časopisy pro dospělé,60.0,0.0,916
+48,OSV-DOPOR,Doporučujeme (dospělí),181.0,0.0,781
+48,OSV-DOPORD,Doporučujeme dětem,160.0,0.0,782
+48,OSV-HRAB,Dnes vrácené knihy,160.0,0.0,629
+48,OSV-KOMDE,Beletrie - děti,105.0,0.0,1259
+48,OSV-KOMDO,Beletrie - dospělí,100.0,0.0,1258
+48,OSV-LEPOR,Beletrie - děti,80.0,0.0,1260
+48,OSV-NAUDO,AK,27.0,0.0,655
+48,OSV-NAUDO,Naučná - dospělí,2102.0,0.0,655
+48,OSV-NAUDO,Naučná - děti,1190.0,0.0,655
+48,OSV-VSMS,CD,21.0,0.0,761
+48,REZERVACE,Rezervace,160.0,0.0,
+51,DIT-BELDO,Beletrie - dospělí,3490.0,9.0,207
+51,DIT-CASDE,Časopisy pro děti,47.0,0.0,
+51,DIT-CASDO,Časopisy pro dospělé,26.0,0.0,
+51,DIT-DOMDE,Beletrie - děti,190.0,0.0,1020
+51,DIT-DOMDE,Naučná - děti,50.0,0.0,1020
+51,DIT-DOPOR,Beletrie - dospělí,51.0,0.0,806
+51,DIT-KOMDE,Beletrie - děti,90.0,0.0,1068
+51,DIT-KOMDE,Naučná - děti,30.0,0.0,1068
+51,DIT-KOMDO,Beletrie - dospělí,180.0,0.0,960
+51,DIT-KOMDO,Deskové hry,15.0,0.0,960
+51,DIT-LITDE,Beletrie - děti,2239.0,5.0,212
+51,DIT-LITDE,Naučná - děti,1738.0,9.5,212
+51,DIT-NAUDO,JK,15.0,0.0,213
+51,DIT-NAUDO,Naučná - dospělí,4379.0,72.25,213
+51,DIT-VITRIN,Beletrie - děti,6.0,0.0,216
+51,DIT-VITRIN,Naučná - dospělí,15.0,0.0,216
+51,DIT-VITRIN,Časopisy pro děti,5.0,0.0,216
+51,DIT-VSMS,CD,18.0,0.0,733
+51,DIT-VYSTAV,Beletrie - dospělí,56.0,0.0,818
+51,DIT_VITRIN,Časopisy pro dospělé,1.0,0.0,
+51,NONE,Dnes vrácené knihy,323.0,0.0,
+51,NONE,Rezervace,331.0,0.0,
+52,BOH-BELDO,Beletrie - dospělí,13841.0,0.0,218
+52,BOH-CASOP,Časopisy pro dospělé,0.0,0.0,230
+52,BOH-CHFI1,Chráněný fond,301.0,0.0,232
+52,BOH-CHFI1,Deskové hry,181.0,0.0,232
+52,BOH-CHFOND,Chráněný fond,0.0,0.0,224
+52,BOH-CIZOJ,Beletrie - dospělí,372.0,0.0,1253
+52,BOH-CIZOJ,Naučná - dospělí,181.0,0.0,1253
+52,BOH-DETCAS,Časopisy pro děti,0.0,0.0,220
+52,BOH-DOPOR,Doporučujeme (dospělí),1084.0,0.0,766
+52,BOH-HRAB,Dnes vrácené knihy,482.0,0.0,222
+52,BOH-HUDBA,Naučná - dospělí,2162.0,0.0,227
+52,BOH-HUDCAS,Časopisy pro dospělé,0.0,0.0,228
+52,BOH-KOMDO,Beletrie - dospělí,900.0,0.0,1139
+52,BOH-LITDE,Beletrie - děti,5341.0,24.0,219
+52,BOH-LITDE,Naučná - děti,2056.0,0.0,219
+52,BOH-NAUDO,Naučná - dospělí,16066.0,0.0,221
+52,BOH-SKLAD,AK,120.0,0.0,223
+52,BOH-SKLAD,JK,120.0,0.0,223
+52,BOH-SKLAD,Sklad,11868.0,0.0,223
+52,BOH-VYSTAV,Beletrie - dospělí,365.0,0.0,1251
+52,BOH-VYSTAV,Doporučujeme (dospělí),181.0,0.0,1251
+52,BOH-VYSTAV,Naučná - dospělí,38.0,0.0,1251
+52,NONE,Rezervace,542.0,0.0,
+54,PRO- BELDO,Doporučujeme (dospělí),424.0,0.0,
+54,PRO-BELDE,Beletrie - děti,4200.0,3.0,327
+54,PRO-BELDO,Beletrie - dospělí,5670.0,0.0,324
+54,PRO-CASDE,Časopisy pro děti,90.0,0.0,329
+54,PRO-CASDO,Časopisy pro dospělé,63.0,0.0,326
+54,PRO-CHFDE,AK,75.0,0.0,333
+54,PRO-CHFDE,Deskové hry,90.0,0.0,333
+54,PRO-CHFDE,JK,75.0,0.0,333
+54,PRO-CHFDE,Naučná - děti,60.0,0.0,333
+54,PRO-CHFOND,Naučná - dospělí,90.0,0.0,323
+54,PRO-DOPOR,Beletrie - dospělí,60.0,0.0,786
+54,PRO-DOPOR,CD,0.0,0.0,786
+54,PRO-DOPOR,Naučná - dospělí,30.0,0.0,786
+54,PRO-DOPORD,Naučná - děti,102.0,0.0,787
+54,PRO-DOPORD,None,120.0,0.0,787
+54,PRO-HRAB,Dnes vrácené knihy,181.0,0.0,322
+54,PRO-HRABDE,Dnes vrácené knihy,90.0,0.0,334
+54,PRO-KOMDE,Beletrie - dospělí,200.0,0.0,981
+54,PRO-KOMDO,Beletrie - dospělí,260.0,0.0,982
+54,PRO-NAU,Naučná - dospělí,1293.0,0.0,332
+54,PRO-NAUDE,Naučná - děti,2069.0,0.0,328
+54,PRO-NAUDO,Doporučujeme (dospělí),12.0,0.0,325
+54,PRO-NAUDO,Naučná - dospělí,5162.0,0.0,325
+54,PRO-POE,Beletrie - dospělí,660.0,0.0,331
+54,PRO-PRSK,Příruční sklad,1755.0,0.0,976
+54,REZERVACE,Rezervace,361.0,0.0,
+56,56.44,Beletrie - dospělí,30912.0,0.0,
+56,REZERVACE,Rezervace,179.0,0.0,
+56,RUS-BELDO,Beletrie - dospělí,12721.0,8.0,752
+56,RUS-DETI,Beletrie - dospělí,46.0,0.0,754
+56,RUS-DETI,Beletrie - děti,5445.0,80.0,754
+56,RUS-DETI,Naučná - děti,2448.0,0.0,754
+56,RUS-HRAB,Dnes vrácené knihy,438.0,0.0,755
+56,RUS-NAUDO,Naučná - dospělí,11223.0,0.0,753
+56,RUS-OST1,CD,600.0,0.0,948
+56,RUS-OST1,None,336.0,0.0,948
+56,RUS-OST2,AK,197.0,0.0,949
+56,RUS-OST2,Časopisy pro dospělé,0.0,0.0,949
+56,RUS-OST3,CD,284.0,0.0,950
+56,RUS-OST3,Časopisy pro děti,0.0,0.0,950
+56,SKLAD,Sklad,2539.0,0.0,
+58,OPA-ARTCAS,Časopisy pro dospělé,361.0,0.0,281
+58,OPA-ARTCHF,Naučná - dospělí,237.0,0.0,279
+58,OPA-ARTMAP,Naučná - dospělí,0.0,0.0,280
+58,OPA-ARTO,Naučná - dospělí,3680.0,0.0,278
+58,OPA-ARTSKL,Naučná - dospělí,6400.0,0.0,721
+58,OPA-ARTSKL,Časopisy pro dospělé,840.0,0.0,721
+58,OPA-AUDIO,AK,186.0,0.0,961
+58,OPA-BELDO,Beletrie - dospělí,17485.0,0.0,273
+58,OPA-CASOP,Časopisy pro dospělé,452.0,0.0,275
+58,OPA-CD,CD,130.0,0.0,1009
+58,OPA-DETCAS,Časopisy pro děti,120.0,0.0,271
+58,OPA-DETCD,CD,80.0,0.0,1010
+58,OPA-DETKOM,Beletrie - děti,250.0,0.0,1138
+58,OPA-DOPOR,Doporučujeme (dospělí),100.0,0.0,809
+58,OPA-HRAB,Dnes vrácené knihy,572.0,0.0,276
+58,OPA-KOMIKS,Beletrie - dospělí,605.0,0.0,882
+58,OPA-LITDE,Beletrie - děti,5421.0,0.0,270
+58,OPA-LITDE,Naučná - děti,3866.0,0.0,270
+58,OPA-LITLEP,Beletrie - děti,100.0,0.0,850
+58,OPA-MAPY,Naučná - dospělí,204.0,0.0,1021
+58,OPA-MONOGR,Naučná - dospělí,1820.0,0.0,285
+58,OPA-NAUDO,Naučná - dospělí,21047.0,0.0,274
+58,OPA-SAMOPRA,None,90.0,0.0,
+58,OPA-SKLAD,Beletrie - dospělí,17068.0,0.0,272
+58,OPA-SKLAD,Beletrie - děti,5645.0,0.0,272
+58,OPA-SKLAD,CD,2240.0,0.0,272
+58,OPA-SKLAD,JK,271.0,0.0,272
+58,OPA-SKLAD,Naučná - dospělí,12106.0,0.0,272
+58,OPA-STUD,Naučná - dospělí,4552.0,0.0,267
+58,OPA-VITRIN,Doporučujeme (dospělí),14.0,0.0,277
+58,REZERVACE,Rezervace,722.0,0.0,
+60,KRC-AUDIO,CD,274.0,0.0,1276
+60,KRC-BELDO,Beletrie - dospělí,5219.0,0.0,1277
+60,KRC-CASDE,Časopisy pro děti,25.0,0.0,526
+60,KRC-CASDO,Časopisy pro dospělé,101.0,0.0,524
+60,KRC-DOPOR,Doporučujeme (dospělí),454.0,0.0,776
+60,KRC-HRAB,Dnes vrácené knihy,181.0,0.0,522
+60,KRC-KOMDE,Beletrie - děti,250.0,0.0,1278
+60,KRC-KOMDO,Beletrie - dospělí,360.0,0.0,1279
+60,KRC-LITDE,Beletrie - děti,4435.0,0.0,525
+60,KRC-LITDE,Naučná - děti,1886.0,0.0,525
+60,KRC-NAUDO,Naučná - dospělí,5956.0,0.0,1280
+60,KRC-POEDIV,Beletrie - dospělí,380.0,0.0,1281
+60,KRC-PRSK,Příruční sklad,1393.0,0.0,529
+60,KRC-RODIC,Beletrie - dospělí,57.0,0.0,1287
+60,KRC-RODIC,Naučná - dospělí,181.0,0.0,1287
+60,KRC-VYSTAV,Doporučujeme (dospělí),90.0,0.0,1282
+60,REZERVACE,Rezervace,181.0,0.0,
+61,MAL-BELDO,Beletrie - dospělí,3175.0,45.0,1037
+61,MAL-CASDE,Časopisy pro děti,0.0,0.0,1041
+61,MAL-CASDO,Časopisy pro dospělé,105.0,0.0,1039
+61,MAL-DETI,Beletrie - děti,1243.0,30.0,1040
+61,MAL-DETI,Naučná - děti,697.0,3.0,1040
+61,MAL-DOPDE,Doporučujeme dětem,406.0,0.0,1045
+61,MAL-DOPDO,Doporučujeme (dospělí),160.0,0.0,1043
+61,MAL-DOPML,None,365.0,0.0,
+61,MAL-HRAB,Dnes vrácené knihy,746.0,0.0,1046
+61,MAL-KOMIKS,Beletrie - dospělí,200.0,3.0,1066
+61,MAL-LITML,Beletrie - dospělí,668.0,0.0,1042
+61,MAL-LITML,Naučná - dospělí,179.0,3.0,1042
+61,MAL-NAUDO,Naučná - dospělí,2552.0,24.0,1038
+61,REZERVACE,Rezervace,130.0,0.0,
+61,SAMOPRA,Opravuje se na pobočce,27.0,0.0,
+62,BAR-AKJK,AK,30.0,0.0,1255
+62,BAR-BELDE,Beletrie - děti,2865.0,0.0,465
+62,BAR-BELDO,Beletrie - dospělí,4730.0,0.0,461
+62,BAR-CASDE,Časopisy pro děti,30.0,0.0,887
+62,BAR-CASDO,Časopisy pro dospělé,120.0,0.0,888
+62,BAR-DOPOR,Doporučujeme (dospělí),1349.0,0.0,765
+62,BAR-HRAB,Dnes vrácené knihy,487.0,0.0,459
+62,BAR-KOMDE,Beletrie - děti,100.0,0.0,1072
+62,BAR-KOMDO,Beletrie - dospělí,100.0,0.0,1071
+62,BAR-LEPOR,Beletrie - děti,200.0,0.0,1146
+62,BAR-NAUDE,Naučná - děti,1368.0,2.0,464
+62,BAR-NAUDO,Naučná - dospělí,3897.0,18.0,462
+62,BAR-PRSK,Opravuje se na pobočce,361.0,0.0,675
+62,BAR-VSMS,CD,301.0,0.0,1145
+62,REZERVACE,Rezervace,361.0,0.0,
+65,NONE,Dnes vrácené knihy,306.0,0.0,
+65,NONE,Rezervace,153.0,0.0,
+65,ZAH-BELDO,Beletrie - dospělí,2408.0,0.0,352
+65,ZAH-CASDE,Časopisy pro děti,5.0,0.0,898
+65,ZAH-CASDO,Časopisy pro dospělé,21.0,0.0,353
+65,ZAH-CHFDE,Deskové hry,20.0,0.0,346
+65,ZAH-CHFDE,Naučná - dospělí,23.0,0.0,346
+65,ZAH-DETI,Beletrie - děti,2162.0,0.5,360
+65,ZAH-DETI,Naučná - děti,1589.0,5.5,360
+65,ZAH-DOPOR,Doporučujeme (dospělí),182.0,0.0,794
+65,ZAH-DOPORD,Naučná - děti,26.0,0.0,795
+65,ZAH-KOMDO,Beletrie - dospělí,200.0,0.0,1070
+65,ZAH-KOMIKS,Beletrie - děti,150.0,0.0,899
+65,ZAH-LEPDE,Beletrie - děti,90.0,0.0,1069
+65,ZAH-LEPDE,Naučná - děti,60.0,0.0,1069
+65,ZAH-NAUDE,Beletrie - dospělí,262.0,10.0,355
+65,ZAH-NAUDE,Naučná - dospělí,751.0,12.0,355
+65,ZAH-NAUDO,Naučná - dospělí,3640.0,34.75,351
+65,ZAH-POEDIV,Beletrie - dospělí,281.0,6.5,361
+65,ZAH-SCIFI,Beletrie - dospělí,484.0,13.0,359
+65,ZAH-SCIFI,Beletrie - děti,107.0,5.0,359
+65,ZAH-VSMS,CD,50.0,0.0,748
+66,CHM-BELDO,Beletrie - dospělí,5271.0,0.0,537
+66,CHM-CASDE,Časopisy pro děti,21.0,0.0,985
+66,CHM-CASDO,Časopisy pro dospělé,21.0,0.0,984
+66,CHM-DOPOR,Deskové hry,25.0,0.0,773
+66,CHM-DOPOR,Dnes vrácené knihy,133.0,0.0,773
+66,CHM-DOPOR,Doporučujeme (dospělí),144.0,0.0,773
+66,CHM-DOPOR,Doporučujeme dětem,240.0,0.0,773
+66,CHM-KOMDE,Beletrie - děti,125.0,0.0,987
+66,CHM-KOMDO,Beletrie - dospělí,160.0,0.0,986
+66,CHM-LITDE,Beletrie - děti,2680.0,0.0,539
+66,CHM-LITDE,Naučná - děti,1412.0,1.0,539
+66,CHM-NAUDO,CHM-NAUDO,9.0,0.0,538
+66,CHM-NAUDO,JK,40.0,0.0,538
+66,CHM-NAUDO,Naučná - dospělí,6529.0,5.0,538
+66,CHM-VSMS,CD,17.0,0.0,737
+66,CHM-VYST,Doporučujeme (dospělí),28.0,0.0,988
+66,NONE,Rezervace,331.0,0.0,
+70,REZERVACE,Rezervace,227.0,0.0,
+70,SKA-BELDO,Beletrie - dospělí,3959.0,91.5,544
+70,SKA-CASDE,Časopisy pro děti,30.0,0.0,952
+70,SKA-CASDO,Časopisy pro dospělé,256.0,0.0,951
+70,SKA-DOPOR,Doporučujeme (dospělí),370.0,0.0,792
+70,SKA-HRAB,Dnes vrácené knihy,90.0,0.0,547
+70,SKA-KOMIKS,None,200.0,6.0,1150
+70,SKA-LITDE,Beletrie - děti,2012.0,32.0,543
+70,SKA-LITDE,Naučná - děti,720.0,0.0,543
+70,SKA-NAUDO,Naučná - dospělí,3949.0,71.0,545
+70,SKA-VSMS,CD,30.0,0.0,743
+81,LUZ-BELCAS,Časopisy pro dospělé,61.0,0.0,871
+81,LUZ-BELDO,Beletrie - dospělí,6719.0,0.0,136
+81,LUZ-CIZJAZ,AK,305.0,0.0,875
+81,LUZ-CIZJAZ,Beletrie - dospělí,1481.0,0.0,875
+81,LUZ-CIZJAZ,Beletrie - děti,217.0,0.0,875
+81,LUZ-DEBEL,Beletrie - děti,5054.0,0.0,167
+81,LUZ-DELEP,Beletrie - děti,100.0,0.0,1086
+81,LUZ-DENA,Naučná - děti,3399.0,0.0,168
+81,LUZ-DETCAS,Časopisy pro děti,61.0,0.0,870
+81,LUZ-DOPOR,Doporučujeme (dospělí),1827.0,0.0,777
+81,LUZ-DOPORD,Doporučujeme dětem,731.0,0.0,869
+81,LUZ-HRAB,Dnes vrácené knihy,609.0,0.0,140
+81,LUZ-KOMDE,Beletrie - děti,200.0,0.0,1256
+81,LUZ-KOMDO,Beletrie - dospělí,300.0,0.0,1257
+81,LUZ-MAPY,None,0.0,0.0,873
+81,LUZ-NAUCAS,Časopisy pro dospělé,183.0,0.0,872
+81,LUZ-NAUDO,Naučná - dospělí,12349.0,0.0,137
+81,LUZ-VSMS,CD,0.0,0.0,874
+81,LUZ-YA,Doporučujeme (dospělí),546.0,0.0,1224
+81,REZERVACE,Rezervace,609.0,0.0,
+84,REZERVACE,Rezervace,168.0,0.0,
+84,STO-AKJK,AK,34.0,0.0,1222
+84,STO-BELDE,Beletrie - děti,2967.0,0.0,617
+84,STO-BELDO,Beletrie - dospělí,5177.0,0.0,614
+84,STO-CASDE,Časopisy pro děti,51.0,0.0,920
+84,STO-CASDO,Časopisy pro dospělé,69.0,0.0,919
+84,STO-DOPOR,Doporučujeme (dospělí),176.0,0.0,758
+84,STO-DOPORD,Doporučujeme dětem,353.0,0.0,1223
+84,STO-HRAB,Dnes vrácené knihy,336.0,0.0,582
+84,STO-KOMDE,Beletrie - děti,120.0,0.0,1075
+84,STO-KOMDO,Beletrie - dospělí,150.0,0.0,1074
+84,STO-LEPOR,Beletrie - děti,100.0,0.0,1147
+84,STO-NAUDE,Naučná - děti,1614.0,0.0,618
+84,STO-NAUDO,Naučná - dospělí,2733.0,0.0,615
+84,STO-PRSK,Příruční sklad,914.0,0.0,620
+84,STO-VSMS,CD,168.0,0.0,744
+87,NONE,Rezervace,235.0,0.0,
+87,RAJ-CASDE,Časopisy pro děti,16.0,0.0,943
+87,RAJ-CASDO,Časopisy pro dospělé,98.0,0.0,942
+87,RAJ-DOPOR,CD,22.0,0.0,769
+87,RAJ-DOPOR,Doporučujeme (dospělí),158.0,0.0,769
+87,RAJ-HRAB,Dnes vrácené knihy,147.0,0.0,472
+87,RAJ-KOMDE,Beletrie - děti,90.0,0.0,1059
+87,RAJ-KOMDO,Beletrie - dospělí,155.0,0.0,1060
+87,RAJ-LITDE,Beletrie - děti,1591.0,0.0,474
+87,RAJ-LITDE,Naučná - děti,695.0,0.0,474
+87,RAJ-LITDO,Beletrie - dospělí,3137.0,89.0,473
+87,RAJ-LITDO,Naučná - dospělí,2281.0,3.5,473
+87,RAJ-MLSLDE,CD,0.0,0.0,1061
+87,RAJ-MLSLDO,CD,0.0,0.0,1062
+87,RAJ-PRSK,Příruční sklad,270.0,0.0,1132
+87,VÝSTAVKA DOSPĚLÍ,Doporučujeme (dospělí),0.0,0.0,
+87,VÝSTAVKA DĚTI,Deskové hry,20.0,0.0,
+87,VÝSTAVKA DĚTI,Doporučujeme dětem,79.0,0.0,
+88,DAB-BELDO,Beletrie - dospělí,7466.0,0.0,515
+88,DAB-CASDE,Časopisy pro děti,30.0,0.0,945
+88,DAB-CASDO,Časopisy pro dospělé,0.0,0.0,520
+88,DAB-DOPOR,Deskové hry,151.0,0.0,770
+88,DAB-DOPOR,Doporučujeme (dospělí),301.0,0.0,770
+88,DAB-HRAB,Dnes vrácené knihy,572.0,0.0,512
+88,DAB-JAZYK,Beletrie - dospělí,470.0,0.0,516
+88,DAB-JAZYK,Naučná - dospělí,430.0,0.0,516
+88,DAB-JK/AK,AK,217.0,0.0,1137
+88,DAB-JK/AK,JK,526.0,0.0,1137
+88,DAB-KOMDO,Beletrie - dospělí,300.0,0.0,971
+88,DAB-LITDE,Beletrie - děti,4624.0,0.0,513
+88,DAB-LITDE,Deskové hry,60.0,0.0,513
+88,DAB-LITDE,Doporučujeme dětem,140.0,0.0,513
+88,DAB-LITDE,Naučná - děti,1477.0,0.0,513
+88,DAB-MAPY,Naučná - dospělí,150.0,0.0,970
+88,DAB-NAUC,Naučná - dospělí,13557.0,0.0,514
+88,DAB-PIKTO,Beletrie - dospělí,1055.0,0.0,517
+88,DAB-POEZIE,Beletrie - dospělí,477.0,0.0,969
+88,DAB-VSMS,CD,25.0,0.0,731
+88,DAB-VYSTAV,Doporučujeme (dospělí),26.0,0.0,1221
+88,NONE,Rezervace,482.0,0.0,
+89,JIR-AUDIO,CD,368.0,0.0,1007
+89,JIR-BELDO,Beletrie - dospělí,10276.0,0.0,247
+89,JIR-CASOP,Časopisy pro dospělé,131.0,0.0,254
+89,JIR-DETCAS,Časopisy pro děti,39.0,0.0,250
+89,JIR-DOPOR,Beletrie - dospělí,310.0,0.0,774
+89,JIR-DOPOR,Deskové hry,20.0,0.0,774
+89,JIR-HRAB,Dnes vrácené knihy,289.0,0.0,255
+89,JIR-KOM,Beletrie - dospělí,160.0,0.0,1006
+89,JIR-LEPOR,Beletrie - děti,190.0,0.0,1065
+89,JIR-LITDE,Beletrie - děti,3663.0,0.0,249
+89,JIR-LITDE,Naučná - děti,1748.0,0.0,249
+89,JIR-NAUDO,Naučná - dospělí,6526.0,0.0,251
+89,JIR-SAMOPRA,Opravuje se na pobočce,95.0,0.0,
+89,JIR-ZIVOT,Beletrie - dospělí,85.0,0.0,1249
+89,JIR-ZIVOT,Naučná - dospělí,165.0,0.0,1249
+89,REZERVACE,Rezervace,260.0,0.0,
+92,JEN-DEPJST,Beletrie - dospělí,547140.0,0.0,1067
+92,JEN-PV,Beletrie - dospělí,2158.0,0.0,863
+92,JEN-PVP,Beletrie - dospělí,56100.0,0.0,862
+92,JEN-ZASOB,Beletrie - dospělí,79223.0,0.0,867

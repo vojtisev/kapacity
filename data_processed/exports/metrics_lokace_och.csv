@@ -1,0 +1,2989 @@
+﻿lokace_id,lokace_short,pobocka_nazev,pobocka_cislo,oblast,je_realokace,OCH,kapacita_fyzicka,kapacita_realokace,kapacita_effective,stav_fondu_och
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,JK,120.0,180.0,180.0,0.0
+2,naučná,Ústřední knihovna,1,Ústřední knihovna,True,Naučná - dospělí,23476.0,,,0.0
+670,HRA-DE,Hradčany,3,Středozápad,True,Beletrie - dospělí,14.0,,,0.0
+673,HRA-NAUDO,Hradčany,3,Středozápad,True,Naučná - dospělí,1556.0,,,0.0
+893,OST-KOMIKS,Ostrčilovo nám.,4,Středozápad,True,Beletrie - děti,85.0,,,0.0
+762,OST-VSMS,Ostrčilovo nám.,4,Středozápad,False,CD,20.0,,20.0,0.0
+603,KOB-DO,Kobylisy,7,Severovýchod,True,Naučná - dospělí,2827.0,,,0.0
+958,SKO-KOMDO,Školská,8,Středozápad,True,Beletrie - dospělí,200.0,,,0.0
+445,VYS-NAUDE,Vysočany,10,Severovýchod,True,Naučná - děti,37.0,,,0.0
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,Beletrie - dospělí,1813.0,,,0.0
+800,HLO-DOPOR,Hloubětín,13,Severovýchod,False,Deskové hry,20.0,,20.0,0.0
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,Naučná - dospělí,1398.0,,,0.0
+315,HUS-DOMDE,Žižkov,15,Středozápad,True,Beletrie - děti,50.0,,,0.0
+1002,HUS-KOMDE,Žižkov,15,Středozápad,True,Beletrie - děti,130.0,,,0.0
+378,KOR-CASDO,Korunní,18,Jihovýchod,False,Časopisy pro dospělé,116.0,,116.0,0.0
+903,VIK-CASDE,Vikova,25,Jih,False,Časopisy pro děti,30.0,,30.0,0.0
+790,VIK-DOPOR,Vikova,25,Jih,False,Beletrie - dospělí,394.0,,394.0,0.0
+559,VIK-HRAB,Vikova,25,Jih,False,Dnes vrácené knihy,208.0,,208.0,0.0
+1148,SMI-CD,Smíchov,29,Jihozápad,False,CD,487.0,,487.0,0.0
+924,BRE-CASDE,Břevnov,35,Středozápad,False,Časopisy pro děti,21.0,,21.0,0.0
+822,DED-LITDE,Dědina,37,Středozápad,True,Dnes vrácené knihy,28.0,,,0.0
+929,DEJ-CASDE,Dejvice,38,Středozápad,False,Časopisy pro děti,11.0,,11.0,0.0
+926,DEJ-MAPY,Dejvice,38,Středozápad,False,Naučná - dospělí,68.0,,68.0,0.0
+245,NOV-HRAB,Novodvorská,41,Jih,False,Dnes vrácené knihy,263.0,,263.0,0.0
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,Beletrie - děti,2191.0,,,0.0
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,Naučná - děti,381.0,,,0.0
+499,NVE-LITML,Pankrác,43,Jih,True,AK,11.0,,,0.0
+499,NVE-LITML,Pankrác,43,Jih,True,JK,11.0,,,0.0
+1024,SPO-KOMDE,Spořilov,45,Jih,True,Beletrie - děti,195.0,,,0.0
+441,SPO-POEDIV,Spořilov,45,Jih,True,Beletrie - dospělí,781.0,,,0.0
+793,ZME-DOPOR,Zahradní Město,47,Jihovýchod,False,Deskové hry,13.0,,13.0,0.0
+1093,ZME-KOMDO,Zahradní Město,47,Jihovýchod,True,Beletrie - dospělí,250.0,,,5.0
+1139,BOH-KOMDO,Bohnice,52,Severovýchod,True,Beletrie - dospělí,900.0,,,0.0
+329,PRO-CASDE,Prosek,54,Severovýchod,False,Časopisy pro děti,90.0,,90.0,0.0
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,Beletrie - dospělí,46.0,,,0.0
+949,RUS-OST2,Dům čtení,56,Jihovýchod,False,Časopisy pro dospělé,0.0,,0.0,0.0
+271,OPA-DETCAS,Opatov,58,Jih,False,Časopisy pro děti,120.0,,120.0,0.0
+1138,OPA-DETKOM,Opatov,58,Jih,True,Beletrie - děti,250.0,,,0.0
+1277,KRC-BELDO,Krč,60,Jih,False,Beletrie - dospělí,5219.0,,5219.0,0.0
+1039,MAL-CASDO,Malešice,61,Jihovýchod,False,Časopisy pro dospělé,105.0,,105.0,0.0
+1255,BAR-AKJK,Barrandov,62,Jihozápad,False,AK,30.0,,30.0,0.0
+898,ZAH-CASDE,Záhřebská,65,Středozápad,False,Časopisy pro děti,5.0,,5.0,0.0
+472,RAJ-HRAB,Rajská zahrada,87,Severovýchod,False,Dnes vrácené knihy,147.0,,147.0,0.0
+81,hrabátko,Ústřední knihovna,1,Ústřední knihovna,False,Dnes vrácené knihy,3140.0,,3140.0,0.0
+415,HOL-DETI,Sedmička,5,Severovýchod,True,CD,80.0,,,0.0
+854,HOL-DOPOR,Sedmička,5,Severovýchod,False,Doporučujeme (dospělí),635.0,,635.0,0.0
+1081,HOL-KOMDE,Sedmička,5,Severovýchod,True,Beletrie - děti,200.0,,,0.0
+601,KOB-CHFDE,Kobylisy,7,Severovýchod,False,CD,0.0,,0.0,0.0
+443,VYS-BELDO,Vysočany,10,Severovýchod,True,Beletrie - dospělí,3506.0,,,0.0
+804,HUS-DOPOR,Žižkov,15,Středozápad,False,Beletrie - dospělí,25.0,,25.0,0.0
+1003,HUS-NAUDE,Žižkov,15,Středozápad,True,Naučná - děti,860.0,,,0.75
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,Naučná - dospělí,10696.0,,,78.5
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,Naučná - dospělí,4142.0,,,49.5
+1113,JEZ-PRSK,Jezerka,24,Jih,True,Naučná - dospělí,1036.0,,,0.0
+565,VIK-LITDE,Vikova,25,Jih,True,Beletrie - děti,2974.0,,,0.0
+565,VIK-LITDE,Vikova,25,Jih,True,Naučná - děti,1494.0,,,0.0
+566,VIK-NAUDO,Vikova,25,Jih,True,Beletrie - dospělí,72.0,,,0.0
+404,SMI-CHRVOL,Smíchov,29,Jihozápad,True,Příruční sklad,0.0,,,0.0
+639,CI3-CHFDE,Cibulka,30,Jihozápad,False,Chráněný fond,9.0,,9.0,0.0
+592,CHU-BELDE,Velká Chuchle,31,Jihozápad,True,Beletrie - děti,1437.0,,,0.0
+789,CHU-DOPOR,Velká Chuchle,31,Jihozápad,False,Doporučujeme (dospělí),60.0,,60.0,0.0
+145,BRE-BELDO,Břevnov,35,Středozápad,True,Beletrie - dospělí,7380.0,,,0.0
+822,DED-LITDE,Dědina,37,Středozápad,True,Deskové hry,18.0,,,0.0
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,Beletrie - děti,4686.0,,,0.0
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,Naučná - děti,1379.0,,,6.5
+242,NOV-NAUDO,Novodvorská,41,Jih,True,Naučná - dospělí,5134.0,,,0.0
+1236,PET-BELDO2,Petřiny,42,Středozápad,True,Beletrie - dospělí,4001.0,,,0.0
+1229,PET-DOPDE1,Petřiny,42,Středozápad,False,Beletrie - děti,18.0,,18.0,0.0
+507,NVE-CHFDE,Pankrác,43,Jih,True,Naučná - dospělí,72.0,,,0.0
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,AK,120.0,,,0.0
+1251,BOH-VYSTAV,Bohnice,52,Severovýchod,False,Beletrie - dospělí,365.0,,365.0,0.0
+324,PRO-BELDO,Prosek,54,Severovýchod,True,Beletrie - dospělí,5670.0,,,0.0
+279,OPA-ARTCHF,Opatov,58,Jih,False,Naučná - dospělí,237.0,,237.0,0.0
+280,OPA-ARTMAP,Opatov,58,Jih,False,Naučná - dospělí,0.0,,0.0,0.0
+961,OPA-AUDIO,Opatov,58,Jih,False,AK,186.0,,186.0,0.0
+273,OPA-BELDO,Opatov,58,Jih,True,Beletrie - dospělí,17485.0,,,0.0
+529,KRC-PRSK,Krč,60,Jih,False,Příruční sklad,1393.0,,1393.0,0.0
+1046,MAL-HRAB,Malešice,61,Jihovýchod,False,Dnes vrácené knihy,746.0,,746.0,0.0
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,Beletrie - děti,2162.0,,,0.5
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,Naučná - děti,1589.0,,,5.5
+359,ZAH-SCIFI,Záhřebská,65,Středozápad,True,Beletrie - dospělí,484.0,,,13.0
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,JK,40.0,,,0.0
+137,LUZ-NAUDO,Lužiny,81,Jihozápad,True,Naučná - dospělí,12349.0,,,0.0
+1059,RAJ-KOMDE,Rajská zahrada,87,Severovýchod,True,Beletrie - děti,90.0,,,0.0
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,Naučná - dospělí,2281.0,,,3.5
+255,JIR-HRAB,Chodov,89,Jih,False,Dnes vrácené knihy,289.0,,289.0,0.0
+867,JEN-ZASOB,Vzdálený sklad 6,92,Sklad,True,Beletrie - dospělí,79223.0,,79223.0,0.0
+1134,děti-kom,Ústřední knihovna,1,Ústřední knihovna,True,Beletrie - děti,0.0,,,0.0
+1030,hud-gal,Ústřední knihovna,1,Ústřední knihovna,False,Naučná - dospělí,2498.0,,2498.0,0.0
+602,KOB-CHFDO,Kobylisy,7,Severovýchod,False,CD,10.0,,10.0,0.0
+801,KOB-DOPOR,Kobylisy,7,Severovýchod,False,AK,15.0,,15.0,0.0
+801,KOB-DOPOR,Kobylisy,7,Severovýchod,False,Doporučujeme (dospělí),28.0,,28.0,0.0
+801,KOB-DOPOR,Kobylisy,7,Severovýchod,False,JK,15.0,,15.0,0.0
+802,KOB-DOPORD,Kobylisy,7,Severovýchod,False,Deskové hry,15.0,,15.0,0.0
+894,SKO-CASDE,Školská,8,Středozápad,False,Časopisy pro děti,21.0,,21.0,0.0
+814,SKO-DOPO3,Školská,8,Středozápad,False,Deskové hry,25.0,,25.0,0.0
+117,SKO-NAUDO,Školská,8,Středozápad,True,Naučná - dospělí,9184.0,,,0.0
+937,VYS-CASDE,Vysočany,10,Severovýchod,False,Časopisy pro děti,18.0,,18.0,0.0
+448,VYS-CHFVYP,Vysočany,10,Severovýchod,False,Chráněný fond,35.0,,35.0,0.0
+992,KOR-AK,Korunní,18,Jihovýchod,False,AK,0.0,,0.0,0.0
+1106,JEZ-HRABDE,Jezerka,24,Jih,False,None,218.0,,218.0,0.0
+1109,JEZ-KOMDO,Jezerka,24,Jih,True,Beletrie - dospělí,200.0,,,0.0
+1112,JEZ-NAUDO,Jezerka,24,Jih,True,Naučná - dospělí,2931.0,,,0.0
+1113,JEZ-PRSK,Jezerka,24,Jih,True,Beletrie - dospělí,1366.0,,,0.0
+902,VIK-CASDO,Vikova,25,Jih,False,Časopisy pro dospělé,100.0,,100.0,0.0
+566,VIK-NAUDO,Vikova,25,Jih,True,Naučná - dospělí,4305.0,,,0.0
+661,MOD-CHF,Modřany,27,Jih,False,Deskové hry,120.0,,120.0,0.0
+1149,SMI-JK,Smíchov,29,Jihozápad,False,JK,365.0,,365.0,0.0
+828,CI3-VSMS,Cibulka,30,Jihozápad,False,CD,26.0,,26.0,0.0
+594,CHU-CAS,Velká Chuchle,31,Jihozápad,False,Časopisy pro děti,15.0,,15.0,0.0
+738,CHU-VSMS,Velká Chuchle,31,Jihozápad,False,CD,0.0,,0.0,0.0
+148,BRE-LITDE,Břevnov,35,Středozápad,True,Beletrie - děti,4399.0,,,0.0
+148,BRE-LITDE,Břevnov,35,Středozápad,True,Naučná - děti,1217.0,,,0.0
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,Naučná - dospělí,10202.0,,,254.0
+930,DEJ-AUDIO,Dejvice,38,Středozápad,False,CD,140.0,,140.0,0.0
+241,NOV-DETCAS,Novodvorská,41,Jih,False,None,36.0,,36.0,0.0
+1240,PET-LITML2,Petřiny,42,Středozápad,True,Beletrie - děti,529.0,,,0.0
+1240,PET-LITML2,Petřiny,42,Středozápad,True,Naučná - děti,358.0,,,0.0
+703,ZME-CASDO,Zahradní Město,47,Jihovýchod,False,Časopisy pro dospělé,74.0,,74.0,5.0
+705,ZME-HRAB,Zahradní Město,47,Jihovýchod,False,Dnes vrácené knihy,152.0,,152.0,5.0
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,Naučná - dospělí,2102.0,,,0.0
+1020,DIT-DOMDE,Dittrichova,51,Středozápad,True,Beletrie - děti,190.0,,,0.0
+1020,DIT-DOMDE,Dittrichova,51,Středozápad,True,Naučná - děti,50.0,,,0.0
+1251,BOH-VYSTAV,Bohnice,52,Severovýchod,False,Naučná - dospělí,38.0,,38.0,0.0
+328,PRO-NAUDE,Prosek,54,Severovýchod,True,Naučná - děti,2069.0,,,0.0
+524,KRC-CASDO,Krč,60,Jih,False,Časopisy pro dospělé,101.0,,101.0,0.0
+1041,MAL-CASDE,Malešice,61,Jihovýchod,False,Časopisy pro děti,0.0,,0.0,0.0
+675,BAR-PRSK,Barrandov,62,Jihozápad,False,Opravuje se na pobočce,361.0,,361.0,0.0
+1145,BAR-VSMS,Barrandov,62,Jihozápad,False,CD,301.0,,301.0,0.0
+794,ZAH-DOPOR,Záhřebská,65,Středozápad,False,Doporučujeme (dospělí),182.0,,182.0,0.0
+795,ZAH-DOPORD,Záhřebská,65,Středozápad,False,Naučná - děti,26.0,,26.0,0.0
+748,ZAH-VSMS,Záhřebská,65,Středozápad,False,CD,50.0,,50.0,0.0
+544,SKA-BELDO,Skalka,70,Jihovýchod,True,Beletrie - dospělí,3959.0,,,91.5
+758,STO-DOPOR,Stodůlky,84,Jihozápad,False,Doporučujeme (dospělí),176.0,,176.0,0.0
+620,STO-PRSK,Stodůlky,84,Jihozápad,False,Příruční sklad,914.0,,914.0,0.0
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,Beletrie - dospělí,3137.0,,,89.0
+1065,JIR-LEPOR,Chodov,89,Jih,True,Beletrie - děti,190.0,,,0.0
+863,JEN-PV,Vzdálený sklad 2,92,Sklad,True,Beletrie - dospělí,2158.0,,2158.0,0.0
+1089,DVDDE,Ústřední knihovna,1,Ústřední knihovna,False,DVD - dětské knihy v přízemí,354.0,,354.0,0.0
+27,theatre,Ústřední knihovna,1,Ústřední knihovna,False,Naučná - dospělí,2884.0,,2884.0,0.0
+64,vázanky,Ústřední knihovna,1,Ústřední knihovna,False,Příruční sklad,4487.0,,4487.0,0.0
+980,zvuk,Ústřední knihovna,1,Ústřední knihovna,False,CD,1463.0,,1463.0,0.0
+772,HRA-DOPOR,Hradčany,3,Středozápad,False,Beletrie - dospělí,170.0,,170.0,0.0
+856,HOL-DOPOR3,Sedmička,5,Severovýchod,False,Doporučujeme dětem,289.0,,289.0,0.0
+1082,HOL-KOMDO,Sedmička,5,Severovýchod,True,Beletrie - dospělí,200.0,,,0.0
+603,KOB-DO,Kobylisy,7,Severovýchod,True,Beletrie - dospělí,3309.0,,,0.0
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,Naučná - dospělí,938.0,,,0.0
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,Beletrie - dospělí,1687.0,,,0.0
+316,HUS-DOPDE,Žižkov,15,Středozápad,False,Deskové hry,5.0,,5.0,0.0
+946,KOR-CASDE,Korunní,18,Jihovýchod,False,Časopisy pro děti,27.0,,27.0,0.0
+1100,JEZ-BELDO,Jezerka,24,Jih,True,Beletrie - dospělí,2948.0,,,0.0
+1105,JEZ-HRABDO,Jezerka,24,Jih,False,None,305.0,,305.0,0.0
+1110,JEZ-LEPOR,Jezerka,24,Jih,True,Beletrie - děti,250.0,,,0.0
+567,VIK-BELDO,Vikova,25,Jih,True,Beletrie - dospělí,4189.0,,,0.0
+847,VIK-KOMDO,Vikova,25,Jih,True,Beletrie - dospělí,125.0,,,0.0
+664,MOD-BELDE,Modřany,27,Jih,True,Beletrie - děti,4571.0,,,0.0
+779,MOD-DOPOR,Modřany,27,Jih,False,Doporučujeme (dospělí),633.0,,633.0,0.0
+846,SMI-KOLOTO,Smíchov,29,Jihozápad,True,Beletrie - děti,150.0,,,0.0
+591,CHU-NAU,Velká Chuchle,31,Jihozápad,True,Naučná - dospělí,853.0,,,0.0
+1054,LET-KOMIKS,Letná,39,Severovýchod,True,Beletrie - děti,150.0,,,0.0
+1227,PET-CASDO1,Petřiny,42,Středozápad,False,Časopisy pro dospělé,61.0,,61.0,0.0
+1232,PET-LEPDE1,Petřiny,42,Středozápad,True,Beletrie - děti,60.0,,,0.0
+907,NVE-CASDE,Pankrác,43,Jih,False,Časopisy pro děti,60.0,,60.0,0.0
+436,SPO-CASDO,Spořilov,45,Jih,False,Časopisy pro dospělé,150.0,,150.0,0.0
+437,SPO-DETI,Spořilov,45,Jih,True,Beletrie - děti,3398.0,,,0.0
+437,SPO-DETI,Spořilov,45,Jih,True,Naučná - děti,1580.0,,,0.0
+1068,DIT-KOMDE,Dittrichova,51,Středozápad,True,Beletrie - děti,90.0,,,0.0
+1068,DIT-KOMDE,Dittrichova,51,Středozápad,True,Naučná - děti,30.0,,,0.0
+232,BOH-CHFI1,Bohnice,52,Severovýchod,False,Deskové hry,181.0,,181.0,0.0
+220,BOH-DETCAS,Bohnice,52,Severovýchod,False,Časopisy pro děti,0.0,,0.0,0.0
+326,PRO-CASDO,Prosek,54,Severovýchod,False,Časopisy pro dospělé,63.0,,63.0,0.0
+333,PRO-CHFDE,Prosek,54,Severovýchod,False,Deskové hry,90.0,,90.0,0.0
+982,PRO-KOMDO,Prosek,54,Severovýchod,True,Beletrie - dospělí,260.0,,,0.0
+325,PRO-NAUDO,Prosek,54,Severovýchod,True,Doporučujeme (dospělí),12.0,,,0.0
+976,PRO-PRSK,Prosek,54,Severovýchod,True,Příruční sklad,1755.0,,,0.0
+949,RUS-OST2,Dům čtení,56,Jihovýchod,False,AK,197.0,,197.0,0.0
+1021,OPA-MAPY,Opatov,58,Jih,False,Naučná - dospělí,204.0,,204.0,0.0
+274,OPA-NAUDO,Opatov,58,Jih,True,Naučná - dospělí,21047.0,,,0.0
+461,BAR-BELDO,Barrandov,62,Jihozápad,True,Beletrie - dospělí,4730.0,,,0.0
+346,ZAH-CHFDE,Záhřebská,65,Středozápad,False,Naučná - dospělí,23.0,,23.0,0.0
+773,CHM-DOPOR,Vozovna,66,Středozápad,False,Doporučujeme (dospělí),144.0,,144.0,0.0
+773,CHM-DOPOR,Vozovna,66,Středozápad,False,Doporučujeme dětem,240.0,,240.0,0.0
+951,SKA-CASDO,Skalka,70,Jihovýchod,False,Časopisy pro dospělé,256.0,,256.0,0.0
+871,LUZ-BELCAS,Lužiny,81,Jihozápad,False,Časopisy pro dospělé,61.0,,61.0,0.0
+1074,STO-KOMDO,Stodůlky,84,Jihozápad,True,Beletrie - dospělí,150.0,,,0.0
+515,DAB-BELDO,Ládví,88,Severovýchod,True,Beletrie - dospělí,7466.0,,,0.0
+945,DAB-CASDE,Ládví,88,Severovýchod,False,Časopisy pro děti,30.0,,30.0,0.0
+774,JIR-DOPOR,Chodov,89,Jih,False,Deskové hry,20.0,,20.0,0.0
+609,cizí-jazyk,Ústřední knihovna,1,Ústřední knihovna,True,Beletrie - dospělí,7241.0,,,0.0
+692,dvojjaz,Ústřední knihovna,1,Ústřední knihovna,True,Beletrie - dospělí,583.0,,,0.0
+1133,leporela,Ústřední knihovna,1,Ústřední knihovna,True,Beletrie - děti,0.0,,,0.0
+65,pragensia,Ústřední knihovna,1,Ústřední knihovna,False,Naučná - dospělí,4135.0,,4135.0,0.0
+1028,VYSTDOSP,Ústřední knihovna,1,Ústřední knihovna,False,Doporučujeme (dospělí),59.0,,59.0,0.0
+669,HRA-CHF,Hradčany,3,Středozápad,False,AK,12.0,,12.0,0.0
+670,HRA-DE,Hradčany,3,Středozápad,True,Deskové hry,10.0,,,0.0
+772,HRA-DOPOR,Hradčany,3,Středozápad,False,CD,60.0,,60.0,0.0
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,Naučná - dospělí,6294.0,,,15.0
+934,KOB-CASDE,Kobylisy,7,Severovýchod,False,Časopisy pro děti,9.0,,9.0,0.0
+118,SKO-LITDE,Školská,8,Středozápad,True,Beletrie - děti,2183.0,,,2.0
+118,SKO-LITDE,Školská,8,Středozápad,True,Naučná - děti,1195.0,,,3.0
+446,VYS-BELDE,Vysočany,10,Severovýchod,True,Beletrie - děti,2591.0,,,0.0
+448,VYS-CHFVYP,Vysočany,10,Severovýchod,False,Deskové hry,20.0,,20.0,0.0
+1083,VYS-KOMIKS,Vysočany,10,Severovýchod,True,Beletrie - dospělí,200.0,,,0.0
+444,VYS-NAUDO,Vysočany,10,Severovýchod,True,Naučná - dospělí,3146.0,,,0.0
+1217,MLY-HRAB,Velký mlýn,11,Severovýchod,False,Dnes vrácené knihy,147.0,,147.0,0.0
+1216,MLY-LEPOR,Velký mlýn,11,Severovýchod,True,Beletrie - děti,100.0,,,0.0
+897,HUS-CASDE,Žižkov,15,Středozápad,False,Časopisy pro děti,32.0,,32.0,0.0
+896,HUS-CASDO,Žižkov,15,Středozápad,False,Beletrie - dospělí,53.0,,53.0,0.0
+995,KOR-MAPY,Korunní,18,Jihovýchod,False,None,60.0,,60.0,2.0
+1085,HOS-KOMDE,Hostivař,21,Jihovýchod,True,Beletrie - děti,115.0,,,3.0
+1115,JEZ-ROD,Jezerka,24,Jih,True,Naučná - dospělí,122.0,,,0.0
+1114,JEZ-TEENS,Jezerka,24,Jih,True,Beletrie - děti,731.0,,,0.0
+1114,JEZ-TEENS,Jezerka,24,Jih,True,Naučná - děti,91.0,,,0.0
+807,SMI-DOPOR,Smíchov,29,Jihozápad,False,Deskové hry,426.0,,426.0,0.0
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,Beletrie - dospělí,791.0,,,0.0
+1153,DED-DOPOR,Dědina,37,Středozápad,False,Beletrie - dospělí,178.0,,178.0,0.0
+751,DEJ-DOPOR2,Dejvice,38,Středozápad,False,None,40.0,,40.0,0.0
+1127,LET-LITDE,Letná,39,Severovýchod,True,Beletrie - děti,1600.0,,,0.0
+1127,LET-LITDE,Letná,39,Severovýchod,True,Doporučujeme dětem,149.0,,,0.0
+1127,LET-LITDE,Letná,39,Severovýchod,True,Naučná - děti,965.0,,,0.0
+1023,NVE-KOMDE,Pankrác,43,Jih,True,Beletrie - dospělí,50.0,,,0.0
+500,NVE-LITDE,Pankrác,43,Jih,True,Beletrie - děti,2823.0,,,0.0
+500,NVE-LITDE,Pankrác,43,Jih,True,Naučná - děti,1540.0,,,0.0
+434,SPO-NAUDO,Spořilov,45,Jih,True,Naučná - dospělí,6484.0,,,0.0
+782,OSV-DOPORD,Ostrovského,48,Jihozápad,False,Doporučujeme dětem,160.0,,160.0,0.0
+733,DIT-VSMS,Dittrichova,51,Středozápad,False,CD,18.0,,18.0,0.0
+948,RUS-OST1,Dům čtení,56,Jihovýchod,False,None,336.0,,336.0,0.0
+721,OPA-ARTSKL,Opatov,58,Jih,False,Naučná - dospělí,6400.0,,6400.0,0.0
+882,OPA-KOMIKS,Opatov,58,Jih,True,Beletrie - dospělí,605.0,,,0.0
+850,OPA-LITLEP,Opatov,58,Jih,True,Beletrie - děti,100.0,,,0.0
+1287,KRC-RODIC,Krč,60,Jih,False,Beletrie - dospělí,57.0,,57.0,0.0
+1043,MAL-DOPDO,Malešice,61,Jihovýchod,False,Doporučujeme (dospělí),160.0,,160.0,0.0
+352,ZAH-BELDO,Záhřebská,65,Středozápad,True,Beletrie - dospělí,2408.0,,,0.0
+346,ZAH-CHFDE,Záhřebská,65,Středozápad,False,Deskové hry,20.0,,20.0,0.0
+987,CHM-KOMDE,Vozovna,66,Středozápad,True,Beletrie - děti,125.0,,,0.0
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,Naučná - dospělí,3949.0,,,71.0
+1086,LUZ-DELEP,Lužiny,81,Jihozápad,True,Beletrie - děti,100.0,,,0.0
+777,LUZ-DOPOR,Lužiny,81,Jihozápad,False,Doporučujeme (dospělí),1827.0,,1827.0,0.0
+617,STO-BELDE,Stodůlky,84,Jihozápad,True,Beletrie - děti,2967.0,,,0.0
+582,STO-HRAB,Stodůlky,84,Jihozápad,False,Dnes vrácené knihy,336.0,,336.0,0.0
+769,RAJ-DOPOR,Rajská zahrada,87,Severovýchod,False,CD,22.0,,22.0,0.0
+1061,RAJ-MLSLDE,Rajská zahrada,87,Severovýchod,False,CD,0.0,,0.0,0.0
+513,DAB-LITDE,Ládví,88,Severovýchod,True,Deskové hry,60.0,,,0.0
+251,JIR-NAUDO,Chodov,89,Jih,True,Naučná - dospělí,6526.0,,,0.0
+1067,JEN-DEPJST,Vzdálený sklad 8,92,Sklad,True,Beletrie - dospělí,547140.0,,547140.0,0.0
+25,audio,Ústřední knihovna,1,Ústřední knihovna,False,Sklad,10500.0,,10500.0,0.0
+134,DIVPRI,Ústřední knihovna,1,Ústřední knihovna,False,Chráněný fond,2081.0,,2081.0,0.0
+1136,mládež-kom,Ústřední knihovna,1,Ústřední knihovna,True,Komiksy - knihy na galerii pro mládež,654.0,,,0.0
+672,HRA-BELDO,Hradčany,3,Středozápad,True,Beletrie - dospělí,1412.0,,,0.0
+366,OST-NAUDO,Ostrčilovo nám.,4,Středozápad,True,Naučná - dospělí,2412.0,,,6.0
+412,HOL-BELDO,Sedmička,5,Severovýchod,True,Doporučujeme (dospělí),25.0,,,0.0
+414,HOL-CASDO,Sedmička,5,Severovýchod,False,Časopisy pro dospělé,126.0,,126.0,0.0
+411,HOL-HRAB,Sedmička,5,Severovýchod,False,Dnes vrácené knihy,189.0,,189.0,0.0
+120,SKO-POEML,Školská,8,Středozápad,True,Beletrie - dospělí,178.0,,,0.0
+936,VYS-CASDO,Vysočany,10,Severovýchod,False,Časopisy pro dospělé,35.0,,35.0,0.0
+449,VYS-PRSKDE,Vysočany,10,Severovýchod,True,Příruční sklad,1074.0,,,0.0
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,Beletrie - děti,1129.0,,,0.0
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,Naučná - děti,542.0,,,0.0
+589,HLO-PRSK,Hloubětín,13,Severovýchod,False,Příruční sklad,154.0,,154.0,0.0
+311,HUS-NAUC,Žižkov,15,Středozápad,True,JK,16.0,,,0.0
+1103,JEZ-HRY,Jezerka,24,Jih,False,None,198.0,,198.0,0.0
+1116,JEZ-ZIVOT,Jezerka,24,Jih,True,Beletrie - dospělí,97.0,,,0.0
+957,VIK-KOMDE,Vikova,25,Jih,True,Beletrie - dospělí,15.0,,,0.0
+399,SMI-CHFDE,Smíchov,29,Jihozápad,False,Chráněný fond,61.0,,61.0,0.0
+396,SMI-GALDE,Smíchov,29,Jihozápad,True,Beletrie - děti,1914.0,,,0.0
+638,CI3-LITDE,Cibulka,30,Jihozápad,True,Beletrie - děti,850.0,,,0.0
+638,CI3-LITDE,Cibulka,30,Jihozápad,True,Naučná - děti,305.0,,,0.0
+768,CIB3-DOPOR,Cibulka,30,Jihozápad,False,Deskové hry,26.0,,26.0,0.0
+507,NVE-CHFDE,Pankrác,43,Jih,True,CD,60.0,,,0.0
+504,NVE-HRAB,Pankrác,43,Jih,False,Dnes vrácené knihy,166.0,,166.0,0.0
+1259,OSV-KOMDE,Ostrovského,48,Jihozápad,True,Beletrie - děti,105.0,,,0.0
+207,DIT-BELDO,Dittrichova,51,Středozápad,True,Beletrie - dospělí,3490.0,,,9.0
+806,DIT-DOPOR,Dittrichova,51,Středozápad,False,Beletrie - dospělí,51.0,,51.0,0.0
+218,BOH-BELDO,Bohnice,52,Severovýchod,True,Beletrie - dospělí,13841.0,,,0.0
+232,BOH-CHFI1,Bohnice,52,Severovýchod,False,Chráněný fond,301.0,,301.0,0.0
+221,BOH-NAUDO,Bohnice,52,Severovýchod,True,Naučná - dospělí,16066.0,,,0.0
+272,OPA-SKLAD,Opatov,58,Jih,False,Beletrie - děti,5645.0,,5645.0,0.0
+272,OPA-SKLAD,Opatov,58,Jih,False,JK,271.0,,271.0,0.0
+526,KRC-CASDE,Krč,60,Jih,False,Časopisy pro děti,25.0,,25.0,0.0
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,Beletrie - dospělí,668.0,,,0.0
+464,BAR-NAUDE,Barrandov,62,Jihozápad,True,Naučná - děti,1368.0,,,2.0
+899,ZAH-KOMIKS,Záhřebská,65,Středozápad,True,Beletrie - děti,150.0,,,0.0
+872,LUZ-NAUCAS,Lužiny,81,Jihozápad,False,Časopisy pro dospělé,183.0,,183.0,0.0
+1222,STO-AKJK,Stodůlky,84,Jihozápad,False,AK,34.0,,34.0,0.0
+919,STO-CASDO,Stodůlky,84,Jihozápad,False,Časopisy pro dospělé,69.0,,69.0,0.0
+618,STO-NAUDE,Stodůlky,84,Jihozápad,True,Naučná - děti,1614.0,,,0.0
+770,DAB-DOPOR,Ládví,88,Severovýchod,False,Deskové hry,151.0,,151.0,0.0
+250,JIR-DETCAS,Chodov,89,Jih,False,Časopisy pro děti,39.0,,39.0,0.0
+55,mezipatro,Ústřední knihovna,1,Ústřední knihovna,False,Sklad,65621.0,,65621.0,0.0
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,Knihy pro mládež na galerii,2676.0,,,0.0
+610,poezie,Ústřední knihovna,1,Ústřední knihovna,True,Beletrie - dospělí,1684.0,,,0.0
+1135,prvníčtení,Ústřední knihovna,1,Ústřední knihovna,True,Beletrie - děti,95.0,,,0.0
+109,výstavky,Ústřední knihovna,1,Ústřední knihovna,False,Doporučujeme (dospělí),1336.0,,1336.0,0.0
+803,VYS-DOPOR,Vysočany,10,Severovýchod,False,Beletrie - děti,80.0,,80.0,0.0
+289,HUS-HRAB,Žižkov,15,Středozápad,False,Dnes vrácené knihy,489.0,,489.0,0.0
+845,HUS-KOMDO,Žižkov,15,Středozápad,True,Beletrie - dospělí,140.0,,,0.0
+991,KOR-JK,Korunní,18,Jihovýchod,False,JK,73.0,,73.0,2.5
+1084,HOS-KOMDO,Hostivař,21,Jihovýchod,True,Beletrie - dospělí,110.0,,,5.0
+1116,JEZ-ZIVOT,Jezerka,24,Jih,True,Naučná - dospělí,151.0,,,0.0
+668,MOD-POEDIV,Modřany,27,Jih,True,Beletrie - dospělí,575.0,,,0.0
+884,SMI-AUDIO,Smíchov,29,Jihozápad,False,AK,365.0,,365.0,0.0
+593,CHU-BELDO,Velká Chuchle,31,Jihozápad,True,Beletrie - děti,31.0,,,0.0
+796,BRE-DOPOR,Břevnov,35,Středozápad,False,Beletrie - děti,19.0,,19.0,0.0
+796,BRE-DOPOR,Břevnov,35,Středozápad,False,Naučná - děti,8.0,,8.0,0.0
+159,BRE-VYLOHY,Břevnov,35,Středozápad,False,None,20.0,,20.0,0.0
+750,DEJ-DOPOR1,Dejvice,38,Středozápad,False,Beletrie - dospělí,318.0,,318.0,0.0
+712,DEJ-NAU1,Dejvice,38,Středozápad,True,JK,84.0,,,0.0
+714,DEJ-NAU2,Dejvice,38,Středozápad,True,Naučná - dospělí,7728.0,,,40.0
+780,NOV-DOPOR,Novodvorská,41,Jih,False,None,421.0,,421.0,0.0
+240,NOV-LITDE,Novodvorská,41,Jih,True,Beletrie - děti,2984.0,,,0.0
+240,NOV-LITDE,Novodvorská,41,Jih,True,Naučná - děti,1336.0,,,0.0
+1226,PET-CASDE1,Petřiny,42,Středozápad,False,Časopisy pro děti,27.0,,27.0,0.0
+1234,PET-VSMS1,Petřiny,42,Středozápad,False,CD,11.0,,11.0,0.0
+507,NVE-CHFDE,Pankrác,43,Jih,True,Deskové hry,35.0,,,0.0
+843,NVE-KOMDO,Pankrác,43,Jih,True,Beletrie - dospělí,70.0,,,0.0
+955,SPO-KOMIKS,Spořilov,45,Jih,True,Beletrie - dospělí,292.0,,,0.0
+1092,ZME-KOMDE,Zahradní Město,47,Jihovýchod,True,Beletrie - děti,50.0,,,1.0
+216,DIT-VITRIN,Dittrichova,51,Středozápad,False,Beletrie - děti,6.0,,6.0,0.0
+275,OPA-CASOP,Opatov,58,Jih,False,Časopisy pro dospělé,452.0,,452.0,0.0
+1276,KRC-AUDIO,Krč,60,Jih,False,CD,274.0,,274.0,0.0
+1279,KRC-KOMDO,Krč,60,Jih,False,Beletrie - dospělí,360.0,,360.0,0.0
+1066,MAL-KOMIKS,Malešice,61,Jihovýchod,True,Beletrie - dospělí,200.0,,,3.0
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,Naučná - dospělí,179.0,,,3.0
+361,ZAH-POEDIV,Záhřebská,65,Středozápad,True,Beletrie - dospělí,281.0,,,6.5
+539,CHM-LITDE,Vozovna,66,Středozápad,True,Beletrie - děti,2680.0,,,0.0
+539,CHM-LITDE,Vozovna,66,Středozápad,True,Naučná - děti,1412.0,,,1.0
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,CHM-NAUDO,9.0,,,0.0
+952,SKA-CASDE,Skalka,70,Jihovýchod,False,Časopisy pro děti,30.0,,30.0,0.0
+547,SKA-HRAB,Skalka,70,Jihovýchod,False,Dnes vrácené knihy,90.0,,90.0,0.0
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,Beletrie - děti,2012.0,,,32.0
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,Naučná - děti,720.0,,,0.0
+743,SKA-VSMS,Skalka,70,Jihovýchod,False,CD,30.0,,30.0,0.0
+875,LUZ-CIZJAZ,Lužiny,81,Jihozápad,True,AK,305.0,,,0.0
+875,LUZ-CIZJAZ,Lužiny,81,Jihozápad,True,Beletrie - děti,217.0,,,0.0
+614,STO-BELDO,Stodůlky,84,Jihozápad,True,Beletrie - dospělí,5177.0,,,0.0
+1062,RAJ-MLSLDO,Rajská zahrada,87,Severovýchod,False,CD,0.0,,0.0,0.0
+971,DAB-KOMDO,Ládví,88,Severovýchod,True,Beletrie - dospělí,300.0,,,0.0
+862,JEN-PVP,Vzdálený sklad 1,92,Sklad,True,Beletrie - dospělí,56100.0,,56100.0,0.0
+1031,muzika,Ústřední knihovna,1,Ústřední knihovna,False,CD,591.0,,591.0,0.0
+608,piktogramy,Ústřední knihovna,1,Ústřední knihovna,True,Beletrie - dospělí,6487.0,,,0.0
+1,prezent,Ústřední knihovna,1,Ústřední knihovna,False,Naučná - dospělí,1558.0,,1558.0,0.0
+674,HRA-PIKTO,Hradčany,3,Středozápad,True,Beletrie - dospělí,122.0,,,0.0
+367,OST-BEL,Ostrčilovo nám.,4,Středozápad,True,Beletrie - dospělí,4313.0,,,3.0
+923,HOL-AUDIO,Sedmička,5,Severovýchod,False,CD,0.0,,0.0,0.0
+933,KOB-CASDO,Kobylisy,7,Severovýchod,False,Časopisy pro dospělé,151.0,,151.0,0.0
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,Beletrie - děti,2844.0,,,2.0
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,Naučná - děti,1297.0,,,0.0
+816,SKO-AUDIO,Školská,8,Středozápad,False,AK,70.0,,70.0,0.0
+816,SKO-AUDIO,Školská,8,Středozápad,False,JK,141.0,,141.0,0.0
+815,SKO-MAPY,Školská,8,Středozápad,False,Naučná - dospělí,250.0,,250.0,5.0
+1214,MLY-KOMDO,Velký mlýn,11,Severovýchod,True,Beletrie - dospělí,95.0,,,0.0
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,Beletrie - děti,1205.0,,,0.0
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,Naučná - děti,498.0,,,0.0
+380,KOR-DETI,Korunní,18,Jihovýchod,True,Beletrie - děti,5132.0,,,24.0
+380,KOR-DETI,Korunní,18,Jihovýchod,True,Naučná - děti,1761.0,,,6.0
+775,KOR-DOPOR,Korunní,18,Jihovýchod,False,Doporučujeme (dospělí),562.0,,562.0,12.0
+1115,JEZ-ROD,Jezerka,24,Jih,True,Beletrie - dospělí,49.0,,,0.0
+666,MOD-CAS,Modřany,27,Jih,False,Časopisy pro dospělé,90.0,,90.0,0.0
+808,SMI-DOPORD,Smíchov,29,Jihozápad,False,Doporučujeme dětem,365.0,,365.0,0.0
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,Naučná - dospělí,256.0,,,0.0
+144,BRE-CITR,Břevnov,35,Středozápad,False,Časopisy pro dospělé,21.0,,21.0,0.0
+711,DEJ-BEL,Dejvice,38,Středozápad,True,Beletrie - dospělí,12223.0,,,0.0
+751,DEJ-DOPOR2,Dejvice,38,Středozápad,False,Beletrie - děti,72.0,,72.0,0.0
+1235,PET-VITRI1,Petřiny,42,Středozápad,False,Beletrie - dospělí,58.0,,58.0,0.0
+844,NVE-POEDE,Pankrác,43,Jih,True,Beletrie - dospělí,17.0,,,0.0
+788,SPO-DOPOR,Spořilov,45,Jih,False,Doporučujeme (dospělí),349.0,,349.0,0.0
+916,OSV-CASDO,Ostrovského,48,Jihozápad,False,Časopisy pro dospělé,60.0,,60.0,0.0
+1258,OSV-KOMDO,Ostrovského,48,Jihozápad,True,Beletrie - dospělí,100.0,,,0.0
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,Naučná - dospělí,4379.0,,,72.25
+227,BOH-HUDBA,Bohnice,52,Severovýchod,True,Naučná - dospělí,2162.0,,,0.0
+322,PRO-HRAB,Prosek,54,Severovýchod,False,Dnes vrácené knihy,181.0,,181.0,0.0
+332,PRO-NAU,Prosek,54,Severovýchod,True,Naučná - dospělí,1293.0,,,0.0
+752,RUS-BELDO,Dům čtení,56,Jihovýchod,True,Beletrie - dospělí,12721.0,,,8.0
+285,OPA-MONOGR,Opatov,58,Jih,False,Naučná - dospělí,1820.0,,1820.0,0.0
+525,KRC-LITDE,Krč,60,Jih,True,Beletrie - děti,4435.0,,,0.0
+525,KRC-LITDE,Krč,60,Jih,True,Naučná - děti,1886.0,,,0.0
+1287,KRC-RODIC,Krč,60,Jih,False,Naučná - dospělí,181.0,,181.0,0.0
+465,BAR-BELDE,Barrandov,62,Jihozápad,True,Beletrie - děti,2865.0,,,0.0
+985,CHM-CASDE,Vozovna,66,Středozápad,False,Časopisy pro děti,21.0,,21.0,0.0
+986,CHM-KOMDO,Vozovna,66,Středozápad,True,Beletrie - dospělí,160.0,,,0.0
+136,LUZ-BELDO,Lužiny,81,Jihozápad,True,Beletrie - dospělí,6719.0,,,0.0
+140,LUZ-HRAB,Lužiny,81,Jihozápad,False,Dnes vrácené knihy,609.0,,609.0,0.0
+1060,RAJ-KOMDO,Rajská zahrada,87,Severovýchod,True,Beletrie - dospělí,155.0,,,0.0
+774,JIR-DOPOR,Chodov,89,Jih,False,Beletrie - dospělí,310.0,,310.0,0.0
+135,HUDPRI,Ústřední knihovna,1,Ústřední knihovna,False,Chráněný fond,1148.0,,1148.0,0.0
+891,OST-CASDO,Ostrčilovo nám.,4,Středozápad,False,Časopisy pro dospělé,21.0,,21.0,0.0
+805,OST-DOPOR,Ostrčilovo nám.,4,Středozápad,False,Naučná - dospělí,16.0,,16.0,0.0
+415,HOL-DETI,Sedmička,5,Severovýchod,True,Beletrie - děti,5136.0,,,0.0
+415,HOL-DETI,Sedmička,5,Severovýchod,True,Doporučujeme dětem,77.0,,,0.0
+415,HOL-DETI,Sedmička,5,Severovýchod,True,Naučná - děti,1256.0,,,0.0
+801,KOB-DOPOR,Kobylisy,7,Severovýchod,False,Deskové hry,10.0,,10.0,0.0
+562,KOB-HRAB,Kobylisy,7,Severovýchod,False,None,215.0,,215.0,0.0
+814,SKO-DOPO3,Školská,8,Středozápad,False,Beletrie - děti,188.0,,188.0,0.0
+814,SKO-DOPO3,Školská,8,Středozápad,False,Naučná - děti,83.0,,83.0,0.0
+803,VYS-DOPOR,Vysočany,10,Severovýchod,False,Beletrie - dospělí,136.0,,136.0,0.0
+307,HUS-BELDO,Žižkov,15,Středozápad,True,Beletrie - dospělí,5512.0,,,0.0
+311,HUS-NAUC,Žižkov,15,Středozápad,True,Naučná - dospělí,5254.0,,,47.0
+840,HUS-SCIFI,Žižkov,15,Středozápad,True,Beletrie - dospělí,776.0,,,0.0
+375,KOR-BELDO,Korunní,18,Jihovýchod,True,Beletrie - dospělí,7605.0,,,34.0
+1035,KOR-CIZODO,Korunní,18,Jihovýchod,True,Beletrie - dospělí,927.0,,,29.5
+495,HOS-CASDO,Hostivař,21,Jihovýchod,False,Časopisy pro dospělé,9.0,,9.0,0.0
+1017,HOS-DOPDE,Hostivař,21,Jihovýchod,False,Doporučujeme dětem,120.0,,120.0,4.0
+771,HOS-DOPOR,Hostivař,21,Jihovýchod,False,Doporučujeme (dospělí),361.0,,361.0,12.0
+1108,JEZ-KOMDE,Jezerka,24,Jih,True,Beletrie - děti,130.0,,,0.0
+661,MOD-CHF,Modřany,27,Jih,False,JK,30.0,,30.0,0.0
+392,SMI-BELDE,Smíchov,29,Jihozápad,True,Beletrie - děti,4674.0,,,0.0
+593,CHU-BELDO,Velká Chuchle,31,Jihozápad,True,Beletrie - dospělí,1444.0,,,0.0
+796,BRE-DOPOR,Břevnov,35,Středozápad,False,Beletrie - dospělí,605.0,,605.0,0.0
+245,NOV-HRAB,Novodvorská,41,Jih,False,None,263.0,,263.0,0.0
+1285,NOV-VYSTAV,Novodvorská,41,Jih,False,None,98.0,,98.0,0.0
+1231,PET-KOMDE1,Petřiny,42,Středozápad,True,Beletrie - děti,35.0,,,0.0
+1027,SPO-DESK,Spořilov,45,Jih,False,Deskové hry,0.0,,0.0,0.0
+1025,SPO-LEPO,Spořilov,45,Jih,True,Beletrie - děti,195.0,,,0.0
+224,BOH-CHFOND,Bohnice,52,Severovýchod,False,Chráněný fond,0.0,,0.0,0.0
+766,BOH-DOPOR,Bohnice,52,Severovýchod,False,Doporučujeme (dospělí),1084.0,,1084.0,0.0
+786,PRO-DOPOR,Prosek,54,Severovýchod,False,Naučná - dospělí,30.0,,30.0,0.0
+981,PRO-KOMDE,Prosek,54,Severovýchod,True,Beletrie - dospělí,200.0,,,0.0
+278,OPA-ARTO,Opatov,58,Jih,False,Naučná - dospělí,3680.0,,3680.0,0.0
+272,OPA-SKLAD,Opatov,58,Jih,False,Naučná - dospělí,12106.0,,12106.0,0.0
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,Naučná - dospělí,2552.0,,,24.0
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,Naučná - dospělí,3897.0,,,18.0
+773,CHM-DOPOR,Vozovna,66,Středozápad,False,Dnes vrácené knihy,133.0,,133.0,0.0
+875,LUZ-CIZJAZ,Lužiny,81,Jihozápad,True,Beletrie - dospělí,1481.0,,,0.0
+168,LUZ-DENA,Lužiny,81,Jihozápad,True,Naučná - děti,3399.0,,,0.0
+874,LUZ-VSMS,Lužiny,81,Jihozápad,False,CD,0.0,,0.0,0.0
+1223,STO-DOPORD,Stodůlky,84,Jihozápad,False,Doporučujeme dětem,353.0,,353.0,0.0
+1147,STO-LEPOR,Stodůlky,84,Jihozápad,True,Beletrie - děti,100.0,,,0.0
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,Beletrie - děti,1591.0,,,0.0
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,Naučná - děti,695.0,,,0.0
+1132,RAJ-PRSK,Rajská zahrada,87,Severovýchod,True,Příruční sklad,270.0,,,0.0
+1137,DAB-JK/AK,Ládví,88,Severovýchod,False,AK,217.0,,217.0,0.0
+1137,DAB-JK/AK,Ládví,88,Severovýchod,False,JK,526.0,,526.0,0.0
+111,AK,Ústřední knihovna,1,Ústřední knihovna,False,AK,250.0,,250.0,0.0
+1087,CASDE,Ústřední knihovna,1,Ústřední knihovna,False,Časopisy pro děti,187.0,,187.0,0.0
+978,mluv,Ústřední knihovna,1,Ústřední knihovna,False,CD,721.0,,721.0,0.0
+983,NAUCMAP,Ústřední knihovna,1,Ústřední knihovna,False,Mapy u naučné literatury,536.0,,536.0,0.0
+27,theatre,Ústřední knihovna,1,Ústřední knihovna,False,Volný výběr v divadelním úseku,1190.0,,1190.0,0.0
+890,HRA-CASDE,Hradčany,3,Středozápad,False,Časopisy pro děti,26.0,,26.0,0.0
+674,HRA-PIKTO,Hradčany,3,Středozápad,True,Beletrie - děti,67.0,,,0.0
+671,HRA-POEDI,Hradčany,3,Středozápad,True,Beletrie - dospělí,191.0,,,0.0
+856,HOL-DOPOR3,Sedmička,5,Severovýchod,False,Deskové hry,10.0,,10.0,0.0
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,AK,32.0,,,2.0
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,JK,32.0,,,0.0
+116,SKO-BELDO,Školská,8,Středozápad,True,Beletrie - dospělí,3544.0,,,6.0
+895,SKO-KOMIKS,Školská,8,Středozápad,True,Beletrie - děti,180.0,,,0.0
+444,VYS-NAUDO,Vysočany,10,Severovýchod,True,AK,18.0,,,0.0
+316,HUS-DOPDE,Žižkov,15,Středozápad,False,Beletrie - děti,133.0,,133.0,0.0
+994,KOR-KOMDE,Korunní,18,Jihovýchod,True,Beletrie - děti,200.0,,,5.0
+885,HOS-CASDE,Hostivař,21,Jihovýchod,False,Časopisy pro děti,3.0,,3.0,0.0
+1102,JEZ-CASDO,Jezerka,24,Jih,False,None,152.0,,152.0,0.0
+568,VIK-PRSK,Vikova,25,Jih,False,Beletrie - dospělí,579.0,,579.0,0.0
+666,MOD-CAS,Modřany,27,Jih,False,Časopisy pro děti,30.0,,30.0,0.0
+395,SMI-GALML,Smíchov,29,Jihozápad,True,Beletrie - dospělí,1515.0,,,0.0
+883,SMI-MAPY,Smíchov,29,Jihozápad,False,None,61.0,,61.0,0.0
+915,CI3-CASDE,Cibulka,30,Jihozápad,False,Časopisy pro děti,12.0,,12.0,0.0
+570,CHU-HRAB,Velká Chuchle,31,Jihozápad,False,Dnes vrácené knihy,120.0,,120.0,0.0
+1078,DED-KOMIKS,Dědina,37,Středozápad,True,None,180.0,,,0.0
+823,DED-LITDO,Dědina,37,Středozápad,True,Naučná - dospělí,2577.0,,,6.0
+713,DEJ-CIZJAZ,Dejvice,38,Středozápad,True,Beletrie - dospělí,1133.0,,,32.0
+1050,LET-DOPOR,Letná,39,Severovýchod,False,Doporučujeme dětem,89.0,,89.0,0.0
+962,NOV-AUDIO,Novodvorská,41,Jih,False,None,53.0,,53.0,0.0
+244,NOV-CASOP,Novodvorská,41,Jih,False,None,181.0,,181.0,0.0
+1239,PET-DOPOR2,Petřiny,42,Středozápad,False,Deskové hry,14.0,,14.0,0.0
+1242,PET-KOMDO2,Petřiny,42,Středozápad,True,Beletrie - dospělí,300.0,,,0.0
+844,NVE-POEDE,Pankrác,43,Jih,True,Beletrie - děti,281.0,,,0.0
+699,ZME-BELDO,Zahradní Město,47,Jihovýchod,True,Beletrie - dospělí,3718.0,,,68.0
+1260,OSV-LEPOR,Ostrovského,48,Jihozápad,True,Beletrie - děti,80.0,,,0.0
+960,DIT-KOMDO,Dittrichova,51,Středozápad,True,Deskové hry,15.0,,,0.0
+333,PRO-CHFDE,Prosek,54,Severovýchod,False,AK,75.0,,75.0,0.0
+333,PRO-CHFDE,Prosek,54,Severovýchod,False,JK,75.0,,75.0,0.0
+333,PRO-CHFDE,Prosek,54,Severovýchod,False,Naučná - děti,60.0,,60.0,0.0
+270,OPA-LITDE,Opatov,58,Jih,True,Beletrie - děti,5421.0,,,0.0
+270,OPA-LITDE,Opatov,58,Jih,True,Naučná - děti,3866.0,,,0.0
+887,BAR-CASDE,Barrandov,62,Jihozápad,False,Časopisy pro děti,30.0,,30.0,0.0
+888,BAR-CASDO,Barrandov,62,Jihozápad,False,Časopisy pro dospělé,120.0,,120.0,0.0
+355,ZAH-NAUDE,Záhřebská,65,Středozápad,True,Beletrie - dospělí,262.0,,,10.0
+773,CHM-DOPOR,Vozovna,66,Středozápad,False,Deskové hry,25.0,,25.0,0.0
+167,LUZ-DEBEL,Lužiny,81,Jihozápad,True,Beletrie - děti,5054.0,,,0.0
+869,LUZ-DOPORD,Lužiny,81,Jihozápad,False,Doporučujeme dětem,731.0,,731.0,0.0
+512,DAB-HRAB,Ládví,88,Severovýchod,False,Dnes vrácené knihy,572.0,,572.0,0.0
+254,JIR-CASOP,Chodov,89,Jih,False,Časopisy pro dospělé,131.0,,131.0,0.0
+3,beletrie,Ústřední knihovna,1,Ústřední knihovna,True,Beletrie - dospělí,8760.0,,,0.0
+979,mluv-děti,Ústřední knihovna,1,Ústřední knihovna,False,CD,208.0,,208.0,0.0
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,Sklad,1039.0,,,0.0
+812,SKO-DOPO1,Školská,8,Středozápad,False,CD,20.0,,20.0,0.0
+118,SKO-LITDE,Školská,8,Středozápad,True,Beletrie - dospělí,43.0,,,0.0
+446,VYS-BELDE,Vysočany,10,Severovýchod,True,Beletrie - dospělí,87.0,,,0.0
+450,VYS-PRSK,Vysočany,10,Severovýchod,True,Příruční sklad,3158.0,,,0.0
+800,HLO-DOPOR,Hloubětín,13,Severovýchod,False,Doporučujeme (dospělí),80.0,,80.0,0.0
+310,HUS-BELDE,Žižkov,15,Středozápad,True,Beletrie - děti,2216.0,,,16.0
+736,HUS-VSMS,Žižkov,15,Středozápad,False,CD,26.0,,26.0,0.0
+993,KOR-DOPDE,Korunní,18,Jihovýchod,False,Doporučujeme dětem,448.0,,448.0,0.0
+493,HOS-BELDO,Hostivař,21,Jihovýchod,True,Beletrie - dospělí,4478.0,,,132.0
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,Beletrie - děti,2484.0,,,5.0
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,Naučná - děti,1104.0,,,11.75
+1114,JEZ-TEENS,Jezerka,24,Jih,True,Beletrie - dospělí,926.0,,,0.0
+568,VIK-PRSK,Vikova,25,Jih,False,Naučná - dospělí,40.0,,40.0,0.0
+745,VIK-VSMS,Vikova,25,Jih,False,CD,70.0,,70.0,0.0
+391,SMI-CASDO,Smíchov,29,Jihozápad,False,Časopisy pro dospělé,274.0,,274.0,0.0
+157,BRE-POEZIE,Břevnov,35,Středozápad,True,Beletrie - dospělí,401.0,,,0.0
+823,DED-LITDO,Dědina,37,Středozápad,True,Beletrie - dospělí,2653.0,,,0.0
+851,DED-PERDE,Dědina,37,Středozápad,False,Časopisy pro děti,9.0,,9.0,0.0
+852,DED-PERDO,Dědina,37,Středozápad,False,Časopisy pro dospělé,53.0,,53.0,0.0
+751,DEJ-DOPOR2,Dejvice,38,Středozápad,False,Naučná - dospělí,36.0,,36.0,0.0
+1023,NVE-KOMDE,Pankrác,43,Jih,True,Beletrie - děti,150.0,,,0.0
+1091,ZME-BELDE,Zahradní Město,47,Jihovýchod,True,Beletrie - děti,1553.0,,,0.0
+793,ZME-DOPOR,Zahradní Město,47,Jihovýchod,False,Doporučujeme (dospělí),295.0,,295.0,6.0
+1095,ZME-LITML,Zahradní Město,47,Jihovýchod,True,Beletrie - děti,768.0,,,20.5
+781,OSV-DOPOR,Ostrovského,48,Jihozápad,False,Doporučujeme (dospělí),181.0,,181.0,0.0
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,JK,15.0,,,0.0
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,Beletrie - děti,5341.0,,,24.0
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,Naučná - děti,2056.0,,,0.0
+721,OPA-ARTSKL,Opatov,58,Jih,False,Časopisy pro dospělé,840.0,,840.0,0.0
+1009,OPA-CD,Opatov,58,Jih,False,CD,130.0,,130.0,0.0
+1010,OPA-DETCD,Opatov,58,Jih,False,CD,80.0,,80.0,0.0
+522,KRC-HRAB,Krč,60,Jih,False,Dnes vrácené knihy,181.0,,181.0,0.0
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,Beletrie - děti,1243.0,,,30.0
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,Naučná - děti,697.0,,,3.0
+1045,MAL-DOPDE,Malešice,61,Jihovýchod,False,Doporučujeme dětem,406.0,,406.0,0.0
+355,ZAH-NAUDE,Záhřebská,65,Středozápad,True,Naučná - dospělí,751.0,,,12.0
+1150,SKA-KOMIKS,Skalka,70,Jihovýchod,True,None,200.0,,,6.0
+873,LUZ-MAPY,Lužiny,81,Jihozápad,False,None,0.0,,0.0,0.0
+943,RAJ-CASDE,Rajská zahrada,87,Severovýchod,False,Časopisy pro děti,16.0,,16.0,0.0
+520,DAB-CASDO,Ládví,88,Severovýchod,False,Časopisy pro dospělé,0.0,,0.0,0.0
+1006,JIR-KOM,Chodov,89,Jih,True,Beletrie - dospělí,160.0,,,0.0
+68,informace,Ústřední knihovna,1,Ústřední knihovna,False,Chráněný fond,2116.0,,2116.0,0.0
+1022,jakurzy,Ústřední knihovna,1,Ústřední knihovna,False,JK,428.0,,428.0,0.0
+24,student,Ústřední knihovna,1,Ústřední knihovna,False,Studovna pro děti a mládež,116.0,,116.0,0.0
+805,OST-DOPOR,Ostrčilovo nám.,4,Středozápad,False,Beletrie - dospělí,65.0,,65.0,0.0
+412,HOL-BELDO,Sedmička,5,Severovýchod,True,Beletrie - dospělí,5693.0,,,0.0
+854,HOL-DOPOR,Sedmička,5,Severovýchod,False,Deskové hry,10.0,,10.0,0.0
+803,VYS-DOPOR,Vysočany,10,Severovýchod,False,Naučná - dospělí,10.0,,10.0,0.0
+447,VYS-POEDIV,Vysočany,10,Severovýchod,True,Beletrie - dospělí,278.0,,,0.0
+1120,HLO-KOMDE,Hloubětín,13,Severovýchod,True,Beletrie - děti,90.0,,,0.0
+989,KOR-CDDO,Korunní,18,Jihovýchod,False,CD,421.0,,421.0,14.0
+1035,KOR-CIZODO,Korunní,18,Jihovýchod,True,Naučná - dospělí,179.0,,,6.0
+498,HOS-HRAB,Hostivař,21,Jihovýchod,False,Dnes vrácené knihy,331.0,,331.0,11.0
+957,VIK-KOMDE,Vikova,25,Jih,True,Beletrie - děti,90.0,,,0.0
+858,MOD-KOM,Modřany,27,Jih,True,Beletrie - dospělí,150.0,,,0.0
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,Naučná - dospělí,17476.0,,,0.0
+796,BRE-DOPOR,Břevnov,35,Středozápad,False,Naučná - dospělí,11.0,,11.0,0.0
+822,DED-LITDE,Dědina,37,Středozápad,True,Beletrie - děti,2053.0,,,37.0
+822,DED-LITDE,Dědina,37,Středozápad,True,Naučná - děti,605.0,,,0.0
+1151,DEJ-KOMDO,Dejvice,38,Středozápad,True,Beletrie - dospělí,350.0,,,0.0
+712,DEJ-NAU1,Dejvice,38,Středozápad,True,Naučná - dospělí,8459.0,,,11.0
+238,NOV-BELDO,Novodvorská,41,Jih,True,Beletrie - dospělí,7528.0,,,0.0
+966,NOV-MLSL,Novodvorská,41,Jih,False,None,158.0,,158.0,0.0
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,Naučná - dospělí,3893.0,,,0.0
+1057,SPO-CASDE,Spořilov,45,Jih,False,Časopisy pro děti,61.0,,61.0,0.0
+917,OSV-CASDE,Ostrovského,48,Jihozápad,False,Časopisy pro děti,30.0,,30.0,0.0
+216,DIT-VITRIN,Dittrichova,51,Středozápad,False,Naučná - dospělí,15.0,,15.0,0.0
+216,DIT-VITRIN,Dittrichova,51,Středozápad,False,Časopisy pro děti,5.0,,5.0,0.0
+818,DIT-VYSTAV,Dittrichova,51,Středozápad,False,Beletrie - dospělí,56.0,,56.0,0.0
+228,BOH-HUDCAS,Bohnice,52,Severovýchod,False,Časopisy pro dospělé,0.0,,0.0,0.0
+786,PRO-DOPOR,Prosek,54,Severovýchod,False,Beletrie - dospělí,60.0,,60.0,0.0
+950,RUS-OST3,Dům čtení,56,Jihovýchod,False,CD,284.0,,284.0,0.0
+276,OPA-HRAB,Opatov,58,Jih,False,Dnes vrácené knihy,572.0,,572.0,0.0
+272,OPA-SKLAD,Opatov,58,Jih,False,Beletrie - dospělí,17068.0,,17068.0,0.0
+1037,MAL-BELDO,Malešice,61,Jihovýchod,True,Beletrie - dospělí,3175.0,,,45.0
+537,CHM-BELDO,Vozovna,66,Středozápad,True,Beletrie - dospělí,5271.0,,,0.0
+1256,LUZ-KOMDE,Lužiny,81,Jihozápad,True,Beletrie - děti,200.0,,,0.0
+1224,LUZ-YA,Lužiny,81,Jihozápad,False,Doporučujeme (dospělí),546.0,,546.0,0.0
+517,DAB-PIKTO,Ládví,88,Severovýchod,True,Beletrie - dospělí,1055.0,,,0.0
+731,DAB-VSMS,Ládví,88,Severovýchod,False,CD,25.0,,25.0,0.0
+1221,DAB-VYSTAV,Ládví,88,Severovýchod,False,Doporučujeme (dospělí),26.0,,26.0,0.0
+247,JIR-BELDO,Chodov,89,Jih,True,Beletrie - dospělí,10276.0,,,0.0
+249,JIR-LITDE,Chodov,89,Jih,True,Beletrie - děti,3663.0,,,0.0
+249,JIR-LITDE,Chodov,89,Jih,True,Naučná - děti,1748.0,,,0.0
+56,1.patro,Ústřední knihovna,1,Ústřední knihovna,False,Sklad,81602.0,,81602.0,0.0
+57,3.patro,Ústřední knihovna,1,Ústřední knihovna,False,Sklad,31682.0,,31682.0,0.0
+87,časzapult,Ústřední knihovna,1,Ústřední knihovna,False,Sklad,5434.0,,5434.0,0.0
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,None,100.0,,,0.0
+121,SKO-DIVML,Školská,8,Středozápad,True,Beletrie - dospělí,66.0,,,0.0
+452,VYS-HRAB,Vysočany,10,Severovýchod,False,Dnes vrácené knihy,324.0,,324.0,0.0
+1213,MLY-DOPOR,Velký mlýn,11,Severovýchod,False,Doporučujeme (dospělí),206.0,,206.0,0.0
+1119,HLO-KOMDO,Hloubětín,13,Severovýchod,True,Beletrie - dospělí,120.0,,,0.0
+804,HUS-DOPOR,Žižkov,15,Středozápad,False,None,42.0,,42.0,0.0
+314,HUS-VYLOH,Žižkov,15,Středozápad,False,None,40.0,,40.0,0.0
+373,KOR-HRAB,Korunní,18,Jihovýchod,False,Dnes vrácené knihy,0.0,,0.0,0.0
+1209,KOR-YA,Korunní,18,Jihovýchod,True,Beletrie - dospělí,361.0,,,12.0
+1098,JEZ-ATELI,Jezerka,24,Jih,True,Naučná - dospělí,90.0,,,0.0
+1101,JEZ-CASDE,Jezerka,24,Jih,False,None,61.0,,61.0,0.0
+624,MOD-HRAB,Modřany,27,Jih,False,Dnes vrácené knihy,181.0,,181.0,0.0
+1254,MOD-NAUDE,Modřany,27,Jih,True,Naučná - děti,1972.0,,,0.0
+398,SMI-CHFDO,Smíchov,29,Jihozápad,False,Chráněný fond,61.0,,61.0,0.0
+387,SMI-HRAB,Smíchov,29,Jihozápad,False,Dnes vrácené knihy,548.0,,548.0,0.0
+594,CHU-CAS,Velká Chuchle,31,Jihozápad,False,Časopisy pro dospělé,90.0,,90.0,0.0
+796,BRE-DOPOR,Břevnov,35,Středozápad,False,Deskové hry,20.0,,20.0,0.0
+148,BRE-LITDE,Břevnov,35,Středozápad,True,Beletrie - dospělí,149.0,,,0.0
+1052,LET-CASDE,Letná,39,Severovýchod,False,Časopisy pro děti,9.0,,9.0,0.0
+1056,LET-LITDO,Letná,39,Severovýchod,True,Naučná - dospělí,30.0,,,0.0
+905,NOV-MAPY,Novodvorská,41,Jih,False,None,46.0,,46.0,0.0
+1228,PET-HRAB1,Petřiny,42,Středozápad,False,Dnes vrácené knihy,280.0,,280.0,0.0
+1240,PET-LITML2,Petřiny,42,Středozápad,True,Beletrie - dospělí,173.0,,,0.0
+507,NVE-CHFDE,Pankrác,43,Jih,True,Beletrie - děti,93.0,,,0.0
+1094,ZME-DOPDE,Zahradní Město,47,Jihovýchod,False,Doporučujeme dětem,0.0,,0.0,2.0
+749,ZME-VSMS,Zahradní Město,47,Jihovýchod,False,CD,24.0,,24.0,0.0
+629,OSV-HRAB,Ostrovského,48,Jihozápad,False,Dnes vrácené knihy,160.0,,160.0,0.0
+230,BOH-CASOP,Bohnice,52,Severovýchod,False,Časopisy pro dospělé,0.0,,0.0,0.0
+1253,BOH-CIZOJ,Bohnice,52,Severovýchod,True,Beletrie - dospělí,372.0,,,0.0
+327,PRO-BELDE,Prosek,54,Severovýchod,True,Beletrie - děti,4200.0,,,3.0
+323,PRO-CHFOND,Prosek,54,Severovýchod,False,Naučná - dospělí,90.0,,90.0,0.0
+786,PRO-DOPOR,Prosek,54,Severovýchod,False,CD,0.0,,0.0,0.0
+334,PRO-HRABDE,Prosek,54,Severovýchod,False,Dnes vrácené knihy,90.0,,90.0,0.0
+281,OPA-ARTCAS,Opatov,58,Jih,False,Časopisy pro dospělé,361.0,,361.0,0.0
+272,OPA-SKLAD,Opatov,58,Jih,False,CD,2240.0,,2240.0,0.0
+277,OPA-VITRIN,Opatov,58,Jih,False,Doporučujeme (dospělí),14.0,,14.0,0.0
+1281,KRC-POEDIV,Krč,60,Jih,False,Beletrie - dospělí,380.0,,380.0,0.0
+1070,ZAH-KOMDO,Záhřebská,65,Středozápad,True,Beletrie - dospělí,200.0,,,0.0
+351,ZAH-NAUDO,Záhřebská,65,Středozápad,True,Naučná - dospělí,3640.0,,,34.75
+984,CHM-CASDO,Vozovna,66,Středozápad,False,Časopisy pro dospělé,21.0,,21.0,0.0
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,Naučná - dospělí,6529.0,,,5.0
+737,CHM-VSMS,Vozovna,66,Středozápad,False,CD,17.0,,17.0,0.0
+988,CHM-VYST,Vozovna,66,Středozápad,False,Doporučujeme (dospělí),28.0,,28.0,0.0
+870,LUZ-DETCAS,Lužiny,81,Jihozápad,False,Časopisy pro děti,61.0,,61.0,0.0
+516,DAB-JAZYK,Ládví,88,Severovýchod,True,Beletrie - dospělí,470.0,,,0.0
+970,DAB-MAPY,Ládví,88,Severovýchod,False,Naučná - dospělí,150.0,,150.0,0.0
+514,DAB-NAUC,Ládví,88,Severovýchod,True,Naučná - dospělí,13557.0,,,0.0
+1249,JIR-ZIVOT,Chodov,89,Jih,True,Naučná - dospělí,165.0,,,0.0
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,Beletrie - děti,5939.0,,,0.0
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,Naučná - děti,2903.0,,,0.0
+26,hudba,Ústřední knihovna,1,Ústřední knihovna,False,Naučná - dospělí,3034.0,,3034.0,0.0
+63,masky,Ústřední knihovna,1,Ústřední knihovna,False,Naučná - dospělí,6932.0,,6932.0,0.0
+669,HRA-CHF,Hradčany,3,Středozápad,False,CD,500.0,,500.0,0.0
+670,HRA-DE,Hradčany,3,Středozápad,True,None,100.0,,,0.0
+857,HOL-PRSK,Sedmička,5,Severovýchod,False,Příruční sklad,1797.0,,1797.0,0.0
+812,SKO-DOPO1,Školská,8,Středozápad,False,Beletrie - dospělí,632.0,,632.0,5.0
+445,VYS-NAUDE,Vysočany,10,Severovýchod,True,Naučná - dospělí,1841.0,,,0.0
+1215,MLY-KOMDE,Velký mlýn,11,Severovýchod,True,Beletrie - děti,50.0,,,0.0
+289,HUS-HRAB,Žižkov,15,Středozápad,False,Beletrie - děti,18.0,,18.0,0.0
+1099,JEZ-LITDE,Jezerka,24,Jih,True,Beletrie - děti,1803.0,,,0.0
+1099,JEZ-LITDE,Jezerka,24,Jih,True,Naučná - děti,1190.0,,,0.0
+663,MOD-BELDO,Modřany,27,Jih,True,Beletrie - dospělí,5991.0,,,0.0
+394,SMI-CASDE,Smíchov,29,Jihozápad,False,Časopisy pro děti,61.0,,61.0,0.0
+826,BRE-CD,Břevnov,35,Středozápad,False,CD,463.0,,463.0,0.0
+1055,LET-HRAB,Letná,39,Severovýchod,False,Dnes vrácené knihy,89.0,,89.0,0.0
+964,NOV-KOMDE,Novodvorská,41,Jih,True,Beletrie - děti,114.0,,,0.0
+1239,PET-DOPOR2,Petřiny,42,Středozápad,False,Beletrie - dospělí,159.0,,159.0,0.0
+1250,NVE-LEP,Pankrác,43,Jih,True,Beletrie - děti,150.0,,,0.0
+1250,NVE-LEP,Pankrác,43,Jih,True,Naučná - děti,50.0,,,0.0
+499,NVE-LITML,Pankrác,43,Jih,True,Naučná - dospělí,2197.0,,,0.0
+433,SPO-HRAB,Spořilov,45,Jih,False,Dnes vrácené knihy,197.0,,197.0,0.0
+1026,SPO-VSMS,Spořilov,45,Jih,False,CD,343.0,,343.0,0.0
+701,ZME-DETI,Zahradní Město,47,Jihovýchod,True,Naučná - děti,1030.0,,,0.5
+960,DIT-KOMDO,Dittrichova,51,Středozápad,True,Beletrie - dospělí,180.0,,,0.0
+787,PRO-DOPORD,Prosek,54,Severovýchod,False,Naučná - děti,102.0,,102.0,0.0
+331,PRO-POE,Prosek,54,Severovýchod,True,Beletrie - dospělí,660.0,,,0.0
+776,KRC-DOPOR,Krč,60,Jih,False,Doporučujeme (dospělí),454.0,,454.0,0.0
+1278,KRC-KOMDE,Krč,60,Jih,False,Beletrie - děti,250.0,,250.0,0.0
+1072,BAR-KOMDE,Barrandov,62,Jihozápad,True,Beletrie - děti,100.0,,,0.0
+1071,BAR-KOMDO,Barrandov,62,Jihozápad,True,Beletrie - dospělí,100.0,,,0.0
+353,ZAH-CASDO,Záhřebská,65,Středozápad,False,Časopisy pro dospělé,21.0,,21.0,0.0
+1069,ZAH-LEPDE,Záhřebská,65,Středozápad,True,Beletrie - děti,90.0,,,0.0
+1069,ZAH-LEPDE,Záhřebská,65,Středozápad,True,Naučná - děti,60.0,,,0.0
+792,SKA-DOPOR,Skalka,70,Jihovýchod,False,Doporučujeme (dospělí),370.0,,370.0,0.0
+920,STO-CASDE,Stodůlky,84,Jihozápad,False,Časopisy pro děti,51.0,,51.0,0.0
+1075,STO-KOMDE,Stodůlky,84,Jihozápad,True,Beletrie - děti,120.0,,,0.0
+942,RAJ-CASDO,Rajská zahrada,87,Severovýchod,False,Časopisy pro dospělé,98.0,,98.0,0.0
+769,RAJ-DOPOR,Rajská zahrada,87,Severovýchod,False,Doporučujeme (dospělí),158.0,,158.0,0.0
+1007,JIR-AUDIO,Chodov,89,Jih,False,CD,368.0,,368.0,0.0
+66,praha,Ústřední knihovna,1,Ústřední knihovna,False,Chráněný fond,2253.0,,2253.0,0.0
+53,časopisy,Ústřední knihovna,1,Ústřední knihovna,False,Časopisy pro dospělé,630.0,,630.0,0.0
+670,HRA-DE,Hradčany,3,Středozápad,True,Beletrie - děti,733.0,,,0.0
+670,HRA-DE,Hradčany,3,Středozápad,True,Naučná - děti,405.0,,,0.0
+369,OST-DOPDE,Ostrčilovo nám.,4,Středozápad,False,Beletrie - děti,36.0,,36.0,0.0
+893,OST-KOMIKS,Ostrčilovo nám.,4,Středozápad,True,Beletrie - dospělí,80.0,,,0.0
+605,KOB-VYLOHY,Kobylisy,7,Severovýchod,False,Doporučujeme (dospělí),15.0,,15.0,0.0
+605,KOB-VYLOHY,Kobylisy,7,Severovýchod,False,Doporučujeme dětem,15.0,,15.0,0.0
+816,SKO-AUDIO,Školská,8,Středozápad,False,CD,179.0,,179.0,0.0
+812,SKO-DOPO1,Školská,8,Středozápad,False,Naučná - dospělí,58.0,,58.0,0.0
+541,HLO-HRAB,Hloubětín,13,Severovýchod,False,Dnes vrácené knihy,206.0,,206.0,0.0
+312,HUS-POEDIV,Žižkov,15,Středozápad,True,Beletrie - dospělí,830.0,,,0.0
+1107,JEZ-DOPOR,Jezerka,24,Jih,False,None,305.0,,305.0,0.0
+662,MOD-NAU,Modřany,27,Jih,True,Naučná - dospělí,7272.0,,,0.0
+807,SMI-DOPOR,Smíchov,29,Jihozápad,False,Doporučujeme (dospělí),761.0,,761.0,0.0
+393,SMI-NAUDE,Smíchov,29,Jihozápad,True,Naučná - děti,4928.0,,,0.0
+637,CI3-HRAB,Cibulka,30,Jihozápad,False,Dnes vrácené knihy,104.0,,104.0,0.0
+590,CHU-CHF,Velká Chuchle,31,Jihozápad,False,Chráněný fond,14.0,,14.0,0.0
+963,NOV-POEDI,Novodvorská,41,Jih,True,Beletrie - dospělí,341.0,,,0.0
+499,NVE-LITML,Pankrác,43,Jih,True,Beletrie - dospělí,3008.0,,,0.0
+435,SPO-BELDO,Spořilov,45,Jih,True,Beletrie - dospělí,6546.0,,,0.0
+704,ZME-CASDE,Zahradní Město,47,Jihovýchod,False,Časopisy pro děti,30.0,,30.0,1.0
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,Sklad,11868.0,,,0.0
+787,PRO-DOPORD,Prosek,54,Severovýchod,False,None,120.0,,120.0,0.0
+325,PRO-NAUDO,Prosek,54,Severovýchod,True,Naučná - dospělí,5162.0,,,0.0
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,Beletrie - děti,5445.0,,,80.0
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,Naučná - děti,2448.0,,,0.0
+755,RUS-HRAB,Dům čtení,56,Jihovýchod,False,Dnes vrácené knihy,438.0,,438.0,0.0
+948,RUS-OST1,Dům čtení,56,Jihovýchod,False,CD,600.0,,600.0,0.0
+809,OPA-DOPOR,Opatov,58,Jih,False,Doporučujeme (dospělí),100.0,,100.0,0.0
+1282,KRC-VYSTAV,Krč,60,Jih,False,Doporučujeme (dospělí),90.0,,90.0,0.0
+765,BAR-DOPOR,Barrandov,62,Jihozápad,False,Doporučujeme (dospělí),1349.0,,1349.0,0.0
+459,BAR-HRAB,Barrandov,62,Jihozápad,False,Dnes vrácené knihy,487.0,,487.0,0.0
+513,DAB-LITDE,Ládví,88,Severovýchod,True,Beletrie - děti,4624.0,,,0.0
+513,DAB-LITDE,Ládví,88,Severovýchod,True,Doporučujeme dětem,140.0,,,0.0
+513,DAB-LITDE,Ládví,88,Severovýchod,True,Naučná - děti,1477.0,,,0.0
+1129,VYSTAVML,Ústřední knihovna,1,Ústřední knihovna,False,Tematické výstavky na příčné galerii pro mládež,319.0,,319.0,0.0
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,Beletrie - děti,2022.0,,,0.0
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,Naučná - děti,426.0,,,2.25
+735,HOS-VSMS,Hostivař,21,Jihovýchod,False,CD,30.0,,30.0,1.0
+565,VIK-LITDE,Vikova,25,Jih,True,Beletrie - dospělí,114.0,,,0.0
+1274,VIK-ZIVOT,Vikova,25,Jih,False,Naučná - dospělí,105.0,,105.0,0.0
+389,SMI-BELDO,Smíchov,29,Jihozápad,True,Beletrie - dospělí,14251.0,,,18.0
+1154,CI3-CASDO,Cibulka,30,Jihozápad,False,Časopisy pro dospělé,42.0,,42.0,0.0
+592,CHU-BELDE,Velká Chuchle,31,Jihozápad,True,Beletrie - dospělí,130.0,,,0.0
+1018,CHU-NAUDE,Velká Chuchle,31,Jihozápad,True,Naučná - děti,673.0,,,0.0
+796,BRE-DOPOR,Břevnov,35,Středozápad,False,CD,125.0,,125.0,0.0
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,JK,37.0,,,0.0
+732,DED-VSMS,Dědina,37,Středozápad,False,CD,21.0,,21.0,0.0
+1036,DEJ-LITML,Dejvice,38,Středozápad,True,Beletrie - děti,575.0,,,0.0
+1056,LET-LITDO,Letná,39,Severovýchod,True,Beletrie - dospělí,70.0,,,0.0
+830,NOV-KOMIKS,Novodvorská,41,Jih,True,Beletrie - dospělí,329.0,,,0.0
+1230,PET-DOPOR1,Petřiny,42,Středozápad,False,Naučná - dospělí,35.0,,35.0,0.0
+906,NVE-CASDO,Pankrác,43,Jih,False,Časopisy pro dospělé,106.0,,106.0,0.0
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,Naučná - dospělí,4188.0,,,95.0
+654,OSV-BELDE,Ostrovského,48,Jihozápad,True,Beletrie - děti,2008.0,,,0.0
+653,OSV-BELDO,Ostrovského,48,Jihozápad,True,Beletrie - dospělí,2155.0,,,0.0
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,AK,27.0,,,0.0
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,Naučná - děti,1190.0,,,0.0
+761,OSV-VSMS,Ostrovského,48,Jihozápad,False,CD,21.0,,21.0,0.0
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,Beletrie - děti,2239.0,,,5.0
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,Naučná - děti,1738.0,,,9.5
+1253,BOH-CIZOJ,Bohnice,52,Severovýchod,True,Naučná - dospělí,181.0,,,0.0
+222,BOH-HRAB,Bohnice,52,Severovýchod,False,Dnes vrácené knihy,482.0,,482.0,0.0
+1251,BOH-VYSTAV,Bohnice,52,Severovýchod,False,Doporučujeme (dospělí),181.0,,181.0,0.0
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,Naučná - dospělí,11223.0,,,0.0
+950,RUS-OST3,Dům čtení,56,Jihovýchod,False,Časopisy pro děti,0.0,,0.0,0.0
+267,OPA-STUD,Opatov,58,Jih,False,Naučná - dospělí,4552.0,,4552.0,0.0
+1280,KRC-NAUDO,Krč,60,Jih,False,Naučná - dospělí,5956.0,,5956.0,0.0
+1146,BAR-LEPOR,Barrandov,62,Jihozápad,True,Beletrie - děti,200.0,,,0.0
+359,ZAH-SCIFI,Záhřebská,65,Středozápad,True,Beletrie - děti,107.0,,,5.0
+1257,LUZ-KOMDO,Lužiny,81,Jihozápad,True,Beletrie - dospělí,300.0,,,0.0
+615,STO-NAUDO,Stodůlky,84,Jihozápad,True,Naučná - dospělí,2733.0,,,0.0
+744,STO-VSMS,Stodůlky,84,Jihozápad,False,CD,168.0,,168.0,0.0
+770,DAB-DOPOR,Ládví,88,Severovýchod,False,Doporučujeme (dospělí),301.0,,301.0,0.0
+516,DAB-JAZYK,Ládví,88,Severovýchod,True,Naučná - dospělí,430.0,,,0.0
+969,DAB-POEZIE,Ládví,88,Severovýchod,True,Beletrie - dospělí,477.0,,,0.0
+1249,JIR-ZIVOT,Chodov,89,Jih,True,Beletrie - dospělí,85.0,,,0.0
+617,STO-BELDE,Stodůlky,84,Jihozápad,True,J4,,31.0,31.0,
+617,STO-BELDE,Stodůlky,84,Jihozápad,True,,,512.0,512.0,
+614,STO-BELDO,Stodůlky,84,Jihozápad,True,A1,,3315.0,3315.0,
+614,STO-BELDO,Stodůlky,84,Jihozápad,True,B1,,25.0,25.0,
+614,STO-BELDO,Stodůlky,84,Jihozápad,True,B2,,170.0,170.0,
+614,STO-BELDO,Stodůlky,84,Jihozápad,True,J1,,5.0,5.0,
+614,STO-BELDO,Stodůlky,84,Jihozápad,True,J2,,5.0,5.0,
+614,STO-BELDO,Stodůlky,84,Jihozápad,True,J3,,5.0,5.0,
+614,STO-BELDO,Stodůlky,84,Jihozápad,True,J4,,100.0,100.0,
+614,STO-BELDO,Stodůlky,84,Jihozápad,True,,,10.0,10.0,
+1075,STO-KOMDE,Stodůlky,84,Jihozápad,True,,,120.0,120.0,
+1074,STO-KOMDO,Stodůlky,84,Jihozápad,True,,,150.0,150.0,
+1147,STO-LEPOR,Stodůlky,84,Jihozápad,True,,,100.0,100.0,
+618,STO-NAUDE,Stodůlky,84,Jihozápad,True,C,,100.0,100.0,
+618,STO-NAUDE,Stodůlky,84,Jihozápad,True,D,,145.0,145.0,
+618,STO-NAUDE,Stodůlky,84,Jihozápad,True,E,,40.0,40.0,
+618,STO-NAUDE,Stodůlky,84,Jihozápad,True,K,,230.0,230.0,
+618,STO-NAUDE,Stodůlky,84,Jihozápad,True,L,,40.0,40.0,
+618,STO-NAUDE,Stodůlky,84,Jihozápad,True,N,,40.0,40.0,
+618,STO-NAUDE,Stodůlky,84,Jihozápad,True,P,,40.0,40.0,
+618,STO-NAUDE,Stodůlky,84,Jihozápad,True,R,,40.0,40.0,
+618,STO-NAUDE,Stodůlky,84,Jihozápad,True,S,,40.0,40.0,
+618,STO-NAUDE,Stodůlky,84,Jihozápad,True,T,,40.0,40.0,
+618,STO-NAUDE,Stodůlky,84,Jihozápad,True,U,,10.0,10.0,
+618,STO-NAUDE,Stodůlky,84,Jihozápad,True,V,,60.0,60.0,
+618,STO-NAUDE,Stodůlky,84,Jihozápad,True,X,,20.0,20.0,
+618,STO-NAUDE,Stodůlky,84,Jihozápad,True,Y,,70.0,70.0,
+618,STO-NAUDE,Stodůlky,84,Jihozápad,True,Z,,40.0,40.0,
+618,STO-NAUDE,Stodůlky,84,Jihozápad,True,,,10.0,10.0,
+615,STO-NAUDO,Stodůlky,84,Jihozápad,True,C,,220.0,220.0,
+615,STO-NAUDO,Stodůlky,84,Jihozápad,True,D,,210.0,210.0,
+615,STO-NAUDO,Stodůlky,84,Jihozápad,True,E,,145.0,145.0,
+615,STO-NAUDO,Stodůlky,84,Jihozápad,True,G,,220.0,220.0,
+615,STO-NAUDO,Stodůlky,84,Jihozápad,True,K,,120.0,120.0,
+615,STO-NAUDO,Stodůlky,84,Jihozápad,True,L,,235.0,235.0,
+615,STO-NAUDO,Stodůlky,84,Jihozápad,True,N,,105.0,105.0,
+615,STO-NAUDO,Stodůlky,84,Jihozápad,True,O,,30.0,30.0,
+615,STO-NAUDO,Stodůlky,84,Jihozápad,True,P,,195.0,195.0,
+615,STO-NAUDO,Stodůlky,84,Jihozápad,True,R,,45.0,45.0,
+615,STO-NAUDO,Stodůlky,84,Jihozápad,True,S,,110.0,110.0,
+615,STO-NAUDO,Stodůlky,84,Jihozápad,True,T,,50.0,50.0,
+615,STO-NAUDO,Stodůlky,84,Jihozápad,True,V,,15.0,15.0,
+615,STO-NAUDO,Stodůlky,84,Jihozápad,True,W,,40.0,40.0,
+615,STO-NAUDO,Stodůlky,84,Jihozápad,True,X,,45.0,45.0,
+615,STO-NAUDO,Stodůlky,84,Jihozápad,True,Y,,50.0,50.0,
+615,STO-NAUDO,Stodůlky,84,Jihozápad,True,Z,,80.0,80.0,
+1059,RAJ-KOMDE,Rajská zahrada,87,Severovýchod,True,,,90.0,90.0,
+1060,RAJ-KOMDO,Rajská zahrada,87,Severovýchod,True,,,155.0,155.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,A1,,40.0,40.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,A2,,140.0,140.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,A3,,450.0,450.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,A4,,290.0,290.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,B2,,5.0,5.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,C,,35.0,35.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,D,,50.0,50.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,E,,20.0,20.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,J1-J5,,50.0,50.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,K,,120.0,120.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,L,,40.0,40.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,N,,45.0,45.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,P,,10.0,10.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,R,,20.0,20.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,S,,25.0,25.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,T,,10.0,10.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,U,,10.0,10.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,V,,20.0,20.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,Y,,40.0,40.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,Z,,20.0,20.0,
+474,RAJ-LITDE,Rajská zahrada,87,Severovýchod,True,,,285.0,285.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,A1,,2105.0,2105.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,B1,,20.0,20.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,B2,,70.0,70.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,C,,110.0,110.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,D,,210.0,210.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,E,,120.0,120.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,G,,220.0,220.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,J1-J14,,115.0,115.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,K,,80.0,80.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,L,,200.0,200.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,N,,90.0,90.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,O,,55.0,55.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,P,,180.0,180.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,R,,50.0,50.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,S,,30.0,30.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,T,,60.0,60.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,U,,5.0,5.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,V,,30.0,30.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,W,,60.0,60.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,X,,40.0,40.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,Y,,70.0,70.0,
+473,RAJ-LITDO,Rajská zahrada,87,Severovýchod,True,Z,,90.0,90.0,
+1132,RAJ-PRSK,Rajská zahrada,87,Severovýchod,True,A1-A4,,200.0,200.0,
+1132,RAJ-PRSK,Rajská zahrada,87,Severovýchod,True,C-Z,,70.0,70.0,
+515,DAB-BELDO,Ládví,88,Severovýchod,True,A1,,5450.0,5450.0,
+516,DAB-JAZYK,Ládví,88,Severovýchod,True,J1,,10.0,10.0,
+516,DAB-JAZYK,Ládví,88,Severovýchod,True,J2,,10.0,10.0,
+516,DAB-JAZYK,Ládví,88,Severovýchod,True,J3,,50.0,50.0,
+516,DAB-JAZYK,Ládví,88,Severovýchod,True,J4,,240.0,240.0,
+516,DAB-JAZYK,Ládví,88,Severovýchod,True,J5,,15.0,15.0,
+516,DAB-JAZYK,Ládví,88,Severovýchod,True,R,,300.0,300.0,
+516,DAB-JAZYK,Ládví,88,Severovýchod,True,,,30.0,30.0,
+971,DAB-KOMDO,Ládví,88,Severovýchod,True,,,300.0,300.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,A1,,90.0,90.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,A2,,400.0,400.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,A3,,1050.0,1050.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,A4,,570.0,570.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,B2,,2.0,2.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,C,,68.0,68.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,D,,125.0,125.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,E,,42.0,42.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,K,,305.0,305.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,L,,50.0,50.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,N,,61.0,61.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,P,,30.0,30.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,R,,46.0,46.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,S,,50.0,50.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,T,,26.0,26.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,U,,32.0,32.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,V,,40.0,40.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,X,,11.0,11.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,Y,,51.0,51.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,Z,,35.0,35.0,
+513,DAB-LITDE,Ládví,88,Severovýchod,True,,,1141.0,1141.0,
+514,DAB-NAUC,Ládví,88,Severovýchod,True,C,,750.0,750.0,
+514,DAB-NAUC,Ládví,88,Severovýchod,True,D,,1350.0,1350.0,
+514,DAB-NAUC,Ládví,88,Severovýchod,True,E,,830.0,830.0,
+514,DAB-NAUC,Ládví,88,Severovýchod,True,G,,1220.0,1220.0,
+514,DAB-NAUC,Ládví,88,Severovýchod,True,K,,650.0,650.0,
+514,DAB-NAUC,Ládví,88,Severovýchod,True,L,,1050.0,1050.0,
+514,DAB-NAUC,Ládví,88,Severovýchod,True,N,,540.0,540.0,
+514,DAB-NAUC,Ládví,88,Severovýchod,True,O,,165.0,165.0,
+514,DAB-NAUC,Ládví,88,Severovýchod,True,P,,670.0,670.0,
+514,DAB-NAUC,Ládví,88,Severovýchod,True,S,,600.0,600.0,
+514,DAB-NAUC,Ládví,88,Severovýchod,True,T,,360.0,360.0,
+514,DAB-NAUC,Ládví,88,Severovýchod,True,U,,10.0,10.0,
+514,DAB-NAUC,Ládví,88,Severovýchod,True,V,,145.0,145.0,
+514,DAB-NAUC,Ládví,88,Severovýchod,True,W,,340.0,340.0,
+514,DAB-NAUC,Ládví,88,Severovýchod,True,X,,245.0,245.0,
+514,DAB-NAUC,Ládví,88,Severovýchod,True,Y,,340.0,340.0,
+514,DAB-NAUC,Ládví,88,Severovýchod,True,Z,,400.0,400.0,
+517,DAB-PIKTO,Ládví,88,Severovýchod,True,A1,,755.0,755.0,
+969,DAB-POEZIE,Ládví,88,Severovýchod,True,B1,,30.0,30.0,
+969,DAB-POEZIE,Ládví,88,Severovýchod,True,B2,,360.0,360.0,
+247,JIR-BELDO,Chodov,89,Jih,True,A1,,4000.0,4000.0,
+247,JIR-BELDO,Chodov,89,Jih,True,B2,,250.0,250.0,
+247,JIR-BELDO,Chodov,89,Jih,True,J3,,35.0,35.0,
+247,JIR-BELDO,Chodov,89,Jih,True,J4,,90.0,90.0,
+247,JIR-BELDO,Chodov,89,Jih,True,,,35.0,35.0,
+1006,JIR-KOM,Chodov,89,Jih,True,,,160.0,160.0,
+1252,JIR-KOMDE,Chodov,89,Jih,True,,,175.0,175.0,
+1065,JIR-LEPOR,Chodov,89,Jih,True,,,190.0,190.0,
+249,JIR-LITDE,Chodov,89,Jih,True,A1,,140.0,140.0,
+249,JIR-LITDE,Chodov,89,Jih,True,A2,,315.0,315.0,
+249,JIR-LITDE,Chodov,89,Jih,True,A2-A,,100.0,100.0,
+249,JIR-LITDE,Chodov,89,Jih,True,A3,,645.0,645.0,
+249,JIR-LITDE,Chodov,89,Jih,True,A4,,555.0,555.0,
+249,JIR-LITDE,Chodov,89,Jih,True,B2,,5.0,5.0,
+249,JIR-LITDE,Chodov,89,Jih,True,C,,81.0,81.0,
+249,JIR-LITDE,Chodov,89,Jih,True,D,,96.0,96.0,
+249,JIR-LITDE,Chodov,89,Jih,True,E,,26.0,26.0,
+249,JIR-LITDE,Chodov,89,Jih,True,J,,40.0,40.0,
+249,JIR-LITDE,Chodov,89,Jih,True,K,,231.0,231.0,
+249,JIR-LITDE,Chodov,89,Jih,True,L,,31.0,31.0,
+249,JIR-LITDE,Chodov,89,Jih,True,N,,71.0,71.0,
+249,JIR-LITDE,Chodov,89,Jih,True,P,,41.0,41.0,
+249,JIR-LITDE,Chodov,89,Jih,True,R,,81.0,81.0,
+249,JIR-LITDE,Chodov,89,Jih,True,S,,31.0,31.0,
+249,JIR-LITDE,Chodov,89,Jih,True,T,,31.0,31.0,
+249,JIR-LITDE,Chodov,89,Jih,True,U,,61.0,61.0,
+249,JIR-LITDE,Chodov,89,Jih,True,V,,31.0,31.0,
+249,JIR-LITDE,Chodov,89,Jih,True,X,,26.0,26.0,
+249,JIR-LITDE,Chodov,89,Jih,True,Y,,31.0,31.0,
+249,JIR-LITDE,Chodov,89,Jih,True,Z,,31.0,31.0,
+249,JIR-LITDE,Chodov,89,Jih,True,,,871.0,871.0,
+251,JIR-NAUDO,Chodov,89,Jih,True,B1,,55.0,55.0,
+251,JIR-NAUDO,Chodov,89,Jih,True,C,,470.0,470.0,
+251,JIR-NAUDO,Chodov,89,Jih,True,D,,600.0,600.0,
+251,JIR-NAUDO,Chodov,89,Jih,True,E,,500.0,500.0,
+251,JIR-NAUDO,Chodov,89,Jih,True,G,,265.0,265.0,
+251,JIR-NAUDO,Chodov,89,Jih,True,K,,390.0,390.0,
+251,JIR-NAUDO,Chodov,89,Jih,True,L,,400.0,400.0,
+251,JIR-NAUDO,Chodov,89,Jih,True,N,,200.0,200.0,
+251,JIR-NAUDO,Chodov,89,Jih,True,O,,65.0,65.0,
+251,JIR-NAUDO,Chodov,89,Jih,True,P,,350.0,350.0,
+251,JIR-NAUDO,Chodov,89,Jih,True,R,,130.0,130.0,
+251,JIR-NAUDO,Chodov,89,Jih,True,S,,270.0,270.0,
+251,JIR-NAUDO,Chodov,89,Jih,True,T,,110.0,110.0,
+251,JIR-NAUDO,Chodov,89,Jih,True,V,,100.0,100.0,
+251,JIR-NAUDO,Chodov,89,Jih,True,W,,90.0,90.0,
+251,JIR-NAUDO,Chodov,89,Jih,True,X,,125.0,125.0,
+251,JIR-NAUDO,Chodov,89,Jih,True,Y,,140.0,140.0,
+251,JIR-NAUDO,Chodov,89,Jih,True,Z,,130.0,130.0,
+1249,JIR-ZIVOT,Chodov,89,Jih,True,A1,,65.0,65.0,
+1249,JIR-ZIVOT,Chodov,89,Jih,True,G,,55.0,55.0,
+1249,JIR-ZIVOT,Chodov,89,Jih,True,S,,60.0,60.0,
+1249,JIR-ZIVOT,Chodov,89,Jih,True,,,70.0,70.0,
+1067,JEN-DEPJST,Vzdálený sklad 8,92,Sklad,True,,,0.0,0.0,
+1019,JEN-MOFNAU,Vzdálený sklad 7,92,Sklad,True,,,0.0,0.0,
+863,JEN-PV,Vzdálený sklad 2,92,Sklad,True,,,0.0,0.0,
+862,JEN-PVP,Vzdálený sklad 1,92,Sklad,True,,,0.0,0.0,
+866,JEN-RFOKF,Vzdálený sklad 5,92,Sklad,True,,,0.0,0.0,
+865,JEN-RFUK,Vzdálený sklad 4,92,Sklad,True,,,0.0,0.0,
+867,JEN-ZASOB,Vzdálený sklad 6,92,Sklad,True,,,0.0,0.0,
+3,beletrie,Ústřední knihovna,1,Ústřední knihovna,True,A1,,6700.0,6700.0,
+609,cizí-jazyk,Ústřední knihovna,1,Ústřední knihovna,True,J1,,600.0,600.0,
+609,cizí-jazyk,Ústřední knihovna,1,Ústřední knihovna,True,J2,,600.0,600.0,
+609,cizí-jazyk,Ústřední knihovna,1,Ústřední knihovna,True,J3,,650.0,650.0,
+609,cizí-jazyk,Ústřední knihovna,1,Ústřední knihovna,True,J4,,2700.0,2700.0,
+609,cizí-jazyk,Ústřední knihovna,1,Ústřední knihovna,True,J5,,300.0,300.0,
+609,cizí-jazyk,Ústřední knihovna,1,Ústřední knihovna,True,,,800.0,800.0,
+692,dvojjaz,Ústřední knihovna,1,Ústřední knihovna,True,,,480.0,480.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,A2,,470.0,470.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,A3,,1570.0,1570.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,A4,,1000.0,1000.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,B2,,5.0,5.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,C,,105.0,105.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,D,,185.0,185.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,E,,100.0,100.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,J1,,290.0,290.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,J2,,20.0,20.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,J3,,65.0,65.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,J4,,210.0,210.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,K,,425.0,425.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,L,,85.0,85.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,N,,165.0,165.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,P,,75.0,75.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,R,,75.0,75.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,S,,145.0,145.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,T,,65.0,65.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,U,,25.0,25.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,V,,80.0,80.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,Y,,105.0,105.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,Z,,95.0,95.0,
+22,děti,Ústřední knihovna,1,Ústřední knihovna,True,,,545.0,545.0,
+1134,děti-kom,Ústřední knihovna,1,Ústřední knihovna,True,,,205.0,205.0,
+1133,leporela,Ústřední knihovna,1,Ústřední knihovna,True,,,400.0,400.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,C,,55.0,55.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,D,,175.0,175.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,E,,175.0,175.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,G,,25.0,25.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,J1,,40.0,40.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,J2,,10.0,10.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,J3,,50.0,50.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,J4,,410.0,410.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,K,,200.0,200.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,L,,80.0,80.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,N,,65.0,65.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,P,,30.0,30.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,R,,75.0,75.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,S,,90.0,90.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,T,,30.0,30.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,U,,10.0,10.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,W,,5.0,5.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,X,,110.0,110.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,Y,,125.0,125.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,Z,,30.0,30.0,
+23,mládež,Ústřední knihovna,1,Ústřední knihovna,True,,,40.0,40.0,
+1136,mládež-kom,Ústřední knihovna,1,Ústřední knihovna,True,,,810.0,810.0,
+2,naučná,Ústřední knihovna,1,Ústřední knihovna,True,C,,680.0,680.0,
+2,naučná,Ústřední knihovna,1,Ústřední knihovna,True,D,,1800.0,1800.0,
+2,naučná,Ústřední knihovna,1,Ústřední knihovna,True,E,,1200.0,1200.0,
+2,naučná,Ústřední knihovna,1,Ústřední knihovna,True,G,,1500.0,1500.0,
+2,naučná,Ústřední knihovna,1,Ústřední knihovna,True,K,,700.0,700.0,
+2,naučná,Ústřední knihovna,1,Ústřední knihovna,True,L,,2200.0,2200.0,
+2,naučná,Ústřední knihovna,1,Ústřední knihovna,True,N,,1140.0,1140.0,
+2,naučná,Ústřední knihovna,1,Ústřední knihovna,True,O,,430.0,430.0,
+2,naučná,Ústřední knihovna,1,Ústřední knihovna,True,P,,1200.0,1200.0,
+2,naučná,Ústřední knihovna,1,Ústřední knihovna,True,R,,380.0,380.0,
+2,naučná,Ústřední knihovna,1,Ústřední knihovna,True,S,,1400.0,1400.0,
+2,naučná,Ústřední knihovna,1,Ústřední knihovna,True,T,,660.0,660.0,
+2,naučná,Ústřední knihovna,1,Ústřední knihovna,True,W,,570.0,570.0,
+2,naučná,Ústřední knihovna,1,Ústřední knihovna,True,X,,1500.0,1500.0,
+2,naučná,Ústřední knihovna,1,Ústřední knihovna,True,Y,,600.0,600.0,
+2,naučná,Ústřední knihovna,1,Ústřední knihovna,True,Z,,630.0,630.0,
+608,piktogramy,Ústřední knihovna,1,Ústřední knihovna,True,A1,,4160.0,4160.0,
+610,poezie,Ústřední knihovna,1,Ústřední knihovna,True,B2,,1600.0,1600.0,
+1135,prvníčtení,Ústřední knihovna,1,Ústřední knihovna,True,,,125.0,125.0,
+672,HRA-BELDO,Hradčany,3,Středozápad,True,A1,,1190.0,1190.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,A1,,40.0,40.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,A2,,100.0,100.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,A3,,230.0,230.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,A4,,105.0,105.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,B2,,20.0,20.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,C,,35.0,35.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,D,,50.0,50.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,E,,25.0,25.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,"G,O,W",,10.0,10.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,J1,,3.0,3.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,J2,,5.0,5.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,J3,,10.0,10.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,J4,,15.0,15.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,J5,,3.0,3.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,K,,140.0,140.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,L,,25.0,25.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,N,,25.0,25.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,P,,25.0,25.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,R,,45.0,45.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,S,,25.0,25.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,T,,22.0,22.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,U,,15.0,15.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,V,,25.0,25.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,X,,5.0,5.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,Y,,10.0,10.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,Z,,25.0,25.0,
+670,HRA-DE,Hradčany,3,Středozápad,True,,,356.0,356.0,
+673,HRA-NAUDO,Hradčany,3,Středozápad,True,C,,55.0,55.0,
+673,HRA-NAUDO,Hradčany,3,Středozápad,True,D,,140.0,140.0,
+673,HRA-NAUDO,Hradčany,3,Středozápad,True,E,,200.0,200.0,
+673,HRA-NAUDO,Hradčany,3,Středozápad,True,G,,100.0,100.0,
+673,HRA-NAUDO,Hradčany,3,Středozápad,True,K,,90.0,90.0,
+673,HRA-NAUDO,Hradčany,3,Středozápad,True,L,,85.0,85.0,
+673,HRA-NAUDO,Hradčany,3,Středozápad,True,N,,35.0,35.0,
+673,HRA-NAUDO,Hradčany,3,Středozápad,True,O,,15.0,15.0,
+673,HRA-NAUDO,Hradčany,3,Středozápad,True,P,,70.0,70.0,
+673,HRA-NAUDO,Hradčany,3,Středozápad,True,R,,30.0,30.0,
+673,HRA-NAUDO,Hradčany,3,Středozápad,True,S,,85.0,85.0,
+673,HRA-NAUDO,Hradčany,3,Středozápad,True,T,,15.0,15.0,
+673,HRA-NAUDO,Hradčany,3,Středozápad,True,V,,15.0,15.0,
+673,HRA-NAUDO,Hradčany,3,Středozápad,True,W,,25.0,25.0,
+673,HRA-NAUDO,Hradčany,3,Středozápad,True,X,,25.0,25.0,
+673,HRA-NAUDO,Hradčany,3,Středozápad,True,Y,,15.0,15.0,
+673,HRA-NAUDO,Hradčany,3,Středozápad,True,Z,,40.0,40.0,
+674,HRA-PIKTO,Hradčany,3,Středozápad,True,A1,,140.0,140.0,
+671,HRA-POEDI,Hradčany,3,Středozápad,True,B1,,15.0,15.0,
+671,HRA-POEDI,Hradčany,3,Středozápad,True,B2,,70.0,70.0,
+671,HRA-POEDI,Hradčany,3,Středozápad,True,J1,,5.0,5.0,
+671,HRA-POEDI,Hradčany,3,Středozápad,True,J2,,5.0,5.0,
+671,HRA-POEDI,Hradčany,3,Středozápad,True,J3,,10.0,10.0,
+671,HRA-POEDI,Hradčany,3,Středozápad,True,J4,,30.0,30.0,
+671,HRA-POEDI,Hradčany,3,Středozápad,True,J5,,10.0,10.0,
+671,HRA-POEDI,Hradčany,3,Středozápad,True,,,5.0,5.0,
+367,OST-BEL,Ostrčilovo nám.,4,Středozápad,True,A1,,2565.0,2565.0,
+367,OST-BEL,Ostrčilovo nám.,4,Středozápad,True,B1,,15.0,15.0,
+367,OST-BEL,Ostrčilovo nám.,4,Středozápad,True,B2,,70.0,70.0,
+367,OST-BEL,Ostrčilovo nám.,4,Středozápad,True,J1,,5.0,5.0,
+367,OST-BEL,Ostrčilovo nám.,4,Středozápad,True,J2,,20.0,20.0,
+367,OST-BEL,Ostrčilovo nám.,4,Středozápad,True,J3,,20.0,20.0,
+367,OST-BEL,Ostrčilovo nám.,4,Středozápad,True,J4,,55.0,55.0,
+367,OST-BEL,Ostrčilovo nám.,4,Středozápad,True,J5,,10.0,10.0,
+367,OST-BEL,Ostrčilovo nám.,4,Středozápad,True,,,235.0,235.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,A1,,50.0,50.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,A2,,300.0,300.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,A3,,420.0,420.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,A4,,245.0,245.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,C,,27.0,27.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,D,,56.0,56.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,E,,11.0,11.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,G,,1.0,1.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,J1,,1.0,1.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,J2,,6.0,6.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,J3,,11.0,11.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,J4,,26.0,26.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,J5,,6.0,6.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,K,,43.0,43.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,L,,13.0,13.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,N,,20.0,20.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,O,,1.0,1.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,P,,9.0,9.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,R,,21.0,21.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,S,,25.0,25.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,T,,21.0,21.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,U,,9.0,9.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,V,,11.0,11.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,W,,1.0,1.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,X,,14.0,14.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,Y,,11.0,11.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,Z,,28.0,28.0,
+370,OST-DETI,Ostrčilovo nám.,4,Středozápad,True,,,452.0,452.0,
+893,OST-KOMIKS,Ostrčilovo nám.,4,Středozápad,True,,,165.0,165.0,
+366,OST-NAUDO,Ostrčilovo nám.,4,Středozápad,True,C,,115.0,115.0,
+366,OST-NAUDO,Ostrčilovo nám.,4,Středozápad,True,D,,250.0,250.0,
+366,OST-NAUDO,Ostrčilovo nám.,4,Středozápad,True,E,,100.0,100.0,
+366,OST-NAUDO,Ostrčilovo nám.,4,Středozápad,True,G,,200.0,200.0,
+366,OST-NAUDO,Ostrčilovo nám.,4,Středozápad,True,K,,120.0,120.0,
+366,OST-NAUDO,Ostrčilovo nám.,4,Středozápad,True,L,,170.0,170.0,
+366,OST-NAUDO,Ostrčilovo nám.,4,Středozápad,True,N,,70.0,70.0,
+366,OST-NAUDO,Ostrčilovo nám.,4,Středozápad,True,O,,40.0,40.0,
+366,OST-NAUDO,Ostrčilovo nám.,4,Středozápad,True,P,,70.0,70.0,
+366,OST-NAUDO,Ostrčilovo nám.,4,Středozápad,True,R,,90.0,90.0,
+366,OST-NAUDO,Ostrčilovo nám.,4,Středozápad,True,S,,170.0,170.0,
+366,OST-NAUDO,Ostrčilovo nám.,4,Středozápad,True,T,,40.0,40.0,
+366,OST-NAUDO,Ostrčilovo nám.,4,Středozápad,True,V,,30.0,30.0,
+366,OST-NAUDO,Ostrčilovo nám.,4,Středozápad,True,W,,50.0,50.0,
+366,OST-NAUDO,Ostrčilovo nám.,4,Středozápad,True,X,,70.0,70.0,
+366,OST-NAUDO,Ostrčilovo nám.,4,Středozápad,True,Y,,35.0,35.0,
+366,OST-NAUDO,Ostrčilovo nám.,4,Středozápad,True,Z,,80.0,80.0,
+412,HOL-BELDO,Sedmička,5,Severovýchod,True,A1,,3725.0,3725.0,
+412,HOL-BELDO,Sedmička,5,Severovýchod,True,B1,,35.0,35.0,
+412,HOL-BELDO,Sedmička,5,Severovýchod,True,B2,,120.0,120.0,
+412,HOL-BELDO,Sedmička,5,Severovýchod,True,J1,,5.0,5.0,
+412,HOL-BELDO,Sedmička,5,Severovýchod,True,J2,,10.0,10.0,
+412,HOL-BELDO,Sedmička,5,Severovýchod,True,J3,,25.0,25.0,
+412,HOL-BELDO,Sedmička,5,Severovýchod,True,J4,,80.0,80.0,
+412,HOL-BELDO,Sedmička,5,Severovýchod,True,J5,,15.0,15.0,
+412,HOL-BELDO,Sedmička,5,Severovýchod,True,,,10.0,10.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,A1,,280.0,280.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,A2,,1100.0,1100.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,A3,,1100.0,1100.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,A4,,800.0,800.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,C,,40.0,40.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,D,,80.0,80.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,E,,50.0,50.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,K,,210.0,210.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,L,,80.0,80.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,N,,55.0,55.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,P,,15.0,15.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,R,,50.0,50.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,S,,45.0,45.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,T,,40.0,40.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,U,,20.0,20.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,V,,55.0,55.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,Y,,35.0,35.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,Z,,30.0,30.0,
+415,HOL-DETI,Sedmička,5,Severovýchod,True,,,595.0,595.0,
+1081,HOL-KOMDE,Sedmička,5,Severovýchod,True,,,200.0,200.0,
+1082,HOL-KOMDO,Sedmička,5,Severovýchod,True,,,200.0,200.0,
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,C,,250.0,250.0,
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,D,,600.0,600.0,
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,E,,420.0,420.0,
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,G,,500.0,500.0,
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,K,,200.0,200.0,
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,L,,380.0,380.0,
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,N,,230.0,230.0,
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,O,,75.0,75.0,
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,P,,220.0,220.0,
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,R,,110.0,110.0,
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,S,,525.0,525.0,
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,T,,80.0,80.0,
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,U,,5.0,5.0,
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,V,,95.0,95.0,
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,W,,160.0,160.0,
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,X,,130.0,130.0,
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,Y,,145.0,145.0,
+413,HOL-NAUDO,Sedmička,5,Severovýchod,True,Z,,250.0,250.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,A1,,2200.0,2200.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,B1,,25.0,25.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,B2,,45.0,45.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,C,,140.0,140.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,D,,270.0,270.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,E,,260.0,260.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,G,,210.0,210.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,J1,,10.0,10.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,J2,,10.0,10.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,J3,,25.0,25.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,J4,,95.0,95.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,J5,,15.0,15.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,K,,125.0,125.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,L,,240.0,240.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,N,,100.0,100.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,O,,35.0,35.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,P,,100.0,100.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,R,,60.0,60.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,S,,160.0,160.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,T,,65.0,65.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,V,,50.0,50.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,W,,65.0,65.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,X,,80.0,80.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,Y,,65.0,65.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,Z,,100.0,100.0,
+603,KOB-DO,Kobylisy,7,Severovýchod,True,,,90.0,90.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,A1,,25.0,25.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,A2,,300.0,300.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,A3,,740.0,740.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,A4,,450.0,450.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,B2,,1.0,1.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,C,,60.0,60.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,D,,100.0,100.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,E,,46.0,46.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,K,,265.0,265.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,L,,42.0,42.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,N,,65.0,65.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,P,,42.0,42.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,R,,47.0,47.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,S,,40.0,40.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,T,,50.0,50.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,U,,32.0,32.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,V,,45.0,45.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,Y,,60.0,60.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,Z,,35.0,35.0,
+600,KOB-LITDE,Kobylisy,7,Severovýchod,True,,,765.0,765.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,A1,,300.0,300.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,A2,,10.0,10.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,A3,,10.0,10.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,A4,,10.0,10.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,B1,,5.0,5.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,B2,,30.0,30.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,C,,70.0,70.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,D,,40.0,40.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,E,,20.0,20.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,G,,40.0,40.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,K,,30.0,30.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,L,,40.0,40.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,N,,25.0,25.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,O,,10.0,10.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,P,,40.0,40.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,R,,50.0,50.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,S,,40.0,40.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,T,,15.0,15.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,U,,20.0,20.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,V,,15.0,15.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,W,,15.0,15.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,X,,30.0,30.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,Y,,10.0,10.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,Z,,15.0,15.0,
+604,KOB-PRSK,Kobylisy,7,Severovýchod,True,,,10.0,10.0,
+116,SKO-BELDO,Školská,8,Středozápad,True,A1,,2335.0,2335.0,
+116,SKO-BELDO,Školská,8,Středozápad,True,J1,,10.0,10.0,
+116,SKO-BELDO,Školská,8,Středozápad,True,J2,,10.0,10.0,
+116,SKO-BELDO,Školská,8,Středozápad,True,J3,,20.0,20.0,
+116,SKO-BELDO,Školská,8,Středozápad,True,J4,,85.0,85.0,
+116,SKO-BELDO,Školská,8,Středozápad,True,,,20.0,20.0,
+121,SKO-DIVML,Školská,8,Středozápad,True,B1,,50.0,50.0,
+958,SKO-KOMDO,Školská,8,Středozápad,True,,,200.0,200.0,
+895,SKO-KOMIKS,Školská,8,Středozápad,True,,,180.0,180.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,A1,,50.0,50.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,A2,,150.0,150.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,A3,,460.0,460.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,A4,,285.0,285.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,B2,,5.0,5.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,C,,85.0,85.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,D,,65.0,65.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,E,,25.0,25.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,"G,O,W",,10.0,10.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,J4,,20.0,20.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,K,,170.0,170.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,L,,45.0,45.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,N,,60.0,60.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,P,,25.0,25.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,R,,50.0,50.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,S,,45.0,45.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,T,,45.0,45.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,U,,15.0,15.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,V,,50.0,50.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,X,,30.0,30.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,Y,,40.0,40.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,Z,,45.0,45.0,
+118,SKO-LITDE,Školská,8,Středozápad,True,,,595.0,595.0,
+117,SKO-NAUDO,Školská,8,Středozápad,True,C,,225.0,225.0,
+117,SKO-NAUDO,Školská,8,Středozápad,True,D,,910.0,910.0,
+117,SKO-NAUDO,Školská,8,Středozápad,True,E,,660.0,660.0,
+117,SKO-NAUDO,Školská,8,Středozápad,True,G,,590.0,590.0,
+117,SKO-NAUDO,Školská,8,Středozápad,True,K,,530.0,530.0,
+117,SKO-NAUDO,Školská,8,Středozápad,True,L,,660.0,660.0,
+117,SKO-NAUDO,Školská,8,Středozápad,True,N,,215.0,215.0,
+117,SKO-NAUDO,Školská,8,Středozápad,True,O,,120.0,120.0,
+117,SKO-NAUDO,Školská,8,Středozápad,True,P,,330.0,330.0,
+117,SKO-NAUDO,Školská,8,Středozápad,True,R,,250.0,250.0,
+117,SKO-NAUDO,Školská,8,Středozápad,True,S,,550.0,550.0,
+117,SKO-NAUDO,Školská,8,Středozápad,True,T,,215.0,215.0,
+117,SKO-NAUDO,Školská,8,Středozápad,True,V,,165.0,165.0,
+117,SKO-NAUDO,Školská,8,Středozápad,True,W,,250.0,250.0,
+117,SKO-NAUDO,Školská,8,Středozápad,True,X,,320.0,320.0,
+117,SKO-NAUDO,Školská,8,Středozápad,True,Y,,200.0,200.0,
+117,SKO-NAUDO,Školská,8,Středozápad,True,Z,,240.0,240.0,
+120,SKO-POEML,Školská,8,Středozápad,True,B2,,125.0,125.0,
+446,VYS-BELDE,Vysočany,10,Severovýchod,True,A1,,45.0,45.0,
+446,VYS-BELDE,Vysočany,10,Severovýchod,True,A2,,250.0,250.0,
+446,VYS-BELDE,Vysočany,10,Severovýchod,True,A3,,740.0,740.0,
+446,VYS-BELDE,Vysočany,10,Severovýchod,True,A4,,330.0,330.0,
+446,VYS-BELDE,Vysočany,10,Severovýchod,True,,,695.0,695.0,
+443,VYS-BELDO,Vysočany,10,Severovýchod,True,A1,,2525.0,2525.0,
+443,VYS-BELDO,Vysočany,10,Severovýchod,True,J4,,85.0,85.0,
+443,VYS-BELDO,Vysočany,10,Severovýchod,True,,,60.0,60.0,
+1083,VYS-KOMIKS,Vysočany,10,Severovýchod,True,,,150.0,150.0,
+445,VYS-NAUDE,Vysočany,10,Severovýchod,True,D,,25.0,25.0,
+445,VYS-NAUDE,Vysočany,10,Severovýchod,True,K,,525.0,525.0,
+445,VYS-NAUDE,Vysočany,10,Severovýchod,True,N,,215.0,215.0,
+445,VYS-NAUDE,Vysočany,10,Severovýchod,True,R,,130.0,130.0,
+445,VYS-NAUDE,Vysočany,10,Severovýchod,True,T,,100.0,100.0,
+445,VYS-NAUDE,Vysočany,10,Severovýchod,True,U,,20.0,20.0,
+445,VYS-NAUDE,Vysočany,10,Severovýchod,True,Y,,100.0,100.0,
+445,VYS-NAUDE,Vysočany,10,Severovýchod,True,Z,,220.0,220.0,
+445,VYS-NAUDE,Vysočany,10,Severovýchod,True,,,10.0,10.0,
+444,VYS-NAUDO,Vysočany,10,Severovýchod,True,C,,250.0,250.0,
+444,VYS-NAUDO,Vysočany,10,Severovýchod,True,D,,310.0,310.0,
+444,VYS-NAUDO,Vysočany,10,Severovýchod,True,E,,330.0,330.0,
+444,VYS-NAUDO,Vysočany,10,Severovýchod,True,G,,300.0,300.0,
+444,VYS-NAUDO,Vysočany,10,Severovýchod,True,L,,380.0,380.0,
+444,VYS-NAUDO,Vysočany,10,Severovýchod,True,O,,70.0,70.0,
+444,VYS-NAUDO,Vysočany,10,Severovýchod,True,P,,210.0,210.0,
+444,VYS-NAUDO,Vysočany,10,Severovýchod,True,S,,225.0,225.0,
+444,VYS-NAUDO,Vysočany,10,Severovýchod,True,V,,70.0,70.0,
+444,VYS-NAUDO,Vysočany,10,Severovýchod,True,W,,100.0,100.0,
+444,VYS-NAUDO,Vysočany,10,Severovýchod,True,X,,100.0,100.0,
+447,VYS-POEDIV,Vysočany,10,Severovýchod,True,B1,,35.0,35.0,
+447,VYS-POEDIV,Vysočany,10,Severovýchod,True,B2,,190.0,190.0,
+450,VYS-PRSK,Vysočany,10,Severovýchod,True,A1,,1950.0,1950.0,
+450,VYS-PRSK,Vysočany,10,Severovýchod,True,B2,,180.0,180.0,
+449,VYS-PRSKDE,Vysočany,10,Severovýchod,True,C,,180.0,180.0,
+449,VYS-PRSKDE,Vysočany,10,Severovýchod,True,D,,170.0,170.0,
+449,VYS-PRSKDE,Vysočany,10,Severovýchod,True,E,,25.0,25.0,
+449,VYS-PRSKDE,Vysočany,10,Severovýchod,True,G,,110.0,110.0,
+449,VYS-PRSKDE,Vysočany,10,Severovýchod,True,L,,170.0,170.0,
+449,VYS-PRSKDE,Vysočany,10,Severovýchod,True,N,,45.0,45.0,
+449,VYS-PRSKDE,Vysočany,10,Severovýchod,True,P,,20.0,20.0,
+449,VYS-PRSKDE,Vysočany,10,Severovýchod,True,S,,10.0,10.0,
+449,VYS-PRSKDE,Vysočany,10,Severovýchod,True,T,,40.0,40.0,
+449,VYS-PRSKDE,Vysočany,10,Severovýchod,True,"W,O,X,R",,10.0,10.0,
+449,VYS-PRSKDE,Vysočany,10,Severovýchod,True,Y,,20.0,20.0,
+1215,MLY-KOMDE,Velký mlýn,11,Severovýchod,True,A1,,50.0,50.0,
+1214,MLY-KOMDO,Velký mlýn,11,Severovýchod,True,,,95.0,95.0,
+1216,MLY-LEPOR,Velký mlýn,11,Severovýchod,True,,,100.0,100.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,A1,,25.0,25.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,A2,,150.0,150.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,A3,,410.0,410.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,A4,,125.0,125.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,B2,,100.0,100.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,C,,30.0,30.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,D,,40.0,40.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,E,,38.0,38.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,K,,70.0,70.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,L,,20.0,20.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,N,,45.0,45.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,P,,15.0,15.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,S,,15.0,15.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,T,,15.0,15.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,V,,70.0,70.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,Y,,15.0,15.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,Z,,15.0,15.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,komiksy,,60.0,60.0,
+1212,MLY-LITDE,Velký mlýn,11,Severovýchod,True,,,85.0,85.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,A1,,580.0,580.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,B1,,5.0,5.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,B2,,15.0,15.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,C,,55.0,55.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,D,,50.0,50.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,E,,70.0,70.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,G,,85.0,85.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,J,,90.0,90.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,K,,65.0,65.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,L,,75.0,75.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,N,,40.0,40.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,O,,10.0,10.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,P,,75.0,75.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,R,,30.0,30.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,S,,50.0,50.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,T,,40.0,40.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,W,,20.0,20.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,X,,25.0,25.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,Y,,35.0,35.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,Z,,45.0,45.0,
+1211,MLY-LITDO,Velký mlýn,11,Severovýchod,True,,,640.0,640.0,
+1120,HLO-KOMDE,Hloubětín,13,Severovýchod,True,,,90.0,90.0,
+1119,HLO-KOMDO,Hloubětín,13,Severovýchod,True,,,120.0,120.0,
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,A1,,15.0,15.0,
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,A2,,140.0,140.0,
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,A3,,300.0,300.0,
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,A4,,310.0,310.0,
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,B2,,5.0,5.0,
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,C,,27.0,27.0,
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,D,,52.0,52.0,
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,E,,21.0,21.0,
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,K,,75.0,75.0,
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,L,,28.0,28.0,
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,N,,25.0,25.0,
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,P,,16.0,16.0,
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,S,,16.0,16.0,
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,U,,15.0,15.0,
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,V,,18.0,18.0,
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,Y,,25.0,25.0,
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,Z,,17.0,17.0,
+586,HLO-LITDE,Hloubětín,13,Severovýchod,True,,,235.0,235.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,A1,,1061.0,1061.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,B1,,30.0,30.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,B2,,70.0,70.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,C,,130.0,130.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,D,,130.0,130.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,E,,60.0,60.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,G,,100.0,100.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,J4,,70.0,70.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,K,,55.0,55.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,L,,140.0,140.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,N,,65.0,65.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,O,,15.0,15.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,P,,125.0,125.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,R,,30.0,30.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,S,,40.0,40.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,T,,15.0,15.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,V,,15.0,15.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,W,,45.0,45.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,X,,20.0,20.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,Y,,30.0,30.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,Z,,35.0,35.0,
+1121,HLO-LITDO,Hloubětín,13,Severovýchod,True,,,20.0,20.0,
+310,HUS-BELDE,Žižkov,15,Středozápad,True,A1,,80.0,80.0,
+310,HUS-BELDE,Žižkov,15,Středozápad,True,A2,,210.0,210.0,
+310,HUS-BELDE,Žižkov,15,Středozápad,True,A3,,540.0,540.0,
+310,HUS-BELDE,Žižkov,15,Středozápad,True,A4,,240.0,240.0,
+310,HUS-BELDE,Žižkov,15,Středozápad,True,B2,,5.0,5.0,
+310,HUS-BELDE,Žižkov,15,Středozápad,True,,,405.0,405.0,
+307,HUS-BELDO,Žižkov,15,Středozápad,True,A1,,3852.0,3852.0,
+307,HUS-BELDO,Žižkov,15,Středozápad,True,,,105.0,105.0,
+315,HUS-DOMDE,Žižkov,15,Středozápad,True,A2,,40.0,40.0,
+315,HUS-DOMDE,Žižkov,15,Středozápad,True,A3,,60.0,60.0,
+315,HUS-DOMDE,Žižkov,15,Středozápad,True,,,100.0,100.0,
+1002,HUS-KOMDE,Žižkov,15,Středozápad,True,,,130.0,130.0,
+845,HUS-KOMDO,Žižkov,15,Středozápad,True,,,140.0,140.0,
+311,HUS-NAUC,Žižkov,15,Středozápad,True,C,,200.0,200.0,
+311,HUS-NAUC,Žižkov,15,Středozápad,True,D,,660.0,660.0,
+311,HUS-NAUC,Žižkov,15,Středozápad,True,E,,260.0,260.0,
+311,HUS-NAUC,Žižkov,15,Středozápad,True,G,,550.0,550.0,
+311,HUS-NAUC,Žižkov,15,Středozápad,True,K,,210.0,210.0,
+311,HUS-NAUC,Žižkov,15,Středozápad,True,L,,510.0,510.0,
+311,HUS-NAUC,Žižkov,15,Středozápad,True,N,,200.0,200.0,
+311,HUS-NAUC,Žižkov,15,Středozápad,True,O,,40.0,40.0,
+311,HUS-NAUC,Žižkov,15,Středozápad,True,P,,200.0,200.0,
+311,HUS-NAUC,Žižkov,15,Středozápad,True,R,,100.0,100.0,
+311,HUS-NAUC,Žižkov,15,Středozápad,True,S,,280.0,280.0,
+311,HUS-NAUC,Žižkov,15,Středozápad,True,T,,80.0,80.0,
+311,HUS-NAUC,Žižkov,15,Středozápad,True,V,,30.0,30.0,
+311,HUS-NAUC,Žižkov,15,Středozápad,True,W,,160.0,160.0,
+311,HUS-NAUC,Žižkov,15,Středozápad,True,X,,160.0,160.0,
+311,HUS-NAUC,Žižkov,15,Středozápad,True,Y,,70.0,70.0,
+311,HUS-NAUC,Žižkov,15,Středozápad,True,Z,,130.0,130.0,
+1003,HUS-NAUDE,Žižkov,15,Středozápad,True,C,,70.0,70.0,
+1003,HUS-NAUDE,Žižkov,15,Středozápad,True,D,,110.0,110.0,
+1003,HUS-NAUDE,Žižkov,15,Středozápad,True,E,,20.0,20.0,
+1003,HUS-NAUDE,Žižkov,15,Středozápad,True,"G,O,W",,10.0,10.0,
+1003,HUS-NAUDE,Žižkov,15,Středozápad,True,K,,150.0,150.0,
+1003,HUS-NAUDE,Žižkov,15,Středozápad,True,L,,35.0,35.0,
+1003,HUS-NAUDE,Žižkov,15,Středozápad,True,N,,50.0,50.0,
+1003,HUS-NAUDE,Žižkov,15,Středozápad,True,P,,25.0,25.0,
+1003,HUS-NAUDE,Žižkov,15,Středozápad,True,R,,25.0,25.0,
+1003,HUS-NAUDE,Žižkov,15,Středozápad,True,S,,25.0,25.0,
+1003,HUS-NAUDE,Žižkov,15,Středozápad,True,T,,25.0,25.0,
+1003,HUS-NAUDE,Žižkov,15,Středozápad,True,U,,20.0,20.0,
+1003,HUS-NAUDE,Žižkov,15,Středozápad,True,V,,25.0,25.0,
+1003,HUS-NAUDE,Žižkov,15,Středozápad,True,X,,5.0,5.0,
+1003,HUS-NAUDE,Žižkov,15,Středozápad,True,Y,,25.0,25.0,
+1003,HUS-NAUDE,Žižkov,15,Středozápad,True,Z,,25.0,25.0,
+312,HUS-POEDIV,Žižkov,15,Středozápad,True,B1,,75.0,75.0,
+312,HUS-POEDIV,Žižkov,15,Středozápad,True,B2,,220.0,220.0,
+312,HUS-POEDIV,Žižkov,15,Středozápad,True,J1,,15.0,15.0,
+312,HUS-POEDIV,Žižkov,15,Středozápad,True,J2,,40.0,40.0,
+312,HUS-POEDIV,Žižkov,15,Středozápad,True,J3,,30.0,30.0,
+312,HUS-POEDIV,Žižkov,15,Středozápad,True,J4,,200.0,200.0,
+312,HUS-POEDIV,Žižkov,15,Středozápad,True,J5,,25.0,25.0,
+312,HUS-POEDIV,Žižkov,15,Středozápad,True,,,25.0,25.0,
+840,HUS-SCIFI,Žižkov,15,Středozápad,True,A1,,560.0,560.0,
+375,KOR-BELDO,Korunní,18,Jihovýchod,True,A1,,4660.0,4660.0,
+375,KOR-BELDO,Korunní,18,Jihovýchod,True,B1,,90.0,90.0,
+375,KOR-BELDO,Korunní,18,Jihovýchod,True,B2,,400.0,400.0,
+1035,KOR-CIZODO,Korunní,18,Jihovýchod,True,J,,60.0,60.0,
+1035,KOR-CIZODO,Korunní,18,Jihovýchod,True,J1,,10.0,10.0,
+1035,KOR-CIZODO,Korunní,18,Jihovýchod,True,J2,,30.0,30.0,
+1035,KOR-CIZODO,Korunní,18,Jihovýchod,True,J3,,40.0,40.0,
+1035,KOR-CIZODO,Korunní,18,Jihovýchod,True,J4,,420.0,420.0,
+1035,KOR-CIZODO,Korunní,18,Jihovýchod,True,J5,,10.0,10.0,
+1035,KOR-CIZODO,Korunní,18,Jihovýchod,True,,,10.0,10.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,A1,,40.0,40.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,A2,,500.0,500.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,A3,,870.0,870.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,A4,,550.0,550.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,B2,,20.0,20.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,C,,100.0,100.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,D,,135.0,135.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,E,,55.0,55.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,J1,,5.0,5.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,J2,,20.0,20.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,J3,,40.0,40.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,J4,,170.0,170.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,J5,,20.0,20.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,K,,300.0,300.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,L,,70.0,70.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,N,,80.0,80.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,P,,40.0,40.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,R,,75.0,75.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,S,,40.0,40.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,T,,40.0,40.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,U,,25.0,25.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,V,,40.0,40.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,X,,25.0,25.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,Y,,60.0,60.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,Z,,40.0,40.0,
+380,KOR-DETI,Korunní,18,Jihovýchod,True,,,640.0,640.0,
+994,KOR-KOMDE,Korunní,18,Jihovýchod,True,,,200.0,200.0,
+1141,KOR-KOMDO,Korunní,18,Jihovýchod,True,,,350.0,350.0,
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,C,,400.0,400.0,
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,D,,1190.0,1190.0,
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,E,,580.0,580.0,
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,G,,830.0,830.0,
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,K,,450.0,450.0,
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,L,,820.0,820.0,
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,N,,280.0,280.0,
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,O,,120.0,120.0,
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,P,,500.0,500.0,
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,R,,300.0,300.0,
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,S,,400.0,400.0,
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,T,,210.0,210.0,
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,U,,20.0,20.0,
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,V,,110.0,110.0,
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,W,,340.0,340.0,
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,X,,270.0,270.0,
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,Y,,200.0,200.0,
+376,KOR-NAUDO,Korunní,18,Jihovýchod,True,Z,,330.0,330.0,
+1209,KOR-YA,Korunní,18,Jihovýchod,True,A1,,260.0,260.0,
+493,HOS-BELDO,Hostivař,21,Jihovýchod,True,A1,,2600.0,2600.0,
+493,HOS-BELDO,Hostivař,21,Jihovýchod,True,B1,,25.0,25.0,
+493,HOS-BELDO,Hostivař,21,Jihovýchod,True,B2,,170.0,170.0,
+493,HOS-BELDO,Hostivař,21,Jihovýchod,True,J1,,5.0,5.0,
+493,HOS-BELDO,Hostivař,21,Jihovýchod,True,J2,,5.0,5.0,
+493,HOS-BELDO,Hostivař,21,Jihovýchod,True,J3,,10.0,10.0,
+493,HOS-BELDO,Hostivař,21,Jihovýchod,True,J4,,40.0,40.0,
+493,HOS-BELDO,Hostivař,21,Jihovýchod,True,,,10.0,10.0,
+1085,HOS-KOMDE,Hostivař,21,Jihovýchod,True,,,120.0,120.0,
+1084,HOS-KOMDO,Hostivař,21,Jihovýchod,True,,,110.0,110.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,A1,,40.0,40.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,A2,,280.0,280.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,A3,,600.0,600.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,A4,,470.0,470.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,B2,,1.0,1.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,C,,51.0,51.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,D,,95.0,95.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,E,,25.0,25.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,K,,130.0,130.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,L,,21.0,21.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,N,,65.0,65.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,P,,21.0,21.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,R,,21.0,21.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,S,,21.0,21.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,T,,21.0,21.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,U,,15.0,15.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,V,,25.0,25.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,X,,40.0,40.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,Y,,40.0,40.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,Z,,10.0,10.0,
+496,HOS-LITDE,Hostivař,21,Jihovýchod,True,,,432.0,432.0,
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,C,,191.0,191.0,
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,D,,450.0,450.0,
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,E,,271.0,271.0,
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,G,,201.0,201.0,
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,K,,220.0,220.0,
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,L,,291.0,291.0,
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,N,,131.0,131.0,
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,O,,31.0,31.0,
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,P,,131.0,131.0,
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,R,,95.0,95.0,
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,S,,201.0,201.0,
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,T,,71.0,71.0,
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,U,,11.0,11.0,
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,V,,61.0,61.0,
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,W,,100.0,100.0,
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,X,,111.0,111.0,
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,Y,,145.0,145.0,
+494,HOS-NAUDO,Hostivař,21,Jihovýchod,True,Z,,125.0,125.0,
+1098,JEZ-ATELI,Jezerka,24,Jih,True,C,,70.0,70.0,
+1100,JEZ-BELDO,Jezerka,24,Jih,True,A1,,1815.0,1815.0,
+1100,JEZ-BELDO,Jezerka,24,Jih,True,B1,,25.0,25.0,
+1100,JEZ-BELDO,Jezerka,24,Jih,True,B2,,170.0,170.0,
+1100,JEZ-BELDO,Jezerka,24,Jih,True,J,,10.0,10.0,
+1100,JEZ-BELDO,Jezerka,24,Jih,True,J1-J3,,30.0,30.0,
+1100,JEZ-BELDO,Jezerka,24,Jih,True,J4,,65.0,65.0,
+1108,JEZ-KOMDE,Jezerka,24,Jih,True,,,130.0,130.0,
+1109,JEZ-KOMDO,Jezerka,24,Jih,True,,,180.0,180.0,
+1110,JEZ-LEPOR,Jezerka,24,Jih,True,,,250.0,250.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,A1,,20.0,20.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,A2,,250.0,250.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,A2-A4,,75.0,75.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,A3,,600.0,600.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,B2,,5.0,5.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,C,,70.0,70.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,D,,115.0,115.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,E,,40.0,40.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,"G,O,W",,5.0,5.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,J1-J5,,85.0,85.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,K,,180.0,180.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,L,,40.0,40.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,N,,90.0,90.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,P,,20.0,20.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,R,,35.0,35.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,S,,25.0,25.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,T,,25.0,25.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,U,,25.0,25.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,V,,20.0,20.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,X,,20.0,20.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,Z,,45.0,45.0,
+1099,JEZ-LITDE,Jezerka,24,Jih,True,,,140.0,140.0,
+1112,JEZ-NAUDO,Jezerka,24,Jih,True,C,,190.0,190.0,
+1112,JEZ-NAUDO,Jezerka,24,Jih,True,D,,350.0,350.0,
+1112,JEZ-NAUDO,Jezerka,24,Jih,True,E,,170.0,170.0,
+1112,JEZ-NAUDO,Jezerka,24,Jih,True,G,,130.0,130.0,
+1112,JEZ-NAUDO,Jezerka,24,Jih,True,K,,155.0,155.0,
+1112,JEZ-NAUDO,Jezerka,24,Jih,True,L,,145.0,145.0,
+1112,JEZ-NAUDO,Jezerka,24,Jih,True,N,,65.0,65.0,
+1112,JEZ-NAUDO,Jezerka,24,Jih,True,O,,50.0,50.0,
+1112,JEZ-NAUDO,Jezerka,24,Jih,True,P,,170.0,170.0,
+1112,JEZ-NAUDO,Jezerka,24,Jih,True,R,,120.0,120.0,
+1112,JEZ-NAUDO,Jezerka,24,Jih,True,S,,100.0,100.0,
+1112,JEZ-NAUDO,Jezerka,24,Jih,True,T,,80.0,80.0,
+1112,JEZ-NAUDO,Jezerka,24,Jih,True,V,,40.0,40.0,
+1112,JEZ-NAUDO,Jezerka,24,Jih,True,W,,100.0,100.0,
+1112,JEZ-NAUDO,Jezerka,24,Jih,True,X,,80.0,80.0,
+1112,JEZ-NAUDO,Jezerka,24,Jih,True,Y,,85.0,85.0,
+1112,JEZ-NAUDO,Jezerka,24,Jih,True,Z,,70.0,70.0,
+1113,JEZ-PRSK,Jezerka,24,Jih,True,A1,,2150.0,2150.0,
+1115,JEZ-ROD,Jezerka,24,Jih,True,AA,,20.0,20.0,
+1115,JEZ-ROD,Jezerka,24,Jih,True,,,140.0,140.0,
+1114,JEZ-TEENS,Jezerka,24,Jih,True,A1,,585.0,585.0,
+1114,JEZ-TEENS,Jezerka,24,Jih,True,A4,,395.0,395.0,
+1114,JEZ-TEENS,Jezerka,24,Jih,True,Y,,70.0,70.0,
+1116,JEZ-ZIVOT,Jezerka,24,Jih,True,,,120.0,120.0,
+567,VIK-BELDO,Vikova,25,Jih,True,A1,,2780.0,2780.0,
+567,VIK-BELDO,Vikova,25,Jih,True,B1,,65.0,65.0,
+567,VIK-BELDO,Vikova,25,Jih,True,B2,,220.0,220.0,
+567,VIK-BELDO,Vikova,25,Jih,True,J1,,10.0,10.0,
+567,VIK-BELDO,Vikova,25,Jih,True,J2,,10.0,10.0,
+567,VIK-BELDO,Vikova,25,Jih,True,J3,,20.0,20.0,
+567,VIK-BELDO,Vikova,25,Jih,True,J4,,100.0,100.0,
+567,VIK-BELDO,Vikova,25,Jih,True,J5,,10.0,10.0,
+567,VIK-BELDO,Vikova,25,Jih,True,,,5.0,5.0,
+957,VIK-KOMDE,Vikova,25,Jih,True,,,105.0,105.0,
+847,VIK-KOMDO,Vikova,25,Jih,True,,,125.0,125.0,
+565,VIK-LITDE,Vikova,25,Jih,True,A1,,100.0,100.0,
+565,VIK-LITDE,Vikova,25,Jih,True,A2,,190.0,190.0,
+565,VIK-LITDE,Vikova,25,Jih,True,A3,,520.0,520.0,
+565,VIK-LITDE,Vikova,25,Jih,True,A4,,960.0,960.0,
+565,VIK-LITDE,Vikova,25,Jih,True,B2,,5.0,5.0,
+565,VIK-LITDE,Vikova,25,Jih,True,C,,50.0,50.0,
+565,VIK-LITDE,Vikova,25,Jih,True,D,,100.0,100.0,
+565,VIK-LITDE,Vikova,25,Jih,True,E,,40.0,40.0,
+565,VIK-LITDE,Vikova,25,Jih,True,K,,190.0,190.0,
+565,VIK-LITDE,Vikova,25,Jih,True,L,,35.0,35.0,
+565,VIK-LITDE,Vikova,25,Jih,True,N,,55.0,55.0,
+565,VIK-LITDE,Vikova,25,Jih,True,P,,25.0,25.0,
+565,VIK-LITDE,Vikova,25,Jih,True,R,,40.0,40.0,
+565,VIK-LITDE,Vikova,25,Jih,True,S,,40.0,40.0,
+565,VIK-LITDE,Vikova,25,Jih,True,T,,20.0,20.0,
+565,VIK-LITDE,Vikova,25,Jih,True,U,,50.0,50.0,
+565,VIK-LITDE,Vikova,25,Jih,True,V,,25.0,25.0,
+565,VIK-LITDE,Vikova,25,Jih,True,X,,30.0,30.0,
+565,VIK-LITDE,Vikova,25,Jih,True,Y,,55.0,55.0,
+565,VIK-LITDE,Vikova,25,Jih,True,Z,,40.0,40.0,
+565,VIK-LITDE,Vikova,25,Jih,True,,,635.0,635.0,
+566,VIK-NAUDO,Vikova,25,Jih,True,C,,280.0,280.0,
+566,VIK-NAUDO,Vikova,25,Jih,True,D,,390.0,390.0,
+566,VIK-NAUDO,Vikova,25,Jih,True,E,,300.0,300.0,
+566,VIK-NAUDO,Vikova,25,Jih,True,G,,355.0,355.0,
+566,VIK-NAUDO,Vikova,25,Jih,True,K,,250.0,250.0,
+566,VIK-NAUDO,Vikova,25,Jih,True,L,,260.0,260.0,
+566,VIK-NAUDO,Vikova,25,Jih,True,N,,120.0,120.0,
+566,VIK-NAUDO,Vikova,25,Jih,True,O,,65.0,65.0,
+566,VIK-NAUDO,Vikova,25,Jih,True,P,,280.0,280.0,
+566,VIK-NAUDO,Vikova,25,Jih,True,R,,110.0,110.0,
+566,VIK-NAUDO,Vikova,25,Jih,True,S,,240.0,240.0,
+566,VIK-NAUDO,Vikova,25,Jih,True,T,,95.0,95.0,
+566,VIK-NAUDO,Vikova,25,Jih,True,U,,5.0,5.0,
+566,VIK-NAUDO,Vikova,25,Jih,True,V,,85.0,85.0,
+566,VIK-NAUDO,Vikova,25,Jih,True,W,,140.0,140.0,
+566,VIK-NAUDO,Vikova,25,Jih,True,X,,130.0,130.0,
+566,VIK-NAUDO,Vikova,25,Jih,True,Y,,140.0,140.0,
+566,VIK-NAUDO,Vikova,25,Jih,True,Z,,90.0,90.0,
+664,MOD-BELDE,Modřany,27,Jih,True,A1,,100.0,100.0,
+664,MOD-BELDE,Modřany,27,Jih,True,A2,,350.0,350.0,
+664,MOD-BELDE,Modřany,27,Jih,True,A3,,1200.0,1200.0,
+664,MOD-BELDE,Modřany,27,Jih,True,A4,,600.0,600.0,
+664,MOD-BELDE,Modřany,27,Jih,True,B2,,10.0,10.0,
+664,MOD-BELDE,Modřany,27,Jih,True,J,,250.0,250.0,
+664,MOD-BELDE,Modřany,27,Jih,True,,,1245.0,1245.0,
+663,MOD-BELDO,Modřany,27,Jih,True,A1,,4050.0,4050.0,
+663,MOD-BELDO,Modřany,27,Jih,True,J1,,15.0,15.0,
+663,MOD-BELDO,Modřany,27,Jih,True,J2,,15.0,15.0,
+663,MOD-BELDO,Modřany,27,Jih,True,J3,,15.0,15.0,
+663,MOD-BELDO,Modřany,27,Jih,True,J4,,130.0,130.0,
+663,MOD-BELDO,Modřany,27,Jih,True,J5,,20.0,20.0,
+663,MOD-BELDO,Modřany,27,Jih,True,,,20.0,20.0,
+858,MOD-KOM,Modřany,27,Jih,True,,,100.0,100.0,
+662,MOD-NAU,Modřany,27,Jih,True,C,,240.0,240.0,
+662,MOD-NAU,Modřany,27,Jih,True,D,,700.0,700.0,
+662,MOD-NAU,Modřany,27,Jih,True,E,,550.0,550.0,
+662,MOD-NAU,Modřany,27,Jih,True,G,,320.0,320.0,
+662,MOD-NAU,Modřany,27,Jih,True,K,,460.0,460.0,
+662,MOD-NAU,Modřany,27,Jih,True,L,,370.0,370.0,
+662,MOD-NAU,Modřany,27,Jih,True,N,,170.0,170.0,
+662,MOD-NAU,Modřany,27,Jih,True,O,,45.0,45.0,
+662,MOD-NAU,Modřany,27,Jih,True,P,,290.0,290.0,
+662,MOD-NAU,Modřany,27,Jih,True,R,,90.0,90.0,
+662,MOD-NAU,Modřany,27,Jih,True,S,,480.0,480.0,
+662,MOD-NAU,Modřany,27,Jih,True,T,,110.0,110.0,
+662,MOD-NAU,Modřany,27,Jih,True,V,,110.0,110.0,
+662,MOD-NAU,Modřany,27,Jih,True,W,,145.0,145.0,
+662,MOD-NAU,Modřany,27,Jih,True,X,,240.0,240.0,
+662,MOD-NAU,Modřany,27,Jih,True,Y,,170.0,170.0,
+662,MOD-NAU,Modřany,27,Jih,True,Z,,200.0,200.0,
+1254,MOD-NAUDE,Modřany,27,Jih,True,C,,200.0,200.0,
+1254,MOD-NAUDE,Modřany,27,Jih,True,D,,150.0,150.0,
+1254,MOD-NAUDE,Modřany,27,Jih,True,E,,95.0,95.0,
+1254,MOD-NAUDE,Modřany,27,Jih,True,"G,O,W",,25.0,25.0,
+1254,MOD-NAUDE,Modřany,27,Jih,True,K,,400.0,400.0,
+1254,MOD-NAUDE,Modřany,27,Jih,True,L,,90.0,90.0,
+1254,MOD-NAUDE,Modřany,27,Jih,True,N,,100.0,100.0,
+1254,MOD-NAUDE,Modřany,27,Jih,True,P,,80.0,80.0,
+1254,MOD-NAUDE,Modřany,27,Jih,True,R,,50.0,50.0,
+1254,MOD-NAUDE,Modřany,27,Jih,True,S,,50.0,50.0,
+1254,MOD-NAUDE,Modřany,27,Jih,True,T,,100.0,100.0,
+1254,MOD-NAUDE,Modřany,27,Jih,True,U,,60.0,60.0,
+1254,MOD-NAUDE,Modřany,27,Jih,True,V,,25.0,25.0,
+1254,MOD-NAUDE,Modřany,27,Jih,True,X,,30.0,30.0,
+1254,MOD-NAUDE,Modřany,27,Jih,True,Y,,90.0,90.0,
+1254,MOD-NAUDE,Modřany,27,Jih,True,Z,,50.0,50.0,
+668,MOD-POEDIV,Modřany,27,Jih,True,B1,,25.0,25.0,
+668,MOD-POEDIV,Modřany,27,Jih,True,B2,,410.0,410.0,
+665,MOD-PRSK,Modřany,27,Jih,True,A1,,10.0,10.0,
+392,SMI-BELDE,Smíchov,29,Jihozápad,True,A1,,20.0,20.0,
+392,SMI-BELDE,Smíchov,29,Jihozápad,True,A2,,505.0,505.0,
+392,SMI-BELDE,Smíchov,29,Jihozápad,True,A3,,1170.0,1170.0,
+392,SMI-BELDE,Smíchov,29,Jihozápad,True,A4,,5.0,5.0,
+392,SMI-BELDE,Smíchov,29,Jihozápad,True,B2,,5.0,5.0,
+392,SMI-BELDE,Smíchov,29,Jihozápad,True,J1,,6.0,6.0,
+392,SMI-BELDE,Smíchov,29,Jihozápad,True,J2,,6.0,6.0,
+392,SMI-BELDE,Smíchov,29,Jihozápad,True,J3,,36.0,36.0,
+392,SMI-BELDE,Smíchov,29,Jihozápad,True,J4,,111.0,111.0,
+392,SMI-BELDE,Smíchov,29,Jihozápad,True,J5,,21.0,21.0,
+392,SMI-BELDE,Smíchov,29,Jihozápad,True,,,1425.0,1425.0,
+389,SMI-BELDO,Smíchov,29,Jihozápad,True,A1,,8370.0,8370.0,
+389,SMI-BELDO,Smíchov,29,Jihozápad,True,B1,,150.0,150.0,
+389,SMI-BELDO,Smíchov,29,Jihozápad,True,B2,,1040.0,1040.0,
+389,SMI-BELDO,Smíchov,29,Jihozápad,True,J1,,20.0,20.0,
+389,SMI-BELDO,Smíchov,29,Jihozápad,True,J2,,40.0,40.0,
+389,SMI-BELDO,Smíchov,29,Jihozápad,True,J3,,70.0,70.0,
+389,SMI-BELDO,Smíchov,29,Jihozápad,True,J4,,330.0,330.0,
+389,SMI-BELDO,Smíchov,29,Jihozápad,True,J5,,40.0,40.0,
+389,SMI-BELDO,Smíchov,29,Jihozápad,True,,,20.0,20.0,
+404,SMI-CHRVOL,Smíchov,29,Jihozápad,True,A1,,10.0,10.0,
+396,SMI-GALDE,Smíchov,29,Jihozápad,True,A1,,50.0,50.0,
+396,SMI-GALDE,Smíchov,29,Jihozápad,True,A4,,1000.0,1000.0,
+396,SMI-GALDE,Smíchov,29,Jihozápad,True,,,350.0,350.0,
+395,SMI-GALML,Smíchov,29,Jihozápad,True,A1,,920.0,920.0,
+395,SMI-GALML,Smíchov,29,Jihozápad,True,,,200.0,200.0,
+846,SMI-KOLOTO,Smíchov,29,Jihozápad,True,,,150.0,150.0,
+393,SMI-NAUDE,Smíchov,29,Jihozápad,True,C,,160.0,160.0,
+393,SMI-NAUDE,Smíchov,29,Jihozápad,True,D,,470.0,470.0,
+393,SMI-NAUDE,Smíchov,29,Jihozápad,True,E,,120.0,120.0,
+393,SMI-NAUDE,Smíchov,29,Jihozápad,True,K,,840.0,840.0,
+393,SMI-NAUDE,Smíchov,29,Jihozápad,True,L,,115.0,115.0,
+393,SMI-NAUDE,Smíchov,29,Jihozápad,True,N,,170.0,170.0,
+393,SMI-NAUDE,Smíchov,29,Jihozápad,True,P,,115.0,115.0,
+393,SMI-NAUDE,Smíchov,29,Jihozápad,True,R,,40.0,40.0,
+393,SMI-NAUDE,Smíchov,29,Jihozápad,True,S,,120.0,120.0,
+393,SMI-NAUDE,Smíchov,29,Jihozápad,True,T,,160.0,160.0,
+393,SMI-NAUDE,Smíchov,29,Jihozápad,True,U,,75.0,75.0,
+393,SMI-NAUDE,Smíchov,29,Jihozápad,True,V,,80.0,80.0,
+393,SMI-NAUDE,Smíchov,29,Jihozápad,True,X,,95.0,95.0,
+393,SMI-NAUDE,Smíchov,29,Jihozápad,True,Y,,225.0,225.0,
+393,SMI-NAUDE,Smíchov,29,Jihozápad,True,Z,,160.0,160.0,
+393,SMI-NAUDE,Smíchov,29,Jihozápad,True,,,20.0,20.0,
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,C,,680.0,680.0,
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,D,,2040.0,2040.0,
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,E,,1005.0,1005.0,
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,G,,970.0,970.0,
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,K,,750.0,750.0,
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,L,,1370.0,1370.0,
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,N,,430.0,430.0,
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,O,,390.0,390.0,
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,P,,800.0,800.0,
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,R,,550.0,550.0,
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,S,,620.0,620.0,
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,T,,220.0,220.0,
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,U,,10.0,10.0,
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,V,,340.0,340.0,
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,W,,460.0,460.0,
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,X,,710.0,710.0,
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,Y,,410.0,410.0,
+390,SMI-NAUDO,Smíchov,29,Jihozápad,True,Z,,490.0,490.0,
+638,CI3-LITDE,Cibulka,30,Jihozápad,True,A1,,10.0,10.0,
+638,CI3-LITDE,Cibulka,30,Jihozápad,True,A2,,115.0,115.0,
+638,CI3-LITDE,Cibulka,30,Jihozápad,True,A3,,200.0,200.0,
+638,CI3-LITDE,Cibulka,30,Jihozápad,True,A4,,135.0,135.0,
+638,CI3-LITDE,Cibulka,30,Jihozápad,True,C,,10.0,10.0,
+638,CI3-LITDE,Cibulka,30,Jihozápad,True,D,,25.0,25.0,
+638,CI3-LITDE,Cibulka,30,Jihozápad,True,E,,10.0,10.0,
+638,CI3-LITDE,Cibulka,30,Jihozápad,True,J4,,13.0,13.0,
+638,CI3-LITDE,Cibulka,30,Jihozápad,True,K,,60.0,60.0,
+638,CI3-LITDE,Cibulka,30,Jihozápad,True,L,,10.0,10.0,
+638,CI3-LITDE,Cibulka,30,Jihozápad,True,N,,15.0,15.0,
+638,CI3-LITDE,Cibulka,30,Jihozápad,True,T,,10.0,10.0,
+638,CI3-LITDE,Cibulka,30,Jihozápad,True,V,,10.0,10.0,
+638,CI3-LITDE,Cibulka,30,Jihozápad,True,Y,,10.0,10.0,
+638,CI3-LITDE,Cibulka,30,Jihozápad,True,Z,,10.0,10.0,
+638,CI3-LITDE,Cibulka,30,Jihozápad,True,,,183.0,183.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,A1,,444.0,444.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,B1,,5.0,5.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,B2,,25.0,25.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,C,,30.0,30.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,D,,20.0,20.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,E,,15.0,15.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,J4,,19.0,19.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,K,,5.0,5.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,L,,20.0,20.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,N,,10.0,10.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,P,,10.0,10.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,R,,5.0,5.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,S,,10.0,10.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,T,,5.0,5.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,V,,5.0,5.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,X,,5.0,5.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,Y,,8.0,8.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,Z,,20.0,20.0,
+912,CI3-LITDO,Cibulka,30,Jihozápad,True,,,96.0,96.0,
+592,CHU-BELDE,Velká Chuchle,31,Jihozápad,True,A1,,40.0,40.0,
+592,CHU-BELDE,Velká Chuchle,31,Jihozápad,True,A2,,150.0,150.0,
+592,CHU-BELDE,Velká Chuchle,31,Jihozápad,True,A3,,230.0,230.0,
+592,CHU-BELDE,Velká Chuchle,31,Jihozápad,True,A4,,310.0,310.0,
+592,CHU-BELDE,Velká Chuchle,31,Jihozápad,True,B2,,5.0,5.0,
+592,CHU-BELDE,Velká Chuchle,31,Jihozápad,True,,,410.0,410.0,
+593,CHU-BELDO,Velká Chuchle,31,Jihozápad,True,A1,,875.0,875.0,
+593,CHU-BELDO,Velká Chuchle,31,Jihozápad,True,B1,,10.0,10.0,
+593,CHU-BELDO,Velká Chuchle,31,Jihozápad,True,B2,,20.0,20.0,
+593,CHU-BELDO,Velká Chuchle,31,Jihozápad,True,J1,,2.0,2.0,
+593,CHU-BELDO,Velká Chuchle,31,Jihozápad,True,J2,,8.0,8.0,
+593,CHU-BELDO,Velká Chuchle,31,Jihozápad,True,J3,,10.0,10.0,
+593,CHU-BELDO,Velká Chuchle,31,Jihozápad,True,J4,,25.0,25.0,
+593,CHU-BELDO,Velká Chuchle,31,Jihozápad,True,J5,,10.0,10.0,
+593,CHU-BELDO,Velká Chuchle,31,Jihozápad,True,,,80.0,80.0,
+591,CHU-NAU,Velká Chuchle,31,Jihozápad,True,C,,55.0,55.0,
+591,CHU-NAU,Velká Chuchle,31,Jihozápad,True,D,,80.0,80.0,
+591,CHU-NAU,Velká Chuchle,31,Jihozápad,True,E,,50.0,50.0,
+591,CHU-NAU,Velká Chuchle,31,Jihozápad,True,G,,40.0,40.0,
+591,CHU-NAU,Velká Chuchle,31,Jihozápad,True,K,,30.0,30.0,
+591,CHU-NAU,Velká Chuchle,31,Jihozápad,True,L,,70.0,70.0,
+591,CHU-NAU,Velká Chuchle,31,Jihozápad,True,N,,35.0,35.0,
+591,CHU-NAU,Velká Chuchle,31,Jihozápad,True,O,,10.0,10.0,
+591,CHU-NAU,Velká Chuchle,31,Jihozápad,True,P,,35.0,35.0,
+591,CHU-NAU,Velká Chuchle,31,Jihozápad,True,R,,15.0,15.0,
+591,CHU-NAU,Velká Chuchle,31,Jihozápad,True,S,,40.0,40.0,
+591,CHU-NAU,Velká Chuchle,31,Jihozápad,True,T,,35.0,35.0,
+591,CHU-NAU,Velká Chuchle,31,Jihozápad,True,V,,30.0,30.0,
+591,CHU-NAU,Velká Chuchle,31,Jihozápad,True,W,,10.0,10.0,
+591,CHU-NAU,Velká Chuchle,31,Jihozápad,True,X,,10.0,10.0,
+591,CHU-NAU,Velká Chuchle,31,Jihozápad,True,Y,,20.0,20.0,
+591,CHU-NAU,Velká Chuchle,31,Jihozápad,True,Z,,40.0,40.0,
+1018,CHU-NAUDE,Velká Chuchle,31,Jihozápad,True,C,,40.0,40.0,
+1018,CHU-NAUDE,Velká Chuchle,31,Jihozápad,True,D,,55.0,55.0,
+1018,CHU-NAUDE,Velká Chuchle,31,Jihozápad,True,E,,20.0,20.0,
+1018,CHU-NAUDE,Velká Chuchle,31,Jihozápad,True,"G,O,W",,2.0,2.0,
+1018,CHU-NAUDE,Velká Chuchle,31,Jihozápad,True,K,,110.0,110.0,
+1018,CHU-NAUDE,Velká Chuchle,31,Jihozápad,True,L,,20.0,20.0,
+1018,CHU-NAUDE,Velká Chuchle,31,Jihozápad,True,N,,20.0,20.0,
+1018,CHU-NAUDE,Velká Chuchle,31,Jihozápad,True,P,,20.0,20.0,
+1018,CHU-NAUDE,Velká Chuchle,31,Jihozápad,True,R,,20.0,20.0,
+1018,CHU-NAUDE,Velká Chuchle,31,Jihozápad,True,S,,7.0,7.0,
+1018,CHU-NAUDE,Velká Chuchle,31,Jihozápad,True,T,,20.0,20.0,
+1018,CHU-NAUDE,Velká Chuchle,31,Jihozápad,True,U,,10.0,10.0,
+1018,CHU-NAUDE,Velká Chuchle,31,Jihozápad,True,V,,20.0,20.0,
+1018,CHU-NAUDE,Velká Chuchle,31,Jihozápad,True,X,,7.0,7.0,
+1018,CHU-NAUDE,Velká Chuchle,31,Jihozápad,True,Y,,20.0,20.0,
+1018,CHU-NAUDE,Velká Chuchle,31,Jihozápad,True,Z,,20.0,20.0,
+145,BRE-BELDO,Břevnov,35,Středozápad,True,A1,,4335.0,4335.0,
+145,BRE-BELDO,Břevnov,35,Středozápad,True,B1,,180.0,180.0,
+145,BRE-BELDO,Břevnov,35,Středozápad,True,J1-J5,,300.0,300.0,
+145,BRE-BELDO,Břevnov,35,Středozápad,True,,,510.0,510.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,A1,,210.0,210.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,A2,,310.0,310.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,A3,,760.0,760.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,A4,,955.0,955.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,B2,,5.0,5.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,C,,60.0,60.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,D,,120.0,120.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,E,,30.0,30.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,K,,205.0,205.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,L,,45.0,45.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,N,,75.0,75.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,P,,25.0,25.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,R,,45.0,45.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,S,,25.0,25.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,T,,35.0,35.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,U,,30.0,30.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,V,,45.0,45.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,X,,15.0,15.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,Y,,45.0,45.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,Z,,25.0,25.0,
+148,BRE-LITDE,Břevnov,35,Středozápad,True,,,1015.0,1015.0,
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,C,,300.0,300.0,
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,D,,1020.0,1020.0,
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,E,,430.0,430.0,
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,G,,790.0,790.0,
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,K,,730.0,730.0,
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,L,,1000.0,1000.0,
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,N,,250.0,250.0,
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,O,,85.0,85.0,
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,P,,330.0,330.0,
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,R,,215.0,215.0,
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,S,,425.0,425.0,
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,T,,215.0,215.0,
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,U,,10.0,10.0,
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,V,,165.0,165.0,
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,W,,220.0,220.0,
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,X,,320.0,320.0,
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,Y,,210.0,210.0,
+146,BRE-NAUDO,Břevnov,35,Středozápad,True,Z,,400.0,400.0,
+157,BRE-POEZIE,Břevnov,35,Středozápad,True,B2,,270.0,270.0,
+1078,DED-KOMIKS,Dědina,37,Středozápad,True,,,180.0,180.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,A1,,50.0,50.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,A2,,660.0,660.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,A4,,275.0,275.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,C,,30.0,30.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,D,,40.0,40.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,E,,25.0,25.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,"G,O,W",,10.0,10.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,K,,100.0,100.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,L,,20.0,20.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,N,,25.0,25.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,P,,20.0,20.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,R,,25.0,25.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,S,,25.0,25.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,T,,25.0,25.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,U,,10.0,10.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,V,,20.0,20.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,X,,6.0,6.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,Y,,20.0,20.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,Z,,20.0,20.0,
+822,DED-LITDE,Dědina,37,Středozápad,True,,,475.0,475.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,A1,,1680.0,1680.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,B1,,35.0,35.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,B2,,80.0,80.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,C,,105.0,105.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,D,,255.0,255.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,E,,245.0,245.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,G,,140.0,140.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,J4,,40.0,40.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,K,,140.0,140.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,L,,110.0,110.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,N,,100.0,100.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,O,,30.0,30.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,P,,90.0,90.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,R,,55.0,55.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,S,,105.0,105.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,T,,35.0,35.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,V,,30.0,30.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,W,,120.0,120.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,X,,75.0,75.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,Y,,60.0,60.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,Z,,80.0,80.0,
+823,DED-LITDO,Dědina,37,Středozápad,True,,,20.0,20.0,
+711,DEJ-BEL,Dejvice,38,Středozápad,True,A1,,8050.0,8050.0,
+711,DEJ-BEL,Dejvice,38,Středozápad,True,B1,,80.0,80.0,
+711,DEJ-BEL,Dejvice,38,Středozápad,True,B2,,430.0,430.0,
+713,DEJ-CIZJAZ,Dejvice,38,Středozápad,True,J1,,20.0,20.0,
+713,DEJ-CIZJAZ,Dejvice,38,Středozápad,True,J2,,45.0,45.0,
+713,DEJ-CIZJAZ,Dejvice,38,Středozápad,True,J3,,170.0,170.0,
+713,DEJ-CIZJAZ,Dejvice,38,Středozápad,True,J4,,420.0,420.0,
+713,DEJ-CIZJAZ,Dejvice,38,Středozápad,True,J5,,80.0,80.0,
+713,DEJ-CIZJAZ,Dejvice,38,Středozápad,True,,,55.0,55.0,
+1151,DEJ-KOMDO,Dejvice,38,Středozápad,True,,,350.0,350.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,A1,,10.0,10.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,A2,,470.0,470.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,A3,,930.0,930.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,A4,,960.0,960.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,C,,90.0,90.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,D,,125.0,125.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,E,,50.0,50.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,K,,245.0,245.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,L,,50.0,50.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,N,,55.0,55.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,P,,25.0,25.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,R,,25.0,25.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,S,,45.0,45.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,T,,50.0,50.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,U,,28.0,28.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,V,,45.0,45.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,X,,13.0,13.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,Y,,45.0,45.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,Z,,25.0,25.0,
+715,DEJ-LITDE,Dejvice,38,Středozápad,True,,,1275.0,1275.0,
+1036,DEJ-LITML,Dejvice,38,Středozápad,True,A1,,85.0,85.0,
+1036,DEJ-LITML,Dejvice,38,Středozápad,True,,,340.0,340.0,
+712,DEJ-NAU1,Dejvice,38,Středozápad,True,D,,1720.0,1720.0,
+712,DEJ-NAU1,Dejvice,38,Středozápad,True,G,,1115.0,1115.0,
+712,DEJ-NAU1,Dejvice,38,Středozápad,True,L,,1245.0,1245.0,
+712,DEJ-NAU1,Dejvice,38,Středozápad,True,O,,100.0,100.0,
+712,DEJ-NAU1,Dejvice,38,Středozápad,True,R,,285.0,285.0,
+712,DEJ-NAU1,Dejvice,38,Středozápad,True,S,,700.0,700.0,
+712,DEJ-NAU1,Dejvice,38,Středozápad,True,V,,170.0,170.0,
+712,DEJ-NAU1,Dejvice,38,Středozápad,True,X,,590.0,590.0,
+714,DEJ-NAU2,Dejvice,38,Středozápad,True,C,,665.0,665.0,
+714,DEJ-NAU2,Dejvice,38,Středozápad,True,E,,830.0,830.0,
+714,DEJ-NAU2,Dejvice,38,Středozápad,True,K,,1030.0,1030.0,
+714,DEJ-NAU2,Dejvice,38,Středozápad,True,N,,480.0,480.0,
+714,DEJ-NAU2,Dejvice,38,Středozápad,True,P,,690.0,690.0,
+714,DEJ-NAU2,Dejvice,38,Středozápad,True,T,,410.0,410.0,
+714,DEJ-NAU2,Dejvice,38,Středozápad,True,U,,10.0,10.0,
+714,DEJ-NAU2,Dejvice,38,Středozápad,True,W,,530.0,530.0,
+714,DEJ-NAU2,Dejvice,38,Středozápad,True,Y,,425.0,425.0,
+714,DEJ-NAU2,Dejvice,38,Středozápad,True,Z,,340.0,340.0,
+1054,LET-KOMIKS,Letná,39,Severovýchod,True,,,155.0,155.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,A1,,40.0,40.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,A2,,160.0,160.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,A3,,440.0,440.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,A4,,235.0,235.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,C,,55.0,55.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,D,,60.0,60.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,E,,50.0,50.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,K,,130.0,130.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,L,,45.0,45.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,N,,50.0,50.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,P,,20.0,20.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,R,,25.0,25.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,S,,25.0,25.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,T,,30.0,30.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,U,,25.0,25.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,V,,25.0,25.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,X,,10.0,10.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,Y,,40.0,40.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,Z,,40.0,40.0,
+1127,LET-LITDE,Letná,39,Severovýchod,True,,,340.0,340.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,A1,,50.0,50.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,B2,,5.0,5.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,C,,2.0,2.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,D,,2.0,2.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,E,,1.0,1.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,G,,4.0,4.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,K,,2.0,2.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,L,,2.0,2.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,N,,5.0,5.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,O,,1.0,1.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,P,,2.0,2.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,R,,1.0,1.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,S,,2.0,2.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,T,,2.0,2.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,U,,1.0,1.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,V,,1.0,1.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,W,,1.0,1.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,X,,1.0,1.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,Y,,1.0,1.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,Z,,2.0,2.0,
+1056,LET-LITDO,Letná,39,Severovýchod,True,,,5.0,5.0,
+238,NOV-BELDO,Novodvorská,41,Jih,True,A1,,4060.0,4060.0,
+238,NOV-BELDO,Novodvorská,41,Jih,True,J1,,10.0,10.0,
+238,NOV-BELDO,Novodvorská,41,Jih,True,J2,,10.0,10.0,
+238,NOV-BELDO,Novodvorská,41,Jih,True,J3,,20.0,20.0,
+238,NOV-BELDO,Novodvorská,41,Jih,True,J4,,150.0,150.0,
+238,NOV-BELDO,Novodvorská,41,Jih,True,,,20.0,20.0,
+964,NOV-KOMDE,Novodvorská,41,Jih,True,,,150.0,150.0,
+830,NOV-KOMIKS,Novodvorská,41,Jih,True,,,240.0,240.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,A1,,165.0,165.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,A2,,300.0,300.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,A3,,580.0,580.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,A4,,600.0,600.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,B2,,15.0,15.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,C,,50.0,50.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,D,,130.0,130.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,E,,40.0,40.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,K,,145.0,145.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,L,,30.0,30.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,N,,40.0,40.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,P,,15.0,15.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,R,,30.0,30.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,S,,25.0,25.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,T,,30.0,30.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,U,,25.0,25.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,V,,15.0,15.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,X,,15.0,15.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,Y,,15.0,15.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,Z,,20.0,20.0,
+240,NOV-LITDE,Novodvorská,41,Jih,True,,,780.0,780.0,
+242,NOV-NAUDO,Novodvorská,41,Jih,True,C,,270.0,270.0,
+242,NOV-NAUDO,Novodvorská,41,Jih,True,D,,710.0,710.0,
+242,NOV-NAUDO,Novodvorská,41,Jih,True,E,,565.0,565.0,
+242,NOV-NAUDO,Novodvorská,41,Jih,True,G,,370.0,370.0,
+242,NOV-NAUDO,Novodvorská,41,Jih,True,K,,470.0,470.0,
+242,NOV-NAUDO,Novodvorská,41,Jih,True,L,,370.0,370.0,
+242,NOV-NAUDO,Novodvorská,41,Jih,True,N,,250.0,250.0,
+242,NOV-NAUDO,Novodvorská,41,Jih,True,O,,95.0,95.0,
+242,NOV-NAUDO,Novodvorská,41,Jih,True,P,,390.0,390.0,
+242,NOV-NAUDO,Novodvorská,41,Jih,True,R,,210.0,210.0,
+242,NOV-NAUDO,Novodvorská,41,Jih,True,S,,505.0,505.0,
+242,NOV-NAUDO,Novodvorská,41,Jih,True,T,,145.0,145.0,
+242,NOV-NAUDO,Novodvorská,41,Jih,True,U,,6.0,6.0,
+242,NOV-NAUDO,Novodvorská,41,Jih,True,V,,165.0,165.0,
+242,NOV-NAUDO,Novodvorská,41,Jih,True,W,,235.0,235.0,
+242,NOV-NAUDO,Novodvorská,41,Jih,True,X,,170.0,170.0,
+242,NOV-NAUDO,Novodvorská,41,Jih,True,Y,,185.0,185.0,
+242,NOV-NAUDO,Novodvorská,41,Jih,True,Z,,215.0,215.0,
+963,NOV-POEDI,Novodvorská,41,Jih,True,B1,,75.0,75.0,
+963,NOV-POEDI,Novodvorská,41,Jih,True,B2,,240.0,240.0,
+1236,PET-BELDO2,Petřiny,42,Středozápad,True,A1,,2530.0,2530.0,
+1236,PET-BELDO2,Petřiny,42,Středozápad,True,B1,,6.0,6.0,
+1236,PET-BELDO2,Petřiny,42,Středozápad,True,B2,,150.0,150.0,
+1236,PET-BELDO2,Petřiny,42,Středozápad,True,J1-3,,20.0,20.0,
+1236,PET-BELDO2,Petřiny,42,Středozápad,True,J4,,75.0,75.0,
+1236,PET-BELDO2,Petřiny,42,Středozápad,True,J5,,10.0,10.0,
+1236,PET-BELDO2,Petřiny,42,Středozápad,True,,,10.0,10.0,
+1231,PET-KOMDE1,Petřiny,42,Středozápad,True,,,35.0,35.0,
+1242,PET-KOMDO2,Petřiny,42,Středozápad,True,,,300.0,300.0,
+1232,PET-LEPDE1,Petřiny,42,Středozápad,True,,,60.0,60.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,A2,,450.0,450.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,A3,,1020.0,1020.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,C,,10.0,10.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,D,,10.0,10.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,E,,10.0,10.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,"G,O,W",,5.0,5.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,J1-J4,,20.0,20.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,K,,80.0,80.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,L,,15.0,15.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,N,,15.0,15.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,P,,10.0,10.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,R,,10.0,10.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,S,,10.0,10.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,T,,15.0,15.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,U,,10.0,10.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,V,,10.0,10.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,X,,3.0,3.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,Y,,15.0,15.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,Z,,10.0,10.0,
+1233,PET-LITDE1,Petřiny,42,Středozápad,True,,,80.0,80.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,A1,,70.0,70.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,A4,,250.0,250.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,C,,11.0,11.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,D,,26.0,26.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,E,,16.0,16.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,"G,O,W",,10.0,10.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,K,,31.0,31.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,L,,16.0,16.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,N,,12.0,12.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,P,,9.0,9.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,R,,10.0,10.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,S,,9.0,9.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,T,,16.0,16.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,U,,6.0,6.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,V,,9.0,9.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,X,,10.0,10.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,Y,,9.0,9.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,Z,,9.0,9.0,
+1240,PET-LITML2,Petřiny,42,Středozápad,True,,,295.0,295.0,
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,C,,200.0,200.0,
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,D,,370.0,370.0,
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,E,,175.0,175.0,
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,G,,380.0,380.0,
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,K,,160.0,160.0,
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,L,,370.0,370.0,
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,N,,120.0,120.0,
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,O,,55.0,55.0,
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,P,,190.0,190.0,
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,R,,70.0,70.0,
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,S,,145.0,145.0,
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,T,,60.0,60.0,
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,U,,4.0,4.0,
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,V,,25.0,25.0,
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,W,,100.0,100.0,
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,X,,80.0,80.0,
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,Y,,120.0,120.0,
+1241,PET-NAUDO2,Petřiny,42,Středozápad,True,Z,,70.0,70.0,
+507,NVE-CHFDE,Pankrác,43,Jih,True,A2,,20.0,20.0,
+507,NVE-CHFDE,Pankrác,43,Jih,True,A3,,50.0,50.0,
+507,NVE-CHFDE,Pankrác,43,Jih,True,N,,40.0,40.0,
+507,NVE-CHFDE,Pankrác,43,Jih,True,"P,R,V,Y",,10.0,10.0,
+1023,NVE-KOMDE,Pankrác,43,Jih,True,,,200.0,200.0,
+843,NVE-KOMDO,Pankrác,43,Jih,True,,,70.0,70.0,
+1250,NVE-LEP,Pankrác,43,Jih,True,,,200.0,200.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,A1,,150.0,150.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,A2,,300.0,300.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,A3,,650.0,650.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,A4,,330.0,330.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,C,,95.0,95.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,D,,80.0,80.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,E,,55.0,55.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,J4,,80.0,80.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,K,,150.0,150.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,L,,40.0,40.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,N,,45.0,45.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,P,,20.0,20.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,R,,35.0,35.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,S,,35.0,35.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,T,,35.0,35.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,U,,15.0,15.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,V,,40.0,40.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,Y,,35.0,35.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,Z,,40.0,40.0,
+500,NVE-LITDE,Pankrác,43,Jih,True,,,425.0,425.0,
+499,NVE-LITML,Pankrác,43,Jih,True,A1,,1165.0,1165.0,
+499,NVE-LITML,Pankrác,43,Jih,True,B1,,20.0,20.0,
+499,NVE-LITML,Pankrác,43,Jih,True,B2,,90.0,90.0,
+499,NVE-LITML,Pankrác,43,Jih,True,C,,100.0,100.0,
+499,NVE-LITML,Pankrác,43,Jih,True,D,,180.0,180.0,
+499,NVE-LITML,Pankrác,43,Jih,True,E,,135.0,135.0,
+499,NVE-LITML,Pankrác,43,Jih,True,G,,190.0,190.0,
+499,NVE-LITML,Pankrác,43,Jih,True,J4,,85.0,85.0,
+499,NVE-LITML,Pankrác,43,Jih,True,K,,110.0,110.0,
+499,NVE-LITML,Pankrác,43,Jih,True,L,,175.0,175.0,
+499,NVE-LITML,Pankrác,43,Jih,True,N,,60.0,60.0,
+499,NVE-LITML,Pankrác,43,Jih,True,O,,35.0,35.0,
+499,NVE-LITML,Pankrác,43,Jih,True,P,,80.0,80.0,
+499,NVE-LITML,Pankrác,43,Jih,True,R,,30.0,30.0,
+499,NVE-LITML,Pankrác,43,Jih,True,S,,50.0,50.0,
+499,NVE-LITML,Pankrác,43,Jih,True,T,,60.0,60.0,
+499,NVE-LITML,Pankrác,43,Jih,True,V,,25.0,25.0,
+499,NVE-LITML,Pankrác,43,Jih,True,W,,45.0,45.0,
+499,NVE-LITML,Pankrác,43,Jih,True,X,,40.0,40.0,
+499,NVE-LITML,Pankrác,43,Jih,True,Y,,80.0,80.0,
+499,NVE-LITML,Pankrác,43,Jih,True,Z,,80.0,80.0,
+499,NVE-LITML,Pankrác,43,Jih,True,,,20.0,20.0,
+844,NVE-POEDE,Pankrác,43,Jih,True,B2,,5.0,5.0,
+844,NVE-POEDE,Pankrác,43,Jih,True,,,155.0,155.0,
+435,SPO-BELDO,Spořilov,45,Jih,True,A1,,4580.0,4580.0,
+437,SPO-DETI,Spořilov,45,Jih,True,A1,,30.0,30.0,
+437,SPO-DETI,Spořilov,45,Jih,True,A2,,305.0,305.0,
+437,SPO-DETI,Spořilov,45,Jih,True,A3,,900.0,900.0,
+437,SPO-DETI,Spořilov,45,Jih,True,A4,,410.0,410.0,
+437,SPO-DETI,Spořilov,45,Jih,True,B2,,5.0,5.0,
+437,SPO-DETI,Spořilov,45,Jih,True,C,,50.0,50.0,
+437,SPO-DETI,Spořilov,45,Jih,True,D,,50.0,50.0,
+437,SPO-DETI,Spořilov,45,Jih,True,E,,45.0,45.0,
+437,SPO-DETI,Spořilov,45,Jih,True,J,,40.0,40.0,
+437,SPO-DETI,Spořilov,45,Jih,True,K,,200.0,200.0,
+437,SPO-DETI,Spořilov,45,Jih,True,L,,35.0,35.0,
+437,SPO-DETI,Spořilov,45,Jih,True,N,,40.0,40.0,
+437,SPO-DETI,Spořilov,45,Jih,True,P,,20.0,20.0,
+437,SPO-DETI,Spořilov,45,Jih,True,R,,40.0,40.0,
+437,SPO-DETI,Spořilov,45,Jih,True,S,,40.0,40.0,
+437,SPO-DETI,Spořilov,45,Jih,True,T,,20.0,20.0,
+437,SPO-DETI,Spořilov,45,Jih,True,U,,25.0,25.0,
+437,SPO-DETI,Spořilov,45,Jih,True,V,,20.0,20.0,
+437,SPO-DETI,Spořilov,45,Jih,True,X,,10.0,10.0,
+437,SPO-DETI,Spořilov,45,Jih,True,Y,,40.0,40.0,
+437,SPO-DETI,Spořilov,45,Jih,True,Z,,20.0,20.0,
+437,SPO-DETI,Spořilov,45,Jih,True,,,730.0,730.0,
+1024,SPO-KOMDE,Spořilov,45,Jih,True,,,155.0,155.0,
+955,SPO-KOMIKS,Spořilov,45,Jih,True,,,230.0,230.0,
+1025,SPO-LEPO,Spořilov,45,Jih,True,,,200.0,200.0,
+434,SPO-NAUDO,Spořilov,45,Jih,True,C,,300.0,300.0,
+434,SPO-NAUDO,Spořilov,45,Jih,True,D,,695.0,695.0,
+434,SPO-NAUDO,Spořilov,45,Jih,True,E,,400.0,400.0,
+434,SPO-NAUDO,Spořilov,45,Jih,True,G,,330.0,330.0,
+434,SPO-NAUDO,Spořilov,45,Jih,True,K,,300.0,300.0,
+434,SPO-NAUDO,Spořilov,45,Jih,True,L,,470.0,470.0,
+434,SPO-NAUDO,Spořilov,45,Jih,True,N,,230.0,230.0,
+434,SPO-NAUDO,Spořilov,45,Jih,True,O,,65.0,65.0,
+434,SPO-NAUDO,Spořilov,45,Jih,True,P,,300.0,300.0,
+434,SPO-NAUDO,Spořilov,45,Jih,True,R,,245.0,245.0,
+434,SPO-NAUDO,Spořilov,45,Jih,True,S,,280.0,280.0,
+434,SPO-NAUDO,Spořilov,45,Jih,True,T,,145.0,145.0,
+434,SPO-NAUDO,Spořilov,45,Jih,True,V,,75.0,75.0,
+434,SPO-NAUDO,Spořilov,45,Jih,True,W,,130.0,130.0,
+434,SPO-NAUDO,Spořilov,45,Jih,True,X,,285.0,285.0,
+434,SPO-NAUDO,Spořilov,45,Jih,True,Y,,140.0,140.0,
+434,SPO-NAUDO,Spořilov,45,Jih,True,Z,,200.0,200.0,
+441,SPO-POEDIV,Spořilov,45,Jih,True,B1,,25.0,25.0,
+441,SPO-POEDIV,Spořilov,45,Jih,True,B2,,315.0,315.0,
+441,SPO-POEDIV,Spořilov,45,Jih,True,J1,,5.0,5.0,
+441,SPO-POEDIV,Spořilov,45,Jih,True,J2,,10.0,10.0,
+441,SPO-POEDIV,Spořilov,45,Jih,True,J3,,20.0,20.0,
+441,SPO-POEDIV,Spořilov,45,Jih,True,J4,,110.0,110.0,
+441,SPO-POEDIV,Spořilov,45,Jih,True,J5,,35.0,35.0,
+441,SPO-POEDIV,Spořilov,45,Jih,True,,,5.0,5.0,
+1091,ZME-BELDE,Zahradní Město,47,Jihovýchod,True,A2,,410.0,410.0,
+1091,ZME-BELDE,Zahradní Město,47,Jihovýchod,True,A3,,550.0,550.0,
+1091,ZME-BELDE,Zahradní Město,47,Jihovýchod,True,B2,,5.0,5.0,
+1091,ZME-BELDE,Zahradní Město,47,Jihovýchod,True,,,235.0,235.0,
+699,ZME-BELDO,Zahradní Město,47,Jihovýchod,True,A1,,2000.0,2000.0,
+699,ZME-BELDO,Zahradní Město,47,Jihovýchod,True,B1,,10.0,10.0,
+699,ZME-BELDO,Zahradní Město,47,Jihovýchod,True,B2,,120.0,120.0,
+699,ZME-BELDO,Zahradní Město,47,Jihovýchod,True,J4,,90.0,90.0,
+699,ZME-BELDO,Zahradní Město,47,Jihovýchod,True,,,20.0,20.0,
+701,ZME-DETI,Zahradní Město,47,Jihovýchod,True,C,,60.0,60.0,
+701,ZME-DETI,Zahradní Město,47,Jihovýchod,True,D,,70.0,70.0,
+701,ZME-DETI,Zahradní Město,47,Jihovýchod,True,E,,25.0,25.0,
+701,ZME-DETI,Zahradní Město,47,Jihovýchod,True,K,,180.0,180.0,
+701,ZME-DETI,Zahradní Město,47,Jihovýchod,True,L,,45.0,45.0,
+701,ZME-DETI,Zahradní Město,47,Jihovýchod,True,N,,75.0,75.0,
+701,ZME-DETI,Zahradní Město,47,Jihovýchod,True,P,,45.0,45.0,
+701,ZME-DETI,Zahradní Město,47,Jihovýchod,True,R,,25.0,25.0,
+701,ZME-DETI,Zahradní Město,47,Jihovýchod,True,S,,25.0,25.0,
+701,ZME-DETI,Zahradní Město,47,Jihovýchod,True,T,,25.0,25.0,
+701,ZME-DETI,Zahradní Město,47,Jihovýchod,True,U,,15.0,15.0,
+701,ZME-DETI,Zahradní Město,47,Jihovýchod,True,V,,25.0,25.0,
+701,ZME-DETI,Zahradní Město,47,Jihovýchod,True,X,,5.0,5.0,
+701,ZME-DETI,Zahradní Město,47,Jihovýchod,True,Y,,45.0,45.0,
+701,ZME-DETI,Zahradní Město,47,Jihovýchod,True,Z,,45.0,45.0,
+701,ZME-DETI,Zahradní Město,47,Jihovýchod,True,,,10.0,10.0,
+1092,ZME-KOMDE,Zahradní Město,47,Jihovýchod,True,,,50.0,50.0,
+1093,ZME-KOMDO,Zahradní Město,47,Jihovýchod,True,,,250.0,250.0,
+1095,ZME-LITML,Zahradní Město,47,Jihovýchod,True,A1,,44.0,44.0,
+1095,ZME-LITML,Zahradní Město,47,Jihovýchod,True,A4,,406.0,406.0,
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,C,,170.0,170.0,
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,D,,320.0,320.0,
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,E,,330.0,330.0,
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,G,,260.0,260.0,
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,K,,190.0,190.0,
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,L,,340.0,340.0,
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,N,,180.0,180.0,
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,O,,30.0,30.0,
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,P,,200.0,200.0,
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,R,,90.0,90.0,
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,S,,110.0,110.0,
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,T,,80.0,80.0,
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,U,,5.0,5.0,
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,V,,60.0,60.0,
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,W,,80.0,80.0,
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,X,,70.0,70.0,
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,Y,,80.0,80.0,
+700,ZME-NAUDO,Zahradní Město,47,Jihovýchod,True,Z,,90.0,90.0,
+654,OSV-BELDE,Ostrovského,48,Jihozápad,True,A1,,30.0,30.0,
+654,OSV-BELDE,Ostrovského,48,Jihozápad,True,A2,,170.0,170.0,
+654,OSV-BELDE,Ostrovského,48,Jihozápad,True,A3,,400.0,400.0,
+654,OSV-BELDE,Ostrovského,48,Jihozápad,True,A4,,325.0,325.0,
+654,OSV-BELDE,Ostrovského,48,Jihozápad,True,B2,,5.0,5.0,
+654,OSV-BELDE,Ostrovského,48,Jihozápad,True,J4,,55.0,55.0,
+654,OSV-BELDE,Ostrovského,48,Jihozápad,True,,,420.0,420.0,
+653,OSV-BELDO,Ostrovského,48,Jihozápad,True,A1,,1275.0,1275.0,
+653,OSV-BELDO,Ostrovského,48,Jihozápad,True,B1,,15.0,15.0,
+653,OSV-BELDO,Ostrovského,48,Jihozápad,True,B2,,105.0,105.0,
+653,OSV-BELDO,Ostrovského,48,Jihozápad,True,J2,,10.0,10.0,
+653,OSV-BELDO,Ostrovského,48,Jihozápad,True,J3,,10.0,10.0,
+653,OSV-BELDO,Ostrovského,48,Jihozápad,True,J4,,85.0,85.0,
+653,OSV-BELDO,Ostrovského,48,Jihozápad,True,,,10.0,10.0,
+1259,OSV-KOMDE,Ostrovského,48,Jihozápad,True,,,105.0,105.0,
+1258,OSV-KOMDO,Ostrovského,48,Jihozápad,True,,,100.0,100.0,
+1260,OSV-LEPOR,Ostrovského,48,Jihozápad,True,,,80.0,80.0,
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,C,,185.0,185.0,
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,D,,340.0,340.0,
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,E,,175.0,175.0,
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,G,,140.0,140.0,
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,K,,370.0,370.0,
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,L,,185.0,185.0,
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,N,,80.0,80.0,
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,O,,15.0,15.0,
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,P,,145.0,145.0,
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,R,,65.0,65.0,
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,S,,110.0,110.0,
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,T,,50.0,50.0,
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,U,,10.0,10.0,
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,V,,60.0,60.0,
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,W,,45.0,45.0,
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,X,,25.0,25.0,
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,Y,,95.0,95.0,
+655,OSV-NAUDO,Ostrovského,48,Jihozápad,True,Z,,105.0,105.0,
+207,DIT-BELDO,Dittrichova,51,Středozápad,True,A1,,2080.0,2080.0,
+207,DIT-BELDO,Dittrichova,51,Středozápad,True,B1,,20.0,20.0,
+207,DIT-BELDO,Dittrichova,51,Středozápad,True,B2,,255.0,255.0,
+207,DIT-BELDO,Dittrichova,51,Středozápad,True,J4,,70.0,70.0,
+207,DIT-BELDO,Dittrichova,51,Středozápad,True,,,30.0,30.0,
+1020,DIT-DOMDE,Dittrichova,51,Středozápad,True,,,240.0,240.0,
+1068,DIT-KOMDE,Dittrichova,51,Středozápad,True,,,60.0,60.0,
+960,DIT-KOMDO,Dittrichova,51,Středozápad,True,,,120.0,120.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,A1,,10.0,10.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,A2,,275.0,275.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,A3,,525.0,525.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,A4,,380.0,380.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,B2,,5.0,5.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,C,,115.0,115.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,D,,85.0,85.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,E,,45.0,45.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,"G,O,W",,10.0,10.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,J1-J5,,85.0,85.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,K,,245.0,245.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,L,,78.0,78.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,N,,135.0,135.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,P,,80.0,80.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,R,,50.0,50.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,S,,40.0,40.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,T,,65.0,65.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,U,,25.0,25.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,V,,45.0,45.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,X,,50.0,50.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,Y,,25.0,25.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,Z,,50.0,50.0,
+212,DIT-LITDE,Dittrichova,51,Středozápad,True,,,110.0,110.0,
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,C,,305.0,305.0,
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,D,,500.0,500.0,
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,E,,250.0,250.0,
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,G,,315.0,315.0,
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,K,,170.0,170.0,
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,L,,290.0,290.0,
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,N,,100.0,100.0,
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,O,,80.0,80.0,
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,P,,215.0,215.0,
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,R,,90.0,90.0,
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,S,,150.0,150.0,
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,T,,70.0,70.0,
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,V,,35.0,35.0,
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,W,,90.0,90.0,
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,X,,115.0,115.0,
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,Y,,85.0,85.0,
+213,DIT-NAUDO,Dittrichova,51,Středozápad,True,Z,,185.0,185.0,
+218,BOH-BELDO,Bohnice,52,Severovýchod,True,A1,,4900.0,4900.0,
+218,BOH-BELDO,Bohnice,52,Severovýchod,True,B1,,55.0,55.0,
+218,BOH-BELDO,Bohnice,52,Severovýchod,True,B2,,625.0,625.0,
+218,BOH-BELDO,Bohnice,52,Severovýchod,True,,,4240.0,4240.0,
+1253,BOH-CIZOJ,Bohnice,52,Severovýchod,True,J1,,20.0,20.0,
+1253,BOH-CIZOJ,Bohnice,52,Severovýchod,True,J2,,15.0,15.0,
+1253,BOH-CIZOJ,Bohnice,52,Severovýchod,True,J3,,40.0,40.0,
+1253,BOH-CIZOJ,Bohnice,52,Severovýchod,True,J4,,200.0,200.0,
+1253,BOH-CIZOJ,Bohnice,52,Severovýchod,True,J5,,25.0,25.0,
+1253,BOH-CIZOJ,Bohnice,52,Severovýchod,True,,,390.0,390.0,
+227,BOH-HUDBA,Bohnice,52,Severovýchod,True,S,,700.0,700.0,
+227,BOH-HUDBA,Bohnice,52,Severovýchod,True,V,,1200.0,1200.0,
+227,BOH-HUDBA,Bohnice,52,Severovýchod,True,Vnoty,,300.0,300.0,
+1139,BOH-KOMDO,Bohnice,52,Severovýchod,True,,,900.0,900.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,A1,,35.0,35.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,A2,,490.0,490.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,A3,,1120.0,1120.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,A4,,900.0,900.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,B2,,2.0,2.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,C,,130.0,130.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,D,,205.0,205.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,E,,73.0,73.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,G,,26.0,26.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,K,,360.0,360.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,L,,100.0,100.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,N,,120.0,120.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,P,,36.0,36.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,R,,70.0,70.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,S,,90.0,90.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,T,,31.0,31.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,U,,63.0,63.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,V,,90.0,90.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,X,,17.0,17.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,Y,,95.0,95.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,Z,,42.0,42.0,
+219,BOH-LITDE,Bohnice,52,Severovýchod,True,,,915.0,915.0,
+221,BOH-NAUDO,Bohnice,52,Severovýchod,True,C,,700.0,700.0,
+221,BOH-NAUDO,Bohnice,52,Severovýchod,True,D,,1690.0,1690.0,
+221,BOH-NAUDO,Bohnice,52,Severovýchod,True,E,,750.0,750.0,
+221,BOH-NAUDO,Bohnice,52,Severovýchod,True,G,,1380.0,1380.0,
+221,BOH-NAUDO,Bohnice,52,Severovýchod,True,K,,620.0,620.0,
+221,BOH-NAUDO,Bohnice,52,Severovýchod,True,L,,1450.0,1450.0,
+221,BOH-NAUDO,Bohnice,52,Severovýchod,True,N,,450.0,450.0,
+221,BOH-NAUDO,Bohnice,52,Severovýchod,True,O,,190.0,190.0,
+221,BOH-NAUDO,Bohnice,52,Severovýchod,True,P,,810.0,810.0,
+221,BOH-NAUDO,Bohnice,52,Severovýchod,True,R,,220.0,220.0,
+221,BOH-NAUDO,Bohnice,52,Severovýchod,True,S,,810.0,810.0,
+221,BOH-NAUDO,Bohnice,52,Severovýchod,True,T,,250.0,250.0,
+221,BOH-NAUDO,Bohnice,52,Severovýchod,True,W,,510.0,510.0,
+221,BOH-NAUDO,Bohnice,52,Severovýchod,True,X,,760.0,760.0,
+221,BOH-NAUDO,Bohnice,52,Severovýchod,True,Y,,520.0,520.0,
+221,BOH-NAUDO,Bohnice,52,Severovýchod,True,Z,,500.0,500.0,
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,A1,,1500.0,1500.0,
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,D,,300.0,300.0,
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,E,,100.0,100.0,
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,G,,60.0,60.0,
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,K,,35.0,35.0,
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,L,,60.0,60.0,
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,N,,40.0,40.0,
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,P,,20.0,20.0,
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,R,,30.0,30.0,
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,S,,30.0,30.0,
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,SV,,6220.0,6220.0,
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,T,,20.0,20.0,
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,V,,1300.0,1300.0,
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,V7,,350.0,350.0,
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,W,,25.0,25.0,
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,X,,15.0,15.0,
+223,BOH-SKLAD,Bohnice,52,Severovýchod,True,,,825.0,825.0,
+327,PRO-BELDE,Prosek,54,Severovýchod,True,A1,,130.0,130.0,
+327,PRO-BELDE,Prosek,54,Severovýchod,True,A2,,320.0,320.0,
+327,PRO-BELDE,Prosek,54,Severovýchod,True,A3,,805.0,805.0,
+327,PRO-BELDE,Prosek,54,Severovýchod,True,A4,,620.0,620.0,
+327,PRO-BELDE,Prosek,54,Severovýchod,True,B2,,5.0,5.0,
+327,PRO-BELDE,Prosek,54,Severovýchod,True,,,1250.0,1250.0,
+324,PRO-BELDO,Prosek,54,Severovýchod,True,A1,,3870.0,3870.0,
+324,PRO-BELDO,Prosek,54,Severovýchod,True,J1,,15.0,15.0,
+324,PRO-BELDO,Prosek,54,Severovýchod,True,J2,,15.0,15.0,
+324,PRO-BELDO,Prosek,54,Severovýchod,True,J3,,50.0,50.0,
+324,PRO-BELDO,Prosek,54,Severovýchod,True,J4,,160.0,160.0,
+324,PRO-BELDO,Prosek,54,Severovýchod,True,J5,,15.0,15.0,
+324,PRO-BELDO,Prosek,54,Severovýchod,True,,,10.0,10.0,
+981,PRO-KOMDE,Prosek,54,Severovýchod,True,,,205.0,205.0,
+982,PRO-KOMDO,Prosek,54,Severovýchod,True,,,260.0,260.0,
+332,PRO-NAU,Prosek,54,Severovýchod,True,R,,160.0,160.0,
+332,PRO-NAU,Prosek,54,Severovýchod,True,T,,155.0,155.0,
+332,PRO-NAU,Prosek,54,Severovýchod,True,V,,300.0,300.0,
+332,PRO-NAU,Prosek,54,Severovýchod,True,X,,100.0,100.0,
+332,PRO-NAU,Prosek,54,Severovýchod,True,Y,,400.0,400.0,
+328,PRO-NAUDE,Prosek,54,Severovýchod,True,C,,165.0,165.0,
+328,PRO-NAUDE,Prosek,54,Severovýchod,True,D,,120.0,120.0,
+328,PRO-NAUDE,Prosek,54,Severovýchod,True,E,,100.0,100.0,
+328,PRO-NAUDE,Prosek,54,Severovýchod,True,G,,90.0,90.0,
+328,PRO-NAUDE,Prosek,54,Severovýchod,True,K,,420.0,420.0,
+328,PRO-NAUDE,Prosek,54,Severovýchod,True,L,,85.0,85.0,
+328,PRO-NAUDE,Prosek,54,Severovýchod,True,N,,190.0,190.0,
+328,PRO-NAUDE,Prosek,54,Severovýchod,True,P,,80.0,80.0,
+328,PRO-NAUDE,Prosek,54,Severovýchod,True,S,,90.0,90.0,
+328,PRO-NAUDE,Prosek,54,Severovýchod,True,U,,35.0,35.0,
+328,PRO-NAUDE,Prosek,54,Severovýchod,True,Z,,55.0,55.0,
+328,PRO-NAUDE,Prosek,54,Severovýchod,True,,,25.0,25.0,
+325,PRO-NAUDO,Prosek,54,Severovýchod,True,C,,320.0,320.0,
+325,PRO-NAUDO,Prosek,54,Severovýchod,True,D,,590.0,590.0,
+325,PRO-NAUDO,Prosek,54,Severovýchod,True,E,,430.0,430.0,
+325,PRO-NAUDO,Prosek,54,Severovýchod,True,G,,510.0,510.0,
+325,PRO-NAUDO,Prosek,54,Severovýchod,True,K,,340.0,340.0,
+325,PRO-NAUDO,Prosek,54,Severovýchod,True,L,,470.0,470.0,
+325,PRO-NAUDO,Prosek,54,Severovýchod,True,N,,250.0,250.0,
+325,PRO-NAUDO,Prosek,54,Severovýchod,True,O,,80.0,80.0,
+325,PRO-NAUDO,Prosek,54,Severovýchod,True,P,,350.0,350.0,
+325,PRO-NAUDO,Prosek,54,Severovýchod,True,S,,160.0,160.0,
+325,PRO-NAUDO,Prosek,54,Severovýchod,True,W,,175.0,175.0,
+325,PRO-NAUDO,Prosek,54,Severovýchod,True,Z,,265.0,265.0,
+331,PRO-POE,Prosek,54,Severovýchod,True,B1,,55.0,55.0,
+331,PRO-POE,Prosek,54,Severovýchod,True,B2,,445.0,445.0,
+976,PRO-PRSK,Prosek,54,Severovýchod,True,A1,,960.0,960.0,
+976,PRO-PRSK,Prosek,54,Severovýchod,True,C,,40.0,40.0,
+976,PRO-PRSK,Prosek,54,Severovýchod,True,D,,55.0,55.0,
+976,PRO-PRSK,Prosek,54,Severovýchod,True,E,,35.0,35.0,
+976,PRO-PRSK,Prosek,54,Severovýchod,True,G,,80.0,80.0,
+976,PRO-PRSK,Prosek,54,Severovýchod,True,K,,20.0,20.0,
+976,PRO-PRSK,Prosek,54,Severovýchod,True,L,,25.0,25.0,
+976,PRO-PRSK,Prosek,54,Severovýchod,True,N,,20.0,20.0,
+976,PRO-PRSK,Prosek,54,Severovýchod,True,O,,50.0,50.0,
+976,PRO-PRSK,Prosek,54,Severovýchod,True,P,,35.0,35.0,
+976,PRO-PRSK,Prosek,54,Severovýchod,True,R,,15.0,15.0,
+976,PRO-PRSK,Prosek,54,Severovýchod,True,S,,30.0,30.0,
+976,PRO-PRSK,Prosek,54,Severovýchod,True,W,,15.0,15.0,
+976,PRO-PRSK,Prosek,54,Severovýchod,True,X,,30.0,30.0,
+976,PRO-PRSK,Prosek,54,Severovýchod,True,,,65.0,65.0,
+752,RUS-BELDO,Dům čtení,56,Jihovýchod,True,A1,,7365.0,7365.0,
+752,RUS-BELDO,Dům čtení,56,Jihovýchod,True,B1,,80.0,80.0,
+752,RUS-BELDO,Dům čtení,56,Jihovýchod,True,B2,,600.0,600.0,
+752,RUS-BELDO,Dům čtení,56,Jihovýchod,True,J1,,10.0,10.0,
+752,RUS-BELDO,Dům čtení,56,Jihovýchod,True,J2,,20.0,20.0,
+752,RUS-BELDO,Dům čtení,56,Jihovýchod,True,J3,,25.0,25.0,
+752,RUS-BELDO,Dům čtení,56,Jihovýchod,True,J4,,130.0,130.0,
+752,RUS-BELDO,Dům čtení,56,Jihovýchod,True,J5,,10.0,10.0,
+752,RUS-BELDO,Dům čtení,56,Jihovýchod,True,,,775.0,775.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,A1,,105.0,105.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,A2,,420.0,420.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,A3,,1300.0,1300.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,A4,,970.0,970.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,B2,,40.0,40.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,C,,190.0,190.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,D,,190.0,190.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,E,,120.0,120.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,K,,350.0,350.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,L,,105.0,105.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,N,,90.0,90.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,P,,75.0,75.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,R,,45.0,45.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,S,,80.0,80.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,T,,45.0,45.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,U,,60.0,60.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,V,,75.0,75.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,X,,45.0,45.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,Y,,90.0,90.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,Z,,60.0,60.0,
+754,RUS-DETI,Dům čtení,56,Jihovýchod,True,,,1290.0,1290.0,
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,C,,370.0,370.0,
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,D,,1340.0,1340.0,
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,E,,720.0,720.0,
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,G,,780.0,780.0,
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,K,,460.0,460.0,
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,L,,790.0,790.0,
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,N,,330.0,330.0,
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,O,,100.0,100.0,
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,P,,460.0,460.0,
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,R,,350.0,350.0,
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,S,,480.0,480.0,
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,T,,200.0,200.0,
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,U,,1.0,1.0,
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,V,,130.0,130.0,
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,W,,350.0,350.0,
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,X,,520.0,520.0,
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,Y,,240.0,240.0,
+753,RUS-NAUDO,Dům čtení,56,Jihovýchod,True,Z,,340.0,340.0,
+273,OPA-BELDO,Opatov,58,Jih,True,A1,,7345.0,7345.0,
+273,OPA-BELDO,Opatov,58,Jih,True,B2,,720.0,720.0,
+273,OPA-BELDO,Opatov,58,Jih,True,J1,,30.0,30.0,
+273,OPA-BELDO,Opatov,58,Jih,True,J2,,35.0,35.0,
+273,OPA-BELDO,Opatov,58,Jih,True,J3,,90.0,90.0,
+273,OPA-BELDO,Opatov,58,Jih,True,J4,,300.0,300.0,
+273,OPA-BELDO,Opatov,58,Jih,True,J5,,20.0,20.0,
+273,OPA-BELDO,Opatov,58,Jih,True,,,20.0,20.0,
+1138,OPA-DETKOM,Opatov,58,Jih,True,,,270.0,270.0,
+882,OPA-KOMIKS,Opatov,58,Jih,True,,,550.0,550.0,
+270,OPA-LITDE,Opatov,58,Jih,True,A1,,120.0,120.0,
+270,OPA-LITDE,Opatov,58,Jih,True,A2,,400.0,400.0,
+270,OPA-LITDE,Opatov,58,Jih,True,A3,,1020.0,1020.0,
+270,OPA-LITDE,Opatov,58,Jih,True,A4,,950.0,950.0,
+270,OPA-LITDE,Opatov,58,Jih,True,B2,,5.0,5.0,
+270,OPA-LITDE,Opatov,58,Jih,True,C,,205.0,205.0,
+270,OPA-LITDE,Opatov,58,Jih,True,D,,225.0,225.0,
+270,OPA-LITDE,Opatov,58,Jih,True,E,,80.0,80.0,
+270,OPA-LITDE,Opatov,58,Jih,True,K,,555.0,555.0,
+270,OPA-LITDE,Opatov,58,Jih,True,L,,110.0,110.0,
+270,OPA-LITDE,Opatov,58,Jih,True,N,,130.0,130.0,
+270,OPA-LITDE,Opatov,58,Jih,True,P,,40.0,40.0,
+270,OPA-LITDE,Opatov,58,Jih,True,R,,80.0,80.0,
+270,OPA-LITDE,Opatov,58,Jih,True,S,,140.0,140.0,
+270,OPA-LITDE,Opatov,58,Jih,True,T,,80.0,80.0,
+270,OPA-LITDE,Opatov,58,Jih,True,U,,100.0,100.0,
+270,OPA-LITDE,Opatov,58,Jih,True,V,,115.0,115.0,
+270,OPA-LITDE,Opatov,58,Jih,True,X,,160.0,160.0,
+270,OPA-LITDE,Opatov,58,Jih,True,Y,,190.0,190.0,
+270,OPA-LITDE,Opatov,58,Jih,True,Z,,155.0,155.0,
+270,OPA-LITDE,Opatov,58,Jih,True,,,1395.0,1395.0,
+850,OPA-LITLEP,Opatov,58,Jih,True,,,100.0,100.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,B1,,180.0,180.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,C,,450.0,450.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,D,,2150.0,2150.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,E,,1025.0,1025.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,G,,1565.0,1565.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,K,,1475.0,1475.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,L,,1780.0,1780.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,N,,425.0,425.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,O,,190.0,190.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,P,,795.0,795.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,R,,540.0,540.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,S4,,220.0,220.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,S6,,170.0,170.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,T,,640.0,640.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,U,,50.0,50.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,V,,330.0,330.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,W,,605.0,605.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,X,,820.0,820.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,Y,,605.0,605.0,
+274,OPA-NAUDO,Opatov,58,Jih,True,Z,,725.0,725.0,
+525,KRC-LITDE,Krč,60,Jih,True,A1,,255.0,255.0,
+525,KRC-LITDE,Krč,60,Jih,True,A2,,300.0,300.0,
+525,KRC-LITDE,Krč,60,Jih,True,A3,,730.0,730.0,
+525,KRC-LITDE,Krč,60,Jih,True,A4,,600.0,600.0,
+525,KRC-LITDE,Krč,60,Jih,True,B2,,10.0,10.0,
+525,KRC-LITDE,Krč,60,Jih,True,C,,40.0,40.0,
+525,KRC-LITDE,Krč,60,Jih,True,D,,170.0,170.0,
+525,KRC-LITDE,Krč,60,Jih,True,E,,45.0,45.0,
+525,KRC-LITDE,Krč,60,Jih,True,J4,,45.0,45.0,
+525,KRC-LITDE,Krč,60,Jih,True,K,,365.0,365.0,
+525,KRC-LITDE,Krč,60,Jih,True,L,,60.0,60.0,
+525,KRC-LITDE,Krč,60,Jih,True,N,,130.0,130.0,
+525,KRC-LITDE,Krč,60,Jih,True,P,,40.0,40.0,
+525,KRC-LITDE,Krč,60,Jih,True,R,,60.0,60.0,
+525,KRC-LITDE,Krč,60,Jih,True,S,,45.0,45.0,
+525,KRC-LITDE,Krč,60,Jih,True,T,,40.0,40.0,
+525,KRC-LITDE,Krč,60,Jih,True,U,,40.0,40.0,
+525,KRC-LITDE,Krč,60,Jih,True,V,,30.0,30.0,
+525,KRC-LITDE,Krč,60,Jih,True,X,,35.0,35.0,
+525,KRC-LITDE,Krč,60,Jih,True,Y,,55.0,55.0,
+525,KRC-LITDE,Krč,60,Jih,True,Z,,115.0,115.0,
+525,KRC-LITDE,Krč,60,Jih,True,,,1225.0,1225.0,
+1037,MAL-BELDO,Malešice,61,Jihovýchod,True,A1,,1885.0,1885.0,
+1037,MAL-BELDO,Malešice,61,Jihovýchod,True,B1,,10.0,10.0,
+1037,MAL-BELDO,Malešice,61,Jihovýchod,True,B2,,90.0,90.0,
+1037,MAL-BELDO,Malešice,61,Jihovýchod,True,J4,,40.0,40.0,
+1037,MAL-BELDO,Malešice,61,Jihovýchod,True,,,10.0,10.0,
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,A2,,450.0,450.0,
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,A3,,750.0,750.0,
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,C,,50.0,50.0,
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,D,,20.0,20.0,
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,E,,20.0,20.0,
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,K,,40.0,40.0,
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,L,,20.0,20.0,
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,N,,20.0,20.0,
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,P,,20.0,20.0,
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,R,,20.0,20.0,
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,S,,20.0,20.0,
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,T,,20.0,20.0,
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,U,,10.0,10.0,
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,V,,20.0,20.0,
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,X,,20.0,20.0,
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,Y,,20.0,20.0,
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,Z,,20.0,20.0,
+1040,MAL-DETI,Malešice,61,Jihovýchod,True,,,465.0,465.0,
+1066,MAL-KOMIKS,Malešice,61,Jihovýchod,True,,,200.0,200.0,
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,A1,,200.0,200.0,
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,A4,,280.0,280.0,
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,D,,62.0,62.0,
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,E,,21.0,21.0,
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,K,,82.0,82.0,
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,L,,16.0,16.0,
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,N,,21.0,21.0,
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,P,,16.0,16.0,
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,R,,21.0,21.0,
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,S,,11.0,11.0,
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,T,,21.0,21.0,
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,U,,11.0,11.0,
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,V,,2.0,2.0,
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,X,,2.0,2.0,
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,Y,,16.0,16.0,
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,Z,,2.0,2.0,
+1042,MAL-LITML,Malešice,61,Jihovýchod,True,,,46.0,46.0,
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,C,,200.0,200.0,
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,D,,220.0,220.0,
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,E,,180.0,180.0,
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,G,,190.0,190.0,
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,K,,130.0,130.0,
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,L,,130.0,130.0,
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,N,,90.0,90.0,
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,O,,20.0,20.0,
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,P,,140.0,140.0,
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,R,,50.0,50.0,
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,S,,70.0,70.0,
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,T,,35.0,35.0,
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,U,,20.0,20.0,
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,V,,10.0,10.0,
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,W,,35.0,35.0,
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,X,,30.0,30.0,
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,Y,,60.0,60.0,
+1038,MAL-NAUDO,Malešice,61,Jihovýchod,True,Z,,70.0,70.0,
+465,BAR-BELDE,Barrandov,62,Jihozápad,True,A1,,90.0,90.0,
+465,BAR-BELDE,Barrandov,62,Jihozápad,True,A2,,350.0,350.0,
+465,BAR-BELDE,Barrandov,62,Jihozápad,True,A3,,850.0,850.0,
+465,BAR-BELDE,Barrandov,62,Jihozápad,True,A4,,325.0,325.0,
+465,BAR-BELDE,Barrandov,62,Jihozápad,True,B2,,5.0,5.0,
+465,BAR-BELDE,Barrandov,62,Jihozápad,True,J1,,11.0,11.0,
+465,BAR-BELDE,Barrandov,62,Jihozápad,True,J2,,11.0,11.0,
+465,BAR-BELDE,Barrandov,62,Jihozápad,True,J3,,21.0,21.0,
+465,BAR-BELDE,Barrandov,62,Jihozápad,True,J4,,85.0,85.0,
+465,BAR-BELDE,Barrandov,62,Jihozápad,True,,,537.0,537.0,
+461,BAR-BELDO,Barrandov,62,Jihozápad,True,A1,,2910.0,2910.0,
+461,BAR-BELDO,Barrandov,62,Jihozápad,True,B1,,25.0,25.0,
+461,BAR-BELDO,Barrandov,62,Jihozápad,True,B2,,240.0,240.0,
+461,BAR-BELDO,Barrandov,62,Jihozápad,True,J4,,90.0,90.0,
+461,BAR-BELDO,Barrandov,62,Jihozápad,True,,,40.0,40.0,
+1072,BAR-KOMDE,Barrandov,62,Jihozápad,True,,,100.0,100.0,
+1071,BAR-KOMDO,Barrandov,62,Jihozápad,True,,,100.0,100.0,
+1146,BAR-LEPOR,Barrandov,62,Jihozápad,True,,,200.0,200.0,
+464,BAR-NAUDE,Barrandov,62,Jihozápad,True,C,,50.0,50.0,
+464,BAR-NAUDE,Barrandov,62,Jihozápad,True,D,,90.0,90.0,
+464,BAR-NAUDE,Barrandov,62,Jihozápad,True,E,,40.0,40.0,
+464,BAR-NAUDE,Barrandov,62,Jihozápad,True,K,,240.0,240.0,
+464,BAR-NAUDE,Barrandov,62,Jihozápad,True,L,,35.0,35.0,
+464,BAR-NAUDE,Barrandov,62,Jihozápad,True,N,,40.0,40.0,
+464,BAR-NAUDE,Barrandov,62,Jihozápad,True,P,,40.0,40.0,
+464,BAR-NAUDE,Barrandov,62,Jihozápad,True,R,,40.0,40.0,
+464,BAR-NAUDE,Barrandov,62,Jihozápad,True,S,,20.0,20.0,
+464,BAR-NAUDE,Barrandov,62,Jihozápad,True,T,,40.0,40.0,
+464,BAR-NAUDE,Barrandov,62,Jihozápad,True,U,,25.0,25.0,
+464,BAR-NAUDE,Barrandov,62,Jihozápad,True,V,,40.0,40.0,
+464,BAR-NAUDE,Barrandov,62,Jihozápad,True,X,,20.0,20.0,
+464,BAR-NAUDE,Barrandov,62,Jihozápad,True,Y,,40.0,40.0,
+464,BAR-NAUDE,Barrandov,62,Jihozápad,True,Z,,40.0,40.0,
+464,BAR-NAUDE,Barrandov,62,Jihozápad,True,,,20.0,20.0,
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,C,,250.0,250.0,
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,D,,350.0,350.0,
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,E,,170.0,170.0,
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,G,,335.0,335.0,
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,K,,180.0,180.0,
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,L,,340.0,340.0,
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,N,,215.0,215.0,
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,O,,30.0,30.0,
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,P,,170.0,170.0,
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,R,,60.0,60.0,
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,S,,140.0,140.0,
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,T,,60.0,60.0,
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,U,,5.0,5.0,
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,V,,30.0,30.0,
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,W,,100.0,100.0,
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,X,,70.0,70.0,
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,Y,,55.0,55.0,
+462,BAR-NAUDO,Barrandov,62,Jihozápad,True,Z,,170.0,170.0,
+352,ZAH-BELDO,Záhřebská,65,Středozápad,True,A1,,1685.0,1685.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,A1,,90.0,90.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,A2,,300.0,300.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,A3,,525.0,525.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,A4,,305.0,305.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,B2,,5.0,5.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,C,,110.0,110.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,D,,160.0,160.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,E,,45.0,45.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,K,,290.0,290.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,L,,70.0,70.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,N,,45.0,45.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,P,,20.0,20.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,R,,40.0,40.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,S,,65.0,65.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,T,,40.0,40.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,U,,20.0,20.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,V,,55.0,55.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,X,,22.0,22.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,Y,,35.0,35.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,Z,,45.0,45.0,
+360,ZAH-DETI,Záhřebská,65,Středozápad,True,,,330.0,330.0,
+1070,ZAH-KOMDO,Záhřebská,65,Středozápad,True,,,200.0,200.0,
+899,ZAH-KOMIKS,Záhřebská,65,Středozápad,True,,,150.0,150.0,
+1069,ZAH-LEPDE,Záhřebská,65,Středozápad,True,,,150.0,150.0,
+355,ZAH-NAUDE,Záhřebská,65,Středozápad,True,J1,,12.0,12.0,
+355,ZAH-NAUDE,Záhřebská,65,Středozápad,True,J2,,15.0,15.0,
+355,ZAH-NAUDE,Záhřebská,65,Středozápad,True,J3,,25.0,25.0,
+355,ZAH-NAUDE,Záhřebská,65,Středozápad,True,J4,,130.0,130.0,
+355,ZAH-NAUDE,Záhřebská,65,Středozápad,True,K,,275.0,275.0,
+355,ZAH-NAUDE,Záhřebská,65,Středozápad,True,Y,,115.0,115.0,
+355,ZAH-NAUDE,Záhřebská,65,Středozápad,True,Z,,135.0,135.0,
+355,ZAH-NAUDE,Záhřebská,65,Středozápad,True,,,25.0,25.0,
+351,ZAH-NAUDO,Záhřebská,65,Středozápad,True,C,,160.0,160.0,
+351,ZAH-NAUDO,Záhřebská,65,Středozápad,True,D,,525.0,525.0,
+351,ZAH-NAUDO,Záhřebská,65,Středozápad,True,E,,225.0,225.0,
+351,ZAH-NAUDO,Záhřebská,65,Středozápad,True,G,,310.0,310.0,
+351,ZAH-NAUDO,Záhřebská,65,Středozápad,True,L,,290.0,290.0,
+351,ZAH-NAUDO,Záhřebská,65,Středozápad,True,N,,90.0,90.0,
+351,ZAH-NAUDO,Záhřebská,65,Středozápad,True,O,,55.0,55.0,
+351,ZAH-NAUDO,Záhřebská,65,Středozápad,True,P,,200.0,200.0,
+351,ZAH-NAUDO,Záhřebská,65,Středozápad,True,R,,80.0,80.0,
+351,ZAH-NAUDO,Záhřebská,65,Středozápad,True,S,,330.0,330.0,
+351,ZAH-NAUDO,Záhřebská,65,Středozápad,True,T,,30.0,30.0,
+351,ZAH-NAUDO,Záhřebská,65,Středozápad,True,V,,70.0,70.0,
+351,ZAH-NAUDO,Záhřebská,65,Středozápad,True,W,,55.0,55.0,
+351,ZAH-NAUDO,Záhřebská,65,Středozápad,True,X,,140.0,140.0,
+361,ZAH-POEDIV,Záhřebská,65,Středozápad,True,B1,,20.0,20.0,
+361,ZAH-POEDIV,Záhřebská,65,Středozápad,True,B2,,175.0,175.0,
+359,ZAH-SCIFI,Záhřebská,65,Středozápad,True,A1,,400.0,400.0,
+537,CHM-BELDO,Vozovna,66,Středozápad,True,A1,,3325.0,3325.0,
+537,CHM-BELDO,Vozovna,66,Středozápad,True,B1,,20.0,20.0,
+537,CHM-BELDO,Vozovna,66,Středozápad,True,B2,,188.0,188.0,
+537,CHM-BELDO,Vozovna,66,Středozápad,True,J1,,5.0,5.0,
+537,CHM-BELDO,Vozovna,66,Středozápad,True,J2,,20.0,20.0,
+537,CHM-BELDO,Vozovna,66,Středozápad,True,J3,,20.0,20.0,
+537,CHM-BELDO,Vozovna,66,Středozápad,True,J4,,85.0,85.0,
+537,CHM-BELDO,Vozovna,66,Středozápad,True,J5,,20.0,20.0,
+537,CHM-BELDO,Vozovna,66,Středozápad,True,,,10.0,10.0,
+987,CHM-KOMDE,Vozovna,66,Středozápad,True,,,125.0,125.0,
+986,CHM-KOMDO,Vozovna,66,Středozápad,True,,,160.0,160.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,A1,,100.0,100.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,A2,,200.0,200.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,A3,,530.0,530.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,A4,,475.0,475.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,B2,,10.0,10.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,C,,55.0,55.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,D,,95.0,95.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,E,,60.0,60.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,"G,O,W,X",,20.0,20.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,K,,240.0,240.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,L,,45.0,45.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,N,,100.0,100.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,P,,45.0,45.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,R,,60.0,60.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,S,,50.0,50.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,T,,40.0,40.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,U,,20.0,20.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,V,,50.0,50.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,Y,,85.0,85.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,Z,,70.0,70.0,
+539,CHM-LITDE,Vozovna,66,Středozápad,True,,,505.0,505.0,
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,C,,345.0,345.0,
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,D,,775.0,775.0,
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,E,,350.0,350.0,
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,G,,510.0,510.0,
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,K,,250.0,250.0,
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,L,,490.0,490.0,
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,N,,235.0,235.0,
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,O,,85.0,85.0,
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,P,,310.0,310.0,
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,R,,100.0,100.0,
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,S,,370.0,370.0,
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,T,,95.0,95.0,
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,V,,75.0,75.0,
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,W,,150.0,150.0,
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,X,,120.0,120.0,
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,Y,,135.0,135.0,
+538,CHM-NAUDO,Vozovna,66,Středozápad,True,Z,,165.0,165.0,
+544,SKA-BELDO,Skalka,70,Jihovýchod,True,A1,,2440.0,2440.0,
+544,SKA-BELDO,Skalka,70,Jihovýchod,True,B1,,10.0,10.0,
+544,SKA-BELDO,Skalka,70,Jihovýchod,True,B2,,110.0,110.0,
+544,SKA-BELDO,Skalka,70,Jihovýchod,True,J1,,2.0,2.0,
+544,SKA-BELDO,Skalka,70,Jihovýchod,True,J2,,10.0,10.0,
+544,SKA-BELDO,Skalka,70,Jihovýchod,True,J3,,10.0,10.0,
+544,SKA-BELDO,Skalka,70,Jihovýchod,True,J4,,70.0,70.0,
+544,SKA-BELDO,Skalka,70,Jihovýchod,True,J5,,10.0,10.0,
+544,SKA-BELDO,Skalka,70,Jihovýchod,True,,,15.0,15.0,
+1150,SKA-KOMIKS,Skalka,70,Jihovýchod,True,,,200.0,200.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,A1,,25.0,25.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,A2,,300.0,300.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,A3,,420.0,420.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,A4,,360.0,360.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,B2,,2.0,2.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,C,,31.0,31.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,D,,71.0,71.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,E,,21.0,21.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,K,,85.0,85.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,L,,25.0,25.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,N,,45.0,45.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,P,,21.0,21.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,R,,21.0,21.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,S,,21.0,21.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,T,,21.0,21.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,U,,11.0,11.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,V,,21.0,21.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,X,,1.0,1.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,Y,,21.0,21.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,Z,,21.0,21.0,
+543,SKA-LITDE,Skalka,70,Jihovýchod,True,,,478.0,478.0,
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,C,,220.0,220.0,
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,D,,330.0,330.0,
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,E,,335.0,335.0,
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,G,,225.0,225.0,
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,K,,265.0,265.0,
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,L,,240.0,240.0,
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,N,,120.0,120.0,
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,O,,31.0,31.0,
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,P,,235.0,235.0,
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,R,,85.0,85.0,
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,S,,145.0,145.0,
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,T,,75.0,75.0,
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,U,,1.0,1.0,
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,V,,30.0,30.0,
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,W,,105.0,105.0,
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,X,,65.0,65.0,
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,Y,,105.0,105.0,
+545,SKA-NAUDO,Skalka,70,Jihovýchod,True,Z,,5.0,5.0,
+136,LUZ-BELDO,Lužiny,81,Jihozápad,True,A1,,4030.0,4030.0,
+136,LUZ-BELDO,Lužiny,81,Jihozápad,True,B1,,50.0,50.0,
+136,LUZ-BELDO,Lužiny,81,Jihozápad,True,B2,,625.0,625.0,
+875,LUZ-CIZJAZ,Lužiny,81,Jihozápad,True,A1,,710.0,710.0,
+875,LUZ-CIZJAZ,Lužiny,81,Jihozápad,True,A4,,160.0,160.0,
+875,LUZ-CIZJAZ,Lužiny,81,Jihozápad,True,J1,,10.0,10.0,
+875,LUZ-CIZJAZ,Lužiny,81,Jihozápad,True,J2,,30.0,30.0,
+875,LUZ-CIZJAZ,Lužiny,81,Jihozápad,True,J3,,60.0,60.0,
+875,LUZ-CIZJAZ,Lužiny,81,Jihozápad,True,J4,,200.0,200.0,
+875,LUZ-CIZJAZ,Lužiny,81,Jihozápad,True,J5,,25.0,25.0,
+875,LUZ-CIZJAZ,Lužiny,81,Jihozápad,True,,,5.0,5.0,
+167,LUZ-DEBEL,Lužiny,81,Jihozápad,True,A1,,100.0,100.0,
+167,LUZ-DEBEL,Lužiny,81,Jihozápad,True,A2,,500.0,500.0,
+167,LUZ-DEBEL,Lužiny,81,Jihozápad,True,A3,,1250.0,1250.0,
+167,LUZ-DEBEL,Lužiny,81,Jihozápad,True,A4,,740.0,740.0,
+167,LUZ-DEBEL,Lužiny,81,Jihozápad,True,B2,,10.0,10.0,
+167,LUZ-DEBEL,Lužiny,81,Jihozápad,True,J1,,16.0,16.0,
+167,LUZ-DEBEL,Lužiny,81,Jihozápad,True,J2,,6.0,6.0,
+167,LUZ-DEBEL,Lužiny,81,Jihozápad,True,J3,,35.0,35.0,
+167,LUZ-DEBEL,Lužiny,81,Jihozápad,True,J4,,110.0,110.0,
+167,LUZ-DEBEL,Lužiny,81,Jihozápad,True,J5,,2.0,2.0,
+167,LUZ-DEBEL,Lužiny,81,Jihozápad,True,,,771.0,771.0,
+1086,LUZ-DELEP,Lužiny,81,Jihozápad,True,,,100.0,100.0,
+168,LUZ-DENA,Lužiny,81,Jihozápad,True,C,,210.0,210.0,
+168,LUZ-DENA,Lužiny,81,Jihozápad,True,D,,225.0,225.0,
+168,LUZ-DENA,Lužiny,81,Jihozápad,True,E,,80.0,80.0,
+168,LUZ-DENA,Lužiny,81,Jihozápad,True,K,,480.0,480.0,
+168,LUZ-DENA,Lužiny,81,Jihozápad,True,L,,115.0,115.0,
+168,LUZ-DENA,Lužiny,81,Jihozápad,True,N,,130.0,130.0,
+168,LUZ-DENA,Lužiny,81,Jihozápad,True,P,,75.0,75.0,
+168,LUZ-DENA,Lužiny,81,Jihozápad,True,R,,120.0,120.0,
+168,LUZ-DENA,Lužiny,81,Jihozápad,True,S,,80.0,80.0,
+168,LUZ-DENA,Lužiny,81,Jihozápad,True,T,,80.0,80.0,
+168,LUZ-DENA,Lužiny,81,Jihozápad,True,U,,50.0,50.0,
+168,LUZ-DENA,Lužiny,81,Jihozápad,True,V,,80.0,80.0,
+168,LUZ-DENA,Lužiny,81,Jihozápad,True,X,,45.0,45.0,
+168,LUZ-DENA,Lužiny,81,Jihozápad,True,Y,,150.0,150.0,
+168,LUZ-DENA,Lužiny,81,Jihozápad,True,Z,,80.0,80.0,
+168,LUZ-DENA,Lužiny,81,Jihozápad,True,,,35.0,35.0,
+1256,LUZ-KOMDE,Lužiny,81,Jihozápad,True,,,200.0,200.0,
+1257,LUZ-KOMDO,Lužiny,81,Jihozápad,True,,,300.0,300.0,
+137,LUZ-NAUDO,Lužiny,81,Jihozápad,True,C,,565.0,565.0,
+137,LUZ-NAUDO,Lužiny,81,Jihozápad,True,D,,1270.0,1270.0,
+137,LUZ-NAUDO,Lužiny,81,Jihozápad,True,E,,670.0,670.0,
+137,LUZ-NAUDO,Lužiny,81,Jihozápad,True,G,,945.0,945.0,
+137,LUZ-NAUDO,Lužiny,81,Jihozápad,True,K,,465.0,465.0,
+137,LUZ-NAUDO,Lužiny,81,Jihozápad,True,L,,1145.0,1145.0,
+137,LUZ-NAUDO,Lužiny,81,Jihozápad,True,N,,360.0,360.0,
+137,LUZ-NAUDO,Lužiny,81,Jihozápad,True,O,,160.0,160.0,
+137,LUZ-NAUDO,Lužiny,81,Jihozápad,True,P,,670.0,670.0,
+137,LUZ-NAUDO,Lužiny,81,Jihozápad,True,R,,245.0,245.0,
+137,LUZ-NAUDO,Lužiny,81,Jihozápad,True,S,,560.0,560.0,
+137,LUZ-NAUDO,Lužiny,81,Jihozápad,True,T,,180.0,180.0,
+137,LUZ-NAUDO,Lužiny,81,Jihozápad,True,V,,280.0,280.0,
+137,LUZ-NAUDO,Lužiny,81,Jihozápad,True,W,,255.0,255.0,
+137,LUZ-NAUDO,Lužiny,81,Jihozápad,True,X,,120.0,120.0,
+137,LUZ-NAUDO,Lužiny,81,Jihozápad,True,Y,,340.0,340.0,
+137,LUZ-NAUDO,Lužiny,81,Jihozápad,True,Z,,410.0,410.0,
+617,STO-BELDE,Stodůlky,84,Jihozápad,True,A1,,70.0,70.0,
+617,STO-BELDE,Stodůlky,84,Jihozápad,True,A2,,250.0,250.0,
+617,STO-BELDE,Stodůlky,84,Jihozápad,True,A3,,970.0,970.0,
+617,STO-BELDE,Stodůlky,84,Jihozápad,True,A4,,515.0,515.0,
+617,STO-BELDE,Stodůlky,84,Jihozápad,True,B2,,5.0,5.0,
+617,STO-BELDE,Stodůlky,84,Jihozápad,True,J1,,3.0,3.0,
+617,STO-BELDE,Stodůlky,84,Jihozápad,True,J2,,3.0,3.0,
+617,STO-BELDE,Stodůlky,84,Jihozápad,True,J3,,6.0,6.0,
