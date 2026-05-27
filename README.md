@@ -69,11 +69,23 @@ Je to referenční baseline pro porovnání s filtrovaným výběrem.
 ### Co znamenají kategorie a filtry
 
 - **Oblast / Název pobočky / Lokace**: klasické prostorové filtry.
+- **OCH (oborový charakter)**: filtruje rozpad OCH (detail lokace) a podílové pohledy; neomezuje lokace v hlavních KPI (ty jsou na úrovni lokace).
 - **Jen realokační lokace**: omezuje dataset na lokace označené jako realokační.
 - **Označení + Typ** (z přepočtu): filtrují jen nerealokační lokace.
 - **KAPACITA_DESKRIPTOR + KAPACITA_OCH** (z realokace): filtrují jen realokační lokace.
 
 Skupiny filtrů jsou záměrně oddělené, aby se nemíchaly dva různé datové zdroje.
+
+### Podílové pohledy (% síť + odchylky poboček)
+
+Dashboard obsahuje sekce, které ukazují:
+
+- **OCH**: podíl oborů (OCH) na **kapacitě realokace** v síti + odchylky poboček (Δ v procentních bodech).
+- **Typ**: podíl hodnot `Typ` na **fyzické kapacitě** v síti + odchylky poboček (užitečné např. pro „Doporučujeme“).
+- **Piktogramy**: podíl **16 whitelistovaných piktogramů** (podmnožina `Označení`) na fyzické kapacitě + odchylky poboček.
+
+Exporty jsou v `data_processed/exports/` jako:
+`metrics_share_och_*.csv`, `metrics_share_typ_*.csv`, `metrics_share_piktogram_*.csv`.
 
 ### Spuštění po zkopírování ze síťového disku (doporučeno)
 

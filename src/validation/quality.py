@@ -6,7 +6,15 @@ from pathlib import Path
 import duckdb
 import pandas as pd
 
-from ..config import OBLASTI_KANONICKE
+from ..config import OBLASTI_KANONICKE, PIKTOGRAMY, extract_piktogram_code, is_piktogram, normalize_oznaceni
+
+
+def _df_block(df: pd.DataFrame, max_rows: int = 30) -> str:
+    """Textová tabulka bez závislosti na `tabulate` (pandas.to_markdown)."""
+    if df.empty:
+        return "_(prázdné)_"
+    view = df.head(max_rows)
+    return "```text\n" + view.to_string(index=False) + "\n```"
 
 
 def build_quality_report(con: duckdb.DuckDBPyConnection, meta: dict) -> dict:
@@ -15,6 +23,8 @@ def build_quality_report(con: duckdb.DuckDBPyConnection, meta: dict) -> dict:
     kap_raw: pd.DataFrame = meta["kapacita_raw"]
     lok_master: pd.DataFrame = meta["lokace_master"]
     real_raw: pd.DataFrame = meta["realokace_raw"]
+    lookup_prepocet: pd.DataFrame | None = meta.get("lookup_prepocet_dims")
+    lookup_realok: pd.DataFrame | None = meta.get("lookup_realok_dims")
 
     lines: list[str] = []
 
@@ -58,6 +68,119 @@ def build_quality_report(con: duckdb.DuckDBPyConnection, meta: dict) -> dict:
             f"Počet poboček s hodnotou mimo kanon (kromě „Neurčeno“): **{len(neznam)}**."
             + (f" Hodnoty: {', '.join(map(str, neznam))}." if neznam else "")
         )
+
+    # OCH / TYP / piktogramy — přehled hodnot (pomáhá interpretaci podílů)
+    try:
+        och_top = con.execute(
+            """
+            SELECT OCH, SUM(kapacita_realokace) AS kap_realok
+            FROM metrics_lokace_och
+            GROUP BY 1
+            ORDER BY kap_realok DESC NULLS LAST
+            LIMIT 20
+            """
+        ).df()
+    except Exception:
+        och_top = pd.DataFrame()
+
+    if not och_top.empty:
+        t_present = (och_top["OCH"].astype(str) == "T").any()
+        lines.append(
+            "### OCH — top podle kapacity realokace\n"
+            + ("(Pozn.: hodnota `T` v OCH nebyla v top 20 nalezena.)\n\n" if not t_present else "\n")
+            + _df_block(och_top, max_rows=20)
+        )
+
+    if not kap_raw.empty and "typ" in kap_raw.columns and "kapacita_fyzicka" in kap_raw.columns:
+        typ_sum = (
+            kap_raw.assign(typ=kap_raw["typ"].fillna("").astype(str).str.strip())
+            .groupby("typ", dropna=False)["kapacita_fyzicka"]
+            .sum()
+            .reset_index()
+            .sort_values("kapacita_fyzicka", ascending=False)
+            .head(30)
+        )
+        lines.append("### TYP (přepočet) — top podle fyzické kapacity\n\n" + _df_block(typ_sum, max_rows=30))
+
+    # Piktogramy — pokrytí whitelistu + podezřelé varianty.
+    # Primárně z `oznaceni` (přepočet), ale umíme odhalit i „X (piktogram)“ v reallok deskriptoru.
+    if not kap_raw.empty and "kapacita_fyzicka" in kap_raw.columns and "oznaceni" in kap_raw.columns:
+        k = kap_raw.copy()
+        k["pikto_code"] = k["oznaceni"].map(extract_piktogram_code)
+        k["je_piktogram"] = k["pikto_code"].notna()
+        pik_sum = (
+            k[k["je_piktogram"]]
+            .groupby("pikto_code", dropna=False)["kapacita_fyzicka"]
+            .sum()
+            .reset_index()
+            .sort_values("kapacita_fyzicka", ascending=False)
+        )
+        missing = [code for code in PIKTOGRAMY.keys() if code not in set(pik_sum["pikto_code"].tolist())]
+        lines.append(
+            "### Piktogramy (whitelist 16) — součty kapacity\n\n"
+            + (_df_block(pik_sum, max_rows=30) if not pik_sum.empty else "_Nenalezen žádný řádek s piktogramem._")
+            + (f"\n\nChybějící kódy z whitelistu: **{', '.join(missing)}**." if missing else "")
+        )
+
+        # „Téměř shody“: normalize_oznaceni + odstranění teček/mezer + upper
+        def _near_key(x: object) -> str:
+            s = normalize_oznaceni(x)
+            s = s.replace(".", "").replace(" ", "").upper()
+            return s
+
+        whitelist_near = { _near_key(code): code for code in PIKTOGRAMY.keys() }
+        k["ozn_norm"] = k["oznaceni"].map(normalize_oznaceni)
+        k["near"] = k["oznaceni"].map(_near_key)
+        near = k[(~k["je_piktogram"]) & (k["near"].isin(set(whitelist_near.keys())))]
+        if not near.empty:
+            near_tbl = (
+                near.groupby(["ozn_norm", "near"], dropna=False)["kapacita_fyzicka"]
+                .sum()
+                .reset_index()
+                .sort_values("kapacita_fyzicka", ascending=False)
+                .head(30)
+            )
+            lines.append(
+                "### Piktogramy — podezřelé varianty zápisu (téměř shoda s whitelistem)\n\n"
+                + _df_block(near_tbl, max_rows=30)
+            )
+
+    # KAPACITA_DESKRIPTOR — duplicity a varianty zápisu (používá se ve filtru realokace)
+    if lookup_realok is not None and not lookup_realok.empty and "kapacita_deskriptor" in lookup_realok.columns:
+        lr = lookup_realok.copy()
+        lr["deskr_norm"] = lr["kapacita_deskriptor"].fillna("").astype(str).str.strip().str.casefold()
+        # 1) více OCH na stejný deskriptor v rámci lokace
+        multi_och = (
+            lr.groupby(["lokace_id", "deskr_norm"], dropna=False)["kapacita_och"]
+            .nunique()
+            .reset_index(name="pocet_och")
+        )
+        bad = multi_och[multi_och["pocet_och"] > 1].sort_values("pocet_och", ascending=False).head(50)
+        lines.append(
+            "### KAPACITA_DESKRIPTOR — více OCH na stejný deskriptor v rámci lokace\n"
+            + (f"Počet problémových klíčů: **{len(bad)}**.\n\n" if len(bad) else "Počet problémových klíčů: **0**.\n")
+            + (_df_block(bad, max_rows=50) if len(bad) else "")
+        )
+
+        # 2) varianty zápisu, které se po normalizaci slučují
+        variants = (
+            lr.groupby(["deskr_norm"], dropna=False)["kapacita_deskriptor"]
+            .nunique()
+            .reset_index(name="varianty")
+        )
+        var_bad = variants[variants["varianty"] > 1].sort_values("varianty", ascending=False).head(50)
+        if len(var_bad):
+            # ukázat příklady konkrétních variant pro top deskr_norm
+            examples = (
+                lr[lr["deskr_norm"].isin(set(var_bad["deskr_norm"].head(15).tolist()))]
+                .groupby("deskr_norm")["kapacita_deskriptor"]
+                .apply(lambda s: ", ".join(sorted(set(s.astype(str).tolist()))[:10]))
+                .reset_index(name="priklady")
+            )
+            lines.append(
+                "### KAPACITA_DESKRIPTOR — varianty zápisu (po casefold/trim)\n\n"
+                + _df_block(examples, max_rows=50)
+            )
 
     # 1 duplicity lokací (stejné lokace_id by neměly)
     dup_id = dim_lok[dim_lok.duplicated(subset=["lokace_id"], keep=False)]

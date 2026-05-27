@@ -19,6 +19,7 @@ from ..config import (
     LOKACE_MAP_PREPOCET,
     LOKACE_NAZEV,
     OBLAST_MAP,
+    PIKTOGRAMY,
 )
 from ..io.excel import (
     extract_oblast_z_kapacity,
@@ -192,6 +193,12 @@ def _register_duckdb_model(
     )
     con.register("lookup_prepocet_dims", lp)
     con.register("lookup_realok_dims", lr)
+
+    dim_pikto = pd.DataFrame(
+        [{"piktogram": k, "zanr": v} for k, v in PIKTOGRAMY.items()],
+        columns=["piktogram", "zanr"],
+    )
+    con.register("dim_piktogram", dim_pikto)
 
     con.execute(
         """
@@ -388,6 +395,181 @@ def _register_duckdb_model(
         """
     )
 
+    # Podíly OCH z kapacity realokace (síť + pobočky)
+    con.execute(
+        """
+        CREATE OR REPLACE VIEW metrics_share_och_sit AS
+        WITH base AS (
+            SELECT
+                CAST(OCH AS VARCHAR) AS OCH,
+                SUM(kapacita_realokace) AS kapacita_realokace_sum
+            FROM metrics_lokace_och
+            WHERE kapacita_realokace IS NOT NULL
+            GROUP BY 1
+        ),
+        tot AS (SELECT SUM(kapacita_realokace_sum) AS total FROM base)
+        SELECT
+            b.OCH,
+            b.kapacita_realokace_sum,
+            CASE WHEN t.total IS NULL OR t.total = 0 THEN NULL ELSE (b.kapacita_realokace_sum * 100.0 / t.total) END AS podil_pct
+        FROM base b
+        CROSS JOIN tot t
+        """
+    )
+
+    con.execute(
+        """
+        CREATE OR REPLACE VIEW metrics_share_och_pobocka AS
+        WITH base AS (
+            SELECT
+                pobocka_cislo,
+                CAST(OCH AS VARCHAR) AS OCH,
+                SUM(kapacita_realokace) AS kapacita_realokace_sum
+            FROM metrics_lokace_och
+            WHERE kapacita_realokace IS NOT NULL
+            GROUP BY 1, 2
+        ),
+        tot AS (
+            SELECT pobocka_cislo, SUM(kapacita_realokace_sum) AS total
+            FROM base
+            GROUP BY 1
+        )
+        SELECT
+            b.pobocka_cislo,
+            pb.pobocka_nazev,
+            pb.oblast,
+            b.OCH,
+            b.kapacita_realokace_sum,
+            CASE WHEN t.total IS NULL OR t.total = 0 THEN NULL ELSE (b.kapacita_realokace_sum * 100.0 / t.total) END AS podil_pct,
+            s.podil_pct AS podil_pct_sit,
+            CASE WHEN s.podil_pct IS NULL THEN NULL ELSE (CASE WHEN t.total IS NULL OR t.total = 0 THEN NULL ELSE (b.kapacita_realokace_sum * 100.0 / t.total) END) - s.podil_pct END AS delta_pp
+        FROM base b
+        LEFT JOIN tot t ON b.pobocka_cislo = t.pobocka_cislo
+        LEFT JOIN dim_pobocka pb ON b.pobocka_cislo = pb.pobocka_cislo
+        LEFT JOIN metrics_share_och_sit s ON b.OCH = s.OCH
+        """
+    )
+
+    # Podíly TYP z fyzické kapacity (síť + pobočky) — zdroj přepočtu
+    con.execute(
+        """
+        CREATE OR REPLACE VIEW metrics_share_typ_sit AS
+        WITH base AS (
+            SELECT
+                NULLIF(TRIM(CAST(typ AS VARCHAR)), '') AS typ,
+                SUM(kapacita_fyzicka) AS kapacita_fyzicka_sum
+            FROM kapacita_raw
+            WHERE kapacita_fyzicka IS NOT NULL
+            GROUP BY 1
+        ),
+        base2 AS (SELECT * FROM base WHERE typ IS NOT NULL),
+        tot AS (SELECT SUM(kapacita_fyzicka_sum) AS total FROM base2)
+        SELECT
+            b.typ,
+            b.kapacita_fyzicka_sum,
+            CASE WHEN t.total IS NULL OR t.total = 0 THEN NULL ELSE (b.kapacita_fyzicka_sum * 100.0 / t.total) END AS podil_pct
+        FROM base2 b
+        CROSS JOIN tot t
+        """
+    )
+
+    con.execute(
+        """
+        CREATE OR REPLACE VIEW metrics_share_typ_pobocka AS
+        WITH base AS (
+            SELECT
+                pobocka_cislo,
+                NULLIF(TRIM(CAST(typ AS VARCHAR)), '') AS typ,
+                SUM(kapacita_fyzicka) AS kapacita_fyzicka_sum
+            FROM kapacita_raw
+            WHERE kapacita_fyzicka IS NOT NULL
+            GROUP BY 1, 2
+        ),
+        base2 AS (SELECT * FROM base WHERE typ IS NOT NULL),
+        tot AS (
+            SELECT pobocka_cislo, SUM(kapacita_fyzicka_sum) AS total
+            FROM base2
+            GROUP BY 1
+        )
+        SELECT
+            b.pobocka_cislo,
+            pb.pobocka_nazev,
+            pb.oblast,
+            b.typ,
+            b.kapacita_fyzicka_sum,
+            CASE WHEN t.total IS NULL OR t.total = 0 THEN NULL ELSE (b.kapacita_fyzicka_sum * 100.0 / t.total) END AS podil_pct,
+            s.podil_pct AS podil_pct_sit,
+            CASE WHEN s.podil_pct IS NULL THEN NULL ELSE (CASE WHEN t.total IS NULL OR t.total = 0 THEN NULL ELSE (b.kapacita_fyzicka_sum * 100.0 / t.total) END) - s.podil_pct END AS delta_pp
+        FROM base2 b
+        LEFT JOIN tot t ON b.pobocka_cislo = t.pobocka_cislo
+        LEFT JOIN dim_pobocka pb ON b.pobocka_cislo = pb.pobocka_cislo
+        LEFT JOIN metrics_share_typ_sit s ON b.typ = s.typ
+        """
+    )
+
+    # Podíly piktogramů (whitelist 16) z fyzické kapacity podle Označení
+    con.execute(
+        """
+        CREATE OR REPLACE VIEW metrics_share_piktogram_sit AS
+        WITH base AS (
+            SELECT
+                d.piktogram,
+                d.zanr,
+                SUM(k.kapacita_fyzicka) AS kapacita_fyzicka_sum
+            FROM kapacita_raw k
+            INNER JOIN dim_piktogram d
+                ON TRIM(CAST(k.oznaceni AS VARCHAR)) = d.piktogram
+            WHERE k.kapacita_fyzicka IS NOT NULL
+            GROUP BY 1, 2
+        ),
+        tot AS (SELECT SUM(kapacita_fyzicka_sum) AS total FROM base)
+        SELECT
+            b.piktogram,
+            b.zanr,
+            b.kapacita_fyzicka_sum,
+            CASE WHEN t.total IS NULL OR t.total = 0 THEN NULL ELSE (b.kapacita_fyzicka_sum * 100.0 / t.total) END AS podil_pct
+        FROM base b
+        CROSS JOIN tot t
+        """
+    )
+
+    con.execute(
+        """
+        CREATE OR REPLACE VIEW metrics_share_piktogram_pobocka AS
+        WITH base AS (
+            SELECT
+                k.pobocka_cislo,
+                d.piktogram,
+                d.zanr,
+                SUM(k.kapacita_fyzicka) AS kapacita_fyzicka_sum
+            FROM kapacita_raw k
+            INNER JOIN dim_piktogram d
+                ON TRIM(CAST(k.oznaceni AS VARCHAR)) = d.piktogram
+            WHERE k.kapacita_fyzicka IS NOT NULL
+            GROUP BY 1, 2, 3
+        ),
+        tot AS (
+            SELECT pobocka_cislo, SUM(kapacita_fyzicka_sum) AS total
+            FROM base
+            GROUP BY 1
+        )
+        SELECT
+            b.pobocka_cislo,
+            pb.pobocka_nazev,
+            pb.oblast,
+            b.piktogram,
+            b.zanr,
+            b.kapacita_fyzicka_sum,
+            CASE WHEN t.total IS NULL OR t.total = 0 THEN NULL ELSE (b.kapacita_fyzicka_sum * 100.0 / t.total) END AS podil_pct,
+            s.podil_pct AS podil_pct_sit,
+            CASE WHEN s.podil_pct IS NULL THEN NULL ELSE (CASE WHEN t.total IS NULL OR t.total = 0 THEN NULL ELSE (b.kapacita_fyzicka_sum * 100.0 / t.total) END) - s.podil_pct END AS delta_pp
+        FROM base b
+        LEFT JOIN tot t ON b.pobocka_cislo = t.pobocka_cislo
+        LEFT JOIN dim_pobocka pb ON b.pobocka_cislo = pb.pobocka_cislo
+        LEFT JOIN metrics_share_piktogram_sit s ON b.piktogram = s.piktogram
+        """
+    )
+
     meta = {
         "dim_pobocka": pb,
         "dim_lokace": dim_lok,
@@ -399,6 +581,7 @@ def _register_duckdb_model(
         "oblast_kapacita_warnings": oblast_kap_warnings,
         "lookup_prepocet_dims": lp,
         "lookup_realok_dims": lr,
+        "dim_piktogram": dim_pikto,
     }
     return con, meta
 
@@ -845,6 +1028,12 @@ def run_etl(
         ("metrics_pobocka", "metrics_pobocka.csv"),
         ("lookup_prepocet_dims", "lookup_prepocet_dims.csv"),
         ("lookup_realok_dims", "lookup_realok_dims.csv"),
+        ("metrics_share_och_sit", "metrics_share_och_sit.csv"),
+        ("metrics_share_och_pobocka", "metrics_share_och_pobocka.csv"),
+        ("metrics_share_typ_sit", "metrics_share_typ_sit.csv"),
+        ("metrics_share_typ_pobocka", "metrics_share_typ_pobocka.csv"),
+        ("metrics_share_piktogram_sit", "metrics_share_piktogram_sit.csv"),
+        ("metrics_share_piktogram_pobocka", "metrics_share_piktogram_pobocka.csv"),
     ]
     for view, fn in exp:
         df = con.execute(f"SELECT * FROM {view}").df()

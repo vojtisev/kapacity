@@ -1,7 +1,7 @@
 """Cesty a výchozí názvy souborů pro ETL."""
 
 from pathlib import Path
-from typing import Tuple
+from typing import Optional, Tuple
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_RAW = PROJECT_ROOT / "data_raw"
@@ -32,3 +32,63 @@ OBLASTI_KANONICKE: Tuple[str, ...] = (
     "Středozápad",
     "Severovýchod",
 )
+
+# Piktogramy — podmnožina sloupce „Označení“ v přepočítaných kapacitách.
+# Klíč = kód v datech (po normalizaci), hodnota = popisek žánru (jen pro UI).
+PIKTOGRAMY: dict[str, str] = {
+    "LEBKA": "horory",
+    "PISTOLE": "detektivky",
+    "MILENCI": "pro ženy",
+    "ÚSMĚV": "humoristická",
+    "ERB": "historická",
+    "DÍVKA": "dívčí četba",
+    "PEGAS": "báje / mýty",
+    "PRINCEZNA": "pohádky",
+    "KOVBOJ": "dobrodružné",
+    "E.T.": "sci-fi",
+    "MÁG": "fantasy",
+    "KMET": "životopisná",
+    "PÍSMÁK": "paměti",
+    "LYRA": "hudební",
+    "MASKA": "divadelní",
+    "BRÝLE": "knihy s velkými písmeny",
+}
+
+
+def normalize_oznaceni(value: object) -> str:
+    """
+    Normalizace pro porovnání označení/piktogramů napříč exporty:
+    - trim
+    - sjednocení vnitřních mezer
+    - ponechání diakritiky (whitelist je včetně diakritiky)
+    """
+    s = "" if value is None else str(value)
+    s = " ".join(s.strip().split())
+    return s
+
+
+def extract_piktogram_code(value: object) -> Optional[str]:
+    """
+    Vrátí kód piktogramu, pokud jde o piktogramový zápis.
+
+    Podporuje i varianty z realokačních exportů typu:
+    - `MÁG (piktogram)`
+    - `E.T.(piktogram)`
+    """
+    s = normalize_oznaceni(value)
+    if not s:
+        return None
+    if s in PIKTOGRAMY:
+        return s
+    low = s.casefold()
+    if "piktogram" in low:
+        # vezmeme prefix před "(" a znovu normalizujeme
+        prefix = s.split("(", 1)[0].strip()
+        if prefix in PIKTOGRAMY:
+            return prefix
+    return None
+
+
+def is_piktogram(value: object) -> bool:
+    """True pokud normalizované označení je jedním z 16 piktogramů."""
+    return extract_piktogram_code(value) is not None

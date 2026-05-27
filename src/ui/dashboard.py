@@ -282,6 +282,12 @@ def render_dashboard() -> None:
     mpob = con.execute("SELECT * FROM metrics_pobocka").df()
     lookup_prepocet = con.execute("SELECT * FROM lookup_prepocet_dims").df()
     lookup_realok = con.execute("SELECT * FROM lookup_realok_dims").df()
+    share_och_sit = con.execute("SELECT * FROM metrics_share_och_sit").df()
+    share_och_pob = con.execute("SELECT * FROM metrics_share_och_pobocka").df()
+    share_typ_sit = con.execute("SELECT * FROM metrics_share_typ_sit").df()
+    share_typ_pob = con.execute("SELECT * FROM metrics_share_typ_pobocka").df()
+    share_pik_sit = con.execute("SELECT * FROM metrics_share_piktogram_sit").df()
+    share_pik_pob = con.execute("SELECT * FROM metrics_share_piktogram_pobocka").df()
 
     with st.sidebar:
         st.subheader("Filtry")
@@ -291,6 +297,8 @@ def render_dashboard() -> None:
         pob_sel = st.multiselect(L.FILTER_NAZEV_POBOCKY, pob_opts, default=[])
         lok_opts = sorted(mloc["lokace_short"].dropna().unique().tolist())
         lok_sel = st.multiselect(L.FILTER_LOKACE_SHORT, lok_opts, default=[])
+        och_opts = _unique_str_options(moch["OCH"]) if (not moch.empty and "OCH" in moch.columns) else []
+        och_sel = st.multiselect(L.FILTER_OCH, och_opts, default=[])
         jen_realok = st.selectbox(L.FILTER_JEN_REALOK, ["Vše", "Ano", "Ne"], index=0)
 
         st.markdown(f"**{L.FILTER_GROUP_PREPOCET}**")
@@ -318,7 +326,7 @@ def render_dashboard() -> None:
         deskr_sel,
         och_realok_sel,
     )
-    moch_f = _apply_filters(moch, oblast_sel, pob_sel, lok_sel, [], jen_realok)
+    moch_f = _apply_filters(moch, oblast_sel, pob_sel, lok_sel, och_sel, jen_realok)
     if not moch_f.empty and not mloc_f.empty and "lokace_id" in moch_f.columns:
         moch_f = moch_f[moch_f["lokace_id"].isin(mloc_f["lokace_id"])]
 
@@ -404,6 +412,88 @@ def render_dashboard() -> None:
         L.KPI_POCET_LOKACI_SITE,
         str(len(mloc)),
     )
+
+    # Podíly — OCH / Typ / piktogramy (síť + odchylky poboček)
+    st.subheader(L.SECTION_SHARE_OCH)
+    st.caption(L.CAPTION_SHARE_HELP)
+    if share_och_sit.empty:
+        st.info("Podíly OCH nejsou k dispozici (chybí kapacita_realokace).")
+    else:
+        och_choices = sorted(share_och_sit["OCH"].dropna().astype(str).unique().tolist())
+        och_default = "T" if "T" in och_choices else (och_choices[0] if och_choices else "")
+        och_choice = st.selectbox(L.SELECT_OCH_SHARE, [""] + och_choices, index=(och_choices.index(och_default) + 1) if och_default else 0)
+        top_och = share_och_sit.sort_values("podil_pct", ascending=False).head(30)
+        fig = px.bar(
+            top_och,
+            x="OCH",
+            y="podil_pct",
+            title="Podíl OCH v kapacitě realokace (síť)",
+            labels={"OCH": "OCH", "podil_pct": "Podíl (%)"},
+        )
+        st.plotly_chart(fig, use_container_width=True)
+        if och_choice:
+            row = share_och_sit[share_och_sit["OCH"].astype(str) == str(och_choice)]
+            val = float(row["podil_pct"].iloc[0]) if len(row) and pd.notna(row["podil_pct"].iloc[0]) else None
+            st.metric(f"Podíl OCH {och_choice} v síti", f"{val:.2f} %" if val is not None else "—")
+            sub = share_och_pob[share_och_pob["OCH"].astype(str) == str(och_choice)].copy()
+            if not sub.empty:
+                sub["abs_delta"] = sub["delta_pp"].abs()
+                sub = sub.sort_values("abs_delta", ascending=False).head(60)
+                st.dataframe(sub.drop(columns=["abs_delta"]), use_container_width=True)
+
+    st.subheader(L.SECTION_SHARE_TYP)
+    st.caption(L.CAPTION_SHARE_HELP)
+    if share_typ_sit.empty:
+        st.info("Podíly Typ nejsou k dispozici (chybí kapacita_fyzicka).")
+    else:
+        typ_choices = sorted(share_typ_sit["typ"].dropna().astype(str).unique().tolist())
+        # preferovat hodnotu obsahující 'Doporučujeme'
+        typ_default = next((t for t in typ_choices if "Doporučujeme" in t), (typ_choices[0] if typ_choices else ""))
+        typ_choice = st.selectbox(L.SELECT_TYP_SHARE, [""] + typ_choices, index=(typ_choices.index(typ_default) + 1) if typ_default else 0)
+        top_typ = share_typ_sit.sort_values("podil_pct", ascending=False).head(30)
+        fig2 = px.bar(
+            top_typ,
+            x="typ",
+            y="podil_pct",
+            title="Podíl Typ ve fyzické kapacitě (síť)",
+            labels={"typ": "Typ", "podil_pct": "Podíl (%)"},
+        )
+        fig2.update_xaxes(tickangle=45)
+        st.plotly_chart(fig2, use_container_width=True)
+        if typ_choice:
+            row = share_typ_sit[share_typ_sit["typ"].astype(str) == str(typ_choice)]
+            val = float(row["podil_pct"].iloc[0]) if len(row) and pd.notna(row["podil_pct"].iloc[0]) else None
+            st.metric(f"Podíl Typ „{typ_choice}“ v síti", f"{val:.2f} %" if val is not None else "—")
+            sub = share_typ_pob[share_typ_pob["typ"].astype(str) == str(typ_choice)].copy()
+            if not sub.empty:
+                sub["abs_delta"] = sub["delta_pp"].abs()
+                sub = sub.sort_values("abs_delta", ascending=False).head(60)
+                st.dataframe(sub.drop(columns=["abs_delta"]), use_container_width=True)
+
+    st.subheader(L.SECTION_SHARE_PIKTO)
+    st.caption(L.CAPTION_SHARE_HELP)
+    if share_pik_sit.empty:
+        st.info("V datech nebyly nalezeny žádné piktogramy v Označení (whitelist 16).")
+    else:
+        pik_choices = sorted(share_pik_sit["piktogram"].dropna().astype(str).unique().tolist())
+        pik_choice = st.selectbox(L.SELECT_PIKTO_SHARE, [""] + pik_choices, index=1 if pik_choices else 0)
+        fig3 = px.bar(
+            share_pik_sit.sort_values("podil_pct", ascending=False),
+            x="piktogram",
+            y="podil_pct",
+            title="Podíl piktogramů ve fyzické kapacitě (síť; jen whitelist 16)",
+            labels={"piktogram": "Piktogram", "podil_pct": "Podíl (%)"},
+        )
+        st.plotly_chart(fig3, use_container_width=True)
+        if pik_choice:
+            row = share_pik_sit[share_pik_sit["piktogram"].astype(str) == str(pik_choice)]
+            val = float(row["podil_pct"].iloc[0]) if len(row) and pd.notna(row["podil_pct"].iloc[0]) else None
+            st.metric(f"Podíl piktogramu {pik_choice} v síti", f"{val:.2f} %" if val is not None else "—")
+            sub = share_pik_pob[share_pik_pob["piktogram"].astype(str) == str(pik_choice)].copy()
+            if not sub.empty:
+                sub["abs_delta"] = sub["delta_pp"].abs()
+                sub = sub.sort_values("abs_delta", ascending=False).head(60)
+                st.dataframe(sub.drop(columns=["abs_delta"]), use_container_width=True)
 
     st.subheader(L.SECTION_REALOK_PIE)
     pie_df = mloc_f.groupby("je_realokace", dropna=False).size().reset_index(name="pocet")

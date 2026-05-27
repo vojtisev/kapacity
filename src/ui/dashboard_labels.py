@@ -95,6 +95,17 @@ NEPOUZITE_CAPTION = (
     "Zobrazeny jsou jen lokace s naplněností nejvýše 100 %, seřazené od nejnižší k vyšší."
 )
 
+# Podíly (síť + odchylky poboček)
+SECTION_SHARE_OCH = "Složení kapacity realokace — podíl OCH"
+SECTION_SHARE_TYP = "Složení fyzické kapacity — podíl Typ"
+SECTION_SHARE_PIKTO = "Složení fyzické kapacity — podíl piktogramů"
+
+SELECT_OCH_SHARE = "Vyberte OCH (pro KPI a odchylky poboček)"
+SELECT_TYP_SHARE = "Vyberte Typ (pro KPI a odchylky poboček)"
+SELECT_PIKTO_SHARE = "Vyberte piktogram (pro KPI a odchylky poboček)"
+
+CAPTION_SHARE_HELP = "Podíl v % je počítán vůči síťovému součtu (nebo vůči součtu pobočky). Δ je odchylka pobočky proti síti v procentních bodech."
+
 # Sloupce pro zobrazení (mapování z interních názvů)
 COL_LOKACE_SHORT = "LOKACE_SHORT"
 COL_PREPOCITANA = "Přepočítaný kapacitní plán"
