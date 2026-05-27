@@ -19,6 +19,9 @@ __pycache__/
 # Pravidlo: soubory do ~100 MB mohou být v repu (kvůli Streamlit deploy).
 # Větší soubory držte mimo Git (např. ~/Data/<project>/) a řešte externě.
 
+# Dočasné Office lock soubory (Excel)
+~$*.xlsx
+
 # IDE / OS
 .idea/
 .vscode/
