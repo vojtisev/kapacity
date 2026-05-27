@@ -1,6 +1,9 @@
 # Python
 venv/
 .venv/
+# Prenosny embeddable runtime (sestavi build_portable.bat; nepatri do Gitu)
+runtime/
+wheels/
 __pycache__/
 *.py[cod]
 *$py.class
