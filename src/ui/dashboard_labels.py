@@ -98,7 +98,7 @@ NEPOUZITE_CAPTION = (
 # Podíly (síť + odchylky poboček)
 SECTION_SHARE_OCH = "Složení kapacity realokace — podíl OCH"
 SECTION_SHARE_TYP = "Složení fyzické kapacity — podíl Typ"
-SECTION_SHARE_PIKTO = "Složení fyzické kapacity — podíl piktogramů"
+SECTION_SHARE_PIKTO = "Složení kapacity realokace — podíl piktogramů"
 
 SELECT_OCH_SHARE = "Vyberte OCH (pro KPI a odchylky poboček)"
 SELECT_TYP_SHARE = "Vyberte Typ (pro KPI a odchylky poboček)"

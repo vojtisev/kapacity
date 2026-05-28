@@ -20,6 +20,7 @@ from ..config import (
     LOKACE_NAZEV,
     OBLAST_MAP,
     PIKTOGRAMY,
+    extract_piktogram_code,
 )
 from ..io.excel import (
     extract_oblast_z_kapacity,
@@ -80,6 +81,7 @@ def _prepare_realokace(df: pd.DataFrame) -> pd.DataFrame:
                 "pobocka_cislo",
                 "pobocka_nazev",
                 "och",
+                "kapacita_deskriptor",
                 "kapacita_realokace",
             ]
         )
@@ -95,8 +97,11 @@ def _prepare_realokace(df: pd.DataFrame) -> pd.DataFrame:
         r["pobocka_nazev"] = ""
     if "och" not in r.columns:
         r["och"] = ""
+    if "kapacita_deskriptor" not in r.columns:
+        r["kapacita_deskriptor"] = ""
     r["och"] = r["och"].fillna("").astype(str).str.strip()
     r.loc[r["och"] == "", "och"] = np.nan
+    r["kapacita_deskriptor"] = r["kapacita_deskriptor"].fillna("").astype(str).str.strip()
     if "kapacita_realokace" in r.columns:
         r["kapacita_realokace"] = pd.to_numeric(r["kapacita_realokace"], errors="coerce")
     else:
@@ -199,6 +204,24 @@ def _register_duckdb_model(
         columns=["piktogram", "zanr"],
     )
     con.register("dim_piktogram", dim_pikto)
+
+    # Piktogramy z realokace: deskriptor často obsahuje „X (piktogram)“.
+    # Připravíme agregaci v pandas, aby šla použít v DuckDB bez UDF.
+    if (not real.empty) and ("kapacita_deskriptor" in real.columns):
+        rp = real.copy()
+        rp["piktogram"] = rp["kapacita_deskriptor"].map(extract_piktogram_code)
+        rp = rp[rp["piktogram"].notna()].copy()
+        fact_piktogram_realok = (
+            rp.groupby(["pobocka_cislo", "pobocka_nazev", "piktogram"], dropna=False)["kapacita_realokace"]
+            .sum()
+            .reset_index()
+            .rename(columns={"kapacita_realokace": "kapacita_realokace_sum"})
+        )
+    else:
+        fact_piktogram_realok = pd.DataFrame(
+            columns=["pobocka_cislo", "pobocka_nazev", "piktogram", "kapacita_realokace_sum"]
+        )
+    con.register("fact_piktogram_realok", fact_piktogram_realok)
 
     con.execute(
         """
@@ -507,7 +530,7 @@ def _register_duckdb_model(
         """
     )
 
-    # Podíly piktogramů (whitelist 16) z fyzické kapacity podle Označení
+    # Podíly piktogramů (whitelist 16) z kapacity realokace podle KAPACITA_DESKRIPTOR
     con.execute(
         """
         CREATE OR REPLACE VIEW metrics_share_piktogram_sit AS
@@ -515,19 +538,19 @@ def _register_duckdb_model(
             SELECT
                 d.piktogram,
                 d.zanr,
-                SUM(k.kapacita_fyzicka) AS kapacita_fyzicka_sum
-            FROM kapacita_raw k
+                SUM(f.kapacita_realokace_sum) AS kapacita_realokace_sum
+            FROM fact_piktogram_realok f
             INNER JOIN dim_piktogram d
-                ON TRIM(CAST(k.oznaceni AS VARCHAR)) = d.piktogram
-            WHERE k.kapacita_fyzicka IS NOT NULL
+                ON CAST(f.piktogram AS VARCHAR) = d.piktogram
+            WHERE f.kapacita_realokace_sum IS NOT NULL
             GROUP BY 1, 2
         ),
-        tot AS (SELECT SUM(kapacita_fyzicka_sum) AS total FROM base)
+        tot AS (SELECT SUM(kapacita_realokace_sum) AS total FROM base)
         SELECT
             b.piktogram,
             b.zanr,
-            b.kapacita_fyzicka_sum,
-            CASE WHEN t.total IS NULL OR t.total = 0 THEN NULL ELSE (b.kapacita_fyzicka_sum * 100.0 / t.total) END AS podil_pct
+            b.kapacita_realokace_sum,
+            CASE WHEN t.total IS NULL OR t.total = 0 THEN NULL ELSE (b.kapacita_realokace_sum * 100.0 / t.total) END AS podil_pct
         FROM base b
         CROSS JOIN tot t
         """
@@ -538,18 +561,18 @@ def _register_duckdb_model(
         CREATE OR REPLACE VIEW metrics_share_piktogram_pobocka AS
         WITH base AS (
             SELECT
-                k.pobocka_cislo,
+                f.pobocka_cislo,
                 d.piktogram,
                 d.zanr,
-                SUM(k.kapacita_fyzicka) AS kapacita_fyzicka_sum
-            FROM kapacita_raw k
+                SUM(f.kapacita_realokace_sum) AS kapacita_realokace_sum
+            FROM fact_piktogram_realok f
             INNER JOIN dim_piktogram d
-                ON TRIM(CAST(k.oznaceni AS VARCHAR)) = d.piktogram
-            WHERE k.kapacita_fyzicka IS NOT NULL
+                ON CAST(f.piktogram AS VARCHAR) = d.piktogram
+            WHERE f.kapacita_realokace_sum IS NOT NULL
             GROUP BY 1, 2, 3
         ),
         tot AS (
-            SELECT pobocka_cislo, SUM(kapacita_fyzicka_sum) AS total
+            SELECT pobocka_cislo, SUM(kapacita_realokace_sum) AS total
             FROM base
             GROUP BY 1
         )
@@ -559,10 +582,10 @@ def _register_duckdb_model(
             pb.oblast,
             b.piktogram,
             b.zanr,
-            b.kapacita_fyzicka_sum,
-            CASE WHEN t.total IS NULL OR t.total = 0 THEN NULL ELSE (b.kapacita_fyzicka_sum * 100.0 / t.total) END AS podil_pct,
+            b.kapacita_realokace_sum,
+            CASE WHEN t.total IS NULL OR t.total = 0 THEN NULL ELSE (b.kapacita_realokace_sum * 100.0 / t.total) END AS podil_pct,
             s.podil_pct AS podil_pct_sit,
-            CASE WHEN s.podil_pct IS NULL THEN NULL ELSE (CASE WHEN t.total IS NULL OR t.total = 0 THEN NULL ELSE (b.kapacita_fyzicka_sum * 100.0 / t.total) END) - s.podil_pct END AS delta_pp
+            CASE WHEN s.podil_pct IS NULL THEN NULL ELSE (CASE WHEN t.total IS NULL OR t.total = 0 THEN NULL ELSE (b.kapacita_realokace_sum * 100.0 / t.total) END) - s.podil_pct END AS delta_pp
         FROM base b
         LEFT JOIN tot t ON b.pobocka_cislo = t.pobocka_cislo
         LEFT JOIN dim_pobocka pb ON b.pobocka_cislo = pb.pobocka_cislo

@@ -18,6 +18,7 @@ __pycache__/
 # Data a výstupy ETL
 # Pravidlo: soubory do ~100 MB mohou být v repu (kvůli Streamlit deploy).
 # Větší soubory držte mimo Git (např. ~/Data/<project>/) a řešte externě.
+data_processed/
 
 # Dočasné Office lock soubory (Excel)
 ~$*.xlsx

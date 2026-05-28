@@ -473,7 +473,7 @@ def render_dashboard() -> None:
     st.subheader(L.SECTION_SHARE_PIKTO)
     st.caption(L.CAPTION_SHARE_HELP)
     if share_pik_sit.empty:
-        st.info("V datech nebyly nalezeny žádné piktogramy v Označení (whitelist 16).")
+        st.info("V datech nebyly nalezeny žádné piktogramy v KAPACITA_DESKRIPTOR (realokace; whitelist 16).")
     else:
         pik_choices = sorted(share_pik_sit["piktogram"].dropna().astype(str).unique().tolist())
         pik_choice = st.selectbox(L.SELECT_PIKTO_SHARE, [""] + pik_choices, index=1 if pik_choices else 0)
@@ -481,7 +481,7 @@ def render_dashboard() -> None:
             share_pik_sit.sort_values("podil_pct", ascending=False),
             x="piktogram",
             y="podil_pct",
-            title="Podíl piktogramů ve fyzické kapacitě (síť; jen whitelist 16)",
+            title="Podíl piktogramů v kapacitě realokace (síť; jen whitelist 16)",
             labels={"piktogram": "Piktogram", "podil_pct": "Podíl (%)"},
         )
         st.plotly_chart(fig3, use_container_width=True)
