@@ -105,6 +105,11 @@ SELECT_TYP_SHARE = "Vyberte Typ (pro KPI a odchylky poboček)"
 SELECT_PIKTO_SHARE = "Vyberte piktogram (pro KPI a odchylky poboček)"
 
 CAPTION_SHARE_HELP = "Podíl v % je počítán vůči síťovému součtu (nebo vůči součtu pobočky). Δ je odchylka pobočky proti síti v procentních bodech."
+CAPTION_SHARE_PIKTO = (
+    "Podíl piktogramu = kapacita řádků s daným piktogramem (whitelist 16 z KAPACITA_DESKRIPTOR) "
+    "/ **celková kapacita realokace** pobočky nebo sítě. Součet podílů všech piktogramů nemusí dát 100 %. "
+    "Podrobný popis a příklady: docs/metriky.md v repozitáři."
+)
 
 # Sloupce pro zobrazení (mapování z interních názvů)
 COL_LOKACE_SHORT = "LOKACE_SHORT"

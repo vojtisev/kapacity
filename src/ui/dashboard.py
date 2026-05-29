@@ -212,38 +212,6 @@ def _column_config_och(df: pd.DataFrame) -> dict[str, Any]:
     return cfg
 
 
-def _share_table_display(df: pd.DataFrame) -> pd.DataFrame:
-    """Přejmenuje technické sloupce share view do čitelné podoby."""
-    out = df.copy()
-    rename = {
-        "pobocka_cislo": "Číslo pobočky",
-        "pobocka_nazev": "Pobočka",
-        "oblast": "Oblast",
-        "OCH": "OCH",
-        "typ": "Typ",
-        "piktogram": "Piktogram",
-        "zanr": "Žánr",
-        "kapacita_realokace_sum": "Kapacita realokace (svazky)",
-        "kapacita_fyzicka_sum": "Fyzická kapacita (svazky)",
-        "podil_pct": "Podíl (%)",
-        "podil_pct_sit": "Podíl síť (%)",
-        "delta_pp": "Δ (pp)",
-    }
-    return out.rename(columns={k: v for k, v in rename.items() if k in out.columns})
-
-
-def _column_config_share(df: pd.DataFrame) -> dict[str, Any]:
-    """Formát: svazky localized, procenta s % a Δ v procentních bodech."""
-    cfg: dict[str, Any] = {}
-    for c in ("Číslo pobočky", "Kapacita realokace (svazky)", "Fyzická kapacita (svazky)"):
-        if c in df.columns:
-            cfg[c] = st.column_config.NumberColumn(c, format="localized")
-    for c in ("Podíl (%)", "Podíl síť (%)", "Δ (pp)"):
-        if c in df.columns:
-            cfg[c] = st.column_config.NumberColumn(c, format="%.2f %%")
-    return cfg
-
-
 def _lokace_table_display(df: pd.DataFrame) -> pd.DataFrame:
     """Sloupce podle kontrolního přehledu (svazky) / Power BI."""
     out = df.copy()
@@ -471,8 +439,7 @@ def render_dashboard() -> None:
             if not sub.empty:
                 sub["abs_delta"] = sub["delta_pp"].abs()
                 sub = sub.sort_values("abs_delta", ascending=False).head(60)
-                sub_disp = _share_table_display(sub.drop(columns=["abs_delta"]))
-                st.dataframe(sub_disp, column_config=_column_config_share(sub_disp), use_container_width=True)
+                st.dataframe(sub.drop(columns=["abs_delta"]), use_container_width=True)
 
     st.subheader(L.SECTION_SHARE_TYP)
     st.caption(L.CAPTION_SHARE_HELP)
@@ -501,10 +468,10 @@ def render_dashboard() -> None:
             if not sub.empty:
                 sub["abs_delta"] = sub["delta_pp"].abs()
                 sub = sub.sort_values("abs_delta", ascending=False).head(60)
-                sub_disp = _share_table_display(sub.drop(columns=["abs_delta"]))
-                st.dataframe(sub_disp, column_config=_column_config_share(sub_disp), use_container_width=True)
+                st.dataframe(sub.drop(columns=["abs_delta"]), use_container_width=True)
 
     st.subheader(L.SECTION_SHARE_PIKTO)
+    st.caption(L.CAPTION_SHARE_PIKTO)
     st.caption(L.CAPTION_SHARE_HELP)
     if share_pik_sit.empty:
         st.info("V datech nebyly nalezeny žádné piktogramy v KAPACITA_DESKRIPTOR (realokace; whitelist 16).")
@@ -515,7 +482,7 @@ def render_dashboard() -> None:
             share_pik_sit.sort_values("podil_pct", ascending=False),
             x="piktogram",
             y="podil_pct",
-            title="Podíl piktogramů v kapacitě realokace (síť; jen whitelist 16)",
+            title="Podíl piktogramů v celkové kapacitě realokace (síť; whitelist 16)",
             labels={"piktogram": "Piktogram", "podil_pct": "Podíl (%)"},
         )
         st.plotly_chart(fig3, use_container_width=True)
@@ -527,8 +494,7 @@ def render_dashboard() -> None:
             if not sub.empty:
                 sub["abs_delta"] = sub["delta_pp"].abs()
                 sub = sub.sort_values("abs_delta", ascending=False).head(60)
-                sub_disp = _share_table_display(sub.drop(columns=["abs_delta"]))
-                st.dataframe(sub_disp, column_config=_column_config_share(sub_disp), use_container_width=True)
+                st.dataframe(sub.drop(columns=["abs_delta"]), use_container_width=True)
 
     st.subheader(L.SECTION_REALOK_PIE)
     pie_df = mloc_f.groupby("je_realokace", dropna=False).size().reset_index(name="pocet")

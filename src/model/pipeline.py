@@ -81,7 +81,6 @@ def _prepare_realokace(df: pd.DataFrame) -> pd.DataFrame:
                 "pobocka_cislo",
                 "pobocka_nazev",
                 "och",
-                "kapacita_deskriptor",
                 "kapacita_realokace",
             ]
         )
@@ -97,11 +96,8 @@ def _prepare_realokace(df: pd.DataFrame) -> pd.DataFrame:
         r["pobocka_nazev"] = ""
     if "och" not in r.columns:
         r["och"] = ""
-    if "kapacita_deskriptor" not in r.columns:
-        r["kapacita_deskriptor"] = ""
     r["och"] = r["och"].fillna("").astype(str).str.strip()
     r.loc[r["och"] == "", "och"] = np.nan
-    r["kapacita_deskriptor"] = r["kapacita_deskriptor"].fillna("").astype(str).str.strip()
     if "kapacita_realokace" in r.columns:
         r["kapacita_realokace"] = pd.to_numeric(r["kapacita_realokace"], errors="coerce")
     else:
@@ -221,7 +217,20 @@ def _register_duckdb_model(
         fact_piktogram_realok = pd.DataFrame(
             columns=["pobocka_cislo", "pobocka_nazev", "piktogram", "kapacita_realokace_sum"]
         )
+
+    # Celková kapacita realokace po pobočce (všechny řádky, ne jen piktogramy) — jmenovatel podílů.
+    if (not real.empty) and ("kapacita_realokace" in real.columns) and ("pobocka_cislo" in real.columns):
+        fact_realokace_pobocka_total = (
+            real.groupby("pobocka_cislo", dropna=False)["kapacita_realokace"]
+            .sum()
+            .reset_index()
+            .rename(columns={"kapacita_realokace": "total_realokace"})
+        )
+    else:
+        fact_realokace_pobocka_total = pd.DataFrame(columns=["pobocka_cislo", "total_realokace"])
+
     con.register("fact_piktogram_realok", fact_piktogram_realok)
+    con.register("fact_realokace_pobocka_total", fact_realokace_pobocka_total)
 
     con.execute(
         """
@@ -530,7 +539,8 @@ def _register_duckdb_model(
         """
     )
 
-    # Podíly piktogramů (whitelist 16) z kapacity realokace podle KAPACITA_DESKRIPTOR
+    # Podíly piktogramů (whitelist 16): čitatel = kapacita řádků s piktogramem,
+    # jmenovatel = celá kapacita realokace pobočky / sítě (stejná logika jako OCH).
     con.execute(
         """
         CREATE OR REPLACE VIEW metrics_share_piktogram_sit AS
@@ -545,7 +555,7 @@ def _register_duckdb_model(
             WHERE f.kapacita_realokace_sum IS NOT NULL
             GROUP BY 1, 2
         ),
-        tot AS (SELECT SUM(kapacita_realokace_sum) AS total FROM base)
+        tot AS (SELECT SUM(total_realokace) AS total FROM fact_realokace_pobocka_total)
         SELECT
             b.piktogram,
             b.zanr,
@@ -570,11 +580,6 @@ def _register_duckdb_model(
                 ON CAST(f.piktogram AS VARCHAR) = d.piktogram
             WHERE f.kapacita_realokace_sum IS NOT NULL
             GROUP BY 1, 2, 3
-        ),
-        tot AS (
-            SELECT pobocka_cislo, SUM(kapacita_realokace_sum) AS total
-            FROM base
-            GROUP BY 1
         )
         SELECT
             b.pobocka_cislo,
@@ -583,11 +588,11 @@ def _register_duckdb_model(
             b.piktogram,
             b.zanr,
             b.kapacita_realokace_sum,
-            CASE WHEN t.total IS NULL OR t.total = 0 THEN NULL ELSE (b.kapacita_realokace_sum * 100.0 / t.total) END AS podil_pct,
+            CASE WHEN t.total_realokace IS NULL OR t.total_realokace = 0 THEN NULL ELSE (b.kapacita_realokace_sum * 100.0 / t.total_realokace) END AS podil_pct,
             s.podil_pct AS podil_pct_sit,
-            CASE WHEN s.podil_pct IS NULL THEN NULL ELSE (CASE WHEN t.total IS NULL OR t.total = 0 THEN NULL ELSE (b.kapacita_realokace_sum * 100.0 / t.total) END) - s.podil_pct END AS delta_pp
+            CASE WHEN s.podil_pct IS NULL THEN NULL ELSE (CASE WHEN t.total_realokace IS NULL OR t.total_realokace = 0 THEN NULL ELSE (b.kapacita_realokace_sum * 100.0 / t.total_realokace) END) - s.podil_pct END AS delta_pp
         FROM base b
-        LEFT JOIN tot t ON b.pobocka_cislo = t.pobocka_cislo
+        LEFT JOIN fact_realokace_pobocka_total t ON b.pobocka_cislo = t.pobocka_cislo
         LEFT JOIN dim_pobocka pb ON b.pobocka_cislo = pb.pobocka_cislo
         LEFT JOIN metrics_share_piktogram_sit s ON b.piktogram = s.piktogram
         """

@@ -102,22 +102,35 @@ def build_quality_report(con: duckdb.DuckDBPyConnection, meta: dict) -> dict:
         )
         lines.append("### TYP (přepočet) — top podle fyzické kapacity\n\n" + _df_block(typ_sum, max_rows=30))
 
-    # Piktogramy (whitelist 16) — v praxi jsou u nás v realokaci v KAPACITA_DESKRIPTOR.
-    if not real_raw.empty and "kapacita_realokace" in real_raw.columns and "kapacita_deskriptor" in real_raw.columns:
-        r = real_raw.copy()
-        r["pikto_code"] = r["kapacita_deskriptor"].map(extract_piktogram_code)
-        r = r[r["pikto_code"].notna()].copy()
+    # Piktogramy — pokrytí whitelistu + podezřelé varianty.
+    # Primárně z `oznaceni` (přepočet), ale umíme odhalit i „X (piktogram)“ v reallok deskriptoru.
+    if not kap_raw.empty and "kapacita_fyzicka" in kap_raw.columns and "oznaceni" in kap_raw.columns:
+        k = kap_raw.copy()
+        k["pikto_code"] = k["oznaceni"].map(extract_piktogram_code)
+        k["je_piktogram"] = k["pikto_code"].notna()
         pik_sum = (
-            r.groupby("pikto_code", dropna=False)["kapacita_realokace"]
+            k[k["je_piktogram"]]
+            .groupby("pikto_code", dropna=False)["kapacita_fyzicka"]
             .sum()
             .reset_index()
-            .sort_values("kapacita_realokace", ascending=False)
+            .sort_values("kapacita_fyzicka", ascending=False)
         )
         missing = [code for code in PIKTOGRAMY.keys() if code not in set(pik_sum["pikto_code"].tolist())]
+        total_realok = float(real_raw["kapacita_realokace"].sum())
+        pik_total = float(pik_sum["kapacita_realokace"].sum()) if not pik_sum.empty else 0.0
+        share_note = (
+            f"\n\n**Podíl v dashboardu (metrics_share_piktogram_*):** "
+            f"`podil_pct` = kapacita daného piktogramu / **celková kapacita realokace** "
+            f"(pobočka nebo síť), ne jen součet piktogramových řádků. "
+            f"V této dávce: celá realokace = {total_realok:,.0f} svazků, "
+            f"řádky s rozpoznaným piktogramem = {pik_total:,.0f} svazků "
+            f"({(100.0 * pik_total / total_realok if total_realok else 0):.1f} % realokace)."
+        )
         lines.append(
-            "### Piktogramy (whitelist 16) — součty kapacity realokace\n\n"
-            + (_df_block(pik_sum, max_rows=30) if not pik_sum.empty else "_Nenalezen žádný řádek s piktogramem v KAPACITA_DESKRIPTOR._")
+            "### Piktogramy (whitelist 16) — součty kapacity\n\n"
+            + (_df_block(pik_sum, max_rows=30) if not pik_sum.empty else "_Nenalezen žádný řádek s piktogramem._")
             + (f"\n\nChybějící kódy z whitelistu: **{', '.join(missing)}**." if missing else "")
+            + share_note
         )
 
         # „Téměř shody“: normalize_oznaceni + odstranění teček/mezer + upper
@@ -126,20 +139,20 @@ def build_quality_report(con: duckdb.DuckDBPyConnection, meta: dict) -> dict:
             s = s.replace(".", "").replace(" ", "").upper()
             return s
 
-        whitelist_near = {_near_key(code): code for code in PIKTOGRAMY.keys()}
-        r["deskr_norm"] = r["kapacita_deskriptor"].map(normalize_oznaceni)
-        r["near"] = r["kapacita_deskriptor"].map(_near_key)
-        near = r[(r["pikto_code"].isna()) & (r["near"].isin(set(whitelist_near.keys())))]
+        whitelist_near = { _near_key(code): code for code in PIKTOGRAMY.keys() }
+        k["ozn_norm"] = k["oznaceni"].map(normalize_oznaceni)
+        k["near"] = k["oznaceni"].map(_near_key)
+        near = k[(~k["je_piktogram"]) & (k["near"].isin(set(whitelist_near.keys())))]
         if not near.empty:
             near_tbl = (
-                near.groupby(["deskr_norm", "near"], dropna=False)["kapacita_realokace"]
+                near.groupby(["ozn_norm", "near"], dropna=False)["kapacita_fyzicka"]
                 .sum()
                 .reset_index()
-                .sort_values("kapacita_realokace", ascending=False)
+                .sort_values("kapacita_fyzicka", ascending=False)
                 .head(30)
             )
             lines.append(
-                "### Piktogramy — podezřelé varianty zápisu v KAPACITA_DESKRIPTOR (téměř shoda s whitelistem)\n\n"
+                "### Piktogramy — podezřelé varianty zápisu (téměř shoda s whitelistem)\n\n"
                 + _df_block(near_tbl, max_rows=30)
             )
 
