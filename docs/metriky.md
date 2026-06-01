@@ -76,7 +76,24 @@ Všechny používají stejnou strukturu tabulky odchylek poboček:
 
 ## 4. Podíl OCH (kapacita realokace)
 
-### Vzorec
+### Graf „Kapacitní plán vs. skutečný stav“ (nový)
+
+Pro každé OCH ve **Skutečný stav - realokace** (síť, top 30 podle kapacity):
+
+| Sloupec / série | Zdroj | Význam |
+|-----------------|--------|--------|
+| Kapacitní plán (realokace) | `SUM(kapacita_realokace)` po OCH | Plánovaná kapacita realokovatelných regálů |
+| Skutečný stav (svazky) | `SUM(stav_na_regalu)` po OCH | Aktuální počet svazků na regálu (stejný export) |
+
+**Přepínač zobrazení:**
+
+- **Svazky** — absolutní součty (doporučeno pro porovnání plán vs. stav).
+- **Podíl v síti (%)** — každá série jako podíl na součtu všech OCH v síti (paralelně k původnímu podílovému grafu).
+
+**Naplněnost** u vybraného OCH: `SUM(stav) / SUM(kapacita realokace) × 100` — může být nad 100 % (bez koeficientu 60–70 % z přepočtu).  
+Pohledy: `metrics_och_realok_sit`, `metrics_och_realok_pobocka`.
+
+### Vzorec podílu (tabulka odchylek poboček)
 
 ```
 Podíl OCH (%) = SUM(kapacita_realokace pro dané OCH) / SUM(kapacita_realokace všech OCH) × 100
@@ -84,7 +101,7 @@ Podíl OCH (%) = SUM(kapacita_realokace pro dané OCH) / SUM(kapacita_realokace 
 
 - **Síť:** jmenovatel = celá realokace v síti.  
 - **Pobočka:** jmenovatel = celá realokace dané pobočky.  
-- Agregace vychází z pohledu `metrics_lokace_och` (lokace × OCH).
+- Agregace podílů: `metrics_share_och_*` (z `metrics_lokace_och`).
 
 ### Příklad ze sítě (aktuální data)
 

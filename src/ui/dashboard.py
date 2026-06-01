@@ -5,6 +5,7 @@ from __future__ import annotations
 from typing import Any
 
 import duckdb
+import numpy as np
 import pandas as pd
 import plotly.express as px
 import streamlit as st
@@ -149,6 +150,58 @@ def _apply_source_dimension_filters(
     return pd.concat([ostatni, realok], ignore_index=True)
 
 
+def _och_filter_key(och: str) -> str:
+    """Sjednocení prázdného OCH mezi metrics_share_och_* a metrics_och_realok_*."""
+    if och in ("None", "nan", ""):
+        return "(prázdné)"
+    return och
+
+
+def _och_realok_grouped_bar(df: pd.DataFrame, unit: str, title: str):
+    """Skupinový sloupcový graf: kapacitní plán realokace vs. stav_na_regalu po OCH."""
+    plot = df.sort_values("kapacita_realokace_sum", ascending=False).head(30).copy()
+    if plot.empty:
+        return px.bar(title=title)
+
+    kap_label = L.CHART_OCH_KAPACITA
+    stav_label = L.CHART_OCH_STAV
+    if unit == "Podíl v síti (%)":
+        tot_kap = pd.to_numeric(plot["kapacita_realokace_sum"], errors="coerce").sum()
+        tot_stav = pd.to_numeric(plot["stav_realok_sum"], errors="coerce").sum()
+        if tot_kap and tot_kap > 0:
+            plot[kap_label] = pd.to_numeric(plot["kapacita_realokace_sum"], errors="coerce") * 100.0 / tot_kap
+        else:
+            plot[kap_label] = np.nan
+        if tot_stav and tot_stav > 0:
+            plot[stav_label] = pd.to_numeric(plot["stav_realok_sum"], errors="coerce") * 100.0 / tot_stav
+        else:
+            plot[stav_label] = np.nan
+        y_label = "Podíl (%)"
+    else:
+        plot[kap_label] = pd.to_numeric(plot["kapacita_realokace_sum"], errors="coerce")
+        plot[stav_label] = pd.to_numeric(plot["stav_realok_sum"], errors="coerce")
+        y_label = "Počet svazků"
+
+    long = plot.melt(
+        id_vars=["OCH"],
+        value_vars=[kap_label, stav_label],
+        var_name="Metrika",
+        value_name="Hodnota",
+    )
+    fig = px.bar(
+        long,
+        x="OCH",
+        y="Hodnota",
+        color="Metrika",
+        barmode="group",
+        title=title,
+        labels={"OCH": "OCH", "Hodnota": y_label, "Metrika": ""},
+        color_discrete_map={kap_label: "#2563eb", stav_label: "#f97316"},
+    )
+    fig.update_layout(legend_title_text="")
+    return fig
+
+
 def _fmt_num(x: float | None) -> str:
     if x is None or (isinstance(x, float) and pd.isna(x)):
         return "—"
@@ -284,6 +337,8 @@ def render_dashboard() -> None:
     lookup_realok = con.execute("SELECT * FROM lookup_realok_dims").df()
     share_och_sit = con.execute("SELECT * FROM metrics_share_och_sit").df()
     share_och_pob = con.execute("SELECT * FROM metrics_share_och_pobocka").df()
+    och_realok_sit = con.execute("SELECT * FROM metrics_och_realok_sit").df()
+    och_realok_pob = con.execute("SELECT * FROM metrics_och_realok_pobocka").df()
     share_typ_sit = con.execute("SELECT * FROM metrics_share_typ_sit").df()
     share_typ_pob = con.execute("SELECT * FROM metrics_share_typ_pobocka").df()
     share_pik_sit = con.execute("SELECT * FROM metrics_share_piktogram_sit").df()
@@ -415,6 +470,21 @@ def render_dashboard() -> None:
 
     # Podíly — OCH / Typ / piktogramy (síť + odchylky poboček)
     st.subheader(L.SECTION_SHARE_OCH)
+    st.caption(L.CAPTION_OCH_REALOK_CHART)
+    if och_realok_sit.empty:
+        st.info("Graf OCH (realokace) není k dispozici — chybí data Skutečný stav - realokace.")
+    else:
+        och_unit = st.radio(
+            L.SELECT_OCH_CHART_UNIT,
+            ["Svazky", "Podíl v síti (%)"],
+            horizontal=True,
+            index=0,
+        )
+        st.plotly_chart(
+            _och_realok_grouped_bar(och_realok_sit, och_unit, L.CHART_OCH_REALOK_TITLE),
+            use_container_width=True,
+        )
+
     st.caption(L.CAPTION_SHARE_HELP)
     if share_och_sit.empty:
         st.info("Podíly OCH nejsou k dispozici (chybí kapacita_realokace).")
@@ -422,20 +492,23 @@ def render_dashboard() -> None:
         och_choices = sorted(share_och_sit["OCH"].dropna().astype(str).unique().tolist())
         och_default = "T" if "T" in och_choices else (och_choices[0] if och_choices else "")
         och_choice = st.selectbox(L.SELECT_OCH_SHARE, [""] + och_choices, index=(och_choices.index(och_default) + 1) if och_default else 0)
-        top_och = share_och_sit.sort_values("podil_pct", ascending=False).head(30)
-        fig = px.bar(
-            top_och,
-            x="OCH",
-            y="podil_pct",
-            title="Podíl OCH v kapacitě realokace (síť)",
-            labels={"OCH": "OCH", "podil_pct": "Podíl (%)"},
-        )
-        st.plotly_chart(fig, use_container_width=True)
         if och_choice:
             row = share_och_sit[share_och_sit["OCH"].astype(str) == str(och_choice)]
             val = float(row["podil_pct"].iloc[0]) if len(row) and pd.notna(row["podil_pct"].iloc[0]) else None
-            st.metric(f"Podíl OCH {och_choice} v síti", f"{val:.2f} %" if val is not None else "—")
+            st.metric(f"Podíl OCH {och_choice} v síti (kapacita)", f"{val:.2f} %" if val is not None else "—")
+            rk = och_realok_sit[och_realok_sit["OCH"].astype(str) == _och_filter_key(str(och_choice))]
+            if len(rk):
+                nap = float(rk["naplnenost_pct"].iloc[0]) if pd.notna(rk["naplnenost_pct"].iloc[0]) else None
+                st.metric(
+                    f"Naplněnost OCH {och_choice} (stav / plán realokace)",
+                    f"{nap:.1f} %" if nap is not None else "—",
+                )
             sub = share_och_pob[share_och_pob["OCH"].astype(str) == str(och_choice)].copy()
+            if not sub.empty and not och_realok_pob.empty:
+                extra = och_realok_pob[och_realok_pob["OCH"].astype(str) == _och_filter_key(str(och_choice))][
+                    ["pobocka_cislo", "kapacita_realokace_sum", "stav_realok_sum", "naplnenost_pct"]
+                ]
+                sub = sub.merge(extra, on="pobocka_cislo", how="left")
             if not sub.empty:
                 sub["abs_delta"] = sub["delta_pp"].abs()
                 sub = sub.sort_values("abs_delta", ascending=False).head(60)

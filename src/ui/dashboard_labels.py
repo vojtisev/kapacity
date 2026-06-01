@@ -97,6 +97,15 @@ NEPOUZITE_CAPTION = (
 
 # Podíly (síť + odchylky poboček)
 SECTION_SHARE_OCH = "Složení kapacity realokace — podíl OCH"
+CHART_OCH_REALOK_TITLE = "Kapacitní plán vs. skutečný stav podle OCH (realokace, síť)"
+CHART_OCH_KAPACITA = "Kapacitní plán (realokace)"
+CHART_OCH_STAV = "Skutečný stav (svazky)"
+SELECT_OCH_CHART_UNIT = "Zobrazení grafu OCH"
+CAPTION_OCH_REALOK_CHART = (
+    "Kapacita = součet kapacitního plánu realokace, stav = součet **stav_na_regalu** ze stejného souboru "
+    "(ne přepočet na 100 %). Poměr stav/kapacita může být nad 100 % — odpovídá zaplnění regálů bez koeficientu 60–70 %. "
+    "Podíl v síti (%) = podíl daného OCH na součtu všech OCH."
+)
 SECTION_SHARE_TYP = "Složení fyzické kapacity — podíl Typ"
 SECTION_SHARE_PIKTO = "Složení kapacity realokace — podíl piktogramů"
 

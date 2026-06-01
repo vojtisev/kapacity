@@ -232,6 +232,30 @@ def _register_duckdb_model(
     con.register("fact_piktogram_realok", fact_piktogram_realok)
     con.register("fact_realokace_pobocka_total", fact_realokace_pobocka_total)
 
+    # Surové řádky realokace (kapacitní plán + stav_na_regalu) pro agregace OCH mimo přepočet.
+    if not real.empty:
+        real_reg_cols = [
+            c
+            for c in (
+                "pobocka_cislo",
+                "pobocka_nazev",
+                "och",
+                "kapacita_realokace",
+                "stav_na_regalu",
+            )
+            if c in real.columns
+        ]
+        realokace_raw_reg = real[real_reg_cols].copy()
+        if "stav_na_regalu" in realokace_raw_reg.columns:
+            realokace_raw_reg["stav_na_regalu"] = pd.to_numeric(
+                realokace_raw_reg["stav_na_regalu"], errors="coerce"
+            )
+    else:
+        realokace_raw_reg = pd.DataFrame(
+            columns=["pobocka_cislo", "pobocka_nazev", "och", "kapacita_realokace", "stav_na_regalu"]
+        )
+    con.register("realokace_raw", realokace_raw_reg)
+
     con.execute(
         """
         CREATE OR REPLACE VIEW fact_fond AS
@@ -479,6 +503,45 @@ def _register_duckdb_model(
         LEFT JOIN tot t ON b.pobocka_cislo = t.pobocka_cislo
         LEFT JOIN dim_pobocka pb ON b.pobocka_cislo = pb.pobocka_cislo
         LEFT JOIN metrics_share_och_sit s ON b.OCH = s.OCH
+        """
+    )
+
+    # OCH v realokaci: kapacitní plán (realokace) vs. skutečný stav (stav_na_regalu ze stejného souboru).
+    con.execute(
+        """
+        CREATE OR REPLACE VIEW metrics_och_realok_sit AS
+        SELECT
+            CAST(COALESCE(NULLIF(TRIM(CAST(och AS VARCHAR)), ''), '(prázdné)') AS VARCHAR) AS OCH,
+            SUM(kapacita_realokace) AS kapacita_realokace_sum,
+            SUM(stav_na_regalu) AS stav_realok_sum,
+            CASE
+                WHEN SUM(kapacita_realokace) IS NULL OR SUM(kapacita_realokace) = 0 THEN NULL
+                ELSE SUM(stav_na_regalu) * 100.0 / SUM(kapacita_realokace)
+            END AS naplnenost_pct
+        FROM realokace_raw
+        WHERE kapacita_realokace IS NOT NULL
+        GROUP BY 1
+        """
+    )
+
+    con.execute(
+        """
+        CREATE OR REPLACE VIEW metrics_och_realok_pobocka AS
+        SELECT
+            r.pobocka_cislo,
+            pb.pobocka_nazev,
+            pb.oblast,
+            CAST(COALESCE(NULLIF(TRIM(CAST(r.och AS VARCHAR)), ''), '(prázdné)') AS VARCHAR) AS OCH,
+            SUM(r.kapacita_realokace) AS kapacita_realokace_sum,
+            SUM(r.stav_na_regalu) AS stav_realok_sum,
+            CASE
+                WHEN SUM(r.kapacita_realokace) IS NULL OR SUM(r.kapacita_realokace) = 0 THEN NULL
+                ELSE SUM(r.stav_na_regalu) * 100.0 / SUM(r.kapacita_realokace)
+            END AS naplnenost_pct
+        FROM realokace_raw r
+        LEFT JOIN dim_pobocka pb ON r.pobocka_cislo = pb.pobocka_cislo
+        WHERE r.kapacita_realokace IS NOT NULL
+        GROUP BY 1, 2, 3, 4
         """
     )
 
@@ -1058,6 +1121,8 @@ def run_etl(
         ("lookup_realok_dims", "lookup_realok_dims.csv"),
         ("metrics_share_och_sit", "metrics_share_och_sit.csv"),
         ("metrics_share_och_pobocka", "metrics_share_och_pobocka.csv"),
+        ("metrics_och_realok_sit", "metrics_och_realok_sit.csv"),
+        ("metrics_och_realok_pobocka", "metrics_och_realok_pobocka.csv"),
         ("metrics_share_typ_sit", "metrics_share_typ_sit.csv"),
         ("metrics_share_typ_pobocka", "metrics_share_typ_pobocka.csv"),
         ("metrics_share_piktogram_sit", "metrics_share_piktogram_sit.csv"),
