@@ -80,10 +80,14 @@ Skupiny filtrů jsou záměrně oddělené, aby se nemíchaly dva různé datov�
 
 ### Podílové pohledy (% síť + odchylky poboček)
 
-Sekce **OCH**, **Typ** a **Piktogramy** — podíl kategorie a odchylky poboček (`Podíl (%)`, `Podíl síť (%)`, `Δ` v pp).  
-**Podrobně včetně příkladů:** [docs/metriky.md](docs/metriky.md) (kapitoly 3–6 a FAQ).
+Sekce **OCH**, **Typ** a **Piktogramy**:
 
-Exporty: `data_processed/exports/metrics_share_och_*.csv`, `metrics_share_typ_*.csv`, `metrics_share_piktogram_*.csv`.
+- **OCH** — grouped graf **kapacitní plán realokace vs. skutečný stav** (`stav_na_regalu`) po oborech; rozbalovací **rozpad kategorie (prázdné)** podle deskriptoru; pod tabulkou odchylek poboček podíly a Δ.
+- **Typ** / **Piktogramy** — podíl kategorie a odchylky poboček (`Podíl (%)`, `Podíl síť (%)`, `Δ` v pp).
+
+**Podrobně včetně příkladů a vysvětlení „(prázdné)“:** [docs/metriky.md](docs/metriky.md) (kapitola 4, dále 5–6 a FAQ).
+
+Exporty: `metrics_share_och_*.csv`, `metrics_share_typ_*.csv`, `metrics_share_piktogram_*.csv`, `metrics_och_realok_*.csv`, `metrics_och_prazdne_*.csv` v `data_processed/exports/`.
 
 ### Spuštění po zkopírování ze síťového disku (doporučeno)
 
@@ -212,6 +216,7 @@ app.py              # vstupní bod Streamlit
 - dimenze: `dim_pobocka`, `dim_lokace`
 - fakta: `fact_fond`, `fact_kapacita_fyzicka`, `fact_kapacita_realokace`
 - hlavní pohledy: `metrics_lokace_enriched`, `metrics_lokace_och`, `metrics_oblast`, `metrics_pobocka`, `metrics_sit`
+- OCH realokace: `metrics_och_realok_*`, rozpad bez OCH: `metrics_och_prazdne_*`, podíly: `metrics_share_och_*`
 
 ### Přesná mapa UI metrik na data
 
@@ -222,6 +227,8 @@ app.py              # vstupní bod Streamlit
 | Skutečný stav (počet svazků) | `sum(stav_fondu_celkem)` |
 | Naplněná kapacita (%) | `sum(stav_fondu_celkem) / sum(kapacita_fyzicka_sum) * 100` |
 | Zbývající kapacita (počet svazků) | `sum(kapacita_fyzicka_sum) - sum(stav_fondu_celkem)` |
-| Podíl OCH / Typ / piktogramu (síť) | `metrics_share_*_sit.podil_pct` — viz sekce **Podílové pohledy** výše |
+| Graf OCH — plán vs. stav (síť) | `metrics_och_realok_sit` — `kapacita_realokace_sum`, `stav_realok_sum`, `naplnenost_pct` |
+| Rozpad OCH (prázdné) | `metrics_och_prazdne_skupina_sit`, `metrics_och_prazdne_deskriptor_sit` |
+| Podíl OCH / Typ / piktogramu (síť) | `metrics_share_*_sit.podil_pct` — viz [docs/metriky.md](docs/metriky.md) |
 | Podíl na pobočce + Δ | `metrics_share_*_pobocka` — `podil_pct`, `podil_pct_sit`, `delta_pp` |
 

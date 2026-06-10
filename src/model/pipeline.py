@@ -73,6 +73,82 @@ def _load_kapacita(data_raw: Path, path_override: Path | None = None) -> pd.Data
     return load_kapacita_fyzicka_from_csv(data_raw / KAPACITA_CSV)
 
 
+_PRAZDNE_OCH_SKUPINY: tuple[str, ...] = (
+    "Piktogram (deskriptor)",
+    "Komiksy",
+    "Leporela",
+    "Ostatní (ost.*)",
+    "Ostatní deskriptor",
+    "Prázdný deskriptor",
+)
+
+
+def _prazdne_och_skupina(deskriptor: object) -> str:
+    """Souhrnná kategorie pro řádky realokace bez vyplněného OCH."""
+    d = "" if deskriptor is None or (isinstance(deskriptor, float) and pd.isna(deskriptor)) else str(deskriptor).strip()
+    if extract_piktogram_code(d):
+        return "Piktogram (deskriptor)"
+    if not d:
+        return "Prázdný deskriptor"
+    if d == "komiksy":
+        return "Komiksy"
+    if d == "leporela":
+        return "Leporela"
+    if d.startswith("ost."):
+        return "Ostatní (ost.*)"
+    return "Ostatní deskriptor"
+
+
+def _build_och_prazdne_breakdown(real: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Agregace kapacity/stavu pro řádky bez OCH — souhrnné skupiny + detail deskriptorů."""
+    empty_cols = ["skupina", "kapacita_realokace_sum", "stav_realok_sum", "naplnenost_pct"]
+    desk_cols = ["kapacita_deskriptor", "kapacita_realokace_sum", "stav_realok_sum", "naplnenost_pct"]
+    if real.empty or "kapacita_deskriptor" not in real.columns:
+        return (
+            pd.DataFrame(columns=empty_cols),
+            pd.DataFrame(columns=desk_cols),
+        )
+
+    pr = real.copy()
+    och_s = pr["och"].fillna("").astype(str).str.strip() if "och" in pr.columns else ""
+    pr = pr[och_s == ""].copy()
+    pr["kapacita_realokace"] = pd.to_numeric(pr.get("kapacita_realokace"), errors="coerce")
+    pr["stav_na_regalu"] = pd.to_numeric(pr.get("stav_na_regalu"), errors="coerce")
+    pr = pr[pr["kapacita_realokace"].notna()].copy()
+    if pr.empty:
+        return (
+            pd.DataFrame(columns=empty_cols),
+            pd.DataFrame(columns=desk_cols),
+        )
+
+    pr["skupina"] = pr["kapacita_deskriptor"].map(_prazdne_och_skupina)
+    pr["kapacita_deskriptor"] = pr["kapacita_deskriptor"].fillna("").astype(str).str.strip()
+    pr.loc[pr["kapacita_deskriptor"] == "", "kapacita_deskriptor"] = "(prázdný)"
+
+    def _agg(df: pd.DataFrame, key: str) -> pd.DataFrame:
+        out = (
+            df.groupby(key, dropna=False)
+            .agg(
+                kapacita_realokace_sum=("kapacita_realokace", "sum"),
+                stav_realok_sum=("stav_na_regalu", "sum"),
+            )
+            .reset_index()
+        )
+        out["naplnenost_pct"] = np.where(
+            out["kapacita_realokace_sum"] > 0,
+            out["stav_realok_sum"] * 100.0 / out["kapacita_realokace_sum"],
+            np.nan,
+        )
+        return out
+
+    skupina = _agg(pr, "skupina")
+    skupina["skupina"] = pd.Categorical(skupina["skupina"], categories=list(_PRAZDNE_OCH_SKUPINY), ordered=True)
+    skupina = skupina.sort_values("skupina")
+
+    desk = _agg(pr, "kapacita_deskriptor").sort_values("kapacita_realokace_sum", ascending=False)
+    return skupina, desk
+
+
 def _prepare_realokace(df: pd.DataFrame) -> pd.DataFrame:
     if df.empty:
         return pd.DataFrame(
@@ -255,6 +331,10 @@ def _register_duckdb_model(
             columns=["pobocka_cislo", "pobocka_nazev", "och", "kapacita_realokace", "stav_na_regalu"]
         )
     con.register("realokace_raw", realokace_raw_reg)
+
+    och_prazdne_skupina, och_prazdne_deskriptor = _build_och_prazdne_breakdown(real)
+    con.register("metrics_och_prazdne_skupina_sit", och_prazdne_skupina)
+    con.register("metrics_och_prazdne_deskriptor_sit", och_prazdne_deskriptor)
 
     con.execute(
         """
@@ -1123,6 +1203,8 @@ def run_etl(
         ("metrics_share_och_pobocka", "metrics_share_och_pobocka.csv"),
         ("metrics_och_realok_sit", "metrics_och_realok_sit.csv"),
         ("metrics_och_realok_pobocka", "metrics_och_realok_pobocka.csv"),
+        ("metrics_och_prazdne_skupina_sit", "metrics_och_prazdne_skupina_sit.csv"),
+        ("metrics_och_prazdne_deskriptor_sit", "metrics_och_prazdne_deskriptor_sit.csv"),
         ("metrics_share_typ_sit", "metrics_share_typ_sit.csv"),
         ("metrics_share_typ_pobocka", "metrics_share_typ_pobocka.csv"),
         ("metrics_share_piktogram_sit", "metrics_share_piktogram_sit.csv"),

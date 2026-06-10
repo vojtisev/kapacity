@@ -157,9 +157,20 @@ def _och_filter_key(och: str) -> str:
     return och
 
 
-def _och_realok_grouped_bar(df: pd.DataFrame, unit: str, title: str):
-    """Skupinový sloupcový graf: kapacitní plán realokace vs. stav_na_regalu po OCH."""
-    plot = df.sort_values("kapacita_realokace_sum", ascending=False).head(30).copy()
+def _kap_stav_grouped_bar(
+    df: pd.DataFrame,
+    category_col: str,
+    unit: str,
+    title: str,
+    *,
+    horizontal: bool = False,
+    head: int | None = 30,
+    category_label: str | None = None,
+):
+    """Skupinový graf kapacitní plán realokace vs. stav_na_regalu."""
+    plot = df.copy()
+    if head is not None and "kapacita_realokace_sum" in plot.columns:
+        plot = plot.sort_values("kapacita_realokace_sum", ascending=False).head(head)
     if plot.empty:
         return px.bar(title=title)
 
@@ -176,30 +187,50 @@ def _och_realok_grouped_bar(df: pd.DataFrame, unit: str, title: str):
             plot[stav_label] = pd.to_numeric(plot["stav_realok_sum"], errors="coerce") * 100.0 / tot_stav
         else:
             plot[stav_label] = np.nan
-        y_label = "Podíl (%)"
+        val_label = "Podíl (%)"
     else:
         plot[kap_label] = pd.to_numeric(plot["kapacita_realokace_sum"], errors="coerce")
         plot[stav_label] = pd.to_numeric(plot["stav_realok_sum"], errors="coerce")
-        y_label = "Počet svazků"
+        val_label = "Počet svazků"
 
+    cat_label = category_label or category_col
+    if horizontal:
+        plot = plot.sort_values("kapacita_realokace_sum", ascending=True)
     long = plot.melt(
-        id_vars=["OCH"],
+        id_vars=[category_col],
         value_vars=[kap_label, stav_label],
         var_name="Metrika",
         value_name="Hodnota",
     )
-    fig = px.bar(
-        long,
-        x="OCH",
-        y="Hodnota",
-        color="Metrika",
-        barmode="group",
-        title=title,
-        labels={"OCH": "OCH", "Hodnota": y_label, "Metrika": ""},
-        color_discrete_map={kap_label: "#2563eb", stav_label: "#f97316"},
-    )
-    fig.update_layout(legend_title_text="")
+    if horizontal:
+        fig = px.bar(
+            long,
+            y=category_col,
+            x="Hodnota",
+            color="Metrika",
+            barmode="group",
+            orientation="h",
+            title=title,
+            labels={category_col: cat_label, "Hodnota": val_label, "Metrika": ""},
+            color_discrete_map={kap_label: "#2563eb", stav_label: "#f97316"},
+        )
+    else:
+        fig = px.bar(
+            long,
+            x=category_col,
+            y="Hodnota",
+            color="Metrika",
+            barmode="group",
+            title=title,
+            labels={category_col: cat_label, "Hodnota": val_label, "Metrika": ""},
+            color_discrete_map={kap_label: "#2563eb", stav_label: "#f97316"},
+        )
+    fig.update_layout(legend_title_text="", height=max(320, 48 * len(plot)))
     return fig
+
+
+def _och_realok_grouped_bar(df: pd.DataFrame, unit: str, title: str):
+    return _kap_stav_grouped_bar(df, "OCH", unit, title, category_label="OCH")
 
 
 def _fmt_num(x: float | None) -> str:
@@ -339,6 +370,8 @@ def render_dashboard() -> None:
     share_och_pob = con.execute("SELECT * FROM metrics_share_och_pobocka").df()
     och_realok_sit = con.execute("SELECT * FROM metrics_och_realok_sit").df()
     och_realok_pob = con.execute("SELECT * FROM metrics_och_realok_pobocka").df()
+    och_prazdne_skupina = con.execute("SELECT * FROM metrics_och_prazdne_skupina_sit").df()
+    och_prazdne_desk = con.execute("SELECT * FROM metrics_och_prazdne_deskriptor_sit").df()
     share_typ_sit = con.execute("SELECT * FROM metrics_share_typ_sit").df()
     share_typ_pob = con.execute("SELECT * FROM metrics_share_typ_pobocka").df()
     share_pik_sit = con.execute("SELECT * FROM metrics_share_piktogram_sit").df()
@@ -484,6 +517,42 @@ def render_dashboard() -> None:
             _och_realok_grouped_bar(och_realok_sit, och_unit, L.CHART_OCH_REALOK_TITLE),
             use_container_width=True,
         )
+        if not och_prazdne_skupina.empty:
+            with st.expander(L.EXPANDER_OCH_PRAZDNE, expanded=False):
+                st.caption(L.CAPTION_OCH_PRAZDNE)
+                st.plotly_chart(
+                    _kap_stav_grouped_bar(
+                        och_prazdne_skupina,
+                        "skupina",
+                        och_unit,
+                        L.CHART_OCH_PRAZDNE_TITLE,
+                        horizontal=True,
+                        head=None,
+                        category_label="Skupina deskriptoru",
+                    ),
+                    use_container_width=True,
+                )
+                if not och_prazdne_desk.empty:
+                    detail = och_prazdne_desk.head(15).copy()
+                    detail = detail.rename(
+                        columns={
+                            "kapacita_deskriptor": "KAPACITA_DESKRIPTOR",
+                            "kapacita_realokace_sum": "Kapacita (svazky)",
+                            "stav_realok_sum": "Stav (svazky)",
+                            "naplnenost_pct": "Naplněnost (%)",
+                        }
+                    )
+                    st.caption("Top 15 jednotlivých deskriptorů (kapacita) — zbytek je v souhrnné skupině „Ostatní deskriptor“.")
+                    st.dataframe(
+                        detail,
+                        column_config={
+                            "Kapacita (svazky)": st.column_config.NumberColumn(format="localized"),
+                            "Stav (svazky)": st.column_config.NumberColumn(format="localized"),
+                            "Naplněnost (%)": st.column_config.NumberColumn(format="%.1f"),
+                        },
+                        use_container_width=True,
+                        hide_index=True,
+                    )
 
     st.caption(L.CAPTION_SHARE_HELP)
     if share_och_sit.empty:

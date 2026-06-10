@@ -106,6 +106,12 @@ CAPTION_OCH_REALOK_CHART = (
     "(ne přepočet na 100 %). Poměr stav/kapacita může být nad 100 % — odpovídá zaplnění regálů bez koeficientu 60–70 %. "
     "Podíl v síti (%) = podíl daného OCH na součtu všech OCH."
 )
+EXPANDER_OCH_PRAZDNE = "Rozpad kategorie (prázdné) OCH — podle deskriptoru"
+CAPTION_OCH_PRAZDNE = (
+    "Řádky realokace **bez vyplněného OCH** (~55 tis. kapacity v síti). Rozdělení podle **KAPACITA_DESKRIPTOR** "
+    "(ne podle whitelistu piktogramů v jiné sekci). Detailní deskriptory jsou volitelně pod grafem."
+)
+CHART_OCH_PRAZDNE_TITLE = "Kapacita vs. stav — řádky bez OCH (souhrnné skupiny)"
 SECTION_SHARE_TYP = "Složení fyzické kapacity — podíl Typ"
 SECTION_SHARE_PIKTO = "Složení kapacity realokace — podíl piktogramů"
 

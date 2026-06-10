@@ -55,8 +55,12 @@ Na úrovni **jedné lokace**:
 
 ## 3. Podílové pohledy — společná logika
 
-V dashboardu jsou tři sekce: **OCH**, **Typ**, **Piktogramy**.  
-Všechny používají stejnou strukturu tabulky odchylek poboček:
+V dashboardu jsou tři sekce: **OCH**, **Typ**, **Piktogramy**.
+
+U **OCH** je navíc nad tabulkou **grouped graf** kapacitní plán vs. stav a volitelný **rozpad (prázdné)** — viz kapitola 4.  
+U **Typ** a **Piktogramy** je primárně podílový graf / výběr kategorie a tabulka odchylek poboček.
+
+Společná struktura **tabulky odchylek poboček** (pod grafy):
 
 | Sloupec | Význam |
 |---------|--------|
@@ -74,26 +78,82 @@ Všechny používají stejnou strukturu tabulky odchylek poboček:
 
 ---
 
-## 4. Podíl OCH (kapacita realokace)
+## 4. OCH v realokaci — graf, podíly a kategorie „(prázdné)“
 
-### Graf „Kapacitní plán vs. skutečný stav“ (nový)
+Sekce **Složení kapacity realokace — podíl OCH** v dashboardu má **tři vrstvy**:
 
-Pro každé OCH ve **Skutečný stav - realokace** (síť, top 30 podle kapacity):
+1. **Hlavní grouped bar** — kapacitní plán vs. skutečný stav po OCH (síť, top 30).
+2. **Rozbalovací rozpad „(prázdné)“** — co je uvnitř řádků bez vyplněného OCH.
+3. **Tabulka odchylek poboček** — podíly a Δ (viz níže).
 
-| Sloupec / série | Zdroj | Význam |
-|-----------------|--------|--------|
+---
+
+### 4.1 Graf „Kapacitní plán vs. skutečný stav“
+
+Pro každé OCH ve **Skutečný stav - realokace** (síť, top 30 podle kapacity) jsou **dva sloupce**:
+
+| Série v UI | Zdroj | Význam |
+|------------|--------|--------|
 | Kapacitní plán (realokace) | `SUM(kapacita_realokace)` po OCH | Plánovaná kapacita realokovatelných regálů |
 | Skutečný stav (svazky) | `SUM(stav_na_regalu)` po OCH | Aktuální počet svazků na regálu (stejný export) |
 
-**Přepínač zobrazení:**
+**Přepínač zobrazení** (nad grafem):
 
-- **Svazky** — absolutní součty (doporučeno pro porovnání plán vs. stav).
-- **Podíl v síti (%)** — každá série jako podíl na součtu všech OCH v síti (paralelně k původnímu podílovému grafu).
+| Režim | Význam |
+|--------|--------|
+| **Svazky** | Absolutní součty — doporučeno pro porovnání plán vs. stav u jednoho OCH. |
+| **Podíl v síti (%)** | Každá série jako podíl na součtu všech OCH v síti (kapacita a stav zvlášť). |
 
-**Naplněnost** u vybraného OCH: `SUM(stav) / SUM(kapacita realokace) × 100` — může být nad 100 % (bez koeficientu 60–70 % z přepočtu).  
-Pohledy: `metrics_och_realok_sit`, `metrics_och_realok_pobocka`.
+**Naplněnost** u vybraného OCH (pod grafem):  
+`SUM(stav_na_regalu) / SUM(kapacita_realokace) × 100` — může být **nad 100 %** (plán realokace, ne přepočet s koeficientem 60–70 %).
 
-### Vzorec podílu (tabulka odchylek poboček)
+**Pohledy:** `metrics_och_realok_sit`, `metrics_och_realok_pobocka`.
+
+Poznámka: do agregace jdou jen řádky s `kapacita_realokace IS NOT NULL`. Řádky bez kapacity, ale s vysokým stavem (např. některé skladové lokace), se v grafu neobjeví.
+
+---
+
+### 4.2 Co znamená sloupec **(prázdné)**
+
+V exportu realokace **není vyplněné pole OCH** (`och` prázdné / NULL). V modelu se zobrazí jako **`(prázdné)`** — není to samostatný typ regálu ani nová kategorie fondu.
+
+**Typická kapacita v síti (aktuální dávka):** ~**55 400** svazků plánu, ~**55 000** svazků stavu (~99 % naplněnost v rámci této skupiny).
+
+Nejde o to samé jako:
+
+- tabulka **16 piktogramů** (whitelist + podíl z celé realokace),
+- ani o **KAPACITA_DESKRIPTOR** ve filtru (ten vybírá lokace, ne vážený součet).
+
+OCH a deskriptor jsou **nezávislé**: řádek může mít deskriptor `E.T. (piktogram)` a přitom prázdné OCH.
+
+---
+
+### 4.3 Rozpad kategorie „(prázdné)“ (expander v UI)
+
+Pod hlavním grafem: **„Rozpad kategorie (prázdné) OCH — podle deskriptoru“** (defaultně sbalený).
+
+**Úroveň 1 — souhrnné skupiny** (vodorovný grouped bar, stejný přepínač Svazky / %):
+
+| Skupina | Pravidlo | ~podíl kapacity v „(prázdné)“* |
+|---------|----------|----------------------------------|
+| Piktogram (deskriptor) | `extract_piktogram_code(KAPACITA_DESKRIPTOR)` není prázdný | ~39 % |
+| Komiksy | deskriptor přesně `komiksy` | ~27 % |
+| Leporela | deskriptor přesně `leporela` | ~12 % |
+| Ostatní (ost.*) | deskriptor začíná `ost.` | ~10 % |
+| Ostatní deskriptor | ostatní neprázdné texty | ~12 % |
+| Prázdný deskriptor | prázdný `KAPACITA_DESKRIPTOR` | ~1 % |
+
+\*Orientačně z aktuální dávky; po změně parquet se čísla posunou.
+
+V režimu **Podíl v síti (%)** u rozpadu jde o podíl **uvnitř kategorie (prázdné)** (součet skupin = 100 %), ne o celou síť.
+
+**Úroveň 2 — tabulka top 15 deskriptorů** — konkrétní texty (`komiksy`, `DÍVKA (piktogram)`, …) včetně kapacity, stavu a naplněnosti.
+
+**Pohledy / exporty:** `metrics_och_prazdne_skupina_sit`, `metrics_och_prazdne_deskriptor_sit`.
+
+---
+
+### 4.4 Vzorec podílu (tabulka odchylek poboček)
 
 ```
 Podíl OCH (%) = SUM(kapacita_realokace pro dané OCH) / SUM(kapacita_realokace všech OCH) × 100
@@ -105,18 +165,23 @@ Podíl OCH (%) = SUM(kapacita_realokace pro dané OCH) / SUM(kapacita_realokace 
 
 ### Příklad ze sítě (aktuální data)
 
+**Podíly kapacity** (`metrics_share_och_sit`):
+
 | OCH | Kapacita realokace | Podíl v síti |
 |-----|-------------------:|-------------:|
 | A1 | 157 756 | 28,13 % |
-| (prázdné) | 54 200 | 9,66 % |
+| (prázdné) | 55 435 | ~9,8 % |
 | D | 33 555 | 5,98 % |
 
-Součet podílů přes všechna OCH na pobočce / v síti by měl být **100 %** (každý řádek realokace má přiřazené OCH nebo prázdnou hodnotu, která se do součtu započítá).
+**Plán vs. stav** (`metrics_och_realok_sit`) — A1: ~158 tis. plán / ~202 tis. stav (~128 % naplněnost).
 
-### Co OCH podíl **neříká**
+Součet podílů přes všechna OCH na pobočce / v síti by měl být **100 %** (každý řádek s kapacitou má OCH nebo spadá do „(prázdné)“).
+
+### Co OCH graf a podíly **neříkají**
 
 - Není to podíl na fyzickém přepočtu.  
-- Není to počet regálů — váží se **kapacitou ve svazcích** z realokace.
+- Není to počet regálů — váží se **kapacitou ve svazcích** z realokace.  
+- Rozpad „(prázdné)“ nenahrazuje podílovou tabulku piktogramů (jiná pravidla a jmenovatel).
 
 ---
 
@@ -260,6 +325,10 @@ Po ETL (`run_etl` / build modelu) vzniknou mimo jiné:
 | `metrics_share_typ_pobocka.csv` | Podíly Typ — pobočky + Δ |
 | `metrics_share_piktogram_sit.csv` | Podíly piktogramů — síť |
 | `metrics_share_piktogram_pobocka.csv` | Podíly piktogramů — pobočky + Δ |
+| `metrics_och_realok_sit.csv` | OCH — kapacitní plán vs. stav (síť) |
+| `metrics_och_realok_pobocka.csv` | OCH — kapacitní plán vs. stav (pobočky) |
+| `metrics_och_prazdne_skupina_sit.csv` | Rozpad „(prázdné)“ — souhrnné skupiny deskriptorů |
+| `metrics_och_prazdne_deskriptor_sit.csv` | Rozpad „(prázdné)“ — detail podle deskriptoru |
 
 Report **`data_processed/data_quality_report.md`** obsahuje součty kapacity podle OCH/Typ/piktogramu a u piktogramů poznámku k jmenovateli podílu.
 
@@ -273,6 +342,12 @@ Protože jmenovatel je celá realokace, ale čitatel jen 16 rozpoznaných kódů
 **Je podíl piktogramu stejný jako podíl OCH?**  
 Ne. OCH člení **všechnu** realokaci; piktogram jen řádky s parsovatelním deskriptorem. Stejný regál může mít OCH `A1` a deskriptor `komiksy` (bez piktogramu).
 
+**Co je ve sloupci (prázdné) v grafu OCH?**  
+Řádky realokace **bez vyplněného OCH**. Nejčastěji jde o komiksy, leporela a deskriptory s textem „piktogram“, kde export nepřiřadil oborový znak. Detail je v rozbalovačce pod grafem (kapitola 4.3).
+
+**Proč je naplněnost OCH někdy nad 100 %?**  
+Graf porovnává **stav_na_regalu** s **kapacitním plánem realokace**, ne s přepočtem na 100 % kapacity regálu. To odpovídá požadavku z uživatelského testování (zaplnění regálů bez koeficientu 60–70 %).
+
 **Můžu filtrovat podíly podle oblasti?**  
 V aktuálním UI ne — podíly jsou vždy z celé sítě / všech poboček v dávce.
 
@@ -284,15 +359,24 @@ Streamlit cache se invaliduje podle otisku souborů; po změně dat obnovte apli
 
 ---
 
-## 10. Historie změny (piktogramy)
+## 10. Historie změn metrik
 
-| Verze logiky | Jmenovatel podílu piktogramu |
-|--------------|----------------------------|
-| Původní (do úpravy) | Součet kapacit **jen rozpoznaných piktogramů** (mix piktogramů = 100 %) |
-| **Aktuální** | Součet **celé realokace** pobočky / sítě (srovnatelné s OCH) |
+### Piktogramy — jmenovatel podílu
 
-Při vysvětlování starších screenshotů nebo exportů počítejte s tímto rozdílem.
+| Verze | Jmenovatel `podil_pct` |
+|-------|------------------------|
+| Původní | Součet kapacit **jen rozpoznaných piktogramů** |
+| **Aktuální** | Součet **celé realokace** pobočky / sítě |
+
+### OCH — graf a rozpad
+
+| Verze | Chování |
+|-------|---------|
+| Původní | Jen podílový sloupcový graf (`podil_pct`) |
+| **Aktuální** | Grouped graf **plán vs. stav** (`metrics_och_realok_*`); rozbalovací rozpad **(prázdné)** (`metrics_och_prazdne_*`); podílová tabulka poboček beze změny principu |
+
+Při vysvětlování starších screenshotů počítejte s tímto rozdílem.
 
 ---
 
-*Poslední aktualizace dokumentu: v souladu s implementací v `pipeline.py` (jmenovatel `fact_realokace_pobocka_total`).*
+*Poslední aktualizace: kapitola 4 (OCH graf, prázdné, rozpad), piktogramy — `pipeline.py`, `dashboard.py`, exporty `metrics_och_*` / `metrics_och_prazdne_*`.*
