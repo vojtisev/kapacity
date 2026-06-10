@@ -102,6 +102,63 @@ def _unique_str_options(s: pd.Series) -> list[str]:
     return sorted(set(out))
 
 
+def _ensure_df_columns(df: pd.DataFrame | None, columns: list[str]) -> pd.DataFrame:
+    """DuckDB může u prázdné tabulky vrátit DataFrame bez sloupců — doplníme schéma."""
+    if df is None or not isinstance(df, pd.DataFrame):
+        return pd.DataFrame(columns=columns)
+    for col in columns:
+        if col not in df.columns:
+            df = df.copy()
+            df[col] = pd.Series(dtype=object)
+    return df
+
+
+def _col_options(df: pd.DataFrame | None, col: str) -> list[str]:
+    if df is None or df.empty or col not in df.columns:
+        return []
+    return _unique_str_options(df[col])
+
+
+def _duck_df(con: duckdb.DuckDBPyConnection, sql: str, columns: list[str] | None = None) -> pd.DataFrame:
+    df = con.execute(sql).df()
+    if columns:
+        return _ensure_df_columns(df, columns)
+    return df if isinstance(df, pd.DataFrame) else pd.DataFrame()
+
+
+@st.cache_data(show_spinner=False)
+def _load_dashboard_data(data_fingerprint: str) -> dict[str, pd.DataFrame]:
+    """Načte všechny pohledy jednou — při změně filtru v sidebaru se znovu nečtou z DuckDB."""
+    assert data_fingerprint
+    con = _get_connection(data_fingerprint)
+    return {
+        "mloc": _duck_df(con, "SELECT * FROM metrics_lokace_enriched"),
+        "moch": _duck_df(con, "SELECT * FROM metrics_lokace_och"),
+        "mobl": _duck_df(con, "SELECT * FROM metrics_oblast"),
+        "mpob": _duck_df(con, "SELECT * FROM metrics_pobocka"),
+        "lookup_prepocet": _duck_df(
+            con,
+            "SELECT * FROM lookup_prepocet_dims",
+            ["lokace_id", "oznaceni", "typ"],
+        ),
+        "lookup_realok": _duck_df(
+            con,
+            "SELECT * FROM lookup_realok_dims",
+            ["lokace_id", "kapacita_deskriptor", "kapacita_och"],
+        ),
+        "share_och_sit": _duck_df(con, "SELECT * FROM metrics_share_och_sit"),
+        "share_och_pob": _duck_df(con, "SELECT * FROM metrics_share_och_pobocka"),
+        "och_realok_sit": _duck_df(con, "SELECT * FROM metrics_och_realok_sit"),
+        "och_realok_pob": _duck_df(con, "SELECT * FROM metrics_och_realok_pobocka"),
+        "och_prazdne_skupina": _duck_df(con, "SELECT * FROM metrics_och_prazdne_skupina_sit"),
+        "och_prazdne_desk": _duck_df(con, "SELECT * FROM metrics_och_prazdne_deskriptor_sit"),
+        "share_typ_sit": _duck_df(con, "SELECT * FROM metrics_share_typ_sit"),
+        "share_typ_pob": _duck_df(con, "SELECT * FROM metrics_share_typ_pobocka"),
+        "share_pik_sit": _duck_df(con, "SELECT * FROM metrics_share_piktogram_sit"),
+        "share_pik_pob": _duck_df(con, "SELECT * FROM metrics_share_piktogram_pobocka"),
+    }
+
+
 def _apply_source_dimension_filters(
     mloc: pd.DataFrame,
     prep: pd.DataFrame,
@@ -124,7 +181,7 @@ def _apply_source_dimension_filters(
     realok = mloc[mloc["je_realokace"]]
 
     if oz_sel or typ_sel:
-        if prep.empty:
+        if prep.empty or not {"oznaceni", "typ", "lokace_id"}.issubset(prep.columns):
             ostatni = ostatni.iloc[0:0]
         else:
             p = prep.copy()
@@ -358,24 +415,24 @@ def render_dashboard() -> None:
     st.title(L.MAIN_TITLE)
     st.caption(L.MAIN_CAPTION)
 
-    con = _get_connection(_model_data_fingerprint())
-
-    mloc = con.execute("SELECT * FROM metrics_lokace_enriched").df()
-    moch = con.execute("SELECT * FROM metrics_lokace_och").df()
-    mobl = con.execute("SELECT * FROM metrics_oblast").df()
-    mpob = con.execute("SELECT * FROM metrics_pobocka").df()
-    lookup_prepocet = con.execute("SELECT * FROM lookup_prepocet_dims").df()
-    lookup_realok = con.execute("SELECT * FROM lookup_realok_dims").df()
-    share_och_sit = con.execute("SELECT * FROM metrics_share_och_sit").df()
-    share_och_pob = con.execute("SELECT * FROM metrics_share_och_pobocka").df()
-    och_realok_sit = con.execute("SELECT * FROM metrics_och_realok_sit").df()
-    och_realok_pob = con.execute("SELECT * FROM metrics_och_realok_pobocka").df()
-    och_prazdne_skupina = con.execute("SELECT * FROM metrics_och_prazdne_skupina_sit").df()
-    och_prazdne_desk = con.execute("SELECT * FROM metrics_och_prazdne_deskriptor_sit").df()
-    share_typ_sit = con.execute("SELECT * FROM metrics_share_typ_sit").df()
-    share_typ_pob = con.execute("SELECT * FROM metrics_share_typ_pobocka").df()
-    share_pik_sit = con.execute("SELECT * FROM metrics_share_piktogram_sit").df()
-    share_pik_pob = con.execute("SELECT * FROM metrics_share_piktogram_pobocka").df()
+    fp = _model_data_fingerprint()
+    data = _load_dashboard_data(fp)
+    mloc = data["mloc"]
+    moch = data["moch"]
+    mobl = data["mobl"]
+    mpob = data["mpob"]
+    lookup_prepocet = data["lookup_prepocet"]
+    lookup_realok = data["lookup_realok"]
+    share_och_sit = data["share_och_sit"]
+    share_och_pob = data["share_och_pob"]
+    och_realok_sit = data["och_realok_sit"]
+    och_realok_pob = data["och_realok_pob"]
+    och_prazdne_skupina = data["och_prazdne_skupina"]
+    och_prazdne_desk = data["och_prazdne_desk"]
+    share_typ_sit = data["share_typ_sit"]
+    share_typ_pob = data["share_typ_pob"]
+    share_pik_sit = data["share_pik_sit"]
+    share_pik_pob = data["share_pik_pob"]
 
     with st.sidebar:
         st.subheader("Filtry")
@@ -390,14 +447,14 @@ def render_dashboard() -> None:
         jen_realok = st.selectbox(L.FILTER_JEN_REALOK, ["Vše", "Ano", "Ne"], index=0)
 
         st.markdown(f"**{L.FILTER_GROUP_PREPOCET}**")
-        oz_opts = _unique_str_options(lookup_prepocet["oznaceni"]) if not lookup_prepocet.empty else []
-        typ_opts = _unique_str_options(lookup_prepocet["typ"]) if not lookup_prepocet.empty else []
+        oz_opts = _col_options(lookup_prepocet, "oznaceni")
+        typ_opts = _col_options(lookup_prepocet, "typ")
         oz_sel = st.multiselect(L.FILTER_OZNACENI_PREPOCET, oz_opts, default=[])
         typ_sel = st.multiselect(L.FILTER_TYP_PREPOCET, typ_opts, default=[])
 
         st.markdown(f"**{L.FILTER_GROUP_REALOK}**")
-        deskr_opts = _unique_str_options(lookup_realok["kapacita_deskriptor"]) if not lookup_realok.empty else []
-        roch_opts = _unique_str_options(lookup_realok["kapacita_och"]) if not lookup_realok.empty else []
+        deskr_opts = _col_options(lookup_realok, "kapacita_deskriptor")
+        roch_opts = _col_options(lookup_realok, "kapacita_och")
         deskr_sel = st.multiselect(L.FILTER_DESKRIPTOR_REALOK, deskr_opts, default=[])
         och_realok_sel = st.multiselect(L.FILTER_OCH_REALOK, roch_opts, default=[])
 
@@ -460,7 +517,7 @@ def render_dashboard() -> None:
             labels={"kategorie": "", "Svazky": L.AXIS_SVAZKY},
         )
         fig_tri.update_layout(showlegend=False, yaxis=dict(categoryorder="array", categoryarray=tri_df["kategorie"]))
-        st.plotly_chart(fig_tri, use_container_width=True)
+        st.plotly_chart(fig_tri, width="stretch")
         st.caption(L.TRI_CAPTION)
 
     st.subheader(L.SECTION_SIT)
@@ -515,7 +572,7 @@ def render_dashboard() -> None:
         )
         st.plotly_chart(
             _och_realok_grouped_bar(och_realok_sit, och_unit, L.CHART_OCH_REALOK_TITLE),
-            use_container_width=True,
+            width="stretch",
         )
         if not och_prazdne_skupina.empty:
             with st.expander(L.EXPANDER_OCH_PRAZDNE, expanded=False):
@@ -530,7 +587,7 @@ def render_dashboard() -> None:
                         head=None,
                         category_label="Skupina deskriptoru",
                     ),
-                    use_container_width=True,
+                    width="stretch",
                 )
                 if not och_prazdne_desk.empty:
                     detail = och_prazdne_desk.head(15).copy()
@@ -550,7 +607,7 @@ def render_dashboard() -> None:
                             "Stav (svazky)": st.column_config.NumberColumn(format="localized"),
                             "Naplněnost (%)": st.column_config.NumberColumn(format="%.1f"),
                         },
-                        use_container_width=True,
+                        width="stretch",
                         hide_index=True,
                     )
 
@@ -581,7 +638,7 @@ def render_dashboard() -> None:
             if not sub.empty:
                 sub["abs_delta"] = sub["delta_pp"].abs()
                 sub = sub.sort_values("abs_delta", ascending=False).head(60)
-                st.dataframe(sub.drop(columns=["abs_delta"]), use_container_width=True)
+                st.dataframe(sub.drop(columns=["abs_delta"]), width="stretch")
 
     st.subheader(L.SECTION_SHARE_TYP)
     st.caption(L.CAPTION_SHARE_HELP)
@@ -601,7 +658,7 @@ def render_dashboard() -> None:
             labels={"typ": "Typ", "podil_pct": "Podíl (%)"},
         )
         fig2.update_xaxes(tickangle=45)
-        st.plotly_chart(fig2, use_container_width=True)
+        st.plotly_chart(fig2, width="stretch")
         if typ_choice:
             row = share_typ_sit[share_typ_sit["typ"].astype(str) == str(typ_choice)]
             val = float(row["podil_pct"].iloc[0]) if len(row) and pd.notna(row["podil_pct"].iloc[0]) else None
@@ -610,7 +667,7 @@ def render_dashboard() -> None:
             if not sub.empty:
                 sub["abs_delta"] = sub["delta_pp"].abs()
                 sub = sub.sort_values("abs_delta", ascending=False).head(60)
-                st.dataframe(sub.drop(columns=["abs_delta"]), use_container_width=True)
+                st.dataframe(sub.drop(columns=["abs_delta"]), width="stretch")
 
     st.subheader(L.SECTION_SHARE_PIKTO)
     st.caption(L.CAPTION_SHARE_PIKTO)
@@ -627,7 +684,7 @@ def render_dashboard() -> None:
             title="Podíl piktogramů v celkové kapacitě realokace (síť; whitelist 16)",
             labels={"piktogram": "Piktogram", "podil_pct": "Podíl (%)"},
         )
-        st.plotly_chart(fig3, use_container_width=True)
+        st.plotly_chart(fig3, width="stretch")
         if pik_choice:
             row = share_pik_sit[share_pik_sit["piktogram"].astype(str) == str(pik_choice)]
             val = float(row["podil_pct"].iloc[0]) if len(row) and pd.notna(row["podil_pct"].iloc[0]) else None
@@ -636,14 +693,14 @@ def render_dashboard() -> None:
             if not sub.empty:
                 sub["abs_delta"] = sub["delta_pp"].abs()
                 sub = sub.sort_values("abs_delta", ascending=False).head(60)
-                st.dataframe(sub.drop(columns=["abs_delta"]), use_container_width=True)
+                st.dataframe(sub.drop(columns=["abs_delta"]), width="stretch")
 
     st.subheader(L.SECTION_REALOK_PIE)
     pie_df = mloc_f.groupby("je_realokace", dropna=False).size().reset_index(name="pocet")
     pie_df["typ"] = pie_df["je_realokace"].map({True: L.PIE_REALOKACE, False: L.PIE_OSTATNI})
     if not pie_df.empty and pie_df["pocet"].sum() > 0:
         fig_pie = px.pie(pie_df, values="pocet", names="typ", title=L.PIE_TITLE)
-        st.plotly_chart(fig_pie, use_container_width=True)
+        st.plotly_chart(fig_pie, width="stretch")
 
     st.subheader(L.SECTION_OBLASTI)
     if not mobl.empty:
@@ -655,12 +712,12 @@ def render_dashboard() -> None:
             title=L.CHART_OBLAST_TITLE,
             labels={"oblast": L.AXIS_OBLAST, "naplnenost_pct": L.COL_NAPLNENI},
         )
-        st.plotly_chart(fig_obl, use_container_width=True)
+        st.plotly_chart(fig_obl, width="stretch")
         mobl_disp = _oblast_table_display(mobl_f)
         st.dataframe(
             mobl_disp,
             column_config=_column_config_oblast(mobl_disp),
-            use_container_width=True,
+            width="stretch",
         )
 
     st.subheader(L.SECTION_POBOCKY)
@@ -676,7 +733,7 @@ def render_dashboard() -> None:
             labels={"pobocka_nazev": L.AXIS_NAZEV_POBOCKY, "naplnenost_pct": L.COL_NAPLNENI},
         )
         fig_p.update_xaxes(tickangle=45)
-        st.plotly_chart(fig_p, use_container_width=True)
+        st.plotly_chart(fig_p, width="stretch")
 
     st.subheader(L.SECTION_DETAIL_POBOCKY)
     detail_pob_opts = sorted(mloc_f["pobocka_nazev"].dropna().unique().tolist())
@@ -691,7 +748,7 @@ def render_dashboard() -> None:
         st.dataframe(
             sub_disp,
             column_config=_column_config_lokace(sub_disp),
-            use_container_width=True,
+            width="stretch",
         )
     else:
         pob_choice = st.selectbox(L.SELECT_POBOCKA, [""] + detail_pob_opts)
@@ -701,7 +758,7 @@ def render_dashboard() -> None:
             st.dataframe(
                 sub_disp,
                 column_config=_column_config_lokace(sub_disp),
-                use_container_width=True,
+                width="stretch",
             )
 
     st.subheader(L.SECTION_DETAIL_OCH)
@@ -713,7 +770,7 @@ def render_dashboard() -> None:
         st.dataframe(
             disp,
             column_config=_column_config_och(disp),
-            use_container_width=True,
+            width="stretch",
         )
 
     st.subheader(L.SECTION_PRETIZENE)
@@ -722,7 +779,7 @@ def render_dashboard() -> None:
     st.dataframe(
         pret_disp,
         column_config=_column_config_lokace(pret_disp),
-        use_container_width=True,
+        width="stretch",
     )
 
     st.subheader(L.SECTION_NEPOUZITE)
@@ -734,7 +791,7 @@ def render_dashboard() -> None:
     st.dataframe(
         free_disp,
         column_config=_column_config_lokace(free_disp),
-        use_container_width=True,
+        width="stretch",
     )
 
     st.divider()
